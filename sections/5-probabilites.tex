@@ -1,0 +1,306 @@
+
+\section{Probabilités}
+
+\vspace{0.7cm}
+\subsection{Espaces probabilisés}
+
+\vspace{1cm}
+
+Une \textbf{tribu}\index{tribu} sur l'ensemble \(\Omega\) est un ensemble \(\mathcal{A}\) de parties de \(\Omega\) vérifiant : \vspace{-0.1cm}
+\begin{enumerate}[leftmargin=2cm]
+    \item \(\Omega \in \mathcal{A}\).
+    
+    \item \(\forall\, \text{A}\in \mathcal{A},\ \ \overline{\text{A}}\in \mathcal{A}\).\hspace{3cm}
+    \begin{small}
+        (\emph{Stable par complémentaire})
+    \end{small}
+
+    \item \(\forall (A_n)\in \mathcal{A}^\NN,\ \ \underset{n\in \NN}{\bigcup}A_n \in \mathcal{A}\). \hspace{1.3cm} 
+    \begin{small}
+        (\emph{Stable par réunion dénombrable}\footnote{En prenant une suite d'évènements nulle à partir d'un certain rang, on montre que \(\,\mathcal{A}\,\) est stable par réunion finie.})
+    \end{small}
+\end{enumerate}
+
+\vspace{1.3cm}
+
+Un \textbf{espace probabilisable}\index{espace probabilisable} est un couple (\(\Omega,\,\mathcal{A}\)) constitué d'un ensemble \(\Omega\) et d'une tribu \(\,\mathcal{A}\) sur \(\Omega\). Les éléments de la tribu \(\mathcal{A}\) sont appelés des \textbf{évènements}\index{évènements}. L'espace probabilisable (\(\Omega,\,\mathcal{A}\)) est dit \textbf{discret}\index{espace probabilisable discret} \ssi \(\Omega\) est fini ou dénombrable et \(\mathcal{A}=\mathcal{P}(\Omega)\).
+
+\newpage
+
+\noindent Soit (\(\Omega,\,\mathcal{A}\)) un espace probabilisable.
+\begin{itemize}
+    \item[•] L'évènement \(\varnothing\) est appelé \textbf{évènement impossible}\index{évènement impossible}, l'évènement \(\Omega\) est appelé \textbf{évènement certain}\index{évènement certain}.
+    
+    \item[•] Un évènement égal à un singleton est appelé un \textbf{évènement élémentaire}\index{évènement élémentaire}.
+    
+    \item[•] Si A est un évènement alors l'évènement $\overline{\text{A}}=\mathcal{A}\!\setminus\! \text{A}\,$ est appelé \textbf{évènement contraire}\index{évènement contraire} de A.
+    
+    \item[•] Deux évènements A et B sont dits \textbf{incompatibles}\index{incompatibles} (ou \textbf{disjoints}\index{évènements disjoints}) \ssi \(\,A\cap B=\varnothing\).
+    
+    \item[•] Une suite \((A_n)\) d'évènements est dite \textbf{croissante}\index{suite d'évènements croissante} \ssi : \(\forall k\in \NN,\ A_k\subset A_{k+1}.\)\vspace{0.1cm} \\
+    Une suite \((A_n)\) d'évènements est dite \textbf{décroissante}\index{suite d'évènements décroissante} \ssi : \(\forall k\in \NN,\ A_{k+1} \subset A_k\).
+
+    \item[•] Une famille finie \((A_1,\cdots,A_p)\) d'évènements est un \textbf{système complet d'évènements}\index{système complet d'évènements} \ssi les \(A_k,\ k\in \llbracket 1,p \rrbracket\) sont 2 à 2 disjoints et si \(\;\Omega=A_1\cup\cdots\cup A_p.\)\vspace{0.1cm}\\
+    Une suite \((A_n)_{_{n\in \NN}}\) d'évènements est un \textbf{système complet d'évènements}\index{système complet d'évènements} \ssi les \(A_n,\ n\in \NN\) sont 2 à 2 disjoints et si \(\;\Omega=\underset{n\in \NN}{\bigcup}A_n\)
+    
+\end{itemize}
+
+
+\vspace{1.5cm}
+
+\noindent Une \textbf{probabilité}\index{probabilité} \(\,\PP\,\) sur l'espace probabilisable (\(\Omega,\,\mathcal{A}\)) est une application de \(\mathcal{A}\) dans \([0,1]\) qui vérifie:\vspace{0.1cm}
+\begin{enumerate}[leftmargin=1.5cm]
+    \item \(\PP(\Omega)=1\).\vspace{-0.2cm}
+    
+    \item Pour toute suite \((A_n)\) d'éléments de \(\mathcal{A}\ \) deux à deux disjoints, \(\; \displaystyle \PP\!\left(\bigcup_{n\in \NN}A_n\right)=\sum_{n\in \NN}\PP(A_n)\).\vspace{-0.3cm}\\
+    \begin{small}
+        (\emph{$\PP$ est $\sigma$-additive})
+    \end{small}
+\end{enumerate}
+
+\vspace{1.4cm}
+
+Un \textbf{espace probabilisé}\index{espace probabilisé} est un triplet (\(\Omega,\,\mathcal{A},\,\PP\)) constitué d'un ensemble \(\Omega\), d'une tribu \(\mathcal{A}\) sur \(\Omega\) et d'une probabilité \(\,\PP\,\) sur (\(\Omega,\,\mathcal{A}\)). Un espace probabilisé (\(\Omega,\,\mathcal{A},\,\PP\)) est dit \textbf{discret}\index{espace probabilisé discret} \ssi l'espace probabilisable (\(\Omega,\,\mathcal{A}\)) sous-jacent est discret.
+
+\vspace{1.2cm}
+
+Un évènement A est dit \textbf{négligeable}\index{évènement négligeable} \ssi \(\, \PP(A)=0\).\!\! Un évènement A est dit \textbf{presque sûr}\index{évènement presque sûr} \ssi \(\, \PP(A)=1.\)
+
+\vspace{1cm}
+
+Une propriété \(\mathscr{P}(\omega)\) concernant les éléments \(\omega\) de \(\Omega\) est dite \textbf{presque sûre}\index{propriété presque sûre} \ssi il existe un évènement presque sûr A tel que : \(\forall a\in A,\ \mathscr{P}(a)\) vraie.
+
+\vspace{1.3cm}
+
+\noindent Une famille finie \((A_1,\cdots,A_p)\) d'évènements est un \textbf{système quasi-complet d'évènements}\index{système quasi-complet d'évènements} \ssi les \(A_k,\ k\in \llbracket 1,p \rrbracket\,\) sont 2 à 2 disjoints et si \(\;\PP(A_1\cup\cdots\cup A_p)=1.\)\vspace{0.4cm}\\
+Une suite \((A_n)_{_{n\in \NN}}\) d'évènements est un \textbf{système quasi-complet d'évènements}\index{système quasi-complet d'évènements} \ssi les \(A_n,\ n\in \NN\) sont 2 à 2 disjoints et si \(\;\PP\left(\underset{n\in \NN}{\bigcup}A_n\right)=1\)
+
+\newpage
+
+
+Une \textbf{distribution de probabilités discrètes}\index{distribution de probabilités discrètes} (ou \textbf{germe de probabilité}\index{germe de probabilité}) sur l'ensemble \(\Omega\) est une famille \((p_\omega)_{_{\omega \in \Omega}}\) de réels positifs indexée par \(\Omega\) qui vérifie \(\displaystyle\; \sum_{\omega \in \Omega}p_\omega=1.\)\vspace{0.2cm}\\
+Le support d'une distribution de probabilités discrètes \(g=(p_\omega)_{_{\omega \in \Omega}}\) sur \(\Omega\) est l'ensemble \(S_g\) définie par : \(\displaystyle S_g=\left\{\omega \in \Omega \ \rvert \ p_\omega \neq 0 \right\}.\)
+
+\vspace{1.3cm}
+
+
+Une probabilité \(\,\PP\,\) sur un espace probabilisable discret (\(\Omega,\,\mathcal{P}(\Omega)\)) est dite \textbf{uniforme}\index{probabilité uniforme} si et\\
+seulement si : \(\,\forall (\omega_1,\omega_2)\in \Omega^2,\ \, \PP(\{\omega_1\})=\PP(\{\omega_2\})\).
+\vspace{1cm}
+\hrule
+
+\vspace{1cm}
+
+\textbf{• Modèle uniforme}\index{modèle uniforme} :\vspace{0.2cm}\\
+On suppose que \(\Omega\) est un ensemble \underline{fini} et non vide.\\
+Le modèle uniforme sur \(\Omega\) est l'espace probabilisé (\(\Omega,\,\mathcal{P}(\Omega),\,\PP\)) où \(\,\PP\,\) est la probabilité définie par :\vspace{-0.2cm}
+\[\forall A\in \mathcal{P}(\Omega),\ \, \PP(A)=\frac{|A|}{|\Omega|}\].
+\vspace{0.4cm}
+
+\textbf{• Modèle de Bernoulli de paramètre p}\index{modèle de Bernoulli} :\vspace{0.2cm}\\
+Le modèle de Bernoulli de paramètre \(p\in [0,1]\,\) est l'espace probabilisé discret (\(\NN,\,\mathcal{P}(\NN),\,\PP\)) où \(\,\PP\,\) est l'unique probabilité sur (\(\NN,\,\mathcal{P}(\NN)\)) vérifiant :\vspace{-0.3cm}
+
+\[\hspace{2cm} \def\arraystretch{1.4} \arraycolsep=0.01cm
+\begin{array}{ll}
+    \ast \; \PP(\{0\})=1-p & \\
+    \ast \; \PP(\{1\})=p & \\
+    \ast \; \PP(\{k\})=0 & \text{pour } k\geq 2
+\end{array}\]
+
+\noindent La probabilité \(\,\PP\,\) est appelée probabilité de Bernoulli de paramètre $p$. Elle est notée \(\,\mathcal{B}(p)\).
+
+
+\vspace{0.9cm}
+
+\textbf{• Modèle binomial de paramètres n et p}\index{modèle binomial} :\vspace{0.2cm}\\
+Le modèle binomial de paramètres \(n\in \NN\) et \(p\in [0,1]\,\) est l'espace probabilisé discret (\(\NN,\,\mathcal{P}(\NN),\,\PP\)) où \(\PP\) est l'unique probabilité sur (\(\NN,\,\mathcal{P}(\NN)\)) vérifiant :\vspace{-0.1cm}
+
+\[\displaystyle \hspace{2cm} \def\arraystretch{1.4} \arraycolsep=0.15cm
+\begin{array}{ll}
+    \ast \; \PP(\{k\})=\displaystyle{\binom{n}{p}p^k\,(1-p)^{n-k}} & \text{pour } k\in \llbracket 1,n \rrbracket \vspace{0.1cm}\\
+    \ast \; \PP(\{k\})=0 & \text{pour } k\geq n+1 
+\end{array}\]
+
+\vspace{0.3cm}
+
+\noindent La probabilité \(\PP\) est appelée probabilité binomiale de paramètres $n$ et $p$. Elle est notée \(\mathcal{B}(n,p)\)
+
+\vspace{0.9cm}
+
+\textbf{• Modèle géométrique de paramètre p}\index{modèle géométrique} :\vspace{0.2cm}\\
+Le modèle géométrique de paramètre \(p\in\, ]0,1]\) est l'espace probabilisé discret (\(\NN,\,\mathcal{P}(\NN),\,\PP\)) où \(\PP\) est l'unique probabilité sur (\(\NN,\,\mathcal{P}(\NN)\)) vérifiant :\vspace{-0.3cm}
+
+\[ \hspace{2cm} \def\arraystretch{1.4} \arraycolsep=0.15cm
+\begin{array}{ll}
+    \ast \; \PP(\{k\})=p(1-p)^{k-1} & \text{pour } k\in \NN^{^*}\\
+    \ast \; \PP(\{0\})=0 & 
+\end{array}\]
+
+\vspace{0.2cm}
+
+\noindent La probabilité \(\PP\) est appelée probabilité géométrique de paramètre $p$. Elle est notée \(\mathcal{G}(p)\).
+
+\vspace{0.9cm}
+
+\textbf{• Modèle de Poisson de paramètre $\lambda$}\index{modèle de Poisson} :\vspace{0.2cm}\\
+Le modèle de Poisson de paramètre \(\lambda\in\RR^*_+\) est l'espace probabilisé discret (\(\NN,\,\mathcal{P}(\NN),\,\PP\)) où \(\PP\) est l'unique probabilité sur (\(\NN,\,\mathcal{P}(\NN)\)) vérifiant :\vspace{-0.3cm}
+
+\[\forall k\in \NN,\ \PP(\{k\})=e^{-\lambda}\,\frac{\lambda^k}{k!}\]
+
+\vspace{0.4cm}
+
+\noindent La probabilité \(\PP\) est appelée probabilité de Poisson de paramètre $\lambda$. Elle est noté \(\mathcal{P}(\lambda)\).
+
+\vspace{0.9cm}
+
+\hrule
+
+\vspace{1cm}
+
+\noindent \textbf{Probabilité conditionnelle}\index{probabilité conditionnelle} : Soit (\(\Omega,\,\mathcal{A},\,\PP\)) un espace probabilisé.\vspace{0.1cm}\\
+Soit \((A,B)\in\mathcal{A}^2\,\) tel que \(\,\PP(B)>0\). Le réel \(\displaystyle \, \frac{\PP(A\cap B)}{\PP(B)}\,\) est appelé probabilité de A sachant B et est noté \(\,\PP(A\mid B)\) ou encore \(\,\PP_B(A).\)
+
+\vspace{1.5cm}
+
+Deux évènements A et B sont dits \textbf{indépendants}\index{évènements indépendants} pour la probabilité \(\,\PP\,\) \ssi :\vspace{-0.2cm}
+\[\PP\bigl(A\cap B\bigr)=\PP\bigl(A\bigr)\PP\bigl(B\bigr)\]
+
+\vspace{0.4cm}
+
+\noindent Soit \((A_i)_{_{i\in I}}\) une famille d'évènements indexée par un ensemble $I$.
+\begin{itemize}
+    \item[•] Les évènements \(A_i\,,\: i\in I\,\) sont dits \textbf{deux à deux indépendants}\index{évènements deux à deux indépendants} pour \(\,\PP\,\) \ssi : \(\forall (k,l)\in I^2\:\) tel que \(k\neq l\),\, les évènements \(A_k\) et \(A_l\) sont indépendants pour \(\,\PP.\)\vspace{0.2cm}
+    
+    \item[•] Les évènements \(A_i\,,\: i\in I\,\) sont dits \textbf{indépendants}\index{évènements indépendants} pour \(\,\PP\,\) \ssi :\vspace{-0.4cm}\\
+    \[\forall J\in \mathcal{P}_f(I)\ \text{ on a l'égalité }\ \PP\left(\,\bigcap _{j\in J}A_j\right)=\prod_{j\in J}\PP(A_j). \]
+\end{itemize}
+
+\vspace{1cm}
+
+\subsection{Variables aléatoires discrètes}
+\vspace{0.5cm}
+\begin{center}
+    Soient \(\bigl(\Omega,\,\mathcal{A},\,\PP\bigr)\) un espace probabilisé et E un ensemble.
+\end{center}
+
+\vspace{0.5cm}
+
+Une \textbf{variable aléatoires discrète}\index{variable aléatoires discrète} (VAD) sur \(\bigl(\Omega,\,\mathcal{A}\bigr)\) à valeurs dans E est une application \(\,X:\Omega \to \text{E}\,\) qui vérifie les propriétés :\vspace{0.1cm}
+\begin{enumerate}[leftmargin=2cm]
+    \item \(X(\Omega)\) est fini ou dénombrable.
+    
+    \item \(\forall A\in \mathcal{P}(E),\ X^{-1}(A)\in \mathcal{A}.\)
+\end{enumerate}
+\vspace{0.2cm}
+\begin{small}
+    \noindent L'ensemble des VAD sur \(\bigl(\Omega,\,\mathcal{A}\bigr)\) à valeurs dans E est noté \(V_{_E}\bigl(\Omega,\,\mathcal{A}\bigr).\)
+\end{small}
+
+\newpage
+
+Soit X une VAD sur \(\bigl(\Omega,\,\mathcal{A}\bigr)\) à valeurs dans E, \(A\in \mathcal{P}(E)\) et \(x\in E\).\vspace{0.1cm}\\
+L'ensemble \(X^{-1}(A)=\{\omega\in \Omega \ \rvert \ X(\omega)\in A\}\;\) est noté \((X\in A)\) ou encore \(\{X\in A\}\).\vspace{0.1cm}\\
+L'ensemble \(X^{-1}(\{x\})=\{\omega\in \Omega \ \rvert \ X(\omega)=x\}\;\) est noté \((X=x)\) ou encore \(\{X=x\}\).\\
+
+Si de plus X est à valeurs \underline{réelles} alors \(x\in \RR\) et on note :\vspace{0.1cm}\\
+L'ensemble \(X^{-1}\bigl(\,]-\infty,x\,]\,\bigr)=\{\omega\in \Omega \ \rvert \ X(\omega)\leq x\}\;\) est noté \((X\leq x)\) ou encore \(\{X\leq x\}\).\vspace{0.1cm}\\
+L'ensemble \(X^{-1}\bigl(\,]-\infty,x\,[\,\bigr)=\{\omega\in \Omega \ \rvert \ X(\omega)< x\}\;\) est noté \((X< x)\) ou encore \(\{X< x\}\).\vspace{0.1cm}\\
+L'ensemble \(X^{-1}\bigl(\,[\,x,+\infty]\,\bigr)=\{\omega\in \Omega \ \rvert \ X(\omega)\geq x\}\;\) est noté \((X\geq x)\) ou encore \(\{X\geq x\}\).\vspace{0.1cm}\\
+L'ensemble \(X^{-1}\bigl(\,]\,x,+\infty[\,\bigr)=\{\omega\in \Omega \ \rvert \ X(\omega)> x\}\;\) est noté \((X> x)\) ou encore \(\{X> x\}\).
+
+\vspace{1.6cm}
+
+Un \textbf{vecteur aléatoire discret}\index{vecteur aléatoire discret} X sur \(\bigl(\Omega,\,\mathcal{A}\bigr)\) est une VAD sur \(\bigl(\Omega,\,\mathcal{A}\bigr)\) de la forme\\
+\(X=(X_1,\cdots,X_p)\) où pour \(k\in \llbracket 1,p \rrbracket,\ X_k\) est une VAD sur \(\bigl(\Omega,\,\mathcal{A}\bigr)\) à valeurs dans un ensemble E\ind{$k$}. La VAD \(\,X_k\) est appelée \textbf{k\expo{ième} marginale}\index{k\expo{ième} marginale} du vecteur aléatoire X.
+
+\vspace{1.5cm}
+
+Soient \(\,X:\Omega \to E\,\) et \(\,Y:\Omega \to F\,\) des VAD sur \(\bigl(\Omega,\,\mathcal{A}\bigr)\).\\
+On dit que X et Y sont \textbf{indépendantes}\index{VAD indépendantes} pour \(\,\PP\,\), et on note \(X\perp Y\), \ssi :\vspace{-0.25cm}
+\[\forall (A,B)\in \mathcal{P}(E)\!\times\! \mathcal{P}(F),\ \ \PP\Bigl(\bigl(X\in A\bigr)\cap \bigl(Y\in B\bigr)\Bigr)=\PP\bigl(X\in A\bigr)\,\PP\bigl(Y\in B\bigr).\]
+
+\vspace{1.3cm}
+
+Soient E\ind{1}, $\cdots$, E\ind{$p$} des ensembles et \(\,X_1:\Omega \to E_1 , \cdots,\; X_p: \Omega \to E_p\,\) des VAD sur \(\bigl(\Omega,\,\mathcal{A}\bigr)\).\\
+On dit que \(X_1,\cdots,X_p\) sont \textbf{indépendantes}\index{VAD indépendantes} pour \(\,\PP\,\) \ssi :\vspace{-0.3cm}
+\[\forall (A_1,\cdots,A_p)\in\mathcal{P}(E_1)\!\times\cdots\times\! \mathcal{P}(E_p),\ \forall J\in \mathcal{P}_f(\llbracket 1,p \rrbracket),\quad \PP\left(\,\bigcap_{j\in J}\bigl(X_j\in A_j\bigr) \right)=\prod_{j\in J}\PP\bigl(X_j\in A_j\bigr).\]
+
+\vspace{1.3cm}
+
+\underline{\emph{Théorème - définition}} : Soit \(\,X:\Omega \to E\,\) une VAD sur \(\bigl(\Omega,\,\mathcal{A}\bigr)\) à valeurs dans E.\vspace{0.1cm}\\
+\(\PP_{\!_X}:\mathcal{P}(E)\to [0,1]\,\) définie par : \(\;\forall A\in \mathcal{P}(E),\ \: \PP_{\!_X}(A)=\PP\bigl(X^{-1}(A)\bigr)=\PP(X\!\in\! A)\) est une\vspace{0.1cm}\\
+probabilité sur \(\bigl(E,\, \mathcal{P}(E)\bigr)\).\vspace{0.1cm}\\
+La probabilité \(\,\PP_{\!_X}\,\) est appelée \textbf{loi de la VAD}\index{loi d'une VAD} X relativement à la probabilité \(\,\PP.\)
+
+\vspace{1.5cm}
+
+Soient X et Y deux VAD à valeurs dans E et \(\,\PP\,\) une probabilité sur \(\bigl(E,\, \mathcal{P}(E)\bigr)\). Pour exprimer que les variables aléatoires X et Y ont la même loi, c'est-à-dire que \(\,\PP_{\!_X}=\PP_{\!_Y}\), on note \(X\sim_\PP Y\) ou encore \(X\sim Y\) si il n'y a pas d'ambiguïté sur \(\,\PP\).\vspace{0.4cm}\\
+Pour exprimer que la loi \(\,\PP_{\!_X}\,\) de X est égale à une probabilité \(\,\PP_0\,\) on note \(X\!\hookrightarrow \PP_0.\)
+
+\newpage
+
+\noindent Soient X, Y deux VAD sur \(\bigl(\Omega,\,\mathcal{A}\bigr)\) à valeurs dans E et F respectivement.
+\begin{itemize}\vspace{-0.1cm}
+    \item[•] La loi \(\,\PP_{\!_{(X,Y)}}\,\) du vecteur aléatoire (X,Y) est une probabilité sur \(\bigl(E\!\times\! F,\; \mathcal{P}(E)\!\times \!\mathcal{P}(F)\bigr)\).\\
+    Elle est appelée \textbf{loi conjointe}\index{loi conjointe} du vecteur aléatoire (X,Y).
+
+    \item[•] La loi \(\,\PP_{\!_X}\,\) de la variable aléatoire X est une probabilité sur \(\bigl(E,\, \mathcal{P}(E)\bigr)\).\\
+    Elle est appelée \textbf{première loi marginale}\index{première loi marginale} du vecteur aléatoire (X,Y).
+
+    \item[•] La loi \(\,\PP_{\!_Y}\,\) de la variable aléatoire Y est une probabilité sur \(\bigl(F,\, \mathcal{P}(F)\bigr)\).\\
+    Elle est appelée \textbf{seconde loi marginale}\index{seconde loi marginale} du vecteur aléatoire (X,Y).
+\end{itemize}
+
+\vspace{1.5cm}
+
+Une \textbf{variable aléatoire de Bernoulli}\index{variable aléatoire de Bernoulli} de paramètre \(p\in [0,1]\) sur \(\bigl(\Omega,\,\mathcal{A}\bigr)\) est une variable aléatoire discrète \(\,X:\Omega \to \NN\,\) à valeurs entières vérifiant :\vspace{-0.3cm}
+
+\[ \hspace{1.5cm} \def\arraystretch{1.4} \arraycolsep=0.15cm
+\begin{array}{l}
+    \ast \; \PP(X=0)=1-p\\
+    \ast \; \PP(X=1)=p
+\end{array}\]
+
+\vspace{1.7cm}
+
+Si \(\,X:\Omega \to \RR_+\,\) est une VAD à valeurs \underline{positives} alors l'\textbf{espérance}\index{espérance} de X est l'élément \(\EE(X)\) de \([\,0,+\infty]\) défini par : \(\displaystyle \EE(X)=\!\!\!\sum_{x\in X(\Omega)}\!\!x\,\PP(X=x).\) 
+
+\vspace{1.5cm}
+
+Une VAD à valeurs complexes X est dite d'\textbf{espérance finie}\index{espérance finie} \ssi la famille de nombres complexes \(\bigl(x\PP(X=x)\bigr)_{_{x\in X(\Omega)}}\) est sommable. L'ensemble des VAD à valeurs complexes qui\vspace{0.1cm}\\
+sont d'espérance finie est noté \(\,L^1\bigl(\Omega,\,\mathcal{A},\,\PP\bigr)\) ou plus simplement \(\,L^1\).\vspace{0.4cm}\\
+Si \(\,X\in L^1\,\) alors l'espérance de X est le nombre complexe \(\EE(X)\) défini par : \(\displaystyle \EE(X)=\!\!\!\sum_{x\in X(\Omega)}\!\!x\,\PP(X=x).\)
+
+\vspace{1.3cm}
+
+Soient X un VAD à valeurs réelles et \(p\in \NN^{^*}\). On dit que X admet un moment d'ordre $p$ \ssi X\expo{$p$} est d'espérance finie.\vspace{0.1cm}\\
+Si tel est le cas alors le réel \(\, \displaystyle \EE(X^p)=\!\!\!\sum_{x\in X(\Omega)}\!\!x^p\,\PP(X=x)\,\) est appelé \textbf{moment d'ordre p de X}\index{moment d'ordre $p$}.\vspace{0.2cm}
+
+\begin{small}
+    \noindent L'ensemble des VAD à valeurs réelles qui admettent un moment d'ordre $p$ est notée \(L^p\).
+\end{small}
+
+\vspace{1.8cm}
+
+La \textbf{covariance}\index{covariance} de deux variables aléatoires\footnote{Variables aléatoires \underline{réelles}.} X et Y de \(\,L^2\,\) est le réel cov(X,Y) défini par :\vspace{0.1cm}
+
+\hspace{3cm}cov(X,Y)\,\(\,=\EE\,(C_{_X}C_{_Y})\quad \) où \(\:C_{_X}\!=X-\EE(X)\;\) et \(\;C_{_Y}\!=Y-\EE(Y).\)
+
+\newpage
+
+Soit \(X\in L^2\).\\
+La \textbf{variance}\index{variance} de X est le réel prositif \(\,\VV(X)\,\) défini par \(\,\VV(X)=\EE\bigl(C_{_X}^{\,2}\bigr)\;\) où \(\,\,C_{_X}\!=X-\EE(X)\).\vspace{0.1cm}\\
+L'\textbf{écart-type}\index{écart-type} de type X est le réel positif \(\sigma(X)\) défini par \(\sigma(X)=\sqrt{\VV(X)}\).
+
+\vspace{1.2cm}
+
+Soit \(X:\Omega \to \RR\) une VAD réelle sur \(\bigl(\Omega,\,\mathcal{A}\bigr)\).\\
+La variable aléatoire X est dite \textbf{centrée}\index{VAD centrée} \ssi \(\,\EE(X)=0\).\\
+La variable aléatoire X est dite \textbf{réduite}\index{VAD réduite} \ssi \(\,\VV(X)=0.\)
+
+\vspace{1.3cm}
+
+Soit \(\,X:\Omega \to \NN\,\) une VAD sur \(\bigl(\Omega,\,\mathcal{A}\bigr)\) à valeurs \underline{dans \(\,\NN\)}. La \textbf{fonction génératrice}\index{fonction génératrice} \(G_X\) de X est\vspace{0.1cm}\\
+la somme de la série entière de la variable réelle \(\sum \PP(X=k)t^k\).
+
+\vspace{2.3cm}

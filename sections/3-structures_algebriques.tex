@@ -1,0 +1,513 @@
+
+
+\section{Structures algébriques}
+
+\vspace{1cm}
+
+\subsection{Groupes}
+
+\vspace{0.7cm}
+
+Une \textbf{loi de composition interne}\index{loi de composition interne} (abrégée en l.c.i.) sur un ensemble E est une application de E\x E dans E\ \ (i.e.\ \lci\, : E\x E \(\ \to\) E).\vspace{0.1cm} \\
+Une l.c.i. \lci \ est dite \textbf{associative}\index{associativité} \ssi : \(\ \forall (x,y,z)\in E^3,\ \ (x\star y)\star z = x\star (y\star z).\)\vspace{0.1cm} \\
+Une l.c.i. \lci \ est dite \textbf{commutative}\index{commutativité} \ssi : \(\ \forall (x,y)\in E^2,\ \ x\star y = y\star x\).\vspace{0.1cm} \\
+Un \textbf{élément neutre}\index{élément neutre} pour la l.c.i. \lci \ \,est un élément \(e\in \ \)E vérifiant : \(\ \forall x\in E,\ \ x\star e= e\star x = x.\)
+
+\vspace{1cm}
+
+Un \textbf{magma}\index{magma} est un couple (E,\ \lci) où E est un ensemble et \lci \ une loi de composition interne sur E. \\
+Lorsque \lci \ est associative, on dit que le magma (E,\ \lci) est associatif, de même pour la commutativité.\vspace{0.1cm} \\
+Lorsque (E,\ \lci) admet un élément neutre, on dit que le magma est \textbf{magma unifère}\index{unifère}.
+
+\vspace{1cm}
+
+Un \textbf{monoïde}\index{monoïde} est un magma associatif et unifère.
+
+\vspace{1cm}
+
+Soient (E,\ \lci) un magma unifère d'élément neutre $e$, et \(\,a \in \; \)E.\\
+$a$ est dit \textbf{symétrisable}\index{symétrisable} dans (E,\ \lci) \ssi : \(\ \exists b\in E \ | \ b\star a = a\star b = e.\)
+
+\vspace{1.4cm}
+
+Un \textbf{groupe}\index{groupe} est un monoïde dans lequel tout élément est symétrisable.\vspace{0.1cm} \\
+Lorsque la l.c.i. d'un groupe est commutative, on dit qu'il est commutatif, ou \textbf{abélien}\index{groupe abélien}.
+
+\vspace{1cm}
+
+\noindent Une partie H de G est un \textbf{sous-groupe}\index{sous-groupe} de (G,\ \lci) \ssi :\vspace{-0.1cm}
+\begin{enumerate}[leftmargin=2cm]
+    \item H est non vide.\vspace{0.1cm}
+
+    \item \(\forall(x,y)\in H^2,\ \, x\star y\in H \). \hspace{0.3cm}
+    \begin{small}
+        (\emph{Stable pour la loi \lci})
+    \end{small}\vspace{0.1cm}
+
+    \item \(\forall x\in H,\ \,x^{-1}\in H \). \hspace{1.4cm}
+    \begin{small}
+        (\emph{Stable pour l'inverse})
+    \end{small}
+\end{enumerate}
+
+\vspace{0.5cm}
+\begin{small}
+\noindent En pratique, on utilise la caractérisation suivante : \vspace{0.1cm} \\
+Une partie H de G est un sous-groupe de (G,\ \lci) \(\ \Leftrightarrow \ \forall (x,y)\in H^2,\ x\star y^{-1}\in H\)\end{small}
+
+\vspace{1cm}
+
+Soient (G,\ \lci) et (H,\ \lce) deux groupes. On dit que l'application \(\ \phi\) : G \(\to\) H est un \textbf{morphisme de groupes}\index{morphisme de groupes} de (G,\ \lci) dans (H,\ \lce) \ssi : \(\ \forall(x,y)\in G^2,\ \phi(x\star y)=\phi(x)\cdot \phi(y). \)
+
+\vspace{0.1cm}
+
+\noindent On appelle \textbf{isomorphisme}\index{isomorphisme} de groupes tout morphisme de groupes bijectif.
+
+\vspace{1cm} 
+
+Soit \( \phi\) : G \(\to\) H un morphisme de groupes de (G,\ \lci) dans (H,\ \lce). \\
+On appelle le \textbf{noyau}\index{noyau d'un morphisme de groupes} de \(\phi\) l'ensemble \(\ \ker \phi = \{ x\in G\ | \ \phi (x)=e_H\},\ \ \) (\emph{avec e\ind{H} le neutre de (H,\ \lce)})\\
+On appelle \textbf{l'image}\index{l'image d'un morphisme de groupes} de \(\phi\) l'ensemble \(\ \text{Im}\ \phi = \{ y\in B,\ \exists x\in G \ |\ y=\phi(x) \} \)
+
+\vspace{1.3cm}
+
+\underline{\emph{Théorème - Définition}} : Soient (G,\ \lci) un groupe et A une partie de G. La partie \(\bigl \langle \text{A} \bigr \rangle\), égale à l'intersection de tous les sous-groupes de (G,\ \lci) qui contiennent A, est le plus petit sous-groupe de (G,\ \lci) à contenir A. \(\bigl \langle \text{A} \bigr \rangle\) est appelé \textbf{sous-groupe de (G,\ \lci) engendré par A}\index{sous-groupe engendré par une partie}.\vspace{0.1cm} 
+\begin{itemize}[leftmargin=1.5cm]
+    \item[•] On note \(\mathcal{H}_A\) l'ensemble des sous-groupes de (G,\ \lci) qui contiennent A.\\
+    \(\mathcal{H}_A\neq \varnothing\) car \(G\in \mathcal{H}_A\), et par définition on a : \(\displaystyle \bigl \langle \text{A} \bigr \rangle = \bigcap_{H\in \mathcal{H}_A}\!\!H.\)\vspace{0.1cm}
+
+    \item[•] Si \(a\in G\) alors le sous-groupe de (G,\ \lci) engendré par la partie \{a\}, alias \(\bigl \langle \{a\} \bigr \rangle\), est \\
+    simplement noté \(\bigl \langle a \bigr \rangle\) et est appelé sous-groupe de (G,\ \lci) engendré par $a$.\vspace{0.1cm}\\
+    Plus généralement : si \(a_1,\cdots,a_p\) sont des éléments de G, alors le sous-groupe de (G,\ \lci) engendré par la partie \(\{a_1,\cdots,a_p\}\), alias \(\bigl \langle \{a_1,\cdots,a_p\} \bigr \rangle\), est noté \(\bigl \langle a_1,\cdots,a_p \bigr \rangle\) et est appelé sous-groupe de (G,\ \lci) engendré par \(a_1,\cdots,a_p\).
+\end{itemize}
+
+\vspace{1cm}
+
+Soient (G,\ \lci) un groupe et \(a\in G\).\\
+L'\textbf{ordre}\index{ordre d'un élément} \(\omega(a)\) de l'élément \(a\) est le cardinal du groupe engendré par \(a\). On a donc : \(\omega(a)=| \langle a  \rangle|\).\vspace{0.1cm}\\
+Si \(\omega(a)<+\infty\) alors \(a\) est dit d'\textbf{ordre fini}\index{ordre fini}, et si \(\omega(a)=+\infty\) alors \(a\) est dit d'\textbf{ordre infini}\index{ordre infini}.
+
+\vspace{1.3cm}
+
+Soit (G,\ \lci) un groupe.
+\begin{itemize}[leftmargin=2cm]
+    \item[•] On dit que \(a\in G\) est un \textbf{élément générateur}\index{générateur} de (G,\ \lci) \ssi \(G=\bigl \langle a \bigr \rangle\).\vspace{0.1cm}
+    
+    \item[•] Le groupe (G,\ \lci) est dit \textbf{groupe monogène}\index{monogène} \ssi il admet au moins un générateur.\vspace{0.1cm}
+    
+    \item[•] Le groupe (G,\ \lci) est dit \textbf{groupe cyclique}\index{cyclique} \ssi il est à la fois monogène et fini.
+\end{itemize}
+
+
+\vspace{1cm}
+
+\subsection{Anneaux $-$ Corps $-$ K-Algèbres}
+
+\vspace{1cm}
+
+On appelle \textbf{anneau}\index{anneau} tout triplet (A, +,\ \x) où A est un ensemble, + et \x \ sont deux l.c.i. sur A tel que :\vspace{-0.3cm}
+\begin{enumerate}[leftmargin=2cm]
+    \item (A, +) est un groupe commutatif.\vspace{0.1cm}
+    
+    \item (A,\ \x) est un monoïde.\vspace{0.1cm}
+    
+    \item \x \ est distributive par rapport à la loi +.\vspace{0.1cm}
+\end{enumerate}
+
+\vspace{0.2cm}
+
+\noindent Par convention, dans un anneau (A, +,\ \x), on note 0\textsubscript{A} le neutre pour la loi +, et 1\textsubscript{A} le neutre pour la loi \x
+\begin{small}
+    (Ou simplement 0 et 1 lorsqu'il n'y a pas de confusion possible sur l'anneau considéré).
+\end{small} \\
+On dit que l'anneau (A, +,\ \x) est commutatif lorsque le monoïde (A,\ \x) est commutatif.
+
+\vspace{1cm}
+
+\noindent Un anneau (A, +,\ \x) est dit \textbf{sans diviseur de zéro}\index{sans diviseur de zéro} \ssi il vérifie : \vspace{-0.2cm}
+\begin{center}
+    \( \forall(x,y)\in A^2,\ \ a\times b=0_A \ \Rightarrow \ a=0_A\ \ \underline{ou}\ \ b=0_A. \)
+\end{center}\vspace{0.2cm}
+Un anneau \textbf{intègre}\index{intégrité} est un anneau commutatif non nul et sans diviseur de zéro.
+
+\vspace{1.2cm}
+
+\noindent Une partie B de A est un \textbf{sous-anneau}\index{sous-anneau} de (A, +,\ \x) \ssi :\vspace{-0.1cm}
+\begin{enumerate}[leftmargin=2cm]
+    \item \(\forall(x,y)\in B^2,\ x-y\in B \). \
+    \begin{small}
+        (\emph{Stable par différence})
+    \end{small}\vspace{0.1cm}
+
+    \item \(\forall(x,y)\in B^2,\ x\times y\in B \). \
+    \begin{small}
+        (\emph{Stable par produit})
+    \end{small}\vspace{0.1cm}
+
+    \item \(1_A\in B.\)
+\end{enumerate}
+\vspace{1cm}
+
+Soient (A, +,\ \x) et (B,\(\ \oplus ,\ \otimes \)) deux anneaux. Un \textbf{morphisme d'anneaux}\index{morphisme d'anneaux} de (A, +,\ \x) dans (B,\(\ \oplus ,\ \otimes \)) est une application \(\psi\) : A \(\to\) B vérifiant les propriétés suivantes :\vspace{-0.1cm}
+\begin{enumerate}[leftmargin=2cm]
+    \item \(\forall(x,y)\in A^2,\ \, \psi(x+y)=\psi(x)\oplus \psi(y). \)\vspace{0.1cm}
+
+    \item \(\forall(x,y)\in A^2,\ \,\psi(x\times y)=\psi(x)\otimes \psi(y). \)\vspace{0.1cm}
+
+    \item \(\psi(1_A)=1_B. \)
+\end{enumerate}
+
+
+\vspace{1cm}
+
+Soient (A, +,\, \x) un anneau et \(a\in A\).\\
+On dit que $a$ est \textbf{nilpotent}\index{élément nilpotent} \ssi il existe $m\in \NN$\expo{*} tel que \(a^m=0_A\).
+
+\vspace{1cm}
+
+Soit (A, +,\ \x) un anneau \underline{commutatif}. Une partie I de A est un \textbf{idéal}\index{idéal d'un anneau commutatif} de l'anneau (A, +,\ \x) \ssi :\vspace{-0.1cm}
+\begin{enumerate}[leftmargin=2cm]
+    \item I est un sous-groupe de (A, +).\vspace{0.1cm}
+
+    \item \(\forall a\in A,\ \forall i\in I,\ \; a\times i \in I. \)
+\end{enumerate}
+
+\vspace{1cm}
+
+\(\left(\mathbf{HP}\right)\,\) Soient (A, +,\ \x) un anneau\footnote{L'anneau n'est pas considéré commutatif.} et I une partie de A.\vspace{0.1cm}\\
+Notons \(\bigl(\mathscr{G}\bigr)\) la propriété suivante : \guillemetleft\, I est un sous-groupe de (A, +) \guillemetright.\vspace{0.25cm}
+\begin{itemize}[leftmargin=0.3cm,label=•]
+    \item I est un \textbf{idéal à droite}\index{idéal à droite} de A \ssi \(\bigl(\mathscr{G}\bigr)\) et \(\ \forall a\in A,\ \forall i\in I, \ \; i\times a \in I.\)
+    
+    \item I est un \textbf{idéal à gauche}\index{idéal à gauche} de A \ssi \(\bigl(\mathscr{G}\bigr)\) et \(\ \forall a\in A,\ \forall i\in I, \ \; a\times i \in I.\)
+    
+    \item I est un \textbf{idéal bilatère}\index{idéal bilatère}\footnote{Un idéal bilatère est un idéal à gauche et à droite} de A \ssi \(\bigl(\mathscr{G}\bigr)\) et \(\ \forall a\in A,\ \forall i\in I,\ \; a\times i \in I\ \) \underline{et} \(\; i\times a \in I.\)
+\end{itemize}
+
+\vspace{1cm}
+
+
+\underline{\emph{Théorème - Définition}} : Soient (A, +,\ \x) un anneau commutatif et $x \in A$.\\
+L'ensemble \( xA = \{\, x\times a \ \mid a\in A \}\) est un idéal de A, on l'appelle \textbf{idéal engendré}\index{idéal engendré par un élément} par $x$.
+
+\vspace{1cm}
+
+\(\left(\mathbf{HP}\right)\) Un anneau (A, +,\ \x) est dit \textbf{principal}\index{anneau principal} \ssi (A, +,\ \x) est un anneau intègre dans lequel tout idéal est de la forme\footnote{\(aA=\{a\times x,\ x\in A\}\)} $a$A avec $\,a\in \!A$.
+
+\vspace{1.2cm}
+
+\noindent Un \textbf{corps}\index{corps} est un anneau commutatif non nul dans lequel tout élément non nul est inversible\footnote{Symétrisable pour la loi \x}.
+
+\vspace{1cm}
+
+\noindent Une partie L de K est un \textbf{sous-corps}\index{sous-corps} de (K, +,\ \x) \ssi :
+\begin{enumerate}[leftmargin=2cm]
+    \item \(\forall(x,y)\in L^2,\ x-y\in L \). \ \;
+    \begin{small}
+        (\emph{Stable par différence})
+    \end{small}\vspace{0.1cm}
+
+    \item \(\forall(x,y)\in L^2,\ x\times y\in L \). \ \;
+    \begin{small}
+        (\emph{Stable par produit})
+    \end{small}\vspace{0.1cm}
+
+    \item \( \forall x\in L\setminus \left\{0_K\right\},\ x^{-1}\in L \). \ \
+    \begin{small}
+        (\emph{Stable par l'inverse})
+    \end{small}\vspace{0.1cm}
+
+    \item \(1_K\in L.\)
+\end{enumerate}
+\vspace{1cm}
+
+Soient (K, +,\ \x) et (L,\(\ \oplus ,\ \otimes \))\, deux corps. Un \textbf{morphisme de corps}\index{morphisme de corps} de (K, +,\ \x) dans (L,\(\ \oplus ,\ \otimes \)) est un morphisme d'anneaux de (K, +,\ \x) dans (L,\(\ \oplus ,\ \otimes \)).
+
+\vspace{1cm}
+
+On dit que le corps K est \textbf{corps algébriquement clos}\index{algébriquement clos} lorsque tout polynôme non constant de $\poly$ admet au moins une racine dans K.
+
+
+
+\vspace{1.2cm}
+
+Soit (K, \(\oplus\), \(\otimes\)) un corps. Une \textbf{K-algèbre}\index{K-algèbre} est un quadruplet (\(\mathcal{A}\), +,\ \x,\ \lce) où \(\mathcal{A}\) est un ensemble, + et \x \ des l.c.i. sur \(\mathcal{A}\), et \lce \ une l.c.e sur \(\mathcal{A}\) à domaine d'opérateurs dans K tel que :
+\begin{enumerate}[leftmargin=2cm]
+    \item (\(\mathcal{A}\), +,\ \x) est un anneau. \vspace{0.1cm}
+
+    \item (\(\mathcal{A}\), +,\ \lce) est un K-espace vectoriel. \vspace{0.1cm}
+
+    \item \( \forall \alpha \in K,\ \forall (x,y)\in \mathcal{A}^2,\ \alpha \cdot (x\times y) = (\alpha \cdot x) \times y = x\times (\alpha \cdot y).\)
+\end{enumerate}
+
+\vspace{1.2cm}
+
+Soient (\(\mathcal{A}\), +,\ \x,\ \lce) une K-algèbre et \(\mathcal{B}\) une partie de \(\mathcal{A}\). On dit que \(\mathcal{B}\) est une \textbf{sous-algèbre}\index{sous-algèbre} de (\(\mathcal{A}\), +,\ \x,\ \lce) \ssi :\vspace{0.2cm}
+\begin{enumerate}[leftmargin=2cm]
+    \item \(\forall (\alpha,\beta)\in K^2,\ \forall (x,y)\in \mathcal{B}^2,\ \ \alpha\cdot x+\beta \cdot y \in \mathcal{B} \). \
+    \begin{small}
+        (\emph{Stable par combinaison linéaire})
+    \end{small}\vspace{0.2cm}
+
+    \item \(\forall (x,y)\in \mathcal{B}^2,\ x\times y\in \mathcal{B} \). \hspace{3.9cm}
+    \begin{small}
+        (\emph{Stable par produit})
+    \end{small}\vspace{0.2cm}
+
+    \item \(1_{\mathcal{A}}\in \mathcal{B}. \)
+\end{enumerate}
+
+\vspace{1.3cm}
+
+Soient (\(\mathcal{A}\), +,\ \x,\ \lce) et (\(\mathcal{B}\),\ \(\oplus\),\ \(\otimes\),\ $\odot$) deux K-algèbres. On dit que \(\varphi\) : \(\mathcal{A}\ \to \ \mathcal{B}\) est un \textbf{morphisme de K-algèbres}\index{morphisme de K-algèbres} \ssi :\vspace{0.1cm}
+\begin{enumerate}[leftmargin=2cm]
+    \item \(\forall(\alpha,\beta)\in K^2,\ \forall(x,y)\in \mathcal{A}^2,\ \ \varphi (\alpha \cdot x + \beta \cdot y)=\alpha \odot \varphi (x) \oplus \beta \odot \varphi (y). \)\vspace{0.1cm}\\
+    \begin{small}
+        Ou, plus simplement : \(\varphi (\alpha x + \beta y) = \alpha \varphi (x) + \beta \varphi (y) \ \) en notant \(\oplus\) comme +.
+    \end{small}\vspace{0.1cm}
+
+    \item \(\forall (x,y)\in \mathcal{A}^2,\ \ \varphi (x\times y) = \varphi(x)\otimes \varphi(y).\)\vspace{0.1cm}\\
+    \begin{small}
+        Ou, plus simplement : \(\varphi(xy)=\varphi(x)\varphi(y)\).
+    \end{small} \vspace{0.1cm}
+
+    \item \(\varphi \left(1_{\mathcal{A}}\right) = 1_{\mathcal{B}}. \)
+\end{enumerate}
+
+\vspace{1cm}
+
+\subsection{Polynômes}
+
+\vspace{0.5cm}
+
+\begin{center}
+    Soit (K, +,\ \x) un corps.
+\end{center}
+
+\vspace{0.5cm}
+
+\noindent Un \textbf{polynôme à une indéterminée}\index{polynôme à une indéterminée} à coefficients dans K est un élément de K\(^{(\NN)}\). C'est donc une suite \((a_n)\) d'éléments de K nulle à partir d'un certain rang,\\
+c'est-à-dire telle que : \(\ \exists N\in \NN,\ \forall n\geq N,\ a_n = 0_K. \)\vspace{0.1cm}\\
+Si\, P\,\(\,=(a_n)\) est un polynôme, alors les scalaires \(a_k\), \(k\) décrivant \(\NN\), sont appelés les \textbf{coefficients}\index{polynômes!coefficients} du polynôme P. On note aussi : P $\,=\,$ (\(a_0,a_1,\cdots,a_n,\cdots\)).\\
+L'ensemble K\(^{(\NN)}\) des polynômes à une indéterminée à coefficients dans K est noté $\poly$. 
+
+\vspace{1.3cm}
+
+La puissance d'ordre $n$ de l'\textbf{indéterminée}\index{polynômes!indéterminée} X\expo{$n$} désigne la suite partout nulle sauf pour le terme d'indice $n$ qui vaut 1.\vspace{0.1cm}
+
+\hspace{1.5cm}X\(^n=(0,\cdots,0,1,0,\cdots)=(\delta_{1n},\delta_{2n},\delta_{3n},\cdots)=\bigl(\delta_{in}\bigr)_{i\,\in\, \NN}\)
+
+\vspace{1.3cm}
+
+\noindent Soit P\(\:=\displaystyle \sum _{n\in \NN}a_nX^n\) et Q deux polynômes de $\poly$. On appelle \textbf{composé}\index{polynômes!composé} de P par Q le polynôme noté\, P\(\,\circ\,\)Q\, défini par : \(\,\displaystyle P\circ Q=\sum_{n\in \NN}a_nQ^n.\)
+
+\newpage
+
+\noindent Soit \(\displaystyle P=\sum_{n\in \NN}a_nX^n\in \poly. \) Pour tout scalaire \(x\in K\) on dispose du scalaire \(\displaystyle P(x)=\sum_{n\in \NN}a_nx^n\).\vspace{0.2cm}\\
+L'application \hspace{3.3cm} est appelée \textbf{fonction polynôme}\index{fonction polynôme} associée au polynôme P.
+
+\vspace{-0.45cm}
+
+\(\begin{array}{rccl}
+    \hspace{1.8cm} \Tilde{P}\, : &\!\! K & \to & K \\
+     &\!\! x & \mapsto & P(x) 
+\end{array}
+\)
+
+\vspace{1.5cm}
+
+Le \textbf{degré}\index{polynômes!degré} du polynôme \(\displaystyle P = \sum _{n\in \NN}a_nX^n \) de $\poly$, noté deg P, est un élément de \(\NN\cup \{-\infty\}\) défini par : deg P = \(\left\{ \begin{array}{lc}
+     \max \{ k\in \NN \ | \ a_k \neq 0 \} & si\ P\neq 0 \\
+     -\infty & si\ P= 0
+\end{array} \right.\) 
+
+\vspace{1cm}
+
+Soit \(P=a_pX^p+a_{p-1}X^{p-1}+\cdots+a_1X+a_0  \) un polynôme de degré \(p\in \NN\). On a donc \(a_p\neq 0\).\vspace{0.1cm}\\
+Le coefficient \(a_p\) est appelé \textbf{coefficient dominant}\index{polynômes!coefficient dominant} de \(P\).\\
+Le coefficient \(a_0\) est appelé \textbf{coefficient constant}\index{polynômes!coefficient constant} du polynôme \(P\).\vspace{0.1cm}\\
+Le polynôme \(P\) est dit \textbf{unitaire}\index{polynômes!unitaire} \ssi \(a_p=1_K\).
+
+\vspace{1cm}
+
+\noindent On dit que \(a\in K\) est une \textbf{racine}\index{polynômes!racine} de \(P\in \poly\) dans K \ssi \(P(a)=0_K.\) \vspace{0.5cm}\\
+Soient P un polynôme non nul de $\poly$ et \(a\in K.\)\vspace{0.1cm}\\
+Le plus grand entier naturel $k$ vérifiant \((X-a)^k\mid P\) est appelé \textbf{multiplicité}\index{polynômes!multiplicité} de \(a\) dans P.\\
+Il est noté \(m_{_P}(a)\). Lorsque \(m_{_P}(a)=1\) on dit que \(a\) est une \textbf{racine simple}\index{polynômes!racine simple} de P et lorsque \(m_{_P}(a)=2\) on dit que \(a\) est une \textbf{racine double}\index{polynômes!racine double} de P. 
+
+\vspace{1.2cm}
+
+Soit \(P\in \poly \). Le polynôme P est dit \textbf{scindé}\index{polynômes!scindé} sur K \ssi il existe \(\, \lambda\in K\setminus \{0_K\},\)\\
+\(n\in \NN^*\) et \(a_1,\cdots,a_n\) dans K tels que \(P=\lambda\,(X-a_1)\cdots(X-a_n).\)\vspace{0.1cm}\\
+Le polynôme P est dit \textbf{scindé simple}\index{polynômes!scindé simple} sur K \ssi il existe \(\, \lambda\in K\setminus \{0_K\},\ n\in \NN^*\) et \(a_1,\cdots,a_n\) dans K \emph{deux à deux distincts} tels que \(P=\lambda\,(X-a_1)\cdots(X-a_n).\)
+
+\vspace{1.4cm}
+
+\noindent Soit \(\displaystyle P=\sum_{n\in \NN}a_nX^n\in \poly. \) Le polynôme \(\displaystyle P'=\sum_{n\in \NN^{^*}}na_nX^{n-1} \) est appelé \textbf{polynôme dérivé}\index{polynôme dérivé} du polynôme P.
+
+\vspace{1.3cm}
+
+On dit qu'une application \(\,P : \RR \to \KK\,\) est une \textbf{fonction polynôme}\index{fonction polynôme} \ssi :\vspace{-0.3cm} 
+\[\exists n\in \NN,\ \exists (a_0,\cdots,a_n)\in \KK^{n+1} \ | \ \forall t\in \RR,\ P(t)=\sum_{k=0}^{n}a_kt^k. \]
+
+\newpage
+
+\noindent Soit E un K-espace vectoriel de \underline{dimension finie} égale à $p$. On considère une base \(\,\mathcal{B}=(e_1,\cdots,e_p)\,\) de E. On dit que \(\,P:E\to \KK\,\) est une \textbf{fonction polynôme relativement à $\,\mathcal{B}\,$}\index{fonction polynôme relativement à une base} \ssi il existe des entiers naturels \(n_1,\cdots,n_p\,\) et une famille de scalaires \(\,\displaystyle\bigl(a_{i_1\cdots i_p}\bigr)_{(i_1,\cdots,i_p)\in \llbracket 1,n_1 \rrbracket \times \cdots \times \llbracket 1,n_p \rrbracket}\)\\
+tels que :
+
+\[\text{Pour tout vecteur } \,x=\sum_{j=1}^{p}x_je_j\,\text{ de E on ait : }\ P(x)=\hspace{-1cm}\sum_{(i_1,\cdots,i_p)\in \llbracket 1,n_1 \rrbracket \times \cdots \times \llbracket 1,n_p \rrbracket}\hspace{-1cm}a_{i_1\cdots i_p}\,x_1^{i_1}\cdots x_p^{i_p}\]
+
+\vspace{2.2cm}
+
+Soit \(A\in \poly\!\setminus \!\{0\}\), on appelle \textbf{A normalisé}\index{polynômes!normalisé} le polynôme noté $\tilde{A}$ obtenu en divisant A par son coefficient dominant. Ce polynôme est donc unitaire et associé à A.
+
+\vspace{2cm}
+
+\subsection{Fractions rationnelles}
+
+\vspace{0.5cm}
+
+\begin{center}
+    Soit (K, +,\ \x) un corps\footnote{La construction du corps des fraction reste cependant la même pour un anneau intègre.}.
+\end{center}
+
+\vspace{0.5cm}
+
+\noindent Dans l'ensemble $\,\poly\times \bigl(\poly\setminus \{0\}\bigr)$, on définit la relation $\,\mathcal{R}\,$ en posant : \vspace{-0.2cm}
+\[(P,Q)\,\mathcal{R}\,(R,S)\; \Leftrightarrow \; PS=QR.\]
+
+\vspace{1cm}
+
+\noindent On appelle \textbf{fraction rationnelle}\index{fraction rationnelle} à coefficients dans K toute classe d'équivalence pour la relation \(\mathcal{R}\). La classe de $(P,Q)$ est notée\footnote{avec P le \textbf{numérateur}\index{numérateur} et Q le \textbf{dénominateur}\index{dénominateur}.} \(\displaystyle\,\frac{P}{Q}.\,\) On a donc : \vspace{-0.2cm}
+\[\frac{P}{Q}=\bigl\{(R,S)\in \poly\times \bigl(\poly\setminus \{0\}\bigr) \ \mid \ PS=QR\bigr\}.\] 
+On dit que $(P,Q)$ est un \textbf{représentant}\index{fractions rationnelles!représentant} de la fraction \(\,\displaystyle\frac{P}{Q}\). \vspace{0.2cm}\\
+L'ensemble des fractions rationnelles est noté $\,\fracrat\,$ et la relation \(\,\mathcal{R}\,\) est appelée égalité des fractions rationnelles.
+
+\vspace{1.4cm}
+
+Soient \(\,\displaystyle \frac{P}{Q},\ \displaystyle\frac{R}{S}\,\) deux fractions rationnelles et $\,\lambda\in K$. On pose par définition\footnote{Il s'agit bien d'une définition des lois $+$ et \x\,, pas une propriété.} :\vspace{-0.2cm}
+\[\frac{P}{Q}+ \frac{R}{S}=\frac{PS+QR}{QS}\,,\qquad \frac{P}{Q}\times \frac{R}{S}=\frac{PR}{QS}\,,\qquad\lambda\cdot\frac{P}{Q}=\frac{\lambda P}{Q}\vspace{0.2cm}\]
+\newpage
+
+\noindent\underline{\emph{Théorème}} : L'application \(\,\varphi : \poly \to\fracrat\,\) définie par \(\,\displaystyle \varphi(P)=\frac{P}{1}\,\) est un morphisme d'algèbres injectif.\vspace{0.1cm}\\
+\begin{small}Par conséquent on peut identifier le polynôme P avec la fraction $\,\frac{P}{1}$, ce qui fait que l'on peut considérer que \(\,\poly\subset \fracrat\). En particulier la fraction nulle (en vertu de l'égalité des fractions) est identifiée au polyôme nul $0$, et la fraction unité est identifiée au polynôme constant $1$.\end{small}
+
+\vspace{1.6cm}
+
+Soit \(\,\displaystyle F=\frac{P}{Q}\,\) une fraction. On dit que \(\,\displaystyle\frac{P}{Q}\,\) est un représentant \textbf{irréductible}\index{fractions rationnelles!irréductible} dans K \ssi Q est unitaire et \( \,P\wedge Q=1\).  
+
+\vspace{1.2cm}
+
+Soit \(\,\displaystyle F=\frac{P}{Q}\,\) une fraction. On pose \(\;\deg F=-\infty \, \text{ si } \,F=0,\ \text{ et }\, \deg F= \deg P-\deg Q\,\) sinon.\vspace{0.1cm}\\
+Le \textbf{degré}\index{fractions rationnelles!degré} d'une fraction est donc un élément de \(\,\ZZ\cup \{-\infty\}.\)
+
+\vspace{1.1cm}
+
+Soit \(F\in K(\text{X})\) non nulle, et soit \(\,\displaystyle\frac{P}{Q}\,\) un représentant \underline{irréductible} de $F$. On dit que \(a\in K\) est \textbf{racine}\index{fractions rationnelles!racine} de $F$ de multiplicité $m\in \NN$\expo{*} lorsque $a$ est racine du numérateur $P$ de multiplicité $m$.\vspace{0.2cm}\\
+On dit que $a\in K$ est un \textbf{pôle}\index{pôle} de $F$ de multiplicité $m\in\NN$\expo{*} lorsque $a$ est racine du dénominateur $Q$ de multiplicité $m$.
+
+\vspace{1.3cm}
+
+Soit \(\,\displaystyle F=\frac{P}{Q}\,\in K(\text{X})\), on apelle \textbf{fraction dérivée}\index{fraction dérivée} de $F$ la fraction notée $F'$ définie par\footnote{Le résultat ne dépend pas du représentant choisi.} : \vspace{-0.2cm}
+\[F'=\frac{P'Q-PQ'}{Q^2}\]
+
+\vspace{0.3cm}
+
+$\left(\mathbf{HP}\right)$ Soit \(F\in K(\text{X})\) non nulle, la \textbf{dérivée logarithmique}\index{dérivée logarithmique}\footnote{Pour une fonction \(\,f:I\to\KK\,\) dérivable sur l'intervalle I, qui ne s'annule pas sur I, on définit la dérivée logarithmique de $f$ par : \(\,\displaystyle \mathcal{L}(f)=\frac{f'}{f}\). Lorsque $f$ est à valeurs strictement positives : \(\,\mathcal{L}(f)=\bigl(\ln\circ f\bigr)'\).} de $F$ est la fraction \(\,\displaystyle\frac{F'}{F}\)
+
+\vspace{1cm}
+
+\underline{\emph{Théorème - définition}} : Soit $F\in K(\text{X})$, il existe un unique polynôme $E$ et une unique fraction rationnelle $G$ tel que : $\ F=E+G\,$ et $\,\deg (F-Q)<0$. \\Celui-ci est appelé \textbf{partie entière}\index{fractions rationnelles!partie entière} de $F$, c'est le quotient dans la division euclidienne du numérateur de $F$ par le dénominateur.
+
+\vspace{0.5cm}
+
+Un \textbf{élément simple}\index{élément simple} de \(K(\text{X})\) est une fraction du type \(\,\displaystyle\frac{A}{B^n}\,\) où $B$ est un polyône irréductible unitaire, \(\deg A < \deg B\,\) et \(\,n\geq 1\).
+
+\vspace{1cm}
+
+\textbf{Décomposer}\index{fractions rationnelles!décomposer} une fraction rationnelle $F$ non nulle, c'est l'écrire comme somme de sa partie entière et d'éléments simples.
+
+\newpage
+
+\subsection{Structures particulières}
+
+\vspace{0.7cm}
+
+\subsubsection{Groupe symétrique}
+
+\vspace{0.7cm}
+
+Étant donné un ensemble E, l'ensemble des bijections de E sur E est noté S\ind{E}.\\
+Étant donné \(n\in \NN^*\), l'ensemble des bijections de \(\llbracket 1,n\rrbracket\) sur \(\llbracket 1,n\rrbracket\) est noté S\ind{$n$}.
+
+\vspace{1cm}
+
+\underline{\emph{Théorème}} : (S\ind{E}, \(\circ\)) est un groupe. Il est appelé \textbf{groupe symétrique de E}\index{groupe symétrique}.
+
+\vspace{1cm}
+
+Un élément \(\sigma\) de S\ind{E} est appelée une \textbf{permutation}\index{permutation} de E.\\
+Si \(\sigma\in S_E\) alors l'ensemble\, Supp\(\, \sigma =\{x\in E \ \rvert \ \sigma(x)\neq x\}\) est appelé \textbf{support}\index{support d'une permutattion} de \(\sigma\).
+
+\vspace{1cm}
+
+Soient \(n\geq 2\, \text{ et }\, p\in\llbracket 2,n\rrbracket.\)\\
+On dit qu'une permutation $\gamma$ de l'ensemble \(\llbracket 1,n\rrbracket\) est un \textbf{p-cycle}\index{p-cycle} \ssi il existe p entiers deux à deux distincts \(\displaystyle(j_1,\cdots,j_p)\in\llbracket 1,n\rrbracket^p\ \) tels que :\vspace{0.1cm}\\
+\(\gamma(j_1)=j_2,\ \gamma(j_2)=j_3,\cdots ,\ \gamma(j_{p-1})=j_p,\ \gamma(j_p)=j_1\) et \(\forall k\in \llbracket 1,n\rrbracket\setminus\{j_1,\cdots,j_p\},\ \gamma(k)=k. \)\vspace{0.3cm}\\
+Pour un tel p-cycle $\gamma$ on adopte la notation : \(\gamma = (j_1,\cdots,j_p).\,\) Un 2-cycle est appelé une \textbf{transposition}\index{groupe symétrique!transposition}.
+
+\vspace{1.2cm}
+
+\underline{\emph{Théorème - définition}} : Il existe une unique application \(\ \varepsilon : S_n\to \{-1,1\}\,\) vérifiant :\vspace{0.1cm}\\
+\(\varepsilon(\tau)=-1\ \) pour toute transposition $\tau$ de S\ind{$n$} et \(\ \varepsilon(\sigma_1\circ \sigma_2)=\varepsilon(\sigma_1)\varepsilon(\sigma_2)\ \) pour tout \((\sigma_1, \sigma_2)\in S_n^{^2}.\)\vspace{0.1cm}\\
+Cette unique application $\varepsilon$ est appelée \textbf{signature}\index{signature}.\vspace{0.1cm}\\
+C'est un morphisme de groupes de (\(S_n,\,\circ\)) dans \(\bigl(\{-1,1\},\, \times\bigr)\).
+
+\vspace{1.2cm}
+
+\noindent Une \textbf{permutation paire}\index{permutation paire} est une permutation de signature égale à 1.\\
+Une \textbf{permutation impaire}\index{permutation impaire} est une permutation de signature égale à -1.
+
+\vspace{1cm}
+
+\noindent À toute permutation \(\sigma \in S_n\) on associe la matrice \(P_\sigma =(p_{ij})\,\) de \(\,\mathcal{M}_n(\KK)\) définie par :\vspace{-0.4cm}\\
+\[\forall (i,j)\in \llbracket 1,n \rrbracket ^2,\ \, p_{ij}=\delta_{i\sigma(j)}.\]
+\vspace{-0cm}
+\noindent On dit que \(A\in \mathcal{M}_n(\KK)\) est une \textbf{matrice de permutation}\index{matrice de permutation} \ssi il existe \(\sigma \in S_n\) telle que \(A=P_\sigma\).
+
+\newpage
+
+\subsubsection{Autour de $\ZZ/n\ZZ$}
+\vspace{0.5cm}
+\begin{center}
+    Soit $n$ un entier naturel non nul.
+\end{center}
+
+\vspace{1cm}
+
+Étant donné \((a,b)\in \ZZ^2\), on dit que a est \textbf{congru} à b modulo n \ssi \(a-b\in n\ZZ\). Pour exprimer cela on note \(a\equiv b\, [n]\).\vspace{0.5cm}\\
+\underline{\emph{Théorèmes}} : \(\bigl(\mathbf{1}\bigr)\) La relation de congruence modulo n est une relation d'équivalence sur $\,\ZZ\,$ qui est compatible avec l'addition et la multiplication.\\
+La classe de \(a\in \ZZ\) pour la relation de congruence modulo n est égal à \(\, a+n\ZZ\). Elle est notée \(\bar{a}\).\vspace{0.1cm}\vspace{0.3cm}\\
+\(\bigl(\mathbf{2}\bigr)\) Pour \((a,b)\in \ZZ^2\, \) on a : \(\, \bar{a}=\Bar{b}\ \Leftrightarrow \ a\equiv b\, [n]\ \Leftrightarrow \ a-b\in n\ZZ. \)
+
+\vspace{1.5cm}
+
+L'ensemble des parties de \(\ZZ\) de la forme \(\bar{a}\), \(a\) décrivant \(\ZZ\), est noté \(\ZZ/n\ZZ\).\vspace{0.1cm}\\
+On a donc : \(\ZZ/n\ZZ=\{\bar{a},\ a\in \ZZ\}=\{x\in \mathcal{P}(\ZZ),\ \exists a\in \ZZ \ \rvert \ x=\bar{a}\}=\{a+n\ZZ,\ a\in \ZZ\}\)
+
+\vspace{1.5cm}
+
+\begin{small}
+    Soit \(x\in \ZZ/n\ZZ\). Par définition, \(x\) est une partie de \(\ZZ\) et il existe au moins un entier relatif a tel que \(x=\bar{a}\). Un tel entier relatif a est appelé \underline{un} représentant\footnote{Il n'est pas unique.} de \(x\). Les représentants de \(x\) sont en fait les éléments de \(x\), il y en a donc une infinité et si a est l'un d'entre eux alors les autres sont les \(a+nk,\ k\in\ZZ.\)
+\end{small}
+
+\vspace{1.7cm}
+
+Soit \((x,y)\in \bigl(\ZZ/n\ZZ\bigr)^2\). Par définition, il existe \((a,b)\in \ZZ^2\, \) tel que \(\,x=\bar{a}\, \) et \(\, y=\bar{b}\).\vspace{0.2cm}\\
+On pose : \(x\oplus y=\overline{a+b}\,\) et \(\,x\otimes y=\overline{a\times b}\). 
+\vspace*{0.1cm}\\
+Ainsi définies, \(\oplus\) et \(\otimes\) sont des lois de composition interne sur \(\ZZ/n\ZZ\). Pour des raisons de simplicité d'écriture, les lois \(\oplus\) et \(\otimes\) sont respectivement notées $+$ et \x.\vspace{0.2cm}\\
+On retiendra que par définition même : \(\forall (a,b)\in \ZZ^2,\ \, \overline{a}+\overline{b}=\overline{a+b}\,\) et \(\,\overline{a}\times \overline{b}=\overline{a\times b}.\)\vspace{0.2cm}\\
+On remarque que \(\, 0_{_{\ZZ/n\ZZ}}=\bar{0}\,\) et \(\, 1_{_{\ZZ/n\ZZ}}=\bar{1}.\)
+
+\newpage

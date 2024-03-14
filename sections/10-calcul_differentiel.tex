@@ -1,0 +1,526 @@
+
+\section{Calcul différentiel}
+
+\vspace{0.7cm}
+
+\subsection{Différentiabilité}
+
+\vspace{0.7cm}
+
+\begin{center}
+    Soient \(\bigl(E,\,\norm{\ }_E\bigr),\ \bigl(F,\norm{\ }_F\bigr)\,\) des \(\,\RR\)-espaces vectoriels normés de dimension finie\vspace{0.1cm}\\
+    et U un \underline{ouvert} de E. On pose \(\,\dim E=n\,\) et on suppose $n\geq 1$.
+\end{center}
+
+\vspace{1cm}
+
+\underline{\emph{Théorème - définition}} : Soit \(\, f:U\subset E\to F\,\) une application et \(a\in U.\)\vspace*{0.4cm}\\
+• $f$ est \textbf{différentiable au point a}\index{différentiable en un point} \ssi il existe une application linéaire \(\,u_a\in\mathscr{L}(E,F)\)\vspace{0.15cm}\\
+telle que : \(\displaystyle \lim_{\ \; \substack{\vspace{0.05cm}h\to\, 0_{_E} \\ h\,\neq\, 0_{_E}}}\!\frac{\norm{f(a+h)-f(a)-u_a(h)}_F}{\norm{h}_E}=0.\quad (\star)\)\vspace{0.5cm}\\
+• Si il existe une application linéaire \(\,u_a\!\in\!\mathscr{L}(E,F)\) vérifiant $(\star)$ alors elle est unique, est notée \(df(a)\) et est appelée \textbf{différentielle de $f$ au point a}\index{différentielle d'une application en un point} ou encore \textbf{application linéaire tangente à $f$ au point a.}\index{application linéaire tangente à une application en un point}
+
+\vspace{1cm}
+
+\underline{Une notation pratique} : \vspace{0.2cm}\\
+Soit $\,\varepsilon\,$ une fonction de E dans F définie sur un voisinage V de $\,0_E\,$ dans E.\vspace{0.1cm}\\
+Pour exprimer que \(\displaystyle \lim_{\ \; \substack{\vspace{0.05cm}h\to 0_{_E} \\ h\,\neq\, 0_{_E}}}\!\frac{\norm{\varepsilon(h)}_F}{\norm{h}_E}=0\,\) on note \(\,\varepsilon(h)=\mathrm{o}(h)\,\) et on lit \guillemetleft $\,\varepsilon(h)$ est un petit o de $h$ au\vspace{0.3cm}\\
+voisinage de $\,0_E\,$ pour $h\,$\guillemetright \,. Via l'emploi de cette notation, la définition de la différentiabilité de $f$ au point $a$ peut se reformuler sous la forme : $f$ est différentiable au point $a$ \ssi il existe une application linéaire \(\,u_a\in\mathscr{L}(E,F)\,\) telle que \(\,f(a+h)-f(a)-u_a(h)=\mathrm{o}(h).\)
+
+\vspace{1.5cm}
+
+On dit que \(\,f:U\!\subset\! E\to F\,\) est \textbf{différentiable sur l'ouvert U}\index{différentiable sur un ouvert} \ssi $f$ est différentiable en tout point \(\,a\in U.\)\\
+Dans ces conditions on dispose de l'application \(\,df:U\!\subset\! E\to \mathscr{L}(E,F)\,\) qui a tout point $a\in U$ associe la différentielle de $f$ au point $a$, alias \(\,df(a).\)\\
+L'application $df$ est appelée \textbf{différentielle de f.}\index{différentielle d'une application}
+
+\newpage
+
+Soient \(\,f:U\subset E\to F,\ \, h\in E\,\) et \(\,a\in U.\) On dit que $f$ admet une dérivée directionnelle suivant $h$ au point $a$ \ssi le vecteur \(\,\displaystyle\frac{1}{t}\bigl[f(a+th)-f(a)\bigr]\,\) admet une limite dans \(\,\bigl(F,\norm{\ }_F\bigr)\,\) lorsque\footnote{$t$ est un réel, donc lorsque \(\,t\to 0_{_\RR},\ t\neq 0_{_\RR}\).} \(\,t\to 0,\ t\neq 0.\)\vspace{0.1cm}\\
+Si tel est le cas, cette limite est notée \(\,D_hf(a)\,\) et est appelée \textbf{dérivée directionnelle de f suivant h au point a}\index{dérivée directionnelle}.
+
+\vspace{1cm}
+
+Étant donné un vecteur \(h\in E\), on dit que \(\,f:U\subset E\to F\,\) admet une dérivée directionnelle suivant $h$ sur l'ouvert U \ssi $f$ admet une dérivée directionnelle suivant $h$ en tout point \(\,a\in U.\) Dans ces conditions on dispose\footnote{Si $f$ admet une dérivée directionnelle suivant tout vecteur de E sur l'ouvert U, cela n'implique \underline{pas} que $f$ est différentiable sur U (ni E), encore moins dérivable sur U.} de l'application \(\,D_hf:U\subset E\to F\,\) qui à tout point \(a\in U\) associe le vecteur \(\,D_hf(a)\). L'application \(D_hf\) est appelée \textbf{dérivée directionnelle suivant $h$ de $f$.}\index{dérivée directionnelle}
+
+\vspace{1cm}
+
+\hspace*{0.8cm}Soient \(\,f:U\subset E\to F\,\), \(\ \mathcal{B}=(e_1,\cdots,e_p)\,\) une base de E et \(j\in \llbracket 1,p \rrbracket.\,\) On dit que $f$ admet une\, \textbf{j\expo{ème} dérivée partielle dans la base \(\,\mathcal{B}\,\) au point}\index{j\expo{ème} dérivée partielle dans une base en un point} \(\,a\in U\) \ssi $f$ admet une dérivée directionnelle suivant $e_j$ au point $a$.\\Dans ces conditions le vecteur \(D_{e_j}f(a)\) est noté \(\,\partial_jf(a)\,\) ou encore \(\,\displaystyle \frac{\partial f}{\partial x_j}(a)\,\) et est appelé j\expo{ème} dérivée\vspace{-0.1cm}\\
+partielle de $f$ dans la base \(\,\mathcal{B}\,\) au point $a$.
+
+\vspace{1cm}
+
+Soient \(\,f:U\subset E\to F\,\), \(\ \mathcal{B}=(e_1,\cdots,e_p)\,\) une base de E et \(j\in \llbracket 1,p \rrbracket.\,\) On dit que $f$ admet une \textbf{j\expo{ème} dérivée partielle dérivée partielle dans la base \(\,\mathcal{B}\,\) sur U}\index{j\expo{ème} dérivée partielle dans une base sur un ouvert} \ssi $f$ admet une j\expo{ème} dérivée partielle dans \(\,\mathcal{B}\,\) en tout point \(a\in U\).\\
+Dans ces conditions on dispose de l'application \(\, \displaystyle \frac{\partial f}{\partial x_j}:U\subset E \to F\,\) qui à tout point \(a\in U\) associe le vecteur \(\,\displaystyle \frac{\partial f}{\partial x_j}(a).\) L'application \(\, \displaystyle \frac{\partial f}{\partial x_j}\), encore notée \(\,\partial_j f\,\) est appelée j\expo{ème} dérivée partielle dans \(\,\mathcal{B}\,\) de $f$.
+
+\vspace{1.3cm}
+
+Soit U un ouvert de \(\,\RR^p\,\), \(\,f:U\subset \RR^p\to \RR^n\,\) et \(a\in U\). On note \(\,\varepsilon=(\varepsilon_1,\cdots,\varepsilon_p)\,\) la base canonique de \(\,\RR^p\,\) et \(\,\varepsilon'=(\varepsilon'_1,\cdots,\varepsilon'_n)\,\) la base canonique de \(\,\RR^n\). On note \(f_1,\cdots,f_n\;\) les applications coordonnées de $f$ dans la base $\varepsilon'$. \\
+On a donc pour tout \(\, x=(x_1,\cdots,x_p)\in \RR^p,\ \,f(x)=\bigl(f_1(x),\cdots,f_n(x)\bigr).\) On note \(\,f=\bigl(f_1,\cdots,f_n\bigr).\)\\
+Si $f$ est une fonction de \(\,\RR^p\,\) dans \(\,\RR^n\,\),\ \(\,f_1,\cdots,f_n\,\) sont des fonctions de \(\,\RR^p\,\) dans \(\,\RR.\)\vspace{0.1cm}\\
+En cas d'existence, \(\,\displaystyle\frac{\partial f_i}{\partial x_j}(a)\,\) est simplement appelée j\expo{ème} dérivée partielle de l'application $\,f_i\,$ au point $a$ (On ne fait alors plus référence à la base).\vspace{0.1cm}\\
+Si \(\,f_i:U\subset \RR^p\to \RR\,\) admet une j\expo{ème} dérivée partielle en tout point \(a\in U\), alors on dispose de\vspace{0.1cm}\\
+l'application \(\,\displaystyle\frac{\partial f_i}{\partial x_j}:U\subset \RR^p\to \RR\,\) qui à tout point \(a\in U\) associe le réel \(\,\displaystyle\frac{\partial f_i}{\partial x_j}(a).\)\vspace{0.1cm}\\
+L'application \(\,\displaystyle\frac{\partial f_i}{\partial x_j}\,\) est simplement appelée j\expo{ème} dérivée partielle de l'application $\,f_i$.
+
+\newpage
+
+Pour \(\,f=\bigl(f_1,\cdots,f_n\bigr):U\subset \RR^p\to \RR^n\,\), $\,a\in U\,$ et en cas d'existence,\vspace{0.2cm}\\
+la matrice \(\,\displaystyle J_f(a)=\left(\frac{\partial f_i}{\partial x_j}(a)\!\right)\) de \(\,\mathcal{M}_{n,p}(\RR)\,\) est appelée \textbf{matrice jacobienne}\index{matrice jacobienne} de $f$ au point $a$.\vspace{0.2cm}\\
+$\left(\mathbf{HP}\right)\,$ Lorsque $p=n$ (et toujours en cas d'existence), le déterminant $\,\det J_f(a)\,$ est appelé le \textbf{jacobien}\index{jacobien}, ou \textbf{déterminant jacobien}, de $f$ au point $a$.
+
+\vspace{1.2cm}
+
+Soit \(\,f:U\subset E\to F\). On dit que $f$ est \textbf{de classe $\mathscr{C}^1$ sur U}\index{calcul différentiel!classe $\mathscr{C}^1$} \ssi $f$ est différentiable sur U et la différentielle $df$ est continue sur U.\vspace{0.1cm}\\
+\begin{small}On note $\,\mathscr{C}^1\bigl(U,F\bigr)$ l'ensemble des applications de U dans F de classe $\mathscr{C}^1$ sur U.\end{small}
+
+\vspace{1cm}
+
+Soit \(\,f:U\subset E\to F\). On dit que $f$ est \textbf{de classe $\mathscr{C}^k$ sur U}\index{calcul différentiel!classe $\mathscr{C}^k$} \ssi $f$ est différentiable sur U et la différentielle $df$ est de classe $\mathscr{C}^{k-1}$ sur U.\vspace{0.1cm}\\
+\begin{small}On note \(\,\mathscr{C}^k\bigl(U,F\bigr)\,\) l'ensemble des applications de U dans F de classe $\mathscr{C}^k$ sur U.\end{small}
+
+\vspace{1.3cm}
+
+Soit U un ouvert de \(\,\RR^p\,\), \(\,f:U\subset \RR^p\to \RR^n\,\) et \(a\in U\). On note \(\,\varepsilon=(\varepsilon_1,\cdots,\varepsilon_p)\,\) la base canonique de \(\,\RR^p\,\) et \(\,\varepsilon'=(\varepsilon'_1,\cdots,\varepsilon'_n)\,\) la base canonique de \(\,\RR^n\). On note \(f_1,\cdots,f_n\;\) les applications coordonnées de $f$ dans la base $\varepsilon'$. \\
+On a donc pour tout \(\, x=(x_1,\cdots,x_p)\in \RR^p,\ \,f(x)=\bigl(f_1(x),\cdots,f_n(x)\bigr).\) On note \(\,f=\bigl(f_1,\cdots,f_n\bigr).\)\\
+Si $f$ est une fonction de \(\,\RR^p\,\) dans \(\,\RR^n\,\),\ \(\,f_1,\cdots,f_n\,\) sont des fonctions de \(\,\RR^p\,\) dans \(\,\RR.\)\vspace{0.1cm}\\
+En cas d'existence, \(\,\displaystyle\frac{\partial}{\partial x_{j_1}}\!\!\left(\!\frac{\partial f}{\partial x_{j_2}}\!\right)\,\) est simplement noté \(\;\displaystyle \frac{\partial ^2\!f}{\partial x_{j_1}\partial x_{j_2}}\).\vspace{0.2cm}\\
+Toujours en cas d'existence, l'application \(\,\displaystyle \frac{\partial^2\! f}{\partial x_j \partial x_j}\,\) est notée \(\,\displaystyle\frac{\partial^2\!f}{\partial x_j^2}.\)
+
+\vspace{1.5cm}
+
+\(\left(\mathbf{HP}\right)\,\) Soient U un ouvert de E et V un ouvert de F.\vspace{0.1cm}\\
+On appelle $\mathscr{C}^1-\,$\textbf{difféomorphisme}\index{difféomorphisme} de U sur V toute bijection $\Phi$ de U sur V telle que $\Phi$ soit de classe $\mathscr{C}^1$ sur U et $\Phi^{-1}$ soit de classe $\mathscr{C}^1$ sur V.
+
+\vspace{1.2cm}
+
+Soient A une partie non vide de E et \(a\in A.\)\vspace{0.1cm}\\
+Un vecteur \(v\in E\) est dit \textbf{tangent à la partie A au point a}\index{vecteur tangent à une partie en un point}\, \ssi il existe $r>0$ et\vspace{0.1cm}\\
+\(\gamma:\;]-r,r\,[\,\to A\;\) dérivable sur \(\,]-r,r\,[\;\) tels que \(\,\gamma(0)=a\,\) et \(\,\gamma'(0)=v\).\vspace{0.2cm}\\
+\begin{small}L'ensemble des vecteurs tangents à la partie A au point $a$ est noté \(\,T_a(A).\)\end{small}
+
+\vspace{1cm}
+
+\underline{\emph{Théorème - définition}} : Soit $\bigl($E,\,\ps$\bigr)$ un espace euclidien.\vspace{0.1cm}\\
+Soient U un \underline{ouvert} de E et \(\,f:U\subset E\to \RR\,\) différentiable au point \(a\in U\).\vspace{0.1cm}\\
+Il existe un unique vecteur \(\,\nabla f(a)\,\) de E vérifiant \(\,df(a)=\psm{\nabla f(a)}{\sbullet[0.75]\,}\,\) c'est-à-dire tel que :\vspace{0.1cm}\\
+\(\forall h\in E,\ \, df(a)(h)=\psm{\nabla f(a)}{h}\). Le vecteur $\nabla f(a)$ est appelé \textbf{gradient}\index{gradient} de $f$ au point $a$.
+
+\newpage
+
+Soit U un ouvert de \(\displaystyle\,\RR^p,\ f:U\subset \RR^p\to \RR\,\) et \(\,a\in U\).\vspace{0.1cm}\\
+• On note \(\,\varepsilon=(\varepsilon_1,\cdots,\varepsilon_p)\,\) la base canonique de \(\,\RR^p.\) Pour \(\,j\in \llbracket 1,p \rrbracket\,\) on pose\footnote{Avec $\,\varepsilon_j^*\,\,$ l'application de $\displaystyle\left(\RR^p\right)$\expo{*} définie par : \(\ \forall (x_1,\cdots,x_p)\in \RR^p,\ \, \varepsilon_j^*(x_1,\cdots,x_p)=x_j.\)\vspace{0.2cm}} : \(dx_j=\varepsilon_j^*\ \) .\vspace{0.1cm}\\
+La famille de formes linéaires \(\,(dx_1,\cdots,dx_p)\,\) est une base de \(\displaystyle \bigl(\RR^p\bigr)^*.\)\vspace{0.2cm}\\
+• On suppose désormais $f$ différentiable sur U. On dispose donc de \(\,df:U\subset\RR^p \to \left(\RR^p \right)^*.\,\)\\
+La différentielle de $f$ est une \textbf{forme différentielle}\index{forme différentielle} sur l'ouvert U de $\displaystyle\,\RR^p\,$ c'est-à-dire une application de \(\displaystyle \,U\subset \RR^p\,\) dans le dual\footnote{\ i.e. dans \(\displaystyle\,\left(\left(\RR^p\right)^*\right)^*\)} de \(\displaystyle\,\left(\RR^p\right)^*.\)\vspace{0.2cm}\\
+• Pour \(\, j\in \llbracket 1,p \rrbracket\,\), on note $dx_j$ la forme différentielle constante égale à la forme linéaire $dx_j\,$.\vspace{0.2cm}\\
+• L'application $f$ est un \textbf{champ de scalaires}\index{champ de scalaires} sur U c'est-à-dire une application qui à tout point \(a\in U\) associe un réel.\vspace{0.2cm}\\
+• L'application \(\displaystyle\,\nabla f:U\subset \RR^p\to \RR^p\,\) est un \textbf{champ de vecteurs}\index{champ de vecteurs} sur U c'est-à-dire une application qui à tout point \(a\in U\) associe un vecteur de \(\,\RR^p\).\vspace{0.1cm}\\
+• Pour \(\, j\in \llbracket 1,p \rrbracket\,\), on note $\,\varepsilon_j\,$ le champ de vecteurs constant égal au vecteur $\,\varepsilon_j$.
+
+\vspace{1.5cm}
+
+\subsection{Optimisation}
+
+\vspace{0.7cm}
+
+\begin{center}
+    Soit \(\,\bigl(E,\norm{\ }_E\bigr)\,\) un \(\,\RR\)-espace vectoriel normé de dimension finie $\,n\geq 1$.
+\end{center}
+
+\vspace{1cm}
+
+Soient D une partie de E, \(\,a\in D\,\) et \(\, f:D\subset E\to \RR\,\) une application.
+\begin{itemize}[leftmargin=0.5cm]
+    \item[•] On dit que $f$ admet un \textbf{maximum absolu}\index{calcul différentiel!maximum absolu} au point $a$ \ssi : \(\, \forall x\in D,\ \, f(x)\leq f(a).\)\vspace{0.2cm}
+    
+    \item[•] On dit que $f$ admet un \textbf{minimum absolu}\index{calcul différentiel!minimum absolu} au point $a$ \ssi : \(\, \forall x\in D,\ \, f(a)\leq f(x).\)\vspace{0.2cm}
+    
+    \item[•] On dit que $f$ admet un \textbf{maximum local}\index{calcul différentiel!maximum local} au point $a$ \ssi :\vspace{-0.3cm}\\
+    \[\exists V\!\in \mathcal{V}_E(a),\ \  \forall x\in D\cap V,\quad f(x)\leq f(a).\]\vspace{-0.4cm}
+
+    \item[•] On dit que $f$ admet un \textbf{maximum local strict}\index{calcul différentiel!maximum local strict} au point $a$ \ssi :\vspace{-0.3cm}\\
+    \[\exists V\!\in \mathcal{V}_E(a),\ \  \forall x\in D\cap V\setminus\!\{a\},\quad f(x)< f(a).\]\vspace{-0.4cm}
+
+    \item[•] On dit que $f$ admet un \textbf{minimum local}\index{calcul différentiel!minimum local} au point $a$ \ssi :\vspace{-0.3cm}\\
+    \[\exists V\!\in \mathcal{V}_E(a),\ \  \forall x\in D\cap V,\quad f(a)\leq f(x).\]\vspace{-0.4cm}
+
+    \item[•] On dit que $f$ admet un \textbf{minimum local strict}\index{calcul différentiel!minimum local strict} au point $a$ \ssi :\vspace{-0.3cm}\\
+    \[\exists V\!\in \mathcal{V}_E(a),\ \  \forall x\in D\cap V\setminus\!\{a\},\quad f(a)< f(x).\]\vspace{-0.3cm}
+
+    \item[•] On dit que $f$ admet un \textbf{extremum local}\index{calcul différentiel!extremum local} (resp. \textbf{extremum local strict}\index{calcul différentiel!extremum local strict}) au point $a$ \ssi $f$ admet un minimum local (resp. minimum local strict) \underline{ou} un maximum local (resp. maximum local strict) au point $a$.
+\end{itemize}
+
+\vspace{1cm}
+
+Soient U un \underline{ouvert} de E, \(\,a\in U\,\) et \(\,f:U\subset E\to \RR\,\) différentiable au point $a$.\vspace{0.1cm}\\
+On dit que $a$ est un \textbf{point critique}\index{point critique} de $f$ \ssi \(\,df(a)=0_{E\textsuperscript{*}}\,.\)
+
+\vspace{1.3cm}
+
+Soient U un ouvert de \(\displaystyle\,\RR^p\,\) et \(\displaystyle\,f:U\subset \RR^p\to \RR^p\,\) une application de classe $\mathscr{C}^2$ sur U.\vspace{0.2cm}\\
+Pour tout \(a\in U\,\) la matrice \(\,\displaystyle H_f(a)=\left(\frac{\partial^2\!f}{\partial x_i\partial x_j}(a)\!\right)\,\) de \(\,\mathcal{M}_p(\RR)\,\) est appelée \textbf{matrice Hessienne}\index{matrice Hessienne}\vspace{-0.1cm}\\
+de $f$ au point $a$.\vspace{0.2cm}\\
+L'endomorphisme canoniquement associé à $H_f(a)$ est noté \(\,\nabla ^2f(a).\)
+
+\vspace{1.2cm}
+
+\(\left(\mathbf{HP}\right)\) Soit \(\,\displaystyle f \in \mathscr{C}^2\bigl(\RR^p,\RR\bigr).\) Le \textbf{Laplacien}\index{laplacien} \(\,\Delta f:\RR^p\to \RR\,\) définie par \(\,\displaystyle \Delta f=\displaystyle\sum_{i=1}^p \,\frac{\partial^2\!f}{\partial x_i^2}\;\) est un champ de scalaires de classe $\mathscr{C}^{\,0}$ sur \(\,\RR^2.\)
+
+\vspace{1.5cm}
+
+\subsection{Équations différentielles linéaires}
+
+\vspace{1cm}
+
+\begin{center}
+    Soient \(\,\bigl(F,\,\norm{\ }\bigr)\,\) un \(\,\RR\)-espace vectoriel normé de dimension finie \(\,n\geq 1\,\) et I un intervalle de \(\,\RR\,\) d'intérieur non vide.
+\end{center}
+
+\vspace{0.5cm}
+
+\subsubsection[EDL d'ordre 1]{Équations différentielles linéaires d'ordre 1}
+
+\vspace{1.5cm}
+
+Si \(\,a:I\to \mathscr{L}(F)\,\) est une application de I dans \(\,\mathscr{L}(F)\,\) et si \(\,f:I\to F\,\) est une application de I dans F alors on note \(\,a\cdot f\,\) l'application de I dans F définie par :\vspace{-0.2cm}
+\[\forall t\in I,\ \ (a\cdot f)(t)=a(t)\bigl(f(t)\bigr)\]
+
+\vspace{0.7cm}
+
+\underline{Pour les matrices} : On considère \(\,A:I\to\mathcal{M}_n(\KK)\,\) et \(\, X:I\to \mathcal{M}_{n,1}(\KK) \)\vspace{0.1cm}\\
+On note \(A\cdot X\) l'application de I dans \(\,\mathcal{M}_{n,1}(\KK)\, \) définie par :\vspace{-0.2cm}
+\[\forall t\in I,\ \ \left(A\cdot X\right)(t)=A(t)X(t)\]
+
+\newpage
+
+Soient \(\, a:I\to \mathscr{L}(F)\, \) et \(\, b:I\to F\,\) des applications \underline{continues} sur l'invervalle I.\vspace{-0.3cm} \\
+On leur associe les équations différentielles linéaires du premier ordre suivantes :\(\; \begin{array}{ll}
+    & \\
+    (\mathsf{L})\, : & x'=a\cdot x+b\vspace{0.1cm} \\
+    (\mathsf{H})\,: & x'=a\cdot x
+\end{array}\)\vspace{0.4cm} \\
+Les applications $a$ et $b$ sont respectivement appelées coefficient et second membre de \((\mathsf{L})\).\vspace{0.1cm}\\
+L'équation $(\mathsf{L})$ est appelée \textbf{équation différentielle linéaire du premier ordre avec second membre}\index{calcul différentiel!équation différentielle linéaire du premier ordre avec second membre}.\vspace{0.1cm}\\
+L'équation $(\mathsf{H})$ est appelée \textbf{équation différentielle homogène}\index{calcul différentiel!équation différentielle homogène} associée à $(\mathsf{L})$.\vspace{0.4cm}\\
+Les équations différentielles $(\mathsf{L})$ et $(\mathsf{H})$ sont aussi notées : \(
+\left\{\!\!\begin{array}{ll}
+    (\mathsf{L})\,: & x'(t)=a(t)\bigl(x(t)\bigr)+\,b(t)\vspace{0.1cm}\\
+    (\mathsf{H})\,: & x'(t)=a(t)\bigl(x(t)\bigr)
+\end{array}\right.\)\vspace{0.5cm}\\
+Elle sont aussi $abusivement$ notées sous la forme : \(
+    \left\{\!\!\begin{array}{ll}
+        (\mathsf{L})\,: & x'=a(t)\cdot x\,+\,b(t)\vspace{0.1cm}\\
+        (\mathsf{H})\,: & x'=a(t)\cdot x
+    \end{array}\right.\)
+
+\vspace{1.2cm}
+
+On dit qu'une application \(\,f:I\to F\,\) est \textbf{solution de l'équation différentielle}\index{calcul différentiel!solution d'une équation différentielle} $(\mathsf{L})$ sur I \ssi $f$ est dérivable sur I et si : \(\, \forall t\in I,\ f\,'(t)=a(t)\bigl(f(t)\bigr)+\,b(t).\)
+
+\vspace{1.7cm}
+
+Soient \(\,A:I\to \mathcal{M}_n(\KK)\,\) et \(\,B:I\to \mathcal{M}_{n,1}(\KK)\,\) des applications \underline{continues} sur l'intervalle I.\vspace{0.3cm}\\
+On leur associe les \textbf{systèmes différentiels}\index{système différentiel} : \(\ \left\{\!\! 
+\begin{array}{ll}
+    (\mathsf{L})\,: & X'=A\cdot X+B\vspace{0.1cm}\\
+    (\mathsf{H})\,: & X'=A\cdot X
+\end{array}\right.\)\vspace{0.4cm}\\
+Les applications $A$ et $B$ sont respectivement appelées coefficient et second membre de $(\mathsf{L})$.\\
+$(\mathsf{H})$ est le \textbf{système différentiel homogène}\index{système différentiel homogène} associé à $(\mathsf{L})$.
+
+\vspace{1.2cm}
+
+On dit qu'une application \(\,X:I\to \mathcal{M}_{n,1}(\KK)\,\) est \textbf{solution du système différentiel}\index{solution du système différentiel} \((\mathsf{L})\) sur l'intervalle I \ssi $X$ est dérivable sur I et si : \(\, \forall t\in I,\ \, X'(t)=A(t)X(t)+B(t)\)
+
+\vspace{1.3cm}
+
+\hrule
+
+\vspace{1cm}
+
+\begin{center}
+\textbf{Traduction d'un système différentiel en terme de système d'équations} :
+\end{center} \vspace{0.7cm}
+
+\(A:I\to \mathcal{M}_n(\KK)\,\) est une application continue sur I. Il existe donc $n^2\,$ applications continues\\
+\(a_{ij}:I\to \KK \: \) telles que \(A=\!\bigl(a_{ij}\bigr)\,\) c'est-à-dire telles que \(\ \forall t \in I,\ A(t)=\bigl(a_{ij}(t)\bigr).\)\vspace{1.3cm}
+
+\(B:I\to \mathcal{M}_{n,1}(\KK)\,\) est une application continue sur I. Il existe donc $n$ applications continues\\
+\(b_i:I\to \KK \: \) telles que \(B=\arraycolsep=0.05cm\def\arraystretch{1} \left[
+\begin{array}{c}
+    b_1\\
+    \vdots\\
+    b_n
+\end{array}    
+\right]\) c'est-à-dire telles que \(\ \forall t \in I,\ B(t)=\!\arraycolsep=0.03cm\def\arraystretch{1.2}\left[
+    \begin{array}{c}
+        b_1(t)\\
+        \vdots\\
+        b_n(t)
+    \end{array}    
+    \right].\)
+
+\newpage
+
+Considérons \(\,X:I\to\mathcal{M}_{n,1}(\KK)\,\) dérivable sur I. Il existe donc $n$ applications continues\\
+\(x_j:I\to \KK \: \) telles que \(X=\arraycolsep=0.05cm\def\arraystretch{1} \left[
+\begin{array}{c}
+    x_1\\
+    \vdots\\
+    x_n
+\end{array}    
+\right]\) c'est-à-dire telles que \(\ \forall t \in I,\ X(t)=\!\arraycolsep=0.03cm\def\arraystretch{1.2}\left[
+    \begin{array}{c}
+        x_1(t)\\
+        \vdots\\
+        x_n(t)
+    \end{array}    
+    \right].\)
+
+\vspace{1cm}
+
+Avec ces notations, $X$ est solution du système différentiel $(\mathsf{L})$ sur I \ssi :\vspace{0.2cm}
+
+\[\forall t\in I, \qquad \left\{\def\arraystretch{1.2}
+\begin{array}{l}
+    x'_1(t)=a_{11}(t)\,x_1(t)\,+\cdots\cdots+\,a_{1n}(t)\,x_n(t)+b_1(t)\\
+    \hspace{1.07cm} \vdots\\
+    x'_i(t)=a_{i1}(t)\,x_1(t)\,+\cdots\cdots+\,a_{in}(t)\,x_n(t)\,+\,b_i(t)\\
+    \hspace{1.07cm} \vdots\\
+    x'_n(t)=a_{n1}(t)\,x_1(t)\,+\cdots\cdots+\,a_{nn}(t)\,x_n(t)+b_n(t)
+\end{array}
+\right.\]
+
+\vspace{1cm}
+
+\hrule
+
+\vspace{1cm}
+
+\subsubsection[EDLO1 à coefficient constant]{Équations différentielles linéaires d'ordre 1 à coefficient constant}
+
+\vspace{0.7cm}
+
+Soient \(\, a\in \mathscr{L}(F)\, \) et \(\, b:I\to F\,\) une application \underline{continue} sur l'invervalle I.\vspace{-0.3cm} \\
+On leur associe les équations différentielles linéaires du premier ordre suivantes :\(\; \begin{array}{ll}
+    & \\
+    (\mathsf{L})\, : & x'=a\circ x+b\vspace{0.1cm} \\
+    (\mathsf{H})\,: & x'=a\circ x
+\end{array}\)\vspace{0.4cm} \\
+Les équations différentielles $(\mathsf{L})$ et $(\mathsf{H})$ sont aussi notées : \(
+\left\{\!\!\begin{array}{ll}
+    (\mathsf{L})\,: & x'(t)=a\bigl(x(t)\bigr)+\,b(t)\vspace{0.1cm}\\
+    (\mathsf{H})\,: & x'(t)=a\bigl(x(t)\bigr)
+\end{array}\right.\)\vspace{0.5cm}\\
+Elle sont aussi $abusivement$ notées sous la forme : \(
+    \left\{\!\!\begin{array}{ll}
+        (\mathsf{L})\,: & x'=a\,x\,+\,b(t)\vspace{0.1cm}\\
+        (\mathsf{H})\,: & x'=a\,x
+    \end{array}\right.\)
+
+\vspace{0.8cm}
+
+On dit qu'une application \(\,f:I\to F\,\) est \textbf{solution de l'équation différentielle}\index{calcul différentiel!solution de l'équation différentielle} $(\mathsf{L})$ sur I \ssi $f$ est dérivable sur I et si : \(\, \forall t\in I,\ f\,'(t)=a\bigl(f(t)\bigr)+\,b(t).\)
+
+\vspace{1.7cm}
+
+Soient \(\,A\in \mathcal{M}_n(\KK)\,\) et \(\,B:I\to \mathcal{M}_{n,1}(\KK)\,\) une application \underline{continue} sur l'intervalle I.\vspace{0.3cm}\\
+On leur associe les \textbf{systèmes différentiels}\index{système différentiel} suivants : \(\ \left\{\!\! 
+\begin{array}{ll}
+    (\mathsf{L})\,: & X'=A X+B\vspace{0.1cm}\\
+    (\mathsf{H})\,: & X'=A X
+\end{array}\right.\)
+
+\vspace{1cm}
+
+On dit qu'une application \(\,X:I\to \mathcal{M}_{n,1}(\KK)\,\) est \textbf{solution du système différentiel}\index{solution du système différentiel} \((\mathsf{L})\) sur\vspace{0.1cm}\\
+l'intervalle I \ssi $X$ est dérivable sur I et si : \(\, \forall t\in I,\ \, X'(t)=AX(t)+B(t)\)
+
+\newpage
+
+\hrule
+
+\vspace{1cm}
+
+\begin{center}
+\textbf{Traduction d'un S.D.\footnote{Système différentiel.}} :\end{center} 
+\vspace{0.7cm}
+
+\noindent \(A\in \mathcal{M}_n(\KK)\,\). Il existe donc $n^2\,$ scalaires \(\,a_{ij}\in \KK \: \) telles que \(A=\bigl(a_{ij}\bigr)\,\).\vspace{0.5cm}
+
+\(B:I\to \mathcal{M}_{n,1}(\KK)\,\) est une application continue sur I. Il existe donc $n$ applications continues\\
+\(b_i:I\to \KK \: \) telles que \(B=\arraycolsep=0.05cm\def\arraystretch{1} \left[
+\begin{array}{c}
+    b_1\\
+    \vdots\\
+    b_n
+\end{array}    
+\right]\) c'est-à-dire telles que : \(\ \forall t \in I,\ B(t)=\!\arraycolsep=0.03cm\def\arraystretch{1.2}\left[
+    \begin{array}{c}
+        b_1(t)\\
+        \vdots\\
+        b_n(t)
+    \end{array}    
+    \right].\)
+
+\vspace{0.5cm}
+
+Considérons \(\,X:I\to\mathcal{M}_{n,1}(\KK)\,\) dérivable sur I. Il existe donc $n$ application continues\\
+\(x_j:I\to \KK \: \) telles que \(X=\arraycolsep=0.05cm\def\arraystretch{1} \left[
+\begin{array}{c}
+    x_1\\
+    \vdots\\
+    x_n
+\end{array}    
+\right]\) c'est-à-dire telles que : \(\ \forall t \in I,\ X(t)=\!\arraycolsep=0.03cm\def\arraystretch{1.2}\left[
+    \begin{array}{c}
+        x_1(t)\\
+        \vdots\\
+        x_n(t)
+    \end{array}    
+    \right].\)
+
+\vspace{1cm}
+
+Avec ces notations, $X$ est solution du système différentiel $(\mathsf{L})$ sur I \ssi :
+
+\[\forall t\in I, \qquad \left\{\def\arraystretch{1.4}
+\begin{array}{l}
+    x'_1(t)=a_{11}\,x_1(t)\,+\cdots\cdots+\,a_{1n}\,x_n(t)+b_1(t)\\
+    \hspace{1.08cm} \vdots\\
+    x'_i(t)=a_{i1}\,x_1(t)\,+\cdots\cdots+\,a_{in}\,x_n(t)\,+\,b_i(t)\\
+    \hspace{1.08cm} \vdots\\
+    x'_n(t)=a_{n1}\,x_1(t)\,+\cdots\cdots+\,a_{nn}\,x_n(t)+b_n(t)
+\end{array}
+\right.\]
+
+\vspace{1cm}
+
+\hrule
+
+\vspace{1.5cm}
+
+\subsubsection[EDL scalaire d'ordre n]{Équations différentielles linéaires scalaires d'ordre n}
+
+\vspace{0.7cm}
+
+Soient \(\,a_1\,,\cdots,a_n\,,b\,:I\to \KK\: \) des applications de I dans \(\,\KK\,\) \underline{continues} sur I.\vspace{0.1cm}\\
+On leur associe les équations différentielles linéaires scalaires d'ordre $n$ :
+\[\left\{\!
+\begin{array}{ll}
+    (\mathsf{L})\,: & y^{(n)}+a_1\,y^{(n-1)}+a_2\,y^{(n-2)}+\cdots+a_{n-1}\,y'+a_n\,y=b\vspace{0.1cm}\\
+    (\mathsf{H})\,: & y^{(n)}+a_1\,y^{(n-1)}+a_2\,y^{(n-2)}+\cdots+a_{n-1}\,y'+a_n\,y=0
+\end{array}
+ \right.\]\vspace{0.3cm}
+
+\noindent $(\mathsf{L})$ est appelée \textbf{équation différentielle avec second membre}\index{calcul différentiel!équation différentielle avec second membre}.\vspace{0.1cm}\\
+$(\mathsf{H})$ est appelée \textbf{équation différentielle homogène}\index{calcul différentiel!équation différentielle homogène} associée à $(\mathsf{L})$.\vspace{0.235cm}\\
+Les équations $(\mathsf{L})$ et $(\mathsf{H})$ sont aussi notées sous la forme :\vspace{-0.1cm}
+\[\left\{
+\begin{array}{ll}
+    (\mathsf{L})\,: & y^{(n)}(t)+a_1(t)y^{(n-1)}(t)+a_2(t)y^{(n-2)}(t)+\cdots+a_{n-1}(t)y'(t)+a_n(t)y(t)=b(t)\vspace{0.2cm}\\
+    (\mathsf{H})\,: & y^{(n)}(t)+a_1(t)y^{(n-1)}(t)+a_2(t)y^{(n-2)}(t)+\cdots+a_{n-1}(t)y'(t)+a_n(t)y(t)=0
+\end{array}
+ \right.\]\vspace{0.2cm}
+
+On les note aussi $abusivement$ sous la forme :
+\[\left\{
+\begin{array}{ll}
+    (\mathsf{L})\,: & y^{(n)}+a_1(t)y^{(n-1)}+a_2(t)y^{(n-2)}+\cdots+a_{n-1}(t)y'+a_n(t)y=b(t)\vspace{0.1cm}\\
+    (\mathsf{H})\,: & y^{(n)}+a_1(t)y^{(n-1)}+a_2(t)y^{(n-2)}+\cdots+a_{n-1}(t)y'+a_n(t)y=0
+\end{array}
+ \right.\]\vspace{1cm}
+
+On dit que \(\,f:I\to \KK\,\) est \textbf{solution de l'équation différentielle}\index{calcul différentiel!solution de l'équation différentielle} $(\mathsf{L})$ sur I \ssi $f$\vspace{0.1cm}\\
+est $n$-fois dérivable sur I et si : \(\ \forall t\in I,\ \; f^{(n)}(t)+a_1(t)f^{(n-1)}(t)+\cdots+a_n(t)f(t)=b(t).\)
+
+\vspace{1.5cm}
+
+\hrule
+
+\vspace{1cm}
+
+\begin{center}\textbf{Interprétation en terme de système différentiel}\end{center}
+
+\vspace{0.7cm}
+
+Soit \(\,y:I\to \KK\:\) $n$-fois dérivable sur I.\vspace{-0.3cm}\\
+On lui associe \(\,X:I\to \mathcal{M}_{n,1}(\KK)\,\) définie par : \(\, X=\!\arraycolsep=0.03cm\def\arraystretch{1}\left[
+\begin{array}{c}
+    y\\
+    y'\\
+    \vdots\\
+    y^{(n-1)}
+\end{array}
+\right]\)\\
+On a donc : \(\;\forall t\in I,\ \,X(t)=\!\arraycolsep=0.03cm\def\arraystretch{1}\left[
+    \begin{array}{c}
+        y(t)\\
+        y'(t)\\
+        \vdots\\
+        y^{(n-1)}(t)
+    \end{array}
+    \right]\!.\ \) $X$ est dérivable sur I et \(  X'=\!\arraycolsep=0.05cm\def\arraystretch{1}\left[
+        \begin{array}{c}
+            y'\\
+            y''\\
+            \vdots\\
+            y^{(n)}
+        \end{array}
+        \right]\)
+
+\vspace{0.5cm}
+
+\[y^{(n)}+a_1\,y^{(n-1)}+a_2\,y^{(n-2)}+\cdots+a_{n-1}\,y'+a_n\,y=b\; \Leftrightarrow\; \left\{\def\arraystretch{1.1}
+\begin{array}{l}
+    y'=y'\\
+    \cdots\cdots\cdots\\
+    y^{(n-1)}=y^{(n-1)}\vspace{0.2cm}\\
+    y^{(n)}=-\Bigl(a_ny+\cdots+a_1y^{(n-1)}\Bigr)+b
+\end{array}
+ \right.\]\vspace{0.5cm}
+
+On en déduit que : \vspace{-1cm}
+
+\[y\in S_{I\to \KK}(\mathsf{L})\;\Leftrightarrow \; X'=A\cdot X+B \quad\! \text{avec}\quad\!  A=\left[
+\begin{array}{ccccc}
+    0 & 1 & 0 & \cdots & 0\\
+    0 & 0 & \ddots & \ddots & \vdots \\
+    \vdots & \ddots & \ddots & 1 & 0 \\
+    0 & \cdots & 0 & 0 & 1 \\
+    -a_n & -a_{n-1} & \cdots & -a_2 & -a_1 
+\end{array}
+\right]\, \text{ et }\, B=\left[
+\begin{array}{c}
+    0\\
+    \vdots\\
+    \vdots\\
+    0\\
+    b   
+\end{array}
+\right]\]
+
+\vspace{1cm}
+
+\hrule
+
+\vspace{1.5cm}
+
+Soient \(\,a,b,c:I\to\KK\,\) des applications \underline{continues} sur I.\vspace{-0.45cm}\\
+On leur associe les équations différentielles linéaires scalaires d'ordre 2 : \(
+\begin{array}{ll}
+    & \\
+    (\mathsf{L})\,: & y'' +a\,y' +b\,y=c\vspace{0.1cm} \\
+    (\mathsf{H})\,: & y'' +a\,y' +b\,y=0
+\end{array}\)\vspace{0.5cm}\\
+Soit \((h_1,h_2)\in S_{\,I\to \KK}\,(\mathsf{H})^2\).\vspace{-0.1cm}\\
+On appelle \textbf{wronskien}\index{wronskien} de $(h_1,h_2)$ l'application \(\,W:I\to \KK\,\) définie par : \(W(t)=\left|\!
+\begin{array}{cc}
+    h_1(t) & h_2(t)\vspace{0.1cm}\\
+    h'_1(t) & h'_2(t)
+\end{array}\!\right|\)\\
+i.e. \(\, \forall t\in I,\ \, W(t) = h_1(t)h'_2(t)-h_2(t)h'_1(t).\)
+
+
+\newpage
+
+\printindex

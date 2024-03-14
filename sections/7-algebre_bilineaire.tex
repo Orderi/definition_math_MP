@@ -1,0 +1,222 @@
+
+\section{Algèbre bilinéaire}
+
+
+\vspace{0.4cm}
+
+\begin{center}
+    Soit (E, +,\ \x) un \(\RR\)-espace vectoriel.
+\end{center}
+
+\vspace{0.2cm}
+\subsection{Espaces préhilbertiens}
+
+\vspace{0.8cm}
+
+Une \textbf{forme bilinéaire}\index{forme bilinéaire} sur E est une application \(\,\varphi :E\times E\to \RR\,\) qui vérifie : \vspace{0.1cm}\\
+\(\varphi(x,\sbullet[0.75]\,)\,\) est linéaire pour tout \(x\in E\,\) et \(\,\varphi(\,\sbullet[0.75]\,,y)\,\) est linéaire pour tout \(y\in E.\)
+
+\vspace{1cm}
+
+\noindent Soit \(\varphi\) une forme bilinéaire sur E :\vspace{0.1cm}
+\begin{itemize}[leftmargin=1.5cm]\vspace{-0.1cm}
+    \item[•] \(\varphi\) est dite \textbf{symétrique} \ssi : \(\ \forall (x,y)\in E^2,\ \ \varphi(x,y)=\varphi(y,x). \)\vspace{0.1cm}
+
+    \item[•] \(\varphi\) est dite \textbf{positive}\index{forme bilinéaire positive} \ssi : \(\ \forall x\in E,\ \varphi(x,x)\geq 0. \)\vspace{0.1cm}
+
+    \item[•] \(\varphi\) est dite \textbf{définie}\index{forme bilinéaire définie} \ssi : \(\ \forall x\in E,\ \bigl(\varphi(x,x)=0 \ \Rightarrow \ x=0_E\bigr). \)
+\end{itemize}
+
+\vspace{1cm}
+
+\noindent Une \textbf{produit scalaire}\index{produit scalaire} sur E est une forme bilinéaire symétrique, définie et positive.\\
+Un \textbf{semi-produit scalaire}\index{semi-produit scalaire} sur E est une forme bilinéaire symétrique et positive.
+
+\vspace{0.5cm}
+
+\noindent Si \ps\, est un semi-produit scalaire sur E, alors pour tout vecteur \(x\in E\) on pose : \(\norm{x}=\sqrt{\psm{x}{x}} \).\\
+Le réel positif \normtxt{x} est appelé semi-norme du vecteur x.\\
+Lorsque \ps \ est un produit scalaire, ce même réel est appelé norme du vecteur x.\\
+On l'appelle (semi-)norme associée au (semi-)produit scalaire \ps.
+
+\vspace{1cm}
+
+\noindent \underline{\emph{Propositions}}\footnote{Les produits scalaires indiqués par le symbole \(\,\star\,\) sont considérés comme des produits scalaires \textbf{canoniques}\index{produits scalaires canoniques}.} : Exemples de produits scalaires.\vspace{-0.4cm}
+\begin{itemize}
+    \item[$\star$] Pour \(x=(x_1,\cdots,x_n)\in \RR^n\,\) et \(\,y=(y_1,\cdots,y_n)\in \RR^n\,\) on pose : \(\displaystyle \psm{x}{y}=\sum_{i=1}^{n}x_i\,y_i.\)\vspace{-0.2cm}\\
+    \ps\, est un produit scalaire sur le \(\,\RR\)-espace vectoriel \(\,\RR^n.\)\vspace{0.3cm}
+
+    \item[$\star$] Pour \((A,B)\in \mathcal{M}_n(\RR)^2\,\) on pose : \(\,\psm{A}{B}=\text{tr}\bigl(A\textsuperscript{T}B\bigr).\)\vspace{0.1cm}\\
+    \ps\, est un produit scalaire sur le $\,\RR$-espace vectoriel $\,\mathcal{M}_n(\RR).$\vspace{-0.2cm}\\
+    Si \(A=(a_{ij})\) et \(B=(b_{ij})\) alors \(\displaystyle \,\psm{A}{B}=\sum_{i=1}^{n}\sum_{j=1}^{n}a_{ij}b_{ij}\ \) et \(\ \displaystyle \norm{A}=\sqrt{\sum_{i=1}^{n}\sum_{j=1}^{n}a_{ij}^2}\).\vspace{0.2cm}
+
+    \item[•] Pour \((P,Q)\in \RR[\text{X}]^2\,\) on pose : \(\displaystyle \,\psm{P}{Q}=\int_{-1}^{1}\!\frac{P(t)Q(t)}{\sqrt{1-t^2}}\,dt\).\vspace{0.2cm}\\
+    \ps\, est un produit scalaire sur le $\,\RR$-espace vectoriel \(\RR[\text{X}].\)\vspace{0.3cm}
+
+    \item[$\star$] Pour \((f,g)\in \text{M}^0\bigl([a,b],\RR\bigr)^2\,\) on pose : \(\displaystyle \,\psm{f}{g}=\int_{a}^{b}\!\!fg.=\int_{a}^{b}\!\!f(t)g(t)dt.\) \vspace{0.1cm}\\
+    \ps\, est un semi-produit scalaire sur le $\,\RR$-espace vectoriel $\,\text{M}^0\bigl([a,b],\RR\bigr).$\vspace{0.1cm}\\
+    \ps\, est un produit scalaire sur le $\,\RR$-espace vectoriel \(\,\mathscr{C}^{\,0}\bigl([a,b],\RR\bigr).\)\vspace{0.3cm}
+
+    \item[$\star$] Pour \(u=(u_n)\,\) et \(\,v=(v_n)\,\) dans \(\,\ell^2(\RR)\) on pose : \(\displaystyle \quad\psm{u}{v}=\sum_{n=0}^{+\infty}u_nv_n.\)\\
+    \ps\, est un produit scalaire sur le $\,\RR$-espace vectoriel \(\,\ell^2(\RR).\)
+\end{itemize}
+
+
+\vspace{1cm}
+
+Un \textbf{espace préhilbertien réel}\index{espace préhilbertien réel} est un couple $\bigl($E, \ps$\bigr)$ constitué d'un \(\RR\)-espace vectoriel E et d'un produit scalaire \ps \ sur E.\\
+Un \textbf{espace euclidien}\index{espace euclidien} est un espace préhilbertien réel de dimension finie.
+
+\vspace{1cm}
+
+\noindent Soit $\bigl($E, \ps$\bigr)$ un espace préhilbertien réel. On note \normtxt{\ } la norme associée au produit\vspace{0.1cm}\\
+scalaire \ps. $\bigl($E, \normtxt{\ }$\bigr)$ est un espace vectoriel normé.\vspace{0.2cm}
+\begin{itemize}[leftmargin=1cm]
+    \item[•] Deux vecteurs $x$ et $y$ de E sont dits \textbf{orthogonaux}\index{vecteurs orthogonaux} \ssi \(\,\psm{x}{y}=0\).\\
+    Pour exprimer cela, on note \(\,x\perp y\).\vspace{0.2cm}
+
+    \item[•] Une famille (\(x_1,\cdots,x_p\)) de vecteurs de E est dite \textbf{orthogonale}\index{famille orthogonale} \ssi les vecteurs \(x_1,\cdots,x_p\,\) sont deux à deux orthogonaux.\vspace{0.2cm}
+
+    \item[•] Une famille (\(x_1,\cdots,x_p\)) de vecteurs de E est dite \textbf{orthonormale}\index{famille orthonormale} \ssi elle est orthogonale et si \(\ \forall i\in \llbracket1,p\rrbracket,\ \norm{x_i}=1.\,\) Autrement dit : \(\ \forall (i,j)\in \llbracket 1,p\rrbracket^2,\ \psm{x_i}{x_j}=\delta_{ij}.\)\vspace{0.2cm}
+
+    \item[•] Soient A et B deux parties de E.\\
+    Les parties A et B sont dites \textbf{orthogonales}\index{parties orthogonales} \ssi tout vecteur de A est orthogonal à tout vecteur de B. C'est-à-dire \ssi : \(\ \forall a\in A,\ \forall b\in B,\ \psm{a}{b}=0 \).\\
+    Pour exprimer cela, on note \(A\perp B\).\vspace{0.15cm}\\
+    L'\textbf{orthogonal de A}\index{l'orthogonal d'une partie} est l'ensemble des vecteurs de E qui sont orthogonaux à tous les vecteurs de A. C'est une partie de E que l'on note A\(\!^{^\perp}\). Ainsi : \,A\(\!^{^\perp}  =\bigl\{x\in E \ \mid \ \forall a\in A,\ \psm{x}{a}=0 \bigr\}. \)\vspace{0.3cm}
+
+    \item[•] Soient F et G deux sous-espaces vectoriels de E. Pour exprimer que \(E=F\oplus G\) et que \(F\perp G\), on note \(E=F\overset{\perp}{\oplus}G \) et on dit que E est \textbf{somme directe orthogonale}\index{somme directe orthogonale} de F et G.
+\end{itemize}
+
+\vspace{1cm}
+
+\noindent On appelle \textbf{projecteur orthogonal}\index{projecteur orthogonal} de E tout projecteur \(\,p\,\) de E qui vérifie : Im \(\! p \perp \ker p\ \).
+
+\vspace{0.5cm}
+
+\noindent On appelle \textbf{symétrie orthogonale}\index{symétrie orthogonale} de E toute symétrie $\,s\,$ de E qui vérifie : \(\ker (s-id_E)\perp \ker (s+id_E)\)
+
+\vspace{1cm}
+
+Une suite (\(e_k\)) de vecteurs de E est dite \textbf{totale}\index{suite de vecteurs totale} \ssi pour tout vecteur \(x\in E\), il existe une suite (\(\alpha_k\)) de réels telle que \(\,\displaystyle x =\lim_{n\to +\infty} \sum_{k=0}^{n}\alpha_ke_k. \)\\
+Autrement dit, \ssi \(\displaystyle\ \forall x\in E,\ \exists(\alpha_k)\in \RR^\NN \ \mid \ x=\lim_{n\to +\infty} \sum_{k=0}^{n}\alpha_ke_k. \)
+
+\vspace{1cm}
+
+Un vecteur de norme égale à $1$ est dit \textbf{unitaire}\index{vecteur unitaire}.
+
+\vspace{1.5cm}
+
+\subsection{Espaces euclidiens}
+
+\vspace{0.5cm}
+
+\begin{center}
+    Soit $\bigl($E,\,\ps$\bigr)$ un espace euclidien de dimension \(\,n\geq 1\).\vspace{0.1cm}\\
+    On note \normtxt{\ } la norme associée au produit scalaire.
+\end{center}
+
+\vspace{0.7cm}
+
+\noindent On dit que $\,\mathcal{B}\,$ est une \textbf{base orthogonale}\index{base orthogonale}\footnote{On écrit que \(\,\mathcal{B}\,\) est une BO (Base Orthogonale)} (resp. \textbf{base orthonormale}\index{base orthonormale}\footnote{On écrit que \(\,\mathcal{B}\,\) est une BON (Base OrthoNormale)}) de E \ssi la famille \(\,\mathcal{B}\,\) est orthogonale (resp. orthonormale) et c'est une base de E.
+
+\vspace{1cm}
+
+\noindent Soit \(\,\mathcal{B}=(e_1,\cdots,e_n)\,\) une base de E. La matrice \(\,G_\mathcal{B}\left(\psm{e_i}{e_j}\right)\,\) est appelée matrice dans la base \(\,\mathcal{B}\,\) du produit scalaire \ps, ou \textbf{matrice de Gram}\index{matrice de Gram}.
+
+\vspace{1cm}
+
+On suppose que E est \underline{orienté}. Soit \(\,x_1,\cdots,x_n\,\) des vecteurs de E. On appelle \textbf{produit mixte}\index{produit mixte} des n vecteurs \(\,x_1,\cdots,x_n\,\) le réel \(\,[x_1,\cdots,x_n]\,\) défini par :\vspace{0.1cm} \\
+\([x_1,\cdots,x_n]=\det_\mathcal{B}(x_1,\cdots,x_n)\ \) où \(\,\mathcal{B}\,\) est une base orthonormale directe quelconque de E.
+
+\vspace{1cm}
+
+\(\left(\mathbf{H}\mathbf{P}\right)\) \underline{\emph{Théorème - définition}} : On suppose que \(\underline{\dim\,\text{E}=3}\). Soit \((x,y)\in E^2\).\vspace{0.1cm}\\
+Il existe un unique vecteur \(\,v\in E\,\) vérifiant : \(\;\forall z \in E,\ \, [x,y,z]=\psm{v}{z}\)\\
+Cet unique vecteur $v$ est appelé \textbf{produit vectoriel}\index{produit vectoriel} de $x$ et de $y$ et est noté \(\,x\wedge y.\)\vspace{0.1cm}\\
+Par définition même on a donc : \(\ \forall(x,y,z)\in E^3,\ \, [x,y,z]=\psm{x\wedge y}{z}\)
+
+\vspace{1.3cm}
+
+On suppose que E est \underline{orienté} de \underline{dimension 2}. Soit \((x,y)\in \left(E\setminus \{0_E\}\right)^2\).\vspace{-0.1cm}\\
+On appelle \textbf{mesure de l'angle orienté}\index{mesure d'un angle orienté} des vecteurs $x$ et $y$ tout réel $\,\theta\,$ vérifiant : \(\,\displaystyle e^{i\theta}=\frac{\psm{x}{y}+i[x,y]}{\norm{x}\cdot \norm{y}}\)
+
+\vspace{1.3cm}
+
+Soit \(u\in \mathscr{L}(E)\).\vspace{0.1cm}\\
+On dit que u est \textbf{autoadjoint}\index{endomorphisme autoadjoint} \ssi : \(\forall (x,y)\in E^2,\ \, \psm{x}{u(y)\,}=\psm{u(x)}{y}.\)\vspace{0.1cm}\\
+\begin{small}
+    On note S(E) l'ensemble des endomorphismes autoadjoints de E.
+\end{small}\vspace{0.5cm}\\
+On dit que u est \textbf{autoadjoint positif}\index{endomorphisme autoadjoint positif} \ssi \(u\in S(E)\) et \(\ \forall x\in E,\ \,\psm{x}{u(x)\,}\geq 0.\)\vspace{0.1cm}\\
+\begin{small}
+    On note S\expo{+}(E) l'ensemble des endomorphismes autoadjoints positifs de E.
+\end{small}\vspace{0.5cm}\\
+On dit que u est \textbf{autoadjoint défini positif}\index{endomorphisme autoadjoint défini positif} \ssi \(u\in S^+(E)\)\\
+et \(\ \forall x\in E,\ \,\bigl(\,\psm{x}{u(x)\,}=0\ \Rightarrow \ x=0_E \bigr).\)\vspace{0.1cm}\\
+\begin{small}
+    On note S\expo{++}(E) l'ensemble des endomorphismes autoadjoints définis positifs de E.
+\end{small}
+
+\vspace{1.3cm}
+
+Soit \(\,f:E\to E\,\) une application.\vspace{0.1cm}\\
+On dit que $f$ \textbf{conserve le produit scalaire}\index{conservation du produit scalaire} \ssi : \(\, \forall (x,y)\in E^2,\ \psm{f(x)}{f(y)}=\psm{x}{y}\).\vspace{0.2cm}\\
+On dit que $f$ \textbf{conserve la norme}\index{conservation de la norme} \ssi : \(\; \forall x\in E,\ \, \norm{f(x)}=\norm{x}.\)
+
+\vspace{1cm}
+
+\noindent Une \textbf{isométrie vectorielle}\index{isométrie vectorielle} de E est un endomorphisme de E qui conserve la norme.\\
+Un \textbf{automorphisme orthogonal}\index{automorphisme orthogonal} de E est un automorphisme de E qui conserve le produit scalaire.\\
+Une \textbf{rotation}\index{rotation} est un automorphisme orthogonal de déterminant égal à 1.\\
+Une \textbf{réflexion}\index{réflexion} de E est une symétrie orthogonale par rapport à un hyperplan de E.\vspace{0.2cm}\\
+On note O(E) l'ensemble des automorphismes orthogonaux de E.\\
+On note SO(E) l'ensemble des rotations de E. 
+
+\vspace{1.5cm}
+
+Pour \(\theta\in \RR\,\) on pose : \(\;R(\theta)=\left[
+\begin{array}{lr}
+    \cos \theta & -\sin \theta \\
+    \sin \theta & \cos \theta
+\end{array}
+ \right]\ \) et \(\ S(\theta)=\left[
+\begin{array}{lr}
+    \cos \theta & \sin \theta \\
+    \sin \theta & -\cos \theta 
+\end{array}
+\right]\)
+
+
+\vspace{1.5cm}
+
+\underline{\emph{Théorème - définition}} : On suppose E est \underline{orienté} de \underline{dimension 2}.\vspace{0.1cm}\\
+Soit $r$ une rotation de E. Il existe \(\theta_0\in \RR\,\) tel que pour toute base orthonormale directe \(\,\mathcal{B}\,\) de E, \(M_\mathcal{B}(r)=R(\theta_0)\). Si \(\,\theta'_0\,\) est un autre réel vérifiant \(M_\mathcal{B}(r)=R(\theta'_0)\) pour toute base orthogonale directe de E, alors \(\ \theta'_0 \in \theta_0 +2\pi \ZZ,\quad i.e.\ \; \theta'_0\equiv \theta_0\ [2\pi] . \)\vspace{0.2cm}\\
+L'ensemble \(\,\theta_0+2\pi \ZZ\,\) est appelé \textbf{ensemble des mesures de la rotation}\index{ensemble des mesures d'une rotation} $r$, et tout réel $\theta$ de cet ensemble est appelé une \textbf{mesure de la rotation}\index{mesure d'une rotation} $r$.
+
+\vspace{1.3cm}
+
+\underline{\emph{Théorème - définition}} : On suppose que E est \underline{orienté} de \underline{dimension 3}.\vspace{0.1cm}\\
+Soit \(r\in SO(E)\) telle que \(r\neq id_E.\)
+\begin{itemize}[leftmargin=1cm]
+    \item[•] \(D= \ker \bigl(r+id_E \bigr)\) est une droite vectorielle de E et $r$ induit dans le plan euclidien \(D^\bot\) une rotation $\tilde{r}$ distincte de $id_{D^\bot}$. On dit que $r$ est une \textbf{rotation axiale}\index{rotation axiale} d'axe D.\vspace{0.2cm}
+    
+    \item[•] On choisit un vecteur \underline{unitaire} $k$ de D et on \underline{oriente} l'axe D de la rotation $r$ en décrétant que $\bigl(k\bigr)$ est une base directe de D. On considère une base orthonormale $\bigl(i,j\bigr)$ de $D^\bot$ telle que \(\,\mathcal{B}=\bigl(i,j,k\bigr)\) soit une base directe de E et on \underline{oriente} le plan vectoriel $D^\bot$ en décrétant que $\bigl(i,j\bigr)$ est une base directe du plan euclidien $D^\bot$.\\
+    Si $\theta$ est une mesure de la rotation $\tilde{r}$ alors on a : \(M_\mathcal{B}(r)=\left[
+        \begin{array}{lrc}
+            \cos \theta & -\sin \theta & 0 \\
+            \sin \theta & \cos \theta & 0 \\
+            \ \; 0 & 0 \ \; & 1
+        \end{array}
+    \right] \) et \(\, \text{tr}\,r=1+\cos \theta.\)
+\end{itemize}
+
+\vspace{1cm}
+
+\underline{\emph{Théorème - définition}} : Si \(u \in \mathscr{L}(E)\,\) alors il existe un unique endomorphisme $u^*$ de E vérifiant :\vspace{-0.4cm} \[\forall(x,y)\in E^2,\ \; \psm{u(x)}{y}=\psm{x}{u^*(y)\,}\]
+
+\vspace{-0.2cm}
+On dit que $u^*$ est \textbf{l'adjoint}\index{endomorphisme adjoint} de $u$.
+
+
+
+\vspace{2cm}

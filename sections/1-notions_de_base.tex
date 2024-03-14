@@ -1,0 +1,511 @@
+\section{Notions de base}
+
+\vspace{0.8cm}
+
+\subsection{Notations}
+\vspace{0.7cm}
+
+\(\KK \ \text{désigne} \ \RR \ ou\ \CC\)
+\[\overline{\RR}=\RR \cup  \{ -\infty,+\infty\}, \qquad \RR_+ = \{ x\in \RR \ \mid \ x\geq 0 \}\] 
+\[\RR_- = \{ x\in \RR \ \mid \ x\leq 0 \}, \qquad \RR^* = \{ x\in \RR \ \mid \ x\neq 0 \},\qquad i\,\RR=\bigl\{z\in \CC \ \mid \ \text{Re}\,z=0\bigr\}. \]
+
+
+
+
+\vspace{0.5cm}
+\noindent
+\(\ell^1(\KK)= \{ (u_n)\in \KK ^\NN \ | \ \sum |u_n| \ \text{converge}\}\)\vspace{0.2cm}\\
+\(\ell^2(\KK)= \{ (u_n)\in \KK ^\NN \ | \ \sum |u_n|^2 \ \text{converge}\}\)\vspace{0.2cm}\\
+\(\ell^\infty(\KK)= \{ (u_n)\in \KK ^\NN \ | \ (u_n) \ \text{est bornée}\}\)
+
+\vspace{1cm}
+
+Soient (K, +,\ \x) un corps, E et F deux K-espaces vectoriels.
+\begin{itemize}[leftmargin=0cm, label=•]
+    \item L(E,F) ou \(\mathscr{L}\)(E,F) : ensemble des applications linéaires de E dans F. 
+    
+    \item Isom(E,F) : ensemble des isomorphismes de E sur F.
+    
+    \item L(E) ou \(\mathscr{L} \)(E) : ensemble des endomorphismes de E.
+    
+    \item E\expo{*} ou L(E,K) ou \(\mathscr{L} \)(E,K) : ensemble des formes linéaires sur E ou espace dual de E.
+    
+    \item GL(E) ou Isom(E,E) : ensemble des automorphismes de E. 
+    
+    \item Lorsque \(\dim E=n\geq 1\), \(\ \Lambda_n(E)\) : ensemble des formes n-linéaires alternées sur E.
+\end{itemize}
+
+\vspace{1.3cm}
+
+Soient (K, +,\ \x) un corps et \((m,n)\in (\NN^*)^2\).
+\begin{itemize}[leftmargin=0cm,label=•]
+    \item $\poly$ ou K\(^{(\NN)}\) : ensemble des polynômes à une indéterminée à coefficients dans K.
+    
+    \item K\(_n [ \)X\(] =\{ P\in \poly \ | \ \deg P\leq n\} \) : ensemble des polynômes à coefficients dans K de degré \(\leq n\).
+    
+    \item K(X) : ensemble des fractions rationnelles à une indéterminée à coefficients dans K.
+    
+    \item \(\mathcal{M}_{m,n}(K)\) ou M\ind{m,n}(K) : ensemble des matrices de tailles m\x n à coefficients dans K. 
+    
+    \item \(\mathcal{M}_n(K)\) ou M\ind{n}(K) : ensemble des matrices carrées de tailles n\x n à coefficients dans K. 
+    
+    \item \(GL_n(K)\) ou \(GL(n,K)\) : ensemble des matrices inversibles de \(\mathcal{M}_n(K)\).
+    
+    \item \(S_n(K)\) ou \(S^n\) ou \(\mathscr{S}_n(K)\) : ensemble des matrices symétriques de \(\mathcal{M}_n(K).\)
+    
+    \item \(S_n^+(\RR)\) ou \(\mathscr{S}_n^+(K)\) : ensemble des matrices réelles symétriques positives.\footnote{On dit parfois matrice réelle autoadjointe.}
+    
+    \item \(S_n^{++}(\RR)\) ou \(\mathscr{S}_n^{++}(K)\) : ensemble des matrices réelles symétriques définies positives.
+    
+    \item \(O_n(\RR)\) ou \(O(n,\RR)\) : ensemble des matrices orthogonales de \(\mathcal{M}_n(\RR)\).
+    
+    \item \(SO_n(\RR)\) ou \(SO(n,\RR)\) : ensemble des matrices orthogonales positives de \(\mathcal{M}_n(\RR).\)
+    
+    \item \(SL_n(\KK)=SL(n,\KK)=\bigl\{M\in\mathcal{M}_n(\KK) \ \mid \ \det M=1\bigr\}\) : muni de la multiplication, on l'appelle le groupe spécial linéaire.
+    
+    \item \(ST_n(\RR)\) ou \(ST(n,\RR)\) : ensemble des matrices stochastiques de \(\mathcal{M}_n(\RR).\)
+     
+    \item \(\ZZ /n\ZZ=\{\overline{a},\ a\in \ZZ\}=\{x\in \mathcal{P}(\ZZ),\ \exists a\in \ZZ \ \rvert \ x=\overline{a} \}. \) 
+    
+    \item Si p est un nombre premier, l'ensemble \(\ZZ /p\ZZ\) est noté \(\mathbb{F}_p\).
+    
+    \item \(\mathbb{U}=\{z\in \CC,\ |z|=1\}\) : muni de la multiplication, on l'appelle le groupe unité.
+    
+    \item \(\mathbb{U}_n=\{z\in \CC,\ z^n=1\}\) : ensemble des racines n-ième de l'unité\index{racine n-ième de l'unité}.
+\end{itemize}
+
+\vspace{1.3cm}
+
+Si \((p,q)\in \NN^2\), on pose par définition : \(\llbracket p,q \rrbracket = \{n\in \NN \ \rvert \ p\leq n\leq q \}\).\vspace{0.1cm}\\
+Si \(p>q\) alors \(\llbracket p,q \rrbracket = \varnothing\) et si \(p\leq q\) alors \(\llbracket\, p,q \rrbracket = \{p,p+1,\cdots,q-1,q\}\).
+
+\vspace{1.3cm}
+
+\noindent Soient E et F deux ensembles, F\expo{E} désigne l'ensemble des applications de E vers F.\vspace{0.2cm}\\
+Étant donné un ensemble E, l'ensemble des bijections de E sur E est noté S\ind{E}.\\
+Étant donné \(n\in \NN^*\), l'ensemble des bijections de \(\llbracket 1,n\rrbracket\) sur \(\llbracket 1,n\rrbracket\) est noté S\ind{$n$}.
+
+\vspace{1.2cm}
+
+\noindent Une permutation \(\sigma\) de S\ind{$n$} est notée \(\sigma=\left(
+\begin{array}{cccc}
+    1 & 2 & \cdots & n \\
+    \sigma(1) & \sigma(2) & \cdots & \sigma(n)
+\end{array}
+ \right).\)\vspace{-0.2cm}\\
+La permutation \(id_{\llbracket 1,n\rrbracket}\) est notée \(e\).\\
+La composée \(\sigma_1\circ \sigma_2\) de permutations de S\ind{$n$} est notée \(\sigma_1 \sigma_2\) et est appelée \textbf{produit}\index{produit de permutations} de \(\sigma_1\) par \(\sigma_2\).\\
+Soit E un ensemble et \(\sigma \in S_E\), on note Supp\(\, \sigma =\{x\in E \ \rvert \ \sigma(x)\neq x \} \) le support de \(\sigma\).
+
+\vspace{1.4cm}
+
+\begin{itemize}[leftmargin=0cm]
+    \item[] \hspace{0.5cm} \textbf{• Notation multiplicative}\index{notation multiplicative dans un groupe}\vspace{0.3cm}\\
+    Soit (G,\ \lci) un groupe.\vspace{0.1cm}\\
+    Pour \((x,y)\in G^2\) l'élément \(x\star y\) de G est noté \(x\times y\) ou plus simplement \(xy\).\\
+    L'élément neutre est noté \(1_G.\) On a donc \(\forall x\in G,\ x1_G=1_Gx=x.\)\\
+    Le symétrique de \(x\) est noté \(x^{-1}\) et est appelé \textbf{inverse}\index{inverse} de \(x\). On a donc : \(\forall x\in G,\ xx^{-1}=x^{-1}x=1_G.\)\vspace{0.4cm}\\
+    Soit \(x\in G\) et \(n\in \ZZ\).
+    Par définition on pose : \( x^n= \left\{
+    \begin{array}{ll}
+        \underset{x \text{ figurant } n \text{ fois} }{\underbrace{x\times \cdots \times x}} & \text{si } n\geq 1 \vspace{0.3cm} \\
+        \underset{x^{-1} \text{ figurant } (-n) \text{ fois} }{\underbrace{x^{-1}\times \cdots \times x^{-1}}} & \text{si } n\leq -1\vspace{0.3cm} \\
+        1_G & \text{si } n=0
+    \end{array}
+    \right. \)
+
+    \newpage
+
+    \item[] \hspace{0.5cm} \textbf{• Notation additive}\index{notation additive dans un groupe}\vspace{0.3cm}\\
+    Soit (G,\ \lci) un groupe.\vspace{0.1cm}\\
+    Pour \((x,y)\in G^2\) l'élément \(x\star y\) de G est noté \(x+y\).\\
+    L'élément neutre est noté \(0_G\). On a donc : \(\forall x\in G,\ x+0_G=0_G+x=x\).\\
+    Le symétrique de \(x\) est noté \(-x\) et est appelé \textbf{opposé}\index{opposé} de \(x\).\\
+    On a donc : \(\forall x\in G,\ x+(-x)=(-x)+x=0_G.\)\\
+    Enfin, pour \((x,y)\in G^2\), on pose par définition : \(x-y=x+(-y).\)\vspace{0.4cm}\\
+    Soit \(x\in G\) et \(n\in \ZZ\).
+    Par définition on pose : \( nx= \left\{
+    \begin{array}{ll}
+        \underset{x \text{ figurant } n \text{ fois} }{\underbrace{x+ \cdots + x}} & \text{si } n\geq 1 \vspace{0.3cm} \\
+        \underset{(-x) \text{ figurant } (-n) \text{ fois} }{\underbrace{(-x)+\cdots+(-x)}} & \text{si } n\leq -1\vspace{0.3cm} \\
+        0_G & \text{si } n=0
+    \end{array}
+    \right. \)
+\end{itemize}
+
+\vspace{1.7cm}
+
+Soit E un ensemble. On note \(\mathcal{P}(E)\) l'ensemble des parties de E, et \(\mathcal{P}_f(E)\) l'ensemble des parties finies de E.
+
+\vspace{1cm}
+
+Soit X une VAD sur \(\bigl(\Omega,\,\mathcal{A}\bigr)\) à valeurs dans E, \(A\in \mathcal{P}(E)\) et \(x\in E\).\vspace{0.1cm}\\
+L'ensemble \(X^{-1}(A)=\{\omega\in \Omega \ \rvert \ X(\omega)\in A\}\;\) est noté \((X\in A)\) ou encore \(\{X\in A\}\).\vspace{0.1cm}\\
+L'ensemble \(X^{-1}(\{x\})=\{\omega\in \Omega \ \rvert \ X(\omega)=x\}\;\) est noté \((X=x)\) ou encore \(\{X=x\}\).\vspace{0.1cm}\\
+
+Si de plus X est à valeurs \underline{réelles} alors \(x\in \RR\) et on note :\vspace{0.1cm}\\
+L'ensemble \(X^{-1}\bigl(\,]-\infty,x\,]\,\bigr)=\{\omega\in \Omega \ \rvert \ X(\omega)\leq x\}\;\) est noté \((X\leq x)\) ou encore \(\{X\leq x\}\).\vspace{0.1cm}\\
+L'ensemble \(X^{-1}\bigl(\,]-\infty,x\,[\,\bigr)=\{\omega\in \Omega \ \rvert \ X(\omega)< x\}\;\) est noté \((X< x)\) ou encore \(\{X< x\}\).\vspace{0.1cm}\\
+L'ensemble \(X^{-1}\bigl(\,[\,x,+\infty]\,\bigr)=\{\omega\in \Omega \ \rvert \ X(\omega)\geq x\}\;\) est noté \((X\geq x)\) ou encore \(\{X\geq x\}\).\vspace{0.1cm}\\
+L'ensemble \(X^{-1}\bigl(\,]\,x,+\infty[\,\bigr)=\{\omega\in \Omega \ \rvert \ X(\omega)> x\}\;\) est noté \((X> x)\) ou encore \(\{X> x\}\).
+
+\vspace{1cm}
+
+\subsection{Généralités}
+
+\vspace{0.8cm}
+
+\textbf{Symbole de Kronecker}\index{symbole de Kronecker} : \(\delta_{ij}=\left\{ \begin{array}{cc}
+    1 & \text{si } i=j \\
+    0 & \text{si } i\neq j
+\end{array} \right. \)
+
+\vspace{1.2cm}
+
+\noindent Soit \(x\in \RR\).\,  On pose : \(\left\{ 
+\begin{array}{l}
+    x^+=\max\bigl(x,0\bigr) \vspace{0.1cm}\\
+    x^-=\max \bigl(-x,0\bigr)
+\end{array} \right. \) \hspace{0.3cm} on a donc \(\ x=x^+-x^-\ \) et \(\ |x|=x^++x^-.\)
+
+
+\vspace{1.2cm}
+
+\textbf{Racine n-ième}\index{racine n-ième} : Soit \(n\in \NN\)\expo{*}, \(\displaystyle\ \sqrt[n]{x}=y. \)\vspace{0.1cm}\\
+•\, \underline{Si $n$ est pair} : $y$ est l'unique réel positif qui vérifie \(\:y^n=x.\)\vspace{0.2cm}\\
+•\, \underline{Si $n$ est impair} : $y$ est l'unique réel qui vérifie \(\:y^n=x.\)
+
+\vspace{1.3cm}
+
+\noindent Soit \(\,x\in\RR.\)\vspace{-0.2cm}
+\begin{itemize}[leftmargin=1cm,label=•]
+    \item La \textbf{partie entière}\index{partie entière}\footnote{On l'appelle aussi partie entière par défaut ou partie entière inférieure. En anglais on l'appelle $floor$.} de $x$ est l'unique entier relatif $\,n\,$ vérifiant : \(\ n\,\leq \,x\,< n+1.\)\vspace{0.1cm}\\
+    On la note \(\,\left\lfloor x\right\rfloor \,\), \,E$(x)\,$ ou\, \underline{E}$(x)$.\vspace{0.1cm}
+    
+    \item La \textbf{partie entière supérieure}\index{partie entière supérieure}\footnote{On l'appelle aussi partie entière par excès. En anglais on l'appelle $ceil$.} de $x$ est l'unique entier relatif $\,m\,$ vérifiant : \(\ m-1<\,x\,\leq \,m\).\vspace{0.1cm}\\
+    On la note \(\,\left\lceil x\right\rceil\, \) ou $\,\overline{\text{E}}(x)$.\vspace{0.1cm}
+
+    \item La \textbf{partie fractionnaire}\index{partie fractionnaire} de $x\,$ est le réel noté \(\{x\}\) défini par : \(\,\{x\}=x-\left\lfloor x\right\rfloor \).
+\end{itemize}
+
+\vspace{1.3cm}
+
+Soit \(z\in \CC\).\vspace{-0.1cm}
+\begin{itemize}[leftmargin=0cm,label=•]
+    \item \textbf{Forme algébrique}\index{forme algébrique d'un complexe} : \(\,\exists !(a,b)\in \RR^2,\ \; z=a+ib.\)\vspace{0.1cm}\\
+    Le réel $a$ est appelé la \textbf{partie réelle}\index{partie réelle} de $z$ et est noté\, Re$\,z\,$ ou \(\,\Re\, z\).\\
+    Le réel $b$ est appelé la \textbf{partie imaginaire}\index{partie imaginaire} de $z$ et est noté\, Im$\,z\,$ ou \(\,\Im\, z.\)\vspace{0.2cm}
+
+    \item \textbf{Forme trigonométrique}\index{forme trigonométrique d'un complexe} : Si \(z\neq 0\,\) alors \(\displaystyle\,\exists ! r>0, \ \,\exists !\, \theta_0 \in\, ]-\pi,\pi], \ \ z=re^{i\theta_0}.\)\vspace{0.1cm}\\
+    Le réel strictement positif $r$ est appelé \textbf{module}\index{module}\footnote{On définit le module par : \(\,|z|=\sqrt{z\bar{z}}\).} de $z$ et est noté \(\,|z|.\qquad \bigl(|0|=0\bigr)\)\\
+    Le réel $\,\theta_0\,$ est appelé \textbf{argument principal}\index{argument principal d'un xomplexe} de $z$.\vspace{0.1cm}\\
+    Pour $z\neq 0$, tout réel $\,\theta\,$ vérifiant \(z=re^{i\theta}\) est un \textbf{argument}\index{argument d'un complexe} de $z$. On note \(\,arg\,z\,\) l'ensemble des arguments de $z$.\vspace{0.1cm}\\
+    \(arg\,z=\bigl\{\theta_0+2k\pi, \ k\in \ZZ\bigr\}\,\) avec \(\,\theta_0\,\) l'argument principal de $z$.
+\end{itemize}
+
+\vspace{1cm}
+
+Soit \(\,z=x+iy\,\) un nombre complexe.\vspace{0.1cm}\\
+On appelle \textbf{conjugué}\index{conjugué d'un complexe} de $z$ le complexe noté \(\,\bar{z} \,\) défini par : \(\,\bar{z}=x-iy.\)\vspace{0.1cm}\\
+On a donc \(\,\text{Re}\,z=\text{Re}\,\bar{z}\:\) et \(\,\text{Im}\,z=-\text{Im}\,\bar{z}.\)
+
+\vspace{1.3cm}
+
+\noindent Soit \(n\in \NN\),\, on pose\index{factorielle} \(\;n!=\left\{
+\begin{array}{ll}
+    n(n-1)! & \text{si }\, n\geq 1\vspace{0.1cm}\\
+    1 & \text{si }\, n=0
+\end{array}
+\right.\)
+
+\vspace{1.2cm}
+
+Pour \((n,p)\in \NN^2,\,\) on note \(\,\displaystyle \binom{n}{p}\,\) (ou \(\,C_n^p\,\)) le nombre de partie à $p$ éléments dans un ensemble à $n$ éléments\index{coefficient binomial}. \vspace{0.1cm}\\
+Soit \((n,p)\in\NN^2\).\, Si $\,p>n\,$ alors \(\displaystyle\, \binom{n}{p}=0.\quad\) Si $\,p\leq n\,$ alors \(\,\displaystyle \binom{n}{p}=\frac{n!}{p!(n-p)!}\)\vspace{1cm}\\
+Soient $\alpha\in \CC\,$ et $\,p\in \NN$. Si $\,p>\alpha\,$ alors \(\displaystyle\, \binom{\alpha}{p}=0.\quad\) Si $\,p\leq \alpha\,$ alors \(\displaystyle\, \binom{n}{p}=\frac{\alpha(\alpha-1)(\alpha-2)\cdots(\alpha-p+1)}{p!} \) 
+
+
+\vspace{1cm}
+
+\subsection{Relations}
+
+\vspace{0.5cm}
+
+On appelle \textbf{relation}\index{relation} tout couple \(\mathcal{R}=\) (E, \(\Gamma\)) où E est un ensemble et où \(\Gamma\) est une partie de E\texttimes E.\\ 
+Une telle relation \(\mathcal{R}\) est appelée une relation sur l'ensemble E.\\ 
+L'ensemble \(\Gamma\) est appelé le \textbf{graphe}\index{graphe} de la relation \(\mathcal{R}\).\vspace{0.1cm} \\ 
+Étant donnés deux éléments $x$ et $y$ de E, on dit que $x$ est en relation avec $y$ \ssi le couple $(x,y)$ appartient à \(\Gamma\). Pour exprimer cela\footnote{Attention à l'ordre !}, on note \(x\mathcal{R}y\).
+
+\vspace{1cm}
+
+\noindent
+Soit \(\mathcal{R}\) une relation sur l'ensemble E.
+\vspace{0.1cm}
+\begin{itemize}
+    \item[•] \(\mathcal{R}\) est dite \textbf{réflexive}\index{réflexivité} \ssi : \(\ \forall x \in E,\ \ x\mathcal{R}x\).\vspace{0.1cm}
+    
+    \item[•] \(\mathcal{R}\) est dite \textbf{symétrique}\index{symétrie} \ssi : \(\ \forall(x,y)\in E^2,\ \  x\mathcal{R}y \ \Rightarrow \ y\mathcal{R}x\).\vspace{0.1cm}
+    
+     \item[•] \(\mathcal{R}\) est dite \textbf{antisymétrique}\index{antisymétrie}\footnote{Ce n'est pas l'inverse de symétrique.} \ssi : \(\ \forall(x,y)\in E^2,\ \  \left( x\mathcal{R}y\ \ et\ \ y\mathcal{R}x \right) \Rightarrow x=y\).\vspace{0.1cm}
+     
+     \item[•] \(\mathcal{R}\) est dite \textbf{transitive}\index{transitivité} \ssi : \(\ \forall(x,y,z)\in E^3,\ \  \left( x\mathcal{R}y\ \ et\ \ y\mathcal{R}z \right)\ \Rightarrow\ x\mathcal{R}z\).
+\end{itemize}
+
+\vspace{0.8cm}
+
+\noindent
+Soit \(\mathcal{R}\) une relation sur l'ensemble E.
+\begin{itemize}[leftmargin=0cm]
+    \item[•] \(\mathcal{R}\) est une \textbf{relation d'équivalence}\index{relation d'équivalence} sur E \ssi : \(\mathcal{R}\) est \emph{réflexive}, \emph{symétrique} et \emph{transitive}. \\
+    On la note alors avec le symbole \(\, \sim\).\vspace{0.1cm}
+    
+    \item[•] \(\mathcal{R}\) est une \textbf{relation d'ordre}\index{relation d'ordre} sur E \ssi : \(\mathcal{R}\) est \emph{réflexive}, \emph{antisymétrique} et \emph{transitive}. \\
+    On la note alors avec le symbole \(\, \leq\).
+\end{itemize}
+
+\vspace{1cm}
+
+Soient \(\,\sim\,\) une relation d'équivalence sur l'ensemble E et $x\in E$. L'ensemble \( \left\{ y\in E\ |\ y\sim x \right\} \) est noté \([x]_\sim\) et est appelé \textbf{classe d'équivalence}\index{classe d'équivalence} de $x$. Il s'agit d'une partie de E et on dit que ses éléments en sont des \textbf{représentants}\index{représentants}.\vspace{0.1cm} \\
+\emph{\underline{Théorème - Définition}} : Si  \(\,\sim\,\)  est une relation d'équivalence sur l'ensemble E alors il existe une famille \((x_i)_{i\in I}\) d'éléments de E telle que : \[E=\ \bigcup _{i\in I}\ [x_i]_{\sim}\ \ \ et\ \ \ \forall (i,j)\in I^2,\ \ i\neq j\  \Rightarrow\ [x_i]_{\sim} \cap [x_j]_{\sim} = \varnothing \] 
+\indent Une telle famille \((x_i)_{i\in I}\) est appelée un \textbf{système complet de représentants}\index{système complet de représentants} de (E, \(\sim\)).
+
+\vspace{1.3cm}
+
+On appelle \textbf{ensemble ordonné}\index{ensemble ordonné} tout couple (E, \(\leq\)) où E est un ensemble et où \ \(\leq\) \ est une relation d'ordre sur E.\vspace{0.1cm} \\
+Deux éléments $a$ et $b$ de E sont dits \textbf{comparables}\index{comparables} \ssi \(\ a\leq b\,\)  \underline{ou} \(\,b\leq a\) .\vspace{0.1cm} \\
+Si \(\ \forall (a,b)\in E^2\),  $a$ et $b$ sont comparables, alors \(\leq\) est une relation d'\textbf{ordre total}\index{ordre total}. \\
+Dans le cas contraire, on dit que  \(\leq\)  est une relation d'\textbf{ordre partiel}\index{ordre partiel}.
+
+\newpage
+
+\subsection{Applications $-$ familles}
+
+\vspace{0.7cm}
+
+\begin{center}
+Soient E, F, G, H quatre ensembles et \(\Gamma\) une partie de E\x F.
+\end{center}
+
+\vspace{1cm}
+
+\noindent
+On appelle \textbf{application}\index{application} de E vers F tout triplet \(\,f=\) (E, F,\(\ \Gamma\))\, qui vérifie :\vspace{-0.2cm}
+\begin{center}
+    \(\forall x\in\ \)E, il existe \underline{un unique} \(\ y\in \ \)F tel que \((x,y)\in \Gamma\).
+\end{center}\vspace{-0.1cm}
+L'ensemble des applications de E dans F est noté F\expo{E}.
+
+\vspace{1cm}
+
+\noindent
+On appelle \textbf{fonction}\index{fonction} de E vers F tout triplet \(\,f= \) (E, F,\(\ \Gamma\))\, qui vérifie :\vspace{-0.2cm}
+\begin{center}
+    \(\forall x\in\ \)E, il existe \underline{au plus} un \(\ y\in\ \)F tel que \((x,y)\in \Gamma\).
+\end{center}
+L'ensemble des éléments de E qui ont une image par \(f\) est appelé \textbf{l'ensemble de définition}\index{l'ensemble de définition d'une fonction} de \(f\) et est noté D\(_f\).
+
+
+\vspace{1.3cm}
+
+\noindent Soient \(f\) : E \(\to\) F et \(g\) : G \(\to\) H deux applications. On dit que \(f\) et \(g\) sont \textbf{égales}\index{égalité d'applications} et on note \vspace{0.1cm} \\
+\(f=g\) \ssi : \(\left\{ 
+\begin{array}{ll}
+     E=G & \text{(\emph{même ensemble de départ})} \\
+     F=H & \text{(\emph{même ensemble d'arrivée})} \\
+     \forall x\in E,\ f(x)=g(x) & \text{(\emph{même processus d'association})} 
+\end{array}\right. \)
+
+\vspace{1.3cm}
+
+Soient \(f\) : E \(\to\) F une application et A une partie de E. On appelle \textbf{restriction}\index{restriction} de f à A\\
+l'application \(f_{|A}\) : A \(\to\) F définie par : \(\ \forall x\in A,\ f_{|A}(x)=f(x). \)
+
+\vspace{0.8cm}
+
+\noindent Soient \(f\) : E \(\to\) F et \(g\) : G \(\to\) H deux applications.\vspace{-0.5cm}\\
+On dit que \(g\) est un \textbf{prolongement}\index{prolongement} de f \ssi : \(\left\{ 
+\begin{array}{l}
+     E\subset G \\
+     F\subset H\\
+     \forall x\in E,\ f(x)=g(x)
+\end{array}  \right.  
+\)
+
+
+\vspace{1cm}
+
+Soient \(f\) : E \(\to\) F et \(g\) : G \(\to\) H deux applications telles que : \(\ \forall x\in E,\ f(x)\in G \). \\
+On note \(g\circ f\) l'application de E dans H définie par : \(\forall x\in E,\ (g\circ f)(x)=g(f(x)). \)\\
+L'application \(g\circ f\) est appelée la \textbf{composée}\index{composée d'application} de g par f.
+
+\vspace{1cm}
+
+\noindent On appelle \textbf{l'identité}\index{application identité} de E (notée $id_E$) l'application de E dans E définie par : \(\ \forall x\in E,\ \,id_E(x)=x. \)
+
+\vspace{1cm}
+
+Soit A une partie de E.\\
+On appelle \textbf{l'indicatrice}\index{fonction indicatrice} de A dans E l'application \vspace{-0.46cm} \\
+\( 
+\begin{array}{rrcl}
+    \hspace{9.4cm} \mathds{1}_A\ : & E & \to & \RR  \\
+                               & x & \mapsto & \mathds{1}_A(x)= \left\{ \begin{array}{ll}
+                                                                            1 & si\ \,x\in A \\
+                                                                            0 & si\ \,x\notin A
+                                                                         \end{array} \right.
+\end{array}
+\)
+
+
+
+\vspace{1cm}
+
+Soient \(f\) : E \(\to\) F une application, A une partie de E et B une partie de F.\vspace{0.1cm} \\ 
+On appelle \textbf{image directe}\index{image directe} de A par \(f\,\) l'ensemble : \(\ f(A)=\left\{f(x)\, \mid \ x\in A\right\} = \left\{ \,y\in F\: \mid \: \exists \, a\in A,\ y=f(a)\right\}\).\vspace{0.1cm} \\ 
+On appelle \textbf{image réciproque}\index{image réciproque} de B par \(f\,\) l'ensemble : \(\ f^{-1}(B)=\left\{x\in E \ \mid \ f(x)\in B \right\}\).
+
+\vspace{1cm}
+
+Soit \(f\) : E \(\to\) F une application.\vspace{-0.2cm}
+\begin{itemize}[leftmargin=0cm]
+    \item[•] \(f\) est \textbf{surjective}\index{surjection} \ssi tout élément de F admet \underline{au moins} un antécédent dans E par \(f\). \\
+    Ou, de manière équivalente : \( \ \forall y\in  F,\ \ \exists x\in E \ |\ f(x)=y. \) \\
+    Ou encore : \(f\)(E) = F.\vspace{0.3cm}
+    
+    \item[•] \(f\) est dite \textbf{injective}\index{injection} \ssi tout élément de F admet \underline{au plus} un antécédent dans E par \(f\).\\
+    Ou, de manière équivalente :  \( \forall (x,y)\in E^2, \ \ f(x)=f(y)\ \Rightarrow \ x=y \). \\
+    Ou encore : \( \ \forall (x,y)\in E^2, \ \ x\neq y\ \Rightarrow \ f(x)\neq f(y).\)\vspace{0.3cm}
+    
+    \item[•] \(f\) est dite \textbf{bijective}\index{bijection} \ssi tout élément de F admet un \underline{unique} antécédent dans E par \(f\). \\
+    Ou, de manière équivalente : \(f\) est injective et surjective. \\
+    Ou encore : \( \ \forall y\in F, \ \ \exists !x\in E \ | \ f(x)=y.\)
+\end{itemize}
+
+\vspace{1cm}
+
+Soit \(f\) : E \(\to\) F une bijection de E sur F.\\
+L'\textbf{application réciproque}\index{application réciproque} de \(f\) est l'application \(f^{-1}\) : F \(\to\) E définie par :\vspace{-0.2cm}
+\begin{center}
+    \( \forall y\in F,\ f^{-1}(y)\) est l'unique antécédent de \(y\) par \(f\).    
+\end{center}
+
+\vspace{1.2cm}
+
+\noindent Soient E et F deux K-espace vectoriels et \(\,f:E\to F\,\) une application.
+\begin{itemize}[leftmargin=1cm, label=•]
+\item \(f\) est dite \textbf{paire}\index{fonction paire} \ssi : \(\ \forall x\in E, \ \ f(-x)=f(x)\). \vspace{0.1cm}\\
+\begin{small}L'ensemble des applications de E dans F qui sont paires est noté P(E,F). \end{small} 
+
+\item \(f\) est dite \textbf{impaire}\index{fonction impaire} \ssi : \(\ \forall x\in E, \ \ f(-x)=-f(x)\). \vspace{0.1cm}\\
+\begin{small}L'ensemble des applications de E dans F qui sont impaires est noté I(E,F). \end{small}
+\end{itemize}
+
+\vspace{1.3cm}
+
+
+Une \textbf{famille}\index{famille} \(X=\bigl(x_i\bigr)_{i\in I} \) d'éléments x\ind{$i$} d'un ensemble E, indexée par un ensemble I, est une application de I dans E définie par :\vspace{-0.77cm}
+\begin{center}\(
+\begin{array}{rrcl}
+    \hspace{-2cm} X\ : & I & \to & E \\
+     & i & \mapsto & x_i
+\end{array}
+\)\end{center}
+\vspace{0.2cm}
+
+Toute famille d'éléments de E de la forme \(\bigl(x_i\bigr)_{i\in J}\) où J est une partie de I est appelée une \textbf{sous-famille}\index{sous-famille} de \(\bigl(x_i\bigr)_{i\in I}\). Toute famille d'éléments de E dont \(\bigl(x_i\bigr)_{i\in I}\) est une sous-famille est appelée une \textbf{sur-famille}\index{sur-famille} de \(\bigl(x_i\bigr)_{i\in I}\).
+
+\vspace{1cm}
+
+Soient (\(\mathcal{E}\), +,\ \lce) un \(\KK\)-espace vectoriel et I un ensemble quelconque.\\
+Soit \(x=\bigl(x_i\bigr)_{i\in I}\) une famille d'éléments de \(\mathcal{E}\), l'ensemble \(S_x=\{i\in I \ | \ x_i \neq 0_{\mathcal{E}} \} \) est appelé le \textbf{support}\index{support d'une famille} de la famille \(x=\bigl(x_i\bigr)_{i\in I}\).\\
+La famille \(x=\bigl(x_i\bigr)_{i\in I}\) est dite \textbf{presque nulle}\index{famille presque nulle} \ssi son support \(S_x\) est un ensemble fini.\\
+\begin{small}
+    L'ensemble des familles presques nulles de vecteurs de $\mathcal{E}$ indexées par I est noté $\mathcal{E}$\expo{(I)}.
+\end{small}
+
+\vspace{1cm}
+
+\noindent Une \textbf{suite}\index{suite} d'éléments de E est une famille \(\bigl(u_n\bigr)_{n\in \NN}\) d'éléments de E indexée par \(\NN\).\vspace{0.1cm} \\
+Une \textbf{suite double}\index{suite double} d'éléments de E est une famille \(\bigl(a_{pq}\bigr)_{(p,q)\in \NN ^2}\) d'éléments de E indexée par \(\NN ^2\).
+
+\newpage
+
+\noindent On appelle \textbf{partition}\index{partition} de l'ensemble E toute famille \(\bigl(A_i\bigr)_{i\in I}\) de parties de E qui vérifie :
+\begin{itemize}[leftmargin=2cm]
+    \item[\lce] \(\forall i\in I,\ A_i \neq \varnothing \) \hspace{3.9cm} (\emph{Parties non vides})
+
+    \item[\lce] \(\forall (i,j)\in I^2,\ \ i\neq j\ \Rightarrow \ A_i \cap A_j = \varnothing \) \ \ (\emph{Deux à deux disjointes})
+
+    \item[\lce] E  \(=\displaystyle \bigcup _{i\in I} A_i \)
+\end{itemize}
+
+\vspace{1cm}
+
+Soit \((a,b)\in\RR^2\,\) tel que $a<b$. On appelle \textbf{subdivision du segment}\index{subdivision du segment} $[a,b]\,$ toute famille finie \(\sigma=(a_i)_{i\in \llbracket 0,n \rrbracket}\,\) de points de $[a,b]\,$ vérifiant : \(\, a=a_0<a_1<\cdots<a_n=b.\)\vspace{0.2cm}\\
+Le réel \(\, \displaystyle \delta( \sigma )=\max_{1\leq i \leq n}\bigl(a_i-a_{i-1}\bigr)\, \) est appelé \textbf{pas de la subdivision}\index{pas de la subdivision} $\sigma$.\vspace{0.2cm}\\
+A\((\sigma)=\{a_0,\cdots,a_n\}\,\) est appelée \textbf{support de la subdivision}\index{support de la subdivision} $\sigma$.
+
+
+\vspace{1cm}
+
+
+
+\subsection[Ensembles]{Ensembles, ensembles finis ou dénombrables}
+
+\vspace{0.9cm}
+
+Soient E un ensemble et A, B deux parties de E.
+\begin{itemize}[leftmargin=1cm,label=•]
+	\item On dit que B est \textbf{inclu}\index{inclusion} dans A, et on note $\,B\subset A\,$, \ssi : \(\,\forall x\in B,\ \, x\in A\).
+	
+	\item On appelle \textbf{complémentaire}\index{complémentarité} de A dans E l'ensemble \(\,E\!\setminus\!A=\{x\in E \ \mid \ x\notin A\}\).\vspace{0.1cm}\\
+	\begin{small} On note aussi \(\displaystyle\,\overline{A},\ \overline{A}^E,\ \complement_{_E}^{^A}\,\) ou \(\,A^C\).\end{small}
+	
+	\item On appelle \textbf{différence}\index{différence d'ensemble} de B et A l'ensemble \(\,B\!\setminus\!A = \{x\in E \ \mid \ x\in B \, \text{ \underline{et} } x\notin A\}\). 
+	
+	\item L'\textbf{intersection}\index{intersection} de A et B est l'ensemble \(\,A\cap B=\{x\in E \ \mid \ x\in A\, \text{ \underline{et} }\, x\in B\}\).
+	
+	\item La \textbf{réunion}\index{réunion} de A et B est l'ensemble \(\,A\cup B=\{x\in E \ \mid \ x\in A \, \text{ \underline{ou} } \, x\in B\}\).
+	
+	\item La \textbf{différence symétrique}\index{différence symétrique} de A et B est l'ensemble \(\,A\Delta B\,\) défini par :\vspace{0.1cm}\\
+    \(A\Delta B=\bigl(A\!\setminus\! B\bigr)\cup \bigl(B\!\setminus\!A\bigr)=\bigl(A\cap \overline{B}\bigr)\cup\bigl(B\cap \overline{A}\bigr)\).
+
+\end{itemize}
+
+\vspace{1cm}
+
+Un ensemble qui ne contient qu'un seul élément est appelé un \textbf{singleton}\index{singleton}.
+
+\vspace{1cm}
+
+\(\left(\mathbf{H}\mathbf{P}\right)\) $-$ On dit qu'un ensemble E est \textbf{équipotent}\index{équipotent} à un ensemble F \ssi il existe une bijection de E sur F.
+
+\vspace{1cm}
+
+\noindent On dit qu'un ensemble E est \textbf{fini}\index{ensemble fini} \ssi il existe \(p\in \NN\) tel que E soit équipotent à \(\llbracket 1,p \rrbracket\). L'ensemble E est dit \textbf{infini}\index{ensemble infini} \ssi E n'est pas fini.
+
+\vspace{1cm}
+
+Si E est un ensemble alors on définit le symbole |E| de la façon suivante :\\
+Si E est un ensemble fini alors |E| est égal au cardinal de E et si E est infini alors |E|\(\,=+\infty\).\\
+Par convention on pose \(\,|\varnothing|=0.\vspace{0.1cm}\)\\ 
+Le symbole |E| est appelé \textbf{cardinal de l'ensemble}\index{cardinal d'un ensemble} E.\, On notera bien que |E|\(\, \in \NN\cup \{+\infty\}.\)
+
+\vspace{1.1cm}
+
+Soient E un ensemble et \(p\in \NN\).\vspace{-0.1cm}
+\begin{itemize}[leftmargin=0.3cm]
+    \item[•] Une \textbf{p-liste}\index{p-liste} d'éléments de E est un élément (\(x_1,\cdots,x_p\)) de E\expo{$p$}.
+    
+    \item[•] Une \textbf{p-liste d'éléments distincts}\index{p-liste d'éléments distincts} de E est un élément (\(x_1,\cdots,x_p\)) de E\expo{$p$}\ \ avec \(x_i\neq x_j\) pour \(i\neq j\).
+    
+    \item[•] Une \textbf{p-combinaison}\index{p-combinaison} de E est une partie de E de cardinal p.
+\end{itemize}
+
+
+\vspace{1cm}
+
+\noindent On dit qu'un ensemble E est \textbf{dénombrable}\index{dénombrable} \ssi E est équipotent à \(\NN\).
+
+\vspace{1.5cm}
+
