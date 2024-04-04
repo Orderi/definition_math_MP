@@ -1,4 +1,3 @@
-
 \section{Fonctions à valeurs scalaires}
 
 \vspace{0.5cm}
@@ -6,7 +5,6 @@
 \begin{center}
     \( \KK\) désigne indifféremment \(\RR\) ou \(\CC\).
 \end{center}
-
 
 \subsection{Généralités}
 
@@ -19,28 +17,27 @@ Soit E un ensemble.
 \vspace{0.6cm}
 
 \noindent Soit \(f : E\to \KK\ \) une application.
-\vspace{-0.2cm}
-\begin{itemize}
-    \item[•] \(f\) est dite \textbf{bornée}\index{fonctions à valeurs scalaires!bornée} sur E \ssi : \(\ \exists M\in \RR ^+, \ \forall x\in E, \ |f(x)|\leq M\). \\
-    \begin{small}L'ensemble des applications bornées de E dans \(\KK\) est noté B(E,\(\ \KK\)).\end{small}\vspace{0.3cm}
+\begin{itemize}[label=•]
+    \item \(f\) est dite \textbf{bornée}\index{fonctions à valeurs scalaires!bornée} sur E \ssi : \(\ \exists M\in \RR ^+, \ \forall x\in E, \ |f(x)|\leq M\). \\
+    \begin{small}L'ensemble des applications bornées de E dans \(\KK\) est noté B(E,\(\ \KK\)).\end{small}\vspace{0.4cm}
     
-    \item[•] Lorsque \(f\) est à valeurs \underline{réelles} (i.e. \(\KK=\RR\)), \\
+    \item Lorsque \(f\) est à valeurs \underline{réelles} (i.e. \(\KK=\RR\)), \\
     \(f\) est dite \textbf{majorée}\index{fonctions à valeurs scalaires!majorée} sur E \ssi : \(\ \exists M\in \RR \ | \ \forall x \in E,\ f(x)\leq M.\) \\
-    \(f\) est dite \textbf{minorée}\index{fonctions à valeurs scalaires!minorée} sur E \ssi : \(\ \exists m\in \RR \ | \ \forall x \in E,\ f(x)\geq m.\)\vspace{0.3cm}
+    \(f\) est dite \textbf{minorée}\index{fonctions à valeurs scalaires!minorée} sur E \ssi : \(\ \exists m\in \RR \ | \ \forall x \in E,\ f(x)\geq m.\)\vspace{0.4cm}
      
-    \item[•] Lorsque \(f\) est une application d'une variable \underline{réelle} et à valeurs \underline{réelles} \\
+    \item Lorsque \(f\) est une application d'une variable \underline{réelle} et à valeurs \underline{réelles} \\
     (i.e. \(\KK=\RR\) et E=\(\RR\)), \\
     \(f\) est dite \textbf{croissante}\index{fonctions à valeurs scalaires!croissante} sur E \ssi : \(\ \forall (x,y)\in E^2,\ \ x\leq y\ \Rightarrow \ f(x)\leq f(y).\) \\
     \(f\) est dite \textbf{décroissante}\index{fonctions à valeurs scalaires!décroissante} sur E \ssi : \(\ \forall (x,y)\in E^2,\ \ x\leq y\ \Rightarrow \ f(x)\geq f(y).\) \\
-    \(f\) est dite \textbf{monotone}\index{fonctions à valeurs scalaires!monotone} sur E \ssi \(f\) est décroissante ou croissante sur E.\vspace{0.3cm}
+    \(f\) est dite \textbf{monotone}\index{fonctions à valeurs scalaires!monotone} sur E \ssi \(f\) est décroissante ou croissante sur E.\newpage
     
-    \item[•] Lorsque E\(\ \subset \KK\), on appelle \textbf{période}\index{période} de \(f\) tout élément T de E vérifiant :\vspace{-0.3cm}
+    \item Lorsque E\(\ \subset \KK\), on appelle \textbf{période}\index{période} de \(f\) tout élément T de E vérifiant :\vspace{-0.3cm}
     \begin{center}\(\ \forall x\in E,\ f(x+T)=f(x).\)\end{center}\vspace{-0.3cm}
     \begin{small}L'ensemble des périodes de l'application \(f\) est noté P(\(f\)).\end{small} \\
-    On dit que \(f\) est \textbf{périodique}\index{fonction périodique} \ssi \(f\) admet au moins une période non nulle.\vspace{0.3cm}
+    On dit que \(f\) est \textbf{périodique}\index{fonction périodique} \ssi \(f\) admet au moins une période non nulle.\vspace{0.4cm}
 
     
-    \item[•] Lorsque E est un \underline{intervalle} de $\RR$, et \(f\) est à valeurs \underline{réelles} (i.e. \(f : E\to \RR\ \)),\vspace{0.1cm} \\
+    \item Lorsque E est un \underline{intervalle} de $\RR$, et \(f\) est à valeurs \underline{réelles} (i.e. \(f : E\to \RR\ \)),\vspace{0.1cm} \\
     \(f\) est dite \textbf{convexe}\index{fonction convexe} sur E \ssi : \( \ \forall (x,y) \in E^2,\ \forall \lambda \in [0,1],\) on a : \vspace{-0.3cm} 
     \begin{center}\(f\bigl((1-\lambda)x+\lambda y\bigr) \leq (1-\lambda)f(x) + \lambda f(y).\) \end{center} 
     \(f\) est dite \textbf{concave}\index{fonction concave} sur E \ssi :\( \ \forall (x,y) \in E^2,\ \forall \lambda \in [0,1],\) on a : \vspace{-0.3cm} 
@@ -52,7 +49,7 @@ Soit E un ensemble.
 Soient \(\,f:I\to\KK\,\) une application et \(a\in I\). On dit que $f$ est \textbf{continue au point a}\index{fonctions à valeurs scalaires!continue en un point}\footnote{Sinon on dit que $a$ est un point de discontinuité de $f$} \ssi \(\,\displaystyle \adjustlimits\lim_{t\,\to\,a} f(t)=f(a)\).\vspace{0.2cm}\\
 On dit que $f$ est \textbf{continue sur I}\index{fonctions à valeurs scalaires!continue sur un intervalle} \ssi $f$ est continue en tout point de I.
 
-\vspace{1cm}
+\vspace{1.2cm}
 
 \noindent Soient \(\,f:I\to \RR\,\) une application et \(a\in I\).
 \begin{itemize}[leftmargin=1cm, label=•]
@@ -62,38 +59,40 @@ On dit que $f$ est \textbf{continue sur I}\index{fonctions à valeurs scalaires!
 
 \end{itemize}
 
-\vspace{1cm}
+\vspace{1.2cm}
 
 On dit que \(\,f:[a,b]\to \KK\,\) est \textbf{en escalier}\index{application en escalier} sur $[a,b]\,$ \ssi il existe une subdivision\\
 \(\sigma=(a_i)_{i\in \llbracket 0,n \rrbracket}\,\) de $[a,b]\,$ telle que pour tout \(i\in \llbracket 1,n \rrbracket\),\, $f\,$ soit constante sur l'intervalle ouvert \(]a_{i-1},\, a_i[\,\).\vspace{0.1cm}\\
 Une telle subdivision $\sigma$ est dite \textbf{adaptée}\index{fonctions à valeurs scalaires!subdivision adaptée} à $f$.\vspace{0.1cm}\\
 \begin{small}
     L'ensemble des applications de $[a,b]\,$ dans $\,\KK\,$ qui sont en escalier sur $[a,b]\,$ est noté \(\,\mathcal{E}\bigl([a,b]\,,\KK\bigr).\)
-\end{small}
+\end{small}\\
+Une application est en escalier sur un intervalle I \ssi elle est en escalier sur tout segment contenu dans I.
 
-\vspace{1cm}
+\vspace{1.2cm}
 
 On dit que \(\,f:[a,b]\to \KK\,\) est \textbf{continue par morceaux}\index{fonctions à valeurs scalaires!continue par morceaux sur un segment} sur \([a,b]\,\) \ssi il existe une subdivision \(\sigma=(a_i)_{i\in \llbracket 0,n \rrbracket}\,\) de $[a,b]\,$ telle que pour tout \(i\in \llbracket 1,n \rrbracket\),\, la restriction de $f$ à l'intervalle ouvert \(]a_{i-1},\,a_i[\,\) se prolonge en une application continue sur le segment \([a_{i-1},\,a_i].\)\vspace{0.1cm}\\
 Une telle subdivision $\sigma$ est dite \textbf{adaptée}\index{fonctions à valeurs scalaires!subdivision adaptée} à $f$.\vspace{0.1cm}\\
 \begin{small}
     L'ensemble des applications de \([a,b]\,\) dans \(\,\KK\,\) qui sont continues par morceaux sur \([a,b]\,\) est noté\, M\(^0\bigl([a,b]\,\KK\bigr).\)
-\end{small}
+\end{small}\\
+Une application est continue par morceaux sur un intervalle I \ssi elle est continue par morceaux sur tout segment contenu dans I.
 
-\vspace{1.3cm}
+\newpage
 
 Soient I un intervalle d'intérieur non vide de $\,\RR\,$, \(\,f:I\to \KK,\ a\in \KK\,\) et \(\,T_a:I\setminus \{a\}\to \KK\,\) définie par : \(\,\displaystyle T_a(t)=\frac{f(t)-f(a)}{t-a}.\)\vspace{0.1cm}
-\begin{itemize}[leftmargin=1cm]
-    \item[•] On dit que $f$ est \textbf{dérivable en un point}\index{fonctions à valeurs scalaires!dérivable au point} $a$ \ssi \(\;\displaystyle \lim_{a,\,\neq}\,T_a\:\) existe dans $\,\KK\,$.
+\begin{itemize}[leftmargin=1cm, label=•]
+    \item On dit que $f$ est \textbf{dérivable en un point}\index{fonctions à valeurs scalaires!dérivable au point} $a$ \ssi \(\;\displaystyle \lim_{a,\,\neq}\,T_a\:\) existe dans $\,\KK\,$.
     
-    \item[•] Si $a$ n'est pas l'extrémité droite de I, on dit que $f$ est \textbf{dérivable à droite}\index{fonctions à valeurs scalaires!dérivable à droite} en $a$ \ssi \(\;\displaystyle \lim_{a^+}\,T_a\;\) existe dans $\,\KK\,$. En cas d'existence, cette limite est noté \(f_d'(a)\) et est appelée dérivé à droite de $f$ en $a$.
+    \item Si $a$ n'est pas l'extrémité droite de I, on dit que $f$ est \textbf{dérivable à droite}\index{fonctions à valeurs scalaires!dérivable à droite} en $a$ \ssi \(\;\displaystyle \lim_{a^+}\,T_a\;\) existe dans $\,\KK\,$. En cas d'existence, cette limite est noté \(f_d'(a)\) et est appelée dérivé à droite de $f$ en $a$.
     
-    \item[•] Si $a$ n'est pas l'extrémité gauche de I, on dit que $f$ est \textbf{dérivable à gauche}\index{fonctions à valeurs scalaires!dérivable à gauche} en $a$ \ssi \(\;\displaystyle \lim_{a^-}\,T_a\;\) existe dans $\,\KK\,$. En cas d'existence, cette limite est noté \(f_g'(a)\) et est appelée dérivé à gauche de $f$ en $a$.
+    \item Si $a$ n'est pas l'extrémité gauche de I, on dit que $f$ est \textbf{dérivable à gauche}\index{fonctions à valeurs scalaires!dérivable à gauche} en $a$ \ssi \(\;\displaystyle \lim_{a^-}\,T_a\;\) existe dans $\,\KK\,$. En cas d'existence, cette limite est noté \(f_g'(a)\) et est appelée dérivé à gauche de $f$ en $a$.
 \end{itemize}
 
 \vspace{1cm}
 
 Une application \(\,f:I\to \KK\,\) est dite \textbf{dérivable sur l'intervalle}\index{fonctions à valeurs scalaires!dérivable sur un intervalle} I \ssi $f$ est dérivable en tout point de I. On note \(\,\mathcal{D}(I,\KK)\,\) l'ensemble des applications de I dans $\,\KK\,$ dérivables sur I.\\
-Lorsque $f$ est dérivable sur I on dispose de l'application \(\, f':I\to \KK\,\) qui à tout réel \(t\in I\) associe le scalaire \(f'(t)\) de \(\,\KK\). L'application $f'$ est appelée \textbf{application dérivée}\index{fonctions à valeurs scalaires!application dérivée} de $f$
+Lorsque $f$ est dérivable sur I on dispose de l'application \(\, f':I\to \KK\,\) qui à tout réel \(t\in I\) associe le scalaire \(f'(t)\) de \(\,\KK\). L'application $f'$ est appelée \textbf{application dérivée}\index{fonctions à valeurs scalaires!application dérivée} de $f$.
 
 \vspace{1.3cm}
 
@@ -101,15 +100,15 @@ Soit \(\, f:I\to \KK.\,\) Par convention $f$ est dite zéro fois dérivable sur 
 L'application $f$ est dite une fois dérivable sur I \ssi $f$ est dérivable sur I et\\
 on pose alors : $f^{(1)}=f'$.\vspace{0.1cm}\\
 Pour \(n\in \NN\)\expo{*}, l'application $f$ est dite \textbf{n-fois dérivable}\index{fonctions à valeurs scalaires!n-fois dérivable} sur I \ssi $f$ est $n-1$ fois dérivable sur I et si $f^{(n-1)}$ est dérivable sur I. Dans ces conditions on pose : \(f^{(n)}=\left(f^{(n-1)}\right)'.\)\vspace{0.1cm}\\
-En cas d'existence, l'application $f^{(n)}$ est appelée \textbf{dérivée n}\expo{ième}\index{fonctions à valeurs scalaires!dérivée n\expo{ième}} de $f$. L'application $f$ est dite \textbf{indéfiniment déviable}\index{fonctions à valeurs scalaires!indéfiniment déviable} sur I \ssi pour tout \(n\in \NN\), $f$ est $n$-fois dérivable sur I. 
+En cas d'existence, l'application $f^{(n)}$ est appelée \textbf{dérivée n}\expo{ième}\index{fonctions à valeurs scalaires!dérivée n\expo{ième}} de $f$. L'application $f$ est dite \textbf{indéfiniment dérivable}\index{fonctions à valeurs scalaires!indéfiniment dérivable} sur I \ssi pour tout \(n\in \NN\), $f$ est $n$-fois dérivable sur I. 
 
 \vspace{1.3cm}
 
-Soient \(\,f:I\to \KK\,\) une application et \(\,a\in I\). Si $f$ est $n$-fois dérivable en $a$ alors on appelle \textbf{Polynôme de Taylor}\index{Polynôme de Taylor} de $f$ en $a$ à l'ordre $n$ la fonction polynomiale notée $\,T_{n,f,a}\,$ définie par : \vspace{-0.1cm}
+Soient \(\,f:I\to \KK\,\) une application et \(\,a\in I\). Si $f$ est $n$-fois dérivable en $a$ alors on appelle \textbf{polynôme de Taylor}\index{polynôme de Taylor} de $f$ en $a$ à l'ordre $n$ la fonction polynomiale $\,T_{n,f,a}\,$ définie par : \vspace{-0.1cm}
 \[T_{n,f,a}(x)=\sum_{k=0}^n\frac{f^{(k)}(a)}{k!}(x-a)^k\]
-La différence \(\,f-T_{n,f,a}\,\) est notée \(\,R_{n,f,a}\,\) et appelée reste de $f$ en $a$ à l'ordre $n$.
+La différence \(\,f-T_{n,f,a}\,\) est appelée reste de $f$ en $a$ à l'ordre $n$.
 
-\vspace{2cm}
+\newpage
 
 \subsection{Intégration}
 
@@ -119,20 +118,20 @@ La différence \(\,f-T_{n,f,a}\,\) est notée \(\,R_{n,f,a}\,\) et appelée rest
 
 \vspace{1cm}
 
-On considère deux réels $a$ et $b$ tels que $a\leq b$. Si \(\,f\in \text{M}^0\bigl([a,b]\,\KK\bigr)\,\) alors l'intégrale de $f$ sur le segment \([a,b]\,\) est noté \(\,\displaystyle\int_{[a,b]}\!f\).
+On considère deux réels $a$ et $b$ tels que $a\leq b$. Si \(\,f\in \text{M}^0\bigl([a,b]\,\KK\bigr)\,\)\footnote{$f$ est continue par morceaux sur le segment $[a,b]$.} alors l'intégrale de $f$ sur le segment \([a,b]\,\) est noté \(\,\displaystyle\int_{[a,b]}\!f\).
 
-\vspace{1cm}
+\vspace*{1cm}
 
-\underline{\emph{Théorème - définition}} : \textbf{Sommes de Riemann.}\index{somme de Riemann}\vspace{0.1cm}\\
+\underline{\emph{Théorème - définition}} : \textbf{Sommes de Riemann.}\index{sommes de Riemann}\vspace{0.1cm}\\
 Si \(\,f\in \text{M}^0\bigl([0,1],\KK\bigr)\,\) alors \(\,\displaystyle \lim_{n\to +\infty}\frac{1}{n}\sum_{k=1}^{n}f\!\left(\frac{k}{n}\right)=\lim_{n\to +\infty}\frac{1}{n}\sum_{k=0}^{n-1}f\!\left(\frac{k}{n}\right)=\int_{[0,1]}f.\)\vspace{0.3cm}\\
 Si \(\,f\in \text{M}^0\bigl([a,b],\KK\bigr)\,\) alors \(\displaystyle \lim_{n\to +\infty}\frac{b-a}{n}\sum_{k=1}^{n}f\!\left(a+k\,\frac{b-a}{n}\right)=\lim_{n\to +\infty}\frac{b-a}{n}\sum_{k=0}^{n-1}f\!\left(a+k\,\frac{b-a}{n}\right)=\int_{[a,b]}f.\)
 
-\vspace{1.5cm}
+\vspace{2cm}
 
 Soient $I$ un intervalle de \(\,\RR\,\) et \(\,f:I\to \KK\,\) une application. On dit que $f$ admet une \textbf{primitive}\index{fonctions à valeurs scalaires!primitive} sur $I$ \ssi il existe une application \(\,F:I\to \KK\,\) dérivable sur $I$ et telle que : \vspace{0.1cm}\\
 \(\forall t\in I,\ F\,'(t)=f(t).\quad \) On dit alors que $F$ est \underline{une} primitive de $f$ sur $I$.
 
-\newpage
+\vspace{2cm}
 
 \subsubsection{Intégrale généralisée}
 
@@ -147,14 +146,14 @@ Soient $I$ un intervalle de \(\,\RR\,\) et \(\,f:I\to \KK\,\) une application. O
 On suppose \(a\in\RR\ \) (mais $b$ peut valoir \(+\infty\)).\vspace{0.2cm}\\
 On considère \(\,f:[a,\,b[\;\to\KK\,\) continue par morceaux sur l'intervalle \([a,\,b[\,\) et on lui associe l'application\vspace{0.1cm}\\
 \(\,F:[a,\,b[\;\to\KK\;\) définie par : \(\,\displaystyle F(x)=\int_{a}^{x}f\).
-\begin{itemize}[leftmargin=0.5cm]
-    \item[•] On dit que l'intégrale de $f$ sur \([a,\,b[\,\) est \textbf{convergente}\index{intégrale convergente} \ssi \(\,\underset{b}{\lim}\,F\,\) existe dans \(\,\KK.\)\\
+\begin{itemize}[leftmargin=0.5cm, label=•]
+    \item On dit que l'intégrale de $f$ sur \([a,\,b[\,\) est \textbf{convergente}\index{intégrale convergente} \ssi \(\,\underset{b}{\lim}\,F\,\) existe dans \(\,\KK.\)\\
     Lorsque cette condition est remplie, on pose : \(\,\displaystyle \int_{a}^{b}\!f=\lim_{x\to b}\,\int_{a}^{x}\!f\).\\
     Le scalaire \(\,\displaystyle \int_{a}^{b}\!f\,\) est alors appelé \textbf{intégrale généralisée de $f$ sur}\index{intégrale généralisée}\footnote{Une intégrale généralisée est aussi appelée \textbf{intégrale impropre}\index{intégrale impropre}.} \(\,[a,\,b[\,.\)\vspace{0.2cm}
 
-    \item[•] Pour exprimer que l'intégrale de $f$ sur \([a,\,b[\,\) ne converge pas on dit qu'elle \textbf{diverge}\index{intégrale divergente}.\vspace{0.4cm}
+    \item Pour exprimer que l'intégrale de $f$ sur \([a,\,b[\,\) ne converge pas on dit qu'elle \textbf{diverge}\index{intégrale divergente}.\vspace{0.4cm}
     
-    \item[•] On suppose que l'intégrale de $f$ sur \([a,\,b[\,\) est convergente.\vspace{-0.2cm}
+    \item On suppose que l'intégrale de $f$ sur \([a,\,b[\,\) est convergente.\vspace{-0.2cm}
     
     \hspace{4cm}Soit \(R:[a,\,b[\;\to\KK\,\) définie par : \(\,\displaystyle R(x)=\int_{x}^{b}\!f\).\vspace{0.1cm}\\
     La quantité \(R(x)\) est appelée \textbf{reste d'ordre}\index{reste d'ordre $x$ d'une intégrale généralisée} $x$ de l'intégrale généralisée de $f$ sur \([a,\,b[\,\).
@@ -165,38 +164,38 @@ On considère \(\,f:[a,\,b[\;\to\KK\,\) continue par morceaux sur l'intervalle \
 On suppose \(b\in\RR\ \) (mais $a$ peut valoir \(-\infty\)).\vspace{0.2cm}\\
 On considère \(\,f:\;]a,\,b]\to\KK\,\) continue par morceaux sur l'intervalle \(\,]a,\,b]\,\) et on lui associe l'application\vspace{0.1cm}\\
 \(\,F:\;]a,\,b]\to\KK\;\) définie par : \(\,\displaystyle F(x)=\int_{x}^{b}f\).
-\begin{itemize}[leftmargin=0.5cm]
-    \item[•] On dit que l'intégrale de $f$ sur \(\,]a,\,b]\,\) est \textbf{convergente}\index{intégrale convergente} \ssi \(\,\underset{a}{\lim}\,F\,\) existe dans \(\,\KK.\)\\
+\begin{itemize}[leftmargin=0.5cm, label=•]
+    \item On dit que l'intégrale de $f$ sur \(\,]a,\,b]\,\) est \textbf{convergente}\index{intégrale convergente} \ssi \(\,\underset{a}{\lim}\,F\,\) existe dans \(\,\KK.\)\\
     Lorsque cette condition est remplie, on pose : \(\,\displaystyle \int_{a}^{b}\!f=\lim_{x\to a}\,\int_{x}^{b}\!f\).\\
     Le scalaire \(\,\displaystyle \int_{a}^{b}\!f\,\) est alors appelé \textbf{intégrale généralisée de $f$ sur}\index{intégrale généralisée} \(\,]a,\,b]\,.\)\vspace{0.2cm}
 
-    \item[•] Pour exprimer que l'intégrale de $f$ sur \(\,]a,\,b]\,\) ne converge pas on dit qu'elle \textbf{diverge}\index{intégrale divergente}.\vspace{0.4cm}
+    \item Pour exprimer que l'intégrale de $f$ sur \(\,]a,\,b]\,\) ne converge pas on dit qu'elle \textbf{diverge}\index{intégrale divergente}.\vspace{0.4cm}
     
-    \item[•] On suppose que l'intégrale de $f$ sur \(\,]a,\,b]\,\) est convergente.\vspace{-0.2cm}
+    \item On suppose que l'intégrale de $f$ sur \(\,]a,\,b]\,\) est convergente.\vspace{-0.2cm}
     
     \hspace{4cm}Soit \(R:\;]a,\,b]\to\KK\,\) définie par : \(\,\displaystyle R(x)=\int_{a}^{x}\!f\).\vspace{0.1cm}\\
     La quantité \(R(x)\) est appelée \textbf{reste d'ordre}\index{reste d'ordre $x$ d'une intégrale généralisée} $x$ de l'intégrale généralisée de $f$ sur \(\,]a,\,b]\,\).
 \end{itemize}
 
-\newpage
+\vspace{2cm}
 
 On ne suppose rien sur $a$ et $b$, on peut donc avoir \(\,a=-\infty\,\) et/ou \(\,b=+\infty\).\vspace{0.2cm}\\
 Soit \(\,f:\;]a,\,b[\;\to\KK\,\) continue par morceaux sur l'intervalle \(\,]a,\,b[\,\).
-\begin{itemize}[leftmargin=0.5cm]
-    \item[•] On dit que l'intégrale de $f$ sur \(\,]a,\,b[\,\) est \textbf{convergente}\index{intégrale convergente} \ssi il existe \(\,c\in\,]a,\,b[\,\) tel que l'intégrale de $f$ sur \(\,]a,c]\,\) \underline{et} l'intégrale de $f$ sur \([c, b[\,\) sont convergentes.\vspace{0.1cm}\\
+\begin{itemize}[leftmargin=0.5cm, label=•]
+    \item On dit que l'intégrale de $f$ sur \(\,]a,\,b[\,\) est \textbf{convergente}\index{intégrale convergente} \ssi il existe \(\,c\in\,]a,\,b[\,\) tel que l'intégrale de $f$ sur \(\,]a,c]\,\) \underline{et} l'intégrale de $f$ sur \([c, b[\,\) sont convergentes.\vspace{0.1cm}\\
     Lorsque cette condition est remplie on pose : \(\,\displaystyle \int_{a}^{b}\!f\,=\int_{a}^{c}\!f+\int_{c}^{b}\!f.\)\vspace{0.1cm}\\
     Le scalaire \(\,\displaystyle\int_{a}^{b}\!f\,\) est appelé \textbf{intégrale généralisée de $f$ sur}\index{intégrale généralisée} \(\,]a,\,b[\,\) et il est indépendant du réel $c$ considéré dans \(\,]a,\,b[\,\).\vspace{0.4cm}
 
-    \item[•] Pour exprimer que l'intégrale de $f$ sur \(\,]a,\,b[\,\) ne converge pas on dit qu'elle \textbf{diverge}\index{intégrale divergente}.
+    \item Pour exprimer que l'intégrale de $f$ sur \(\,]a,\,b[\,\) ne converge pas on dit qu'elle \textbf{diverge}\index{intégrale divergente}.
 \end{itemize}
 
-\vspace{1.5cm}
+\newpage
 
 \noindent On suppose $I$ ouvert ou semi-ouvert. Soit \(\,f:I\to\KK\,\) continue par morceaux sur $I$.
-\begin{itemize}
-    \item[•] L'intégrale de $f$ sur $I$ est dite \textbf{absolument convergente}\index{intégrale absolument convergente} \ssi l'intégrale de $|f|$ sur $I$ est convergente.
+\begin{itemize}[label=•]
+    \item L'intégrale de $f$ sur $I$ est dite \textbf{absolument convergente}\index{intégrale absolument convergente} \ssi l'intégrale de $|f|$ sur $I$ est convergente.
     
-    \item[•] L'intégrale de $f$ sur $I$ est dite \textbf{semi-convergente}\index{intégrale semi-convergente} \ssi l'intégrale de $f$ sur $I$ est convergente et non absolument convergente.
+    \item L'intégrale de $f$ sur $I$ est dite \textbf{semi-convergente}\index{intégrale semi-convergente} \ssi l'intégrale de $f$ sur $I$ est convergente et non absolument convergente.
 \end{itemize}
 
 \vspace{1.5cm}
@@ -211,26 +210,26 @@ Une application \(\,f:I\to\KK\,\) est dite \textbf{intégrable}\index{applicatio
 
 On note \(L^1\bigl(I,\KK\bigr)\) l'ensemble des applications intégrables sur $I$.
 
-\vspace{1.5cm}
+\vspace{2cm}
 
 Soit \(\,f:I\to \KK\,\) \underline{intégrable} sur $I$.\vspace{-0.2cm}\\
 Si \(\,I=[a,b]\,\) avec \(\,-\infty<a\leq b<+\infty\,\) alors on pose : \(\!\displaystyle \int_{I}f=\int_{a}^{b}\!f\;\) où \(\,\displaystyle\int_{a}^{b}\!f\,\) est l'intégrale de $f$ sur le segment \([a,b]\).\vspace{0.1cm}\\
 Si $I$ est un intervalle semi-ouvert ou ouvert d'extrémités $a$ et $b$ avec \(\,-\infty\leq a <b\leq+\infty\,\) alors on pose \(\!\displaystyle \int_{I}f=\int_{a}^{b}\!f\;\) où \(\,\displaystyle\int_{a}^{b}\!f\,\) est l'intégrale généralisée de $f$ sur $I$.\vspace{0.1cm}\\
 Dans tous les cas, le scalaire \(\,\displaystyle\int_I f\,\) est appelé \textbf{intégrale de $f$ sur I.}\index{intégrale d'une fonction sur un intervalle}
 
-\newpage
+\vspace{2cm}
 
 \textbf{Relations de Chasles}\index{relations de Chasles (intégrales)} : \vspace{0.2cm}\\
 Soit \(f\in L^1\bigl(I,\KK\bigr)\,\) et \(\,(a,b)\in\overline{\RR}^2\:\) tel que \(\,]\min(a,b),\,\max(a,b)\,[\ \subset I.\)
-\begin{itemize}[leftmargin=1.5cm]
-    \item[•] Si \(\,-\infty\leq a<b \leq+\infty\,\) alors \(\,f\in L^1\bigl(\,]a,b[\,,\KK\bigr)\,\) et on pose \(\,\displaystyle \int_{a}^{b}\!f=\int_{]a,b[}f\)
+\begin{itemize}[leftmargin=1.5cm, label=•]
+    \item Si \(\,-\infty\leq a<b \leq+\infty\,\) alors \(\,f\in L^1\bigl(\,]a,b[\,,\KK\bigr)\,\) et on pose \(\,\displaystyle \int_{a}^{b}\!f=\int_{]a,b[}f\)
     
-    \item[•] Si \(\,-\infty\leq b<a \leq+\infty\,\) alors \(\,f\in L^1\bigl(\,]b,a[\,,\KK\bigr)\,\) et on pose \(\,\displaystyle \int_{a}^{b}\!f=-\!\int_{]b,a[}f\)\vspace{-0.2cm}
+    \item Si \(\,-\infty\leq b<a \leq+\infty\,\) alors \(\,f\in L^1\bigl(\,]b,a[\,,\KK\bigr)\,\) et on pose \(\,\displaystyle \int_{a}^{b}\!f=-\!\int_{]b,a[}f\)\vspace{-0.2cm}
     
-    \item[•] Si \(\,-\infty\leq a \leq+\infty\,\) alors on pose \(\,\displaystyle\int_{a}^{a}\!f=0\)
+    \item Si \(\,-\infty\leq a \leq+\infty\,\) alors on pose \(\,\displaystyle\int_{a}^{a}\!f=0\)
 \end{itemize}
 
-\vspace{1.5cm}
+\newpage
 
 \textbf{Intégrale dépendant d'un paramètre :}\index{intégrale dépendant d'un paramètre}\vspace{0.2cm}\\
 On suppose $I$ d'intérieur non vide. Soient A une partie de $\,\RR\,$ et \(\,f:A\times I\to \KK\,\) une application.\vspace{0.1cm}\\
@@ -256,12 +255,12 @@ On dit que $f$ \guillemetleft \emph{est d'un certain type}\guillemetright\, au v
 \vspace{1.3cm}
 
 \noindent On suppose que $g$ \underline{ne s'annule pas} au voisinage de $a$ dans A.
-\begin{itemize}
-    \item[•] On dit que $f$ est \textbf{dominée}\index{fonctions à valeurs scalaires!dominée} par $g$ au voisinage de $a$ dans A, et on note \(\,f\underset{a}{=}\mathrm{O}(g)\), \ssi \(\displaystyle\,\frac{f}{g}\,\) est bornée au voisinage de $a$ dans A.\vspace{0.2cm}
+\begin{itemize}[label=•]
+    \item On dit que $f$ est \textbf{dominée}\index{fonctions à valeurs scalaires!dominée} par $g$ au voisinage de $a$ dans A, et on note \(\,f\underset{a}{=}\mathrm{O}(g)\), \ssi \(\displaystyle\,\frac{f}{g}\,\) est bornée au voisinage de $a$ dans A.\vspace{0.2cm}
     
-    \item[•] On dit que $f$ est \textbf{négligeable}\index{fonctions à valeurs scalaires!négligeable} devant $g$ au voisinage de $a$ dans A, et on note \(\,f\underset{a}{=}\mathrm{o}(g)\), \ssi \(\ \displaystyle \lim_{a,\,A}\,\frac{f}{g}=0\)\vspace{0.2cm}
+    \item On dit que $f$ est \textbf{négligeable}\index{fonctions à valeurs scalaires!négligeable} devant $g$ au voisinage de $a$ dans A, et on note \(\,f\underset{a}{=}\mathrm{o}(g)\), \ssi \(\ \displaystyle \lim_{a,\,A}\,\frac{f}{g}=0\)\vspace{0.2cm}
     
-    \item[•] On dit que $f$ est \textbf{équivalente}\index{fonctions à valeurs scalaires!équivalentes} à $g$ au voisinage de $a $dans A, et on note \(\,f \underset{a}{\sim}g\),\, \ssi \(\ \displaystyle \lim_{a,\,A}\, \frac{f}{g}=1\)
+    \item On dit que $f$ est \textbf{équivalente}\index{fonctions à valeurs scalaires!équivalentes} à $g$ au voisinage de $a$ dans A, et on note \(\,f \underset{a}{\sim}g\),\, \ssi \(\ \displaystyle \lim_{a,\,A}\, \frac{f}{g}=1\)
 \end{itemize}
 \vspace{0.3cm}
 \begin{small}
@@ -274,7 +273,7 @@ On dit que $f$ \guillemetleft \emph{est d'un certain type}\guillemetright\, au v
 
 \[f(x)\,\underset{a}{=}\,a_0+a_1(x-a)+a_2(x-a)^2+\cdots+a_n(x-a)^n+\mathrm{o}\Bigl((x-a)^n\Bigr)\]
 
-Si c'est le cas, le polynôme \(\,a_0+a_1(X-a)+a_2(X-a)^2+\cdots+a_n(X-a)^n\,\) est appelé \textbf{partie régulière}\index{partie régulière d'un DL} du $dl_n(a)$\footnote{Contraction de \textit{développement limité à l'ordre $n$ au voisinage de $a$ dans A}}.
+Si c'est le cas, le polynôme \(\,a_0+a_1(X-a)+a_2(X-a)^2+\cdots+a_n(X-a)^n\,\) est appelé \textbf{partie régulière}\index{partie régulière d'un DL} du $DL_n(a)$\footnote{Contraction de \textit{développement limité à l'ordre $n$ au voisinage de $a$ dans A}}.
 
 \vspace{1.3cm}
 

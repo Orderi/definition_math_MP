@@ -1,42 +1,41 @@
-
 \section{Arithmétique}
 \vspace{0.8cm}
 \subsection{Dans \(\bigl(\ZZ,\,+,\,\times\bigr)\)}
 
 \vspace{1cm}
 
-Un \textbf{nombre premier}\index{nombre premier} est un entier naturel distinct de 1 dont les seuls diviseurs dans $\NN$ sont 1 et lui-même. On note $\mathcal{P}\,$ l'ensemble des nombres premiers.
+Un \textbf{nombre premier}\index{nombre premier} est un entier naturel distinct de 1 dont les seuls diviseurs dans $\NN$ sont 1 et lui-même. On note $\PP\,$ l'ensemble des nombres premiers.
 
 \vspace{1.2cm}
 
 Soit \((a,b,c,n)\in \ZZ^4\).
-\begin{itemize}[leftmargin=0.5cm]
-    \item[•] On dit que $a$ \textbf{divise}\index{division dans $\,\ZZ$} $b$, et on note \(\,a\mid b\,\), \ssi : \(\ \exists\,q\in \ZZ \ \mid \ b=aq.\)
+\begin{itemize}[leftmargin=0.5cm, label=•]
+    \item On dit que $a$ \textbf{divise}\index{division dans $\,\ZZ$} $b$, et on note \(\,a\mid b\,\), \ssi : \(\ \exists\,q\in \ZZ \ \mid \ b=aq.\)
     
-    \item[•] On dit que $a$ est \textbf{congru}\index{congruence dans \(\,\ZZ\)} à $b$ modulo $n$ lorsque \(\,n\mid a-b\).\\
+    \item On dit que $a$ est \textbf{congru}\index{congruence dans \(\,\ZZ\)} à $b$ modulo $n$ lorsque \(\,n\mid a-b\).\\
     Pour exprimer cela, on note \(\,a\equiv b\; (n)\ \) ou \(\ a\equiv_n \!b\ \) ou \(\ a\equiv b\; [n]\).
 
-    \item[•] On note \(\mathcal{D}_a\) l'ensemble des \textbf{diviseurs}\index{diviseurs dans $\,\ZZ$} de $a$. On note \(\mathcal{D}_{a,b}\) l'ensemble des diviseurs communs à $a$ et $b$, on a donc \(\mathcal{D}_{a,b}=\mathcal{D}_a\cap \mathcal{D}_b,\) cet ensemble contient toujours \(\pm 1.\ \)
+    \item On note \(\mathcal{D}_a\) l'ensemble des \textbf{diviseurs}\index{diviseurs dans $\,\ZZ$} de $a$. On note \(\mathcal{D}_{a,b}\) l'ensemble des diviseurs communs à $a$ et $b$, on a donc \(\mathcal{D}_{a,b}=\mathcal{D}_a\cap \mathcal{D}_b,\) cet ensemble contient toujours \(\pm 1.\ \)
     i.e. \(\,\mathcal{D}_a=\{c\in \ZZ,\ c\mid a\} \)
 
-    \item[•] On dit que $a$ et $b$ sont \textbf{premiers entre eux}\index{entiers premiers entre eux} lorsque le seul diviseur commun positif est 1,\\
+    \item On dit que $a$ et $b$ sont \textbf{premiers entre eux}\index{entiers premiers entre eux} lorsque le seul diviseur commun positif est 1,\\
     i.e. \(\mathcal{D}_{a,b}=\{\pm 1\}\).
     
-    \item[•] On suppose $a$ et $b$ non tous deux nuls, on appelle \textbf{pgcd}\index{pgcd dans $\,\ZZ$} de $a$ et de $b$ le plus grand diviseur commun.\\
+    \item On suppose $a$ et $b$ non tous deux nuls, on appelle \textbf{pgcd}\index{pgcd dans $\,\ZZ$} de $a$ et de $b$ le plus grand diviseur commun.\\
     On le note\footnote{En anglais on le note gcd pour \emph{Greatest Common Divisor}.} pgcd$(a,b)$ ou $a\land b$.
 
-    \item[•] On suppose $a$, $b$ et $c$ non tous nuls, on dira que ces trois nombres sont :\\
+    \item On suppose $a$, $b$ et $c$ non tous nuls, on dira que ces trois nombres sont :\\
     \textbf{Premiers entre eux dans leur ensemble}\index{entiers premiers entre eux dans leur ensemble} lorsque pgcd\((a,b,c)=1.\)\\
     \textbf{Premiers entre eux deux à deux}\index{entiers premiers entre eux deux à deux} lorsque pgcd$(a,b)=\,$pgcd$(b,c)=\,$pgcd$(a,c)=1.$
 
-    \item[•] On suppose $a$ et $b$ non nuls. On dit que $m\in \NN$\expo{*} est le \textbf{ppcm}\index{ppcm dans $\,\ZZ$} de $a$ et $b$ lorsque \((a\ZZ)\cap(b\ZZ)=m\ZZ.\)\\
+    \item On suppose $a$ et $b$ non nuls. On dit que $m\in \NN$\expo{*} est le \textbf{ppcm}\index{ppcm dans $\,\ZZ$} de $a$ et $b$ lorsque \((a\ZZ)\cap(b\ZZ)=m\ZZ.\)\\
     On le note\footnote{En anglais on le note lcm pour \emph{Least Common Multiple}.} ppcm$(a,b)$ ou $a\lor b$.
 \end{itemize}
 
-\vspace{1cm}
+\vspace{1.5cm}
 
-\noindent Soit $p\in \mathcal{P}\,$ un nombre premier. On lui associe l'application \(\,\upsilon_p :\NN^* \to \NN\,\) définie de la façon suivante:\vspace{0.2cm}\\
-Supposons $n\geq 2$ et considérons la décomposition \(\,n=p_1^{\alpha_1}\cdots\, p_r^{\alpha_r}\:\) de $n$ en nombres premiers.\vspace{-0.2cm}
+\noindent Soit $p\in \PP\,$ un nombre premier. On lui associe l'application \(\,\upsilon_p :\NN^* \to \NN\,\) définie de la façon suivante:\vspace{0.2cm}\\
+Supposons $n\geq 2$ et considérons la décomposition \(\,n=p_1^{\alpha_1}\cdots\, p_r^{\alpha_r}\:\) de $n$ en nombres premiers.\footnote{$p_1,\cdots,p_r$ sont $r$ nombres premiers deux à deux distincts, et $\alpha_i\in \NN^*,\ i\in \llbracket 1,r\rrbracket$.}\vspace{-0.2cm}
 \begin{center}
 Si il existe \(i\in \llbracket 1,r \rrbracket\,\) tel que $p=p_i$ alors on pose $\upsilon_p(n)=\alpha_i\,,$\vspace{0.1cm}\\
 et si \(p\notin \{p_1,\cdots,p_r\}\,\) alors on pose $\upsilon_p(n)=0.$\vspace{0.1cm}\\
@@ -47,7 +46,7 @@ L'application $\upsilon_p$ ainsi définie est appelée \textbf{valuation p-adiqu
     La définition s'étend à $\,\ZZ\,$ en posant $\upsilon_p\,(-n)=\upsilon_p\,(n)\,$ et $\,\upsilon_p(0)=+\infty$.
 \end{small})
 
-\vspace{1cm}
+\vspace{1.5cm}
 
 Soit $n\in \NN$\expo{*}. On note $\varphi(n)$ le nombre d'entiers naturels compris entre $\,0\,$ et $\,n-1\,$ qui sont premiers avec $n$.\\
 On a donc : \(\; \displaystyle \varphi(n)=\Bigl| \bigl\{k\in \llbracket \,0,n-1\rrbracket \ \mid \ k\land n =1\bigr\} \Bigr|\)\vspace{0.1cm}\\
@@ -66,29 +65,29 @@ L'application \(\:\varphi : \NN^* \to \NN\:\) ainsi définie est appelée \textb
 \vspace{0.3cm}
 
 Soit \((A,B,C,P)\in \poly^4\).
-\begin{itemize}[leftmargin=0.5cm]
-    \item[•] On dit que A \textbf{divise}\index{division dans \(\poly\)} B, et on note $A\mid B$,\, \ssi il existe $Q\in \poly$ tel que $B=AQ$.
+\begin{itemize}[leftmargin=0.5cm, label=•]
+    \item On dit que A \textbf{divise}\index{division dans \(\poly\)} B, et on note $A\mid B$,\, \ssi il existe $Q\in \poly$ tel que $B=AQ$.
     
-    \item[•] On dit que A est \textbf{congru}\index{congruence dans \(\poly\)} à B modulo P lorsque \(\,P\mid A-B.\)\, On le note \(\, A\equiv B\; (\!\!\!\!\mod P)\).
+    \item On dit que A est \textbf{congru}\index{congruence dans \(\poly\)} à B modulo P lorsque \(\,P\mid A-B.\)\, On le note \(\, A\equiv B\; (\!\!\!\!\mod P)\).
     
-    \item[•] On note \(\,\mathcal{D}_A\,\) l'ensemble des \textbf{diviseurs}\index{diviseurs polynômiaux} de A, cet ensemble contient toujours\, K\ind{0}$[$X$]$.\\
+    \item On note \(\,\mathcal{D}_A\,\) l'ensemble des \textbf{diviseurs}\index{diviseurs polynômiaux} de A, cet ensemble contient toujours\, K\ind{$0$}$[$X$]$.\footnote{K\ind{$0$}$[$X$]$ est l'ensemble des polynômes de $\poly$ de degré égal à $0$.}\\
     On note \(\,\mathcal{D}_{A,B}=\mathcal{D}_A\cap\mathcal{D}_B\,\) l'ensemble des \textbf{diviseurs communs}\index{diviseurs communs à des polynômes} à A et B.
 
-    \item[•] On dit que A et B sont \textbf{premiers entre eux}\index{polynômes premiers entre eux} lorsque le seul diviseur commun unitaire est $1_{_{\poly}}$, i.e. \(\,\mathcal{D}_{A,B}=\text{K}_0[\text{X}]\).
+    \item On dit que A et B sont \textbf{premiers entre eux}\index{polynômes premiers entre eux} lorsque le seul diviseur commun unitaire est $1_{_{\poly}}$, i.e. \(\,\mathcal{D}_{A,B}=\text{K}_0[\text{X}]\).
     
-    \item[•] On suppose A et B non tous deux nuls, le \textbf{pgcd}\index{pgcd dans \(\poly\)} de A et de B est le plus grand diviseur commun unitaire. On le note pgcd$(A,B)\,$ ou $\,A\land B$.
+    \item On suppose A et B non tous deux nuls, le \textbf{pgcd}\index{pgcd dans \(\poly\)} de A et de B est le plus grand diviseur commun unitaire. On le note pgcd$(A,B)\,$ ou $\,A\land B$.
     
-    \item[•] On suppose A, B et C non tous nuls, on dira que ces trois polynômes sont : \\
+    \item On suppose A, B et C non tous nuls, on dira que ces trois polynômes sont : \\
     \textbf{Premiers entre eux dans leur ensemble}\index{polynômes premiers entre eux dans leur ensemble} lorsque pgcd$(A,B,C)=1_{_{\poly}}$\\
     \textbf{Premiers entre eux deux à deux}\index{polynômes premiers entre eux deux à deux} lorsque pgcd$(A,B)=\,$pgcd$(B,C)=\,$pgcd$(A,C)=1_{_{\poly}}.$
 
-    \item[•] On suppose A et B non nuls.\\
+    \item On suppose A et B non nuls.\\
     Soit $M\in \poly$ unitaire, on dit que M est le \textbf{ppcm}\index{ppcm dans \(\poly\)} de A et B lorsque \(A\poly\cap B\poly=M\poly\).\\
     On le note ppcm$(A,B)\,$ ou $\,A\lor B$.
 
-    \item[•] On dit que A et B sont \textbf{associés}\index{polynômes!associés} \ssi \,P$\mid$Q\, \underline{et}\, Q$\mid$P
+    \item On dit que A et B sont \textbf{associés}\index{polynômes!associés} \ssi \,P$\mid$Q\, \underline{et}\, Q$\mid$P
 
-    \item[•] P est dit \textbf{irréductible}\index{polynômes!irréductible} sur K \ssi P est non constant et ses seuls diviseurs unitaires sont $1_{_{\poly}}$ et $\tilde{P}\:$ (P normalisé).\\ \begin{small}L'ensemble des éléments irréductibles normalisés de $\poly$ est noté $\mathscr{I}_{\poly}$.\end{small}
+    \item P est dit \textbf{irréductible}\index{polynômes!irréductible} sur K \ssi P est non constant et ses seuls diviseurs unitaires sont $1_{_{\poly}}$ et $\tilde{P}\:$ (P normalisé).\\ \begin{small}L'ensemble des éléments irréductibles normalisés de $\poly$ est noté $\mathscr{I}_{\poly}$.\end{small}
 
 \end{itemize}
 
@@ -120,9 +119,9 @@ L'application $\upsilon_P$ ainsi définie est appelée \textbf{valuation P-adiqu
 
 Soit \((a,b)\in A^2\).\vspace{0.1cm}\\
 On dit que $a$ \textbf{divise}\index{Arithmétique dans $\,\bigl(A,\,+,\,\times\bigr)$!division} $b$ dans A, et on note $a\mid b\,$,\, \ssi : \(\,\exists\, q\in A\ \mid \ b=aq.\)\vspace{0.1cm}\\
-On dit que $a$ et $b$ sont \textbf{associés}\index{éléments associés} dans A \ssi :\, $a\mid b\:$ et $\:b\mid a$.
+On dit que $a$ et $b$ sont \textbf{associés}\index{éléments associés} dans A \ssi :\, $a\mid b\:$ \underline{et} $\:b\mid a$.
 
-\vspace{1.2cm}
+\vspace{1.5cm}
 
 Soit \((a,b)\in A^2\).\vspace{0.1cm}\\
 On appelle plus grand commun diviseur (\textbf{pgcd}\index{Arithmétique dans $\,\bigl(A,\,+,\,\times\bigr)$!pgcd}) de $a$ et $b$ tout élément $\,d\in\! A\,$ vérifiant :\vspace{-0.3cm}
@@ -130,7 +129,7 @@ On appelle plus grand commun diviseur (\textbf{pgcd}\index{Arithmétique dans $\
 On appelle plus petit commun multiple (\textbf{ppcm}\index{Arithmétique dans $\,\bigl(A,\,+,\,\times\bigr)$!ppcm}) de $a$ et de $b$ tout élément $\,m\in\! A\,$ vérifiant :\vspace{-0.3cm}
 \[a\mid m\ \text{ et }\ b\mid m \ \text{ et }\ \forall \mu\in A,\: \bigl(\, a\mid \mu \; \text{ et }\; b\mid \mu\, \bigr)\; \Rightarrow \; m\mid \mu. \]
 
-\vspace{1.3cm}
+\newpage
 
 Soit \((a_1,\cdots,a_n)\in A^n\).\vspace{0.1cm}\\
 On appelle plus grand commun diviseur (\textbf{pgcd}) de \(\,a_1,\cdots,a_n\,\) tout élément $\,d\in\! A\,$ vérifiant :\vspace{-0.3cm}
@@ -138,12 +137,12 @@ On appelle plus grand commun diviseur (\textbf{pgcd}) de \(\,a_1,\cdots,a_n\,\) 
 On appelle plus petit commun multiple (\textbf{ppcm}) de \(\,a_1,\cdots,a_n\,\) tout élément $\,m\in \!A\,$ vérifiant :\vspace{-0.3cm}
 \[\forall k\in \llbracket 1,n \rrbracket,\ a_k\mid m \ \text{ et }\ \forall \mu\in A,\: \bigl(\, \forall k\in \llbracket 1,n \rrbracket,\ \,a_k\mid \mu\,\bigr)\;\Rightarrow\; m\mid \mu.\]
 
-\vspace{1.2cm}
+\vspace{1.5cm}
 
-\noindent Deux éléments $a$ et $b$ de A sont dits \textbf{premiers entre eux}\index{Arithmétique dans $\,\bigl(A,\,+,\,\times\bigr)$!premiers entre eux} \ssi\, 1\ind{A}\, est un pgcd de $a$ et $b$.
+Deux éléments $a$ et $b$ de A sont dits \textbf{premiers entre eux}\index{Arithmétique dans $\,\bigl(A,\,+,\,\times\bigr)$!premiers entre eux} \ssi $1_A$ est un pgcd de $a$ et $b$.
 
-\vspace{1cm}
+\vspace{1.3cm}
 
 Un élément $p\in\! A\,$ est dit \textbf{irréductible}\index{Arithmétique dans $\,\bigl(A,\,+,\,\times\bigr)$!irréductible} \ssi $p$ est non nul, non inversible et si les seuls diviseurs de $p$ dans A sont les inversibles et les associés de $p$.
 
-\newpage
+\vspace{1.4cm}

@@ -1,10 +1,9 @@
-
 \section{Algèbre linéaire}
 
 \vspace{0.4cm}
 
 \begin{center}
-    Soient (K, +,\ \x) un corps et m,n,p des entiers naturels non nuls.
+    Soient (K, +,\ \x) un corps et $m,\, n,\, p\,$ des entiers naturels non nuls.
 \end{center}
 
 \vspace{0.4cm}
@@ -13,16 +12,16 @@
 
 \vspace{0.5cm}
 
-Une \textbf{matrice de type n,p à coefficients dans K}\index{matrice de type n,p à coefficients dans K} est une famille \((a_{ij})_{(i,j)\in \llbracket 1,n \rrbracket \times \llbracket 1,p \rrbracket }\,\) d'éléments de\vspace{0.2cm}\\
-K indexée par \(\llbracket 1,n \rrbracket \times \llbracket 1,p \rrbracket\). L'ensemble des matrices de type n,p est noté \(\mathcal{M}_{n,p}(K)\).\vspace{0.5cm}\\
+Une \textbf{matrice de type $n,p\,$ à coefficients dans K}\index{matrices!matrice de type $n,p\,$ à coefficients dans K} est une famille \((a_{ij})_{(i,j)\in \llbracket 1,n \rrbracket \times \llbracket 1,p \rrbracket }\,\) d'éléments de\vspace{0.2cm}\\
+K indexée par \(\llbracket 1,n \rrbracket \times \llbracket 1,p \rrbracket\). L'ensemble des matrices de type $n,p\,$ est noté \(\mathcal{M}_{n,p}(K)\).\vspace{0.5cm}\\
 \begin{small}
-    Soit \(A= (a_{ij})_{_{(i,j)\in \llbracket 1,n \rrbracket \times \llbracket 1,p \rrbracket }}\) une matrice de type n,p à coefficients dans K.\vspace{0.1cm}\\
+    Soit \(A= (a_{ij})_{_{(i,j)\in \llbracket 1,n \rrbracket \times \llbracket 1,p \rrbracket }}\) une matrice de type $n,p\,$ à coefficients dans K.\vspace{0.1cm}\\
     A est une famille d'éléments de K indexée par \(\llbracket 1,n \rrbracket \times \llbracket 1,p \rrbracket\), c'est donc \\
     une application de \(\llbracket 1,n \rrbracket \times \llbracket 1,p \rrbracket\) dans K qui à tout couple\\ 
     \((i,j)\in \llbracket 1,n \rrbracket \times \llbracket 1,p \rrbracket\) associe le scalaire \(a_{ij}\). Lorsqu'il n'y a pas de risque \\
     d'ambiguïté, on omet les indices et on note \(A=(a_{ij})\). On représente\\
-    la matrice A à l'aide d'un tableau rectangulaire comporant n lignes et \\
-    p colonnes. i correspond à l'indice de ligne, j à l'indice de colonne. \vspace{-3.3cm}
+    la matrice A à l'aide d'un tableau rectangulaire comporant $n$ lignes et \\
+    $p$ colonnes. $i$ correspond à l'indice de ligne, $j$ à l'indice de colonne. \vspace{-3.3cm}
     \[\hspace{14cm} \arraycolsep=0.07cm\def\arraystretch{1}  A=\left[\begin{array}{ccccc}
         a_{11} & \cdots & a_{1j} & \cdots & a_{1p} \\
         \vdots & & \vdots & & \vdots \\
@@ -34,53 +33,53 @@ K indexée par \(\llbracket 1,n \rrbracket \times \llbracket 1,p \rrbracket\). L
 
 \vspace{0.7cm}
 
-\noindent Une \textbf{matrice ligne}\index{matrice ligne} (resp. \textbf{colonne}\index{matrice colonne}) est une matrice de type 1,p (resp. n,1).\\
-Une \textbf{matrice carrée}\index{matrice carrée} d'ordre n est une matrice de type n,n. L'ensemble \(\mathcal{M}_{n,n}(K)\) est noté \(\mathcal{M}_n(K)\).
+\noindent Une \textbf{matrice ligne}\index{matrice ligne} (resp. \textbf{colonne}\index{matrices!matrice colonne}) est une matrice de type $1,p\,$ (resp. $n,1$).\\
+Une \textbf{matrice carrée}\index{matrices!matrice carrée} d'ordre $n$ est une matrice de type $n,n$. L'ensemble \(\mathcal{M}_{n,n}(K)\) est noté \(\mathcal{M}_n(K)\).
 
 \vspace{1cm}
 
-\noindent Pour \((k,l)\in \llbracket 1,n \rrbracket \times \llbracket 1,p \rrbracket \) on note \(E_{kl}^{(np)}\) la matrice de \(\mathcal{M}_{n,p}(K)\) dont tous les éléments sont nuls sauf le kl\expo{ème} qui lui vaut 1\ind{K}. On a donc : \(E_{kl}^{(np)}=\bigl(\delta_{ik}\delta_{jl}\bigr)_{_{(i,j)\in \llbracket 1,n \rrbracket \times \llbracket 1,p \rrbracket}}\).\vspace{0.1cm}\\
+\noindent Pour \((k,l)\in \llbracket 1,n \rrbracket \times \llbracket 1,p \rrbracket \) on note \(E_{kl}^{(np)}\) la matrice de \(\mathcal{M}_{n,p}(K)\) dont tous les éléments sont nuls sauf le $kl$\expo{ème} qui lui vaut 1\ind{K}. On a donc : \(E_{kl}^{(np)}=\bigl(\delta_{ik}\delta_{jl}\bigr)_{_{(i,j)\in \llbracket 1,n \rrbracket \times \llbracket 1,p \rrbracket}}\).\vspace{0.1cm}\\
 Lorsqu'il n'y a pas d'ambiguïté sur la taille, \(E_{kl}^{(np)}\) est simplement notée \(E_{kl}\).
 
-\newpage
+\vspace{1.5cm}
 
 Soit \(A=(a_{kl})\in\mathcal{M}_{n,p}(K)\) et \((i,j)\in \llbracket 1,n \rrbracket \times \llbracket 1,p \rrbracket\).\vspace{0.3cm}\\
 Le \textbf{i\expo{ème} vecteur ligne}\index{matrices!i\expo{ème} vecteur ligne} \(L_i\) de A est le vecteur de K\expo{$p$} défini par \(\,L_i=(a_{i1},\cdots,a_{ip}).\)\vspace{0.1cm}\\ 
-Le \textbf{j\expo{ème} vecteur colonne}\index{j\expo{ème} vecteur colonne} \(C_j\) de A est le vecteur de K\expo{$n$} défini par \(\,C_j=(a_{1j},\cdots,a_{nj}).\)\vspace{0.1cm}\\
-La \textbf{i\expo{ème} matrice ligne}\index{i\expo{ème} matrice ligne} \(\mathcal{L} _i\) de A est la matrice ligne de type 1,p définie par \(\, \mathcal{L} _i= \bigl[\, a_{i1} \quad \cdots \quad a_{ip}\, \bigr]\).\vspace{0.1cm}\\
-La \textbf{j\expo{ème} matrice colonne}\index{matrices!j\expo{ème} matrice colonne} \(\mathcal{C} _j\) de A est la matrice colonne de type n,1 définie par \(\, \displaystyle \arraycolsep=0.1cm\def\arraystretch{1.3} \mathcal{C} _j=\left[
+Le \textbf{j\expo{ème} vecteur colonne}\index{matrices!j\expo{ème} vecteur colonne} \(C_j\) de A est le vecteur de K\expo{$n$} défini par \(\,C_j=(a_{1j},\cdots,a_{nj}).\)\vspace{0.1cm}\\
+La \textbf{i\expo{ème} matrice ligne}\index{matrices!i\expo{ème} matrice ligne} \(\mathcal{L} _i\) de A est la matrice ligne de type $1,p\,$ définie par \(\, \mathcal{L} _i= \bigl[\, a_{i1} \quad \cdots \quad a_{ip}\, \bigr]\).\vspace{0.1cm}\\
+La \textbf{j\expo{ème} matrice colonne}\index{matrices!j\expo{ème} matrice colonne} \(\mathcal{C} _j\) de A est la matrice colonne de type $\,n,1\,$ définie par \(\, \displaystyle \arraycolsep=0.1cm\def\arraystretch{1.3} \mathcal{C} _j=\left[
 \begin{array}{c}
     a_{1j} \\
     \vdots \\
     a_{nj}
 \end{array} \right]\)
 
-\vspace{1cm}
+\vspace{2.3cm}
 
-Soit \(A\in\mathcal{M}_{n,p}(K)\). Une \textbf{matrice extraite}\index{matrice extraite} de A est une matrice obtenue à partir de A en supprimant des lignes et des colonnes de A.\vspace{0.1cm}\\
+Soit \(A\in\mathcal{M}_{n,p}(K)\). Une \textbf{matrice extraite}\index{matrices!matrice extraite} de A est une matrice obtenue à partir de A en supprimant des lignes et des colonnes de A.\vspace{0.1cm}\\
 \begin{small}
     Pour exprimer que B est une \guillemetleft matrice extraite de A\guillemetright \ on dit aussi que \guillemetleft B est une sous-matrice de A\guillemetright.
 \end{small}
 
-\vspace{1.3cm}
+\newpage
 
 Soient \(A=(a_{ik})\in\mathcal{M}_{n,m}(K)\) et \(B=(b_{kj})\in\mathcal{M}_{m,p}(K)\).
-Le \textbf{produit matriciel}\index{produit matriciel} \(AB\) de A par B est la matrice de \(\mathcal{M}_{n,p}(K)\) définie par : \(AB=(c_{ij})\) avec \(\displaystyle c_{ij}=\sum_{k=1}^{m}a_{ik}b_{kj}\).
+Le \textbf{produit matriciel}\index{matrices!produit matriciel}\footnote{Attention à la compatibilité des tailles des matrices !} \(AB\) de A par B est la matrice de \(\mathcal{M}_{n,p}(K)\) définie par : \(AB=(c_{ij})\,\) avec \(\;\displaystyle c_{ij}=\sum_{k=1}^{m}a_{ik}b_{kj}\).
 
-\vspace{1.2cm}
+\vspace{1.4cm}
 
 \noindent Soit \(A=(a_{ij})\in\mathcal{M}_{n,p}(K)\). La \textbf{transposée}\index{matrices!transposée} A\expo{\!T} de A est la matrice de \(\mathcal{M}_{p,n}(K)\) définie par :
 A\expo{\!T}\(\,=(b_{kl})\) avec \(\displaystyle b_{_{kl}}=a_{_{lk}}\). 
 
-\vspace{1.2cm}
+\vspace{1.4cm}
 
 \noindent Soit \(A\in \mathcal{M}_{n,p}(K)\).\vspace{-0.1cm}
-\begin{itemize}[leftmargin=1cm]
-    \item[•] Le \textbf{noyau}\index{matrices!noyau} \(\,\ker\,\)A\, de A est la partie de \(\,\mathcal{M}_{p,1}(K)\,\) définie par :\vspace{0.1cm}\\
-    \(\ker\,\text{A}= \left\{ X\in\mathcal{M}_{p,1}(K) \ \rvert \ AX=0_{_{\mathcal{M}_{n,1}(K)}}\right\} \)\vspace{0.2cm}
+\begin{itemize}[leftmargin=1cm, label=•]
+    \item Le \textbf{noyau}\index{matrices!noyau} \(\,\ker\,\)A\, de A est la partie de \(\,\mathcal{M}_{p,1}(K)\,\) définie par :\vspace{0.1cm}\\
+    \(\ker\,\text{A}= \left\{ X\in\mathcal{M}_{p,1}(K) \ \vert \ AX=0_{_{\mathcal{M}_{n,1}(K)}}\right\} \)\vspace{0.2cm}
 
-    \item[•] L'\textbf{image}\index{matrices!image} Im\,A\, de A est la partie de \(\,\mathcal{M}_{n,1}(K)\,\) définie par :\vspace{0.1cm}\\
-    Im\,A\(\,=\Bigl\{ Y\in \mathcal{M}_{n,1}(K),\ \exists X\in \mathcal{M}_{p,1}(K) \ \rvert \ Y=AX \Bigr\}\)
+    \item L'\textbf{image}\index{matrices!image} Im\,A\, de A est la partie de \(\,\mathcal{M}_{n,1}(K)\,\) définie par :\vspace{0.1cm}\\
+    Im\,A\(\,=\Bigl\{ Y\in \mathcal{M}_{n,1}(K)\ \vert \ \exists X\in \mathcal{M}_{p,1}(K), \; \ Y=AX \Bigr\}\)
 \end{itemize}
 
 \vspace{1cm}
@@ -94,52 +93,52 @@ A\expo{\!T}\(\,=(b_{kl})\) avec \(\displaystyle b_{_{kl}}=a_{_{lk}}\).
 \vspace{1.2cm}
 
 Soit \(A=(a_{ij})\in \mathcal{M}_n(K)\).\vspace{-0.1cm}
-\begin{itemize}[leftmargin=0cm,rightmargin=0cm]
-    \item[•] On dit que A est \textbf{triangulaire supérieure}\index{matrice triangulaire supérieure} \ssi : \(\forall (i,j)\in \llbracket 1,n \rrbracket^2,\ \,i>j\ \Rightarrow \ a_{ij}=0_K.\)\vspace{0.1cm}\\
+\begin{itemize}[leftmargin=0cm,rightmargin=0cm, label=•]
+    \item On dit que A est \textbf{triangulaire supérieure}\index{matrice triangulaire supérieure} \ssi : \(\forall (i,j)\in \llbracket 1,n \rrbracket^2,\ \,i>j\ \Rightarrow \ a_{ij}=0_K.\)\vspace{0.1cm}\\
     \begin{small}
           On note \(T_n^s(K)\) l'ensemble des matrices triangulaires supérieures de \(\mathcal{M}_n(K)\).
     \end{small}\vspace{0.2cm}
     
-    \item[•] On dit que A est \textbf{triangulaire inférieure}\index{matrice triangulaire inférieure} \ssi : \(\forall (i,j)\in \llbracket 1,n \rrbracket^2,\ \,i<j\ \Rightarrow \ a_{ij}=0_K.\)\vspace{0.1cm}\\
+    \item On dit que A est \textbf{triangulaire inférieure}\index{matrice triangulaire inférieure} \ssi : \(\forall (i,j)\in \llbracket 1,n \rrbracket^2,\ \,i<j\ \Rightarrow \ a_{ij}=0_K.\)\vspace{0.1cm}\\
     \begin{small}
         On note \(T_n^i(K)\) l'ensemble des matrices triangulaires inférieures de \(\mathcal{M}_n(K)\).
     \end{small}\vspace{0.2cm}
     
-    \item[•] On dit que A est \textbf{diagonale}\index{matrice diagonale} \ssi :  \(\forall (i,j)\in \llbracket 1,n \rrbracket^2,\ \,i\neq j\ \Rightarrow \ a_{ij}=0_K.\)\vspace{0.1cm}\\
+    \item On dit que A est \textbf{diagonale}\index{matrice diagonale} \ssi :  \(\forall (i,j)\in \llbracket 1,n \rrbracket^2,\ \,i\neq j\ \Rightarrow \ a_{ij}=0_K.\)\vspace{0.1cm}\\
     \begin{small}
-        Une telle matrice diagonale A est notée \(A=Diag(a_{11},\cdots,a_{nn})\).\\
+        Une telle matrice diagonale A est notée \(A=\text{diag}(a_{11},\cdots,a_{nn})\).\\
         On note \(D_n(K)\) l'ensemble des matrices diagonales de \(\mathcal{M}_n(K)\).  
     \end{small}\vspace{0.2cm}
     
 
-    \item[•] On dit que A est \textbf{symétrique}\index{matrice symétrique} \ssi : \(\forall (i,j)\in \llbracket 1,n \rrbracket^2,\ \, a_{ij}=a_{ji}\,.\qquad \quad (i.e.\ \, A^{T}=A)\)\vspace{0.1cm}\\
+    \item On dit que A est \textbf{symétrique}\index{matrice symétrique} \ssi : \(\forall (i,j)\in \llbracket 1,n \rrbracket^2,\ \, a_{ij}=a_{ji}\,.\qquad \quad (i.e.\ \, A^{T}=A)\)\vspace{0.1cm}\\
     \begin{small}
         On note \(S_n(K)\) l'ensemble des matrices symétriques de \(\mathcal{M}_n(K)\).
     \end{small}\vspace{0.2cm}
 
-    \item[•] On dit que A est \textbf{antisymétrique}\index{matrice antisymétrique} \ssi : \(\forall (i,j)\in \llbracket 1,n \rrbracket^2,\ \, a_{ij}=-a_{ji}\,.\quad (i.e.\ \, A^{T}=-A)\)\vspace{0.1cm}\\
+    \item On dit que A est \textbf{antisymétrique}\index{matrice antisymétrique} \ssi : \(\forall (i,j)\in \llbracket 1,n \rrbracket^2,\ \, a_{ij}=-a_{ji}\,.\quad (i.e.\ \, A^{T}=-A)\)\vspace{0.1cm}\\
     \begin{small}
         On note \(A_n(K)\) l'ensemble des matrices antisymétriques de \(\mathcal{M}_n(K)\).
     \end{small}\vspace{0.2cm}
 
-    \item[•] Lorsque \(K=\RR\). On dit que A est \textbf{orthogonale}\index{matrice orthogonale} \ssi : \(A^TA=I_n\).\vspace{0.1cm}\\
+    \item Lorsque \(K=\RR\). On dit que A est \textbf{orthogonale}\index{matrice orthogonale} \ssi : \(A^TA=I_n\).\vspace{0.1cm}\\
     \begin{small}
         On note \(O_n(\RR)\) l'ensemble des matrices orthogonales de \(\mathcal{M}_n(\RR)\).
     \end{small}\vspace{0.2cm}
 
-    \item[•] Lorsque \(K=\RR\). On dit que A est \textbf{orthogonale positive}\index{matrice orthogonale positive} \ssi :\(\,A\in O_n(\RR)\,\) et \(\,\det A=1\).\vspace{0.1cm}\\
+    \item Lorsque \(K=\RR\). On dit que A est \textbf{orthogonale positive}\index{matrice orthogonale positive} \ssi :\(\,A\in O_n(\RR)\,\) \underline{et} \(\,\det A=1\).\vspace{0.1cm}\\
     \begin{small}
         On note \(SO_n(\RR)\) l'ensemble des matrices orthogonales positives de \(\mathcal{M}_n(\RR)\).
     \end{small}\vspace{0.2cm}
 
-    \item[•] On pose \(SL_n(\KK)=\bigl\{M\in \mathcal{M}_n(\KK) \ \rvert \ \det M=1 \bigr\}\).\vspace{0.1cm}\\
+    \item On pose \(SL_n(\KK)=\bigl\{M\in \mathcal{M}_n(\KK) \ \vert \ \det M=1 \bigr\}\).\vspace{0.1cm}\\
     \begin{small}
-        \underline{\emph{Proposition}} : \((SL_n(\KK),\,\times)\) est un groupe. Il est appelé \textbf{groupe spécial linéaire}\index{groupe spécial linéaire} d'ordre n.
+        \underline{\emph{Proposition}} : \((SL_n(\KK),\,\times)\) est un groupe. Il est appelé \textbf{groupe spécial linéaire}\index{matrices!groupe spécial linéaire} d'ordre $n$.
     \end{small}\vspace{0.3cm}
 
-    \item[•] On dit que A est \textbf{nilpotente}\index{matrice nilpotente} \ssi : \(\ \exists\, m\in \NN^* \ \mid \ A^m=0_n\)\vspace{0.2cm}
+    \item On dit que A est \textbf{nilpotente}\index{matrice nilpotente} \ssi : \(\displaystyle \ \exists\, m\in \NN^* \ \mid \ A^m=0_{\mathcal{M}_n(K)}\).\footnote{$0_{\mathcal{M}_n(K)}$ est la matrice nulle d'ordre $n$.}\vspace{0.2cm}
 
-    \item[•] \(\bigl(\mathbf{H} \mathbf{P}\bigr)\) Lorsque \(K=\RR\). On dit que A est \textbf{stochastique}\index{matrice stochastique} \ssi :\vspace{-0.2cm}
+    \item \(\bigl(\mathbf{H} \mathbf{P}\bigr)\) Lorsque \(K=\RR\). On dit que A est \textbf{stochastique}\index{matrice stochastique} \ssi :\vspace{-0.2cm}
     
     \hspace{3cm}\(\forall (i,j)\in \llbracket 1,n \rrbracket^2,\ \, a_{ij}\geq 0\quad \) et \(\displaystyle \quad \forall i\in \llbracket 1,n \rrbracket,\ \, \sum_{j=1}^{n}a_{ij}=1\)\vspace{0.15cm}\\
     \begin{small}
@@ -147,10 +146,10 @@ Soit \(A=(a_{ij})\in \mathcal{M}_n(K)\).\vspace{-0.1cm}
     \end{small}
 \end{itemize}
 
-\vspace{1.4cm}
+\vspace{1.7cm}
 
 \noindent À tout \(\alpha \in \KK\)\expo{*} et à tout \(i\in \llbracket 1,n \rrbracket \,\) on associe la matrice \(D_i(\alpha)\,\) de \(\,\mathcal{M}_n(\KK)\) définie par :\vspace{-0.35cm}\\
-\[D_i(\alpha)=I_n+(\alpha-1)E_{ii}=diag(1,\cdots,1,\,\alpha\,,1,\cdots,1).\vspace{0.2cm}\]
+\[D_i(\alpha)=I_n+(\alpha-1)E_{ii}=\text{diag}(1,\cdots,1,\,\alpha\,,1,\cdots,1).\vspace{0.2cm}\]
 On dit que \(A\in \mathcal{M}_n(\KK)\) est une \textbf{matrice élémentaire de dilatation}\index{matrice élémentaire de dilatation} \ssi il existe \(\alpha\in \KK^*\) et \(i\in \llbracket 1,n \rrbracket \,\) tels que \(A=D_i(\alpha)\).
 
 \vspace{1.2cm}
@@ -158,16 +157,18 @@ On dit que \(A\in \mathcal{M}_n(\KK)\) est une \textbf{matrice élémentaire de 
 À tout \(\lambda\in\KK\) et à tout couple \((i,j)\in \llbracket 1,n \rrbracket ^2\) vérifiant \(i\neq j\) on associe la matrice \(T_{i,j}(\lambda)\) de \(\mathcal{M}_n(\KK)\) définie par : \(T_{i,j}(\lambda)=I_n+\lambda E_{ij}\).\vspace{0.2cm}\\
 On dit que \(A\in \mathcal{M}_n(\KK)\) est une \textbf{matrice élémentaire de transvection}\index{matrice élémentaire de transvection} \ssi il existe \(\lambda\in \KK\) et \((i,j)\in \llbracket 1,n \rrbracket ^2\) vérifiant \(i\neq j\) tels que \(A=T_{i,j}(\lambda)\).
 
-\vspace{1.5cm}
+\vspace{1.7cm}
 
-Soient E, F deux espaces vectoriels de dimension \underline{finie} avec dim\,E\(\,=p\!\geq\! 1\), dim\,F\(\,=\!n\geq\!1\) et \(u\in \mathscr{L}(E,F)\). On fixe une base \(\, \mathcal{B}=(e_1,\cdots,e_p)\) de E et une base \(\, \mathcal{C}=(f_1,\cdots,f_n)\) de F.\vspace{0.2cm}\\
+Soient E, F deux espaces vectoriels de dimensions \underline{finies} avec dim\,E\(\,=p\!\geq\! 1\), dim\,F\(\,=\!n\geq\!1\) et \(u\in \mathscr{L}(E,F)\). On fixe une base \(\, \mathcal{B}=(e_1,\cdots,e_p)\) de E et une base \(\, \mathcal{C}=(f_1,\cdots,f_n)\) de F.\vspace{0.2cm}\\
 $u$ est parfaitement déterminée par la donnée des $p$ vecteurs \(u(e_1),\cdots, u(e_p).\)\\
 Pour tout \(j\in \llbracket 1,p \rrbracket\), le vecteur \(u(e_j)\) de F s'écrit de manière unique sur la base \(\,\mathcal{C}\;\):\\
-\(\displaystyle u(e_j)=\alpha_{1j}f_1+\alpha_{2j}f_2+\cdots+\alpha_{nj}f_n=\sum_{i=1}^{n}\alpha_{ij}f_i \qquad \) avec \(\,\alpha_{ij}=f_i^*(u(e_j))\).\\
-Autrement dit : \(\alpha_{ij}\) est la i\expo{ème} coordonnée de \(u(e_j)\) dans la base \(\,\mathcal{C}=(f_1,\cdots,f_n)\). L'application linéaire $u$ est donc parfaitement déterminée par la donnée des \(np\) scalaires \((\alpha_{ij})_{\substack{1\leq i\leq n \\ 1\leq j\leq p}}\)\ .\vspace{0.6cm}\\
+\(\displaystyle u(e_j)=\alpha_{1j}f_1+\alpha_{2j}f_2+\cdots+\alpha_{nj}f_n=\sum_{i=1}^{n}\alpha_{ij}f_i \qquad \) avec \(\,\alpha_{ij}=f_i^*(u(e_j))\).\footnote{La notation $\,f_i^*(u(e_j))\,$ signifie : \guillemetleft \,$i$\expo{ème} composante dans la base $\,\mathcal{C}\,$ du vecteur $u(e_j)$\guillemetright.}\\
+Autrement dit : \(\alpha_{ij}\) est la $i$\expo{ème} coordonnée de \(u(e_j)\) dans la base \(\,\mathcal{C}=(f_1,\cdots,f_n)\). L'application linéaire $u$ est donc parfaitement déterminée par la donnée des \(\,n\!\times\! p\,\) scalaires \((\alpha_{ij})_{\substack{1\leq i\leq n \\ 1\leq j\leq p}}\)\ .\vspace{0.6cm}\\
 La \textbf{matrice de l'application linéaire}\index{matrice d'une application linéaire} $u$ dans la base \(\,\mathcal{B}\,\) et \(\,\mathcal{C}\,\) est la matrice \(M_{\mathcal{B},\,\mathcal{C}}(u)\) de \(\mathcal{M}_{n,p}(K)\) définie par : \(M_{\mathcal{B},\,\mathcal{C}}(u)=\Bigl(f_i^* \bigl( u(e_j) \bigr)\Bigr)_{\substack{\!1\leq \,i\,\leq n \\ \!1\leq \,j\,\leq p}}\)\ .\vspace{0.5cm}
 
-En particulier, on retiendra que la j\expo{ème} colonne de \(M_{\mathcal{B},\,\mathcal{C}}(u)\) est constituée des coordonnées de \(u(e_j)\) dans la base \(\, \mathcal{C}=(f_1,\cdots,f_n)\).\vspace{-0.1cm}
+En particulier, on retiendra que la $j$\expo{ème} colonne de \(M_{\mathcal{B},\,\mathcal{C}}(u)\) est constituée des coordonnées de \(u(e_j)\) dans la base \(\, \mathcal{C}=(f_1,\cdots,f_n)\).
+
+\newpage
 
 \[\hspace{-0.7cm} \arraycolsep=0.235cm \begin{array}{ccccc}
     \underset{\downarrow}{u(e_1)} & & \underset{\downarrow}{u(e_j)} & & \underset{\downarrow}{u(e_p)}
@@ -188,13 +189,13 @@ En particulier, on retiendra que la j\expo{ème} colonne de \(M_{\mathcal{B},\,\
     \leftarrow \text{ selon } f_n \\
 \end{array}\]
 
-\vspace{1.5cm}
+\vspace{2cm}
 
 Soit \(A\in \mathcal{M}_{n,p}(K)\). L'unique application linéaire \(\,a:K^p\to K^n\,\) vérifiant \(A=M_{\varepsilon,\varepsilon'}(a)\), où \(\varepsilon\) et \(\varepsilon'\) sont les bases canoniques respectives de K\expo{$p$} et K\expo{$n$}, est appelée \textbf{application linéaire canoniquement associée à la matrice A}\index{matrices!application linéaire canoniquement associée}.\vspace{0.2cm}
 
-Soit \(A\in \mathcal{M}_n(K)\). L'unique endomorphisme \(\,a\in \mathscr{L}(K^n) \) vérifiant \(A=M_{\varepsilon}(a)\), où \(\varepsilon\) est la base canonique de K\expo{$n$}, est appelé \textbf{endomorphisme canoniquement associé à la matrice A}\index{matrices!endomorphisme canoniquement associée}.
+Soit \(A\in \mathcal{M}_n(K)\). L'unique endomorphisme \(\,a\in \mathscr{L}(K^n) \) vérifiant \(A=M_{\varepsilon}(a)\), où \(\varepsilon\) est la base canonique de K\expo{$n$}, est appelé \textbf{endomorphisme canoniquement associé à la matrice A}\index{matrices!endomorphisme canoniquement associé}.
 
-\vspace{1.3cm}
+\vspace{1.5cm}
 
 Le \textbf{rang de la matrice}\index{matrices!rang} \(M\in \mathcal{M}_{n,p}(K)\) est égal au rang de son système de \underline{vecteurs} colonnes.\vspace{0.1cm}\\
 Si \(M=(\alpha_{ij})\in \mathcal{M}_{n,p}(K)\) et si \(C_1,\cdots, C_p\) sont les vecteurs colonnes de $M$, alors on a par définition :\vspace{0.1cm}\\
@@ -203,84 +204,85 @@ Si \(M=(\alpha_{ij})\in \mathcal{M}_{n,p}(K)\) et si \(C_1,\cdots, C_p\) sont le
 
 \vspace{1.5cm}
 
-Soit E un K-espace vectoriel de dimension finie \(n\geq 1\). Fixons une base \(\,\mathcal{B}=(e_1,\cdots,e_n)\) de E et considérons $p$ vecteurs \(\,a_1,\cdots,a_p\,\) de E.\vspace{-0.3cm}\\
-Chaque vecteur $a_j$ s'écrit sous la forme : \(\displaystyle a_j=\sum_{i=1}^{n}e_i^*(a_j)e_i\).\\
+Soit E un K-espace vectoriel de dimension finie égale à $\,n$. Fixons une base \(\,\mathcal{B}=(e_1,\cdots,e_n)\) de E et considérons $p$ vecteurs \(\,a_1,\cdots,a_p\,\) de E.\vspace{-0.15cm}\\
+Chaque vecteur $a_j\,$, avec $\,1\leq j\leq p\,$, \,s'écrit sous la forme : \(\ \displaystyle a_j=\sum_{i=1}^{n}e_i^*(a_j)e_i\).\\
 La matrice \(M_\mathcal{B}(a_1,\cdots,a_p)\,\) de la famille \(\,(a_1,\cdots,a_p)\,\) dans la base \(\,\mathcal{B}\) est la matrice de \(\,\mathcal{M}_{n,p}(K)\) définie par : \(M_\mathcal{B}(a_1,\cdots,a_p)=\bigl(e_i^*(a_j)\bigr)_{\substack{1\leq i\leq n \\ 1\leq j\leq p}}\)\ .\vspace{0.15cm}\\
-En particulier, on retiendra que la j\expo{ème} colonne de \(\,M_\mathcal{B}(a_1,\cdots,a_p)\,\) est constituée des coordonnées dans la base \(\, \mathcal{B}\) du vecteur $a_j$.\vspace{1.2cm}\\
+En particulier, on retiendra que la $j$\expo{ème} colonne de \(\,M_\mathcal{B}(a_1,\cdots,a_p)\,\) est constituée des coordonnées dans la base \(\, \mathcal{B}\) du vecteur $a_j$.\vspace{0.5cm}\\
 Soit \(\,\mathcal{B}'=(e'_1,\cdots,e'_n)\) une autre base de E.\vspace{0.1cm}\\
 La matrice \(\,M_\mathcal{B}(e'_1,\cdots,e'_n)\,\) est appelée \textbf{matrice de passage}\index{matrice de passage} de la base \(\,\mathcal{B}\) à la base \(\,\mathcal{B}'\). Il s'agit de\vspace{0.1cm}\\
-la matrice des coordonnées de la famille de vecteur \((e'_1,\cdots,e'_n)\) dans la base \(\,\mathcal{B}\). On la note \(P_{_\mathcal{B}} ^{^{\,\mathcal{B}'}}\).
+la matrice des coordonnées de la famille de vecteurs \((e'_1,\cdots,e'_n)\) dans la base \(\,\mathcal{B}\). On la note \(P_{_\mathcal{B}} ^{^{\,\mathcal{B}'}}\).
 
-\vspace{1.2cm}
+\vspace{1.8 cm}
 
-Soient \(A\in \mathcal{M}_{n,p}(K)\),\, E un K-espace vectoriel de dimension $p$,\, F un K-espace vectoriel de dimension $n$ et \(u\in \mathscr{L}(E,F)\). On dit que la matrice A \textbf{représente l'application} linéaire $u$ \ssi il existe une base \(\,\mathcal{B}\,\) de E et une base \(\,\mathcal{C}\,\) de F telles que \(A=M_{\mathcal{B},\mathcal{C}}(u)\).
+Soient \(A\in \mathcal{M}_{n,p}(K)\),\, E un K-espace vectoriel de dimension $p$,\, F un K-espace vectoriel de dimension $n\,$ et \(u\in \mathscr{L}(E,F)\). On dit que la matrice A \textbf{représente l'application linéaire} $u$ \ssi il existe une base \(\,\mathcal{B}\,\) de E et une base \(\,\mathcal{C}\,\) de F telles que \(A=M_{\mathcal{B},\mathcal{C}}(u)\).
 
 \vspace{0.5cm}
 
-Soient \(A\in \mathcal{M}_n(K)\), E un K-espace vectoriel de dimension $n$ et \(u\in \mathscr{L}(E)\). On dit que la matrice A \textbf{représente l'endomorphisme} $u$ \ssi il existe une base \(\,\mathcal{B}\,\) de E telle que \(A=M_\mathcal{B}(u)\).
+Soient \(A\in \mathcal{M}_n(K)\), E un K-espace vectoriel de dimension $n\,$ et \(u\in \mathscr{L}(E)\). On dit que la matrice A \textbf{représente l'endomorphisme} $u$ \ssi il existe une base \(\,\mathcal{B}\,\) de E telle que \(A=M_\mathcal{B}(u)\).
 
 \vspace{1.3cm}
 
-Soient A et B dans \(\mathcal{M}_{n,p}(K)\). On dit que A est \textbf{équivalente}\index{matrices!équivalence} à B \ssi il existe \(P\in GL_p(K)\) et \(Q\in GL_n(K)\) telles que \(\,Q^{-1}AP=B\).
-
-\vspace{1cm}
-
-Soient A et B dans \(\mathcal{M}_n(K)\). On dit que A est \textbf{semblable}\index{matrices!semblable} à B \ssi il existe \(P\in GL_n(K)\) telle que \(P^{-1}AP=B.\)
+Soient A et B dans \(\mathcal{M}_{n,p}(K)\). On dit que A est \textbf{équivalente}\index{matrices!équivalence}\footnote{On dit aussi que A et B sont équivalentes (car la relation est symétrique).} à B \ssi il existe \(P\in GL_p(K)\) et \(Q\in GL_n(K)\) telles que \(\,Q^{-1}AP=B\).
 
 \vspace{1.3cm}
 
-\(\left(\mathbf{HP}\right)\,\) Soit X un ensemble quelconque et \(\,f:\mathcal{M}_n(K)\to X\,\) une application. On dit que $f$ est \textbf{invariante par similitude}\index{application invariante par similitude} \ssi deux matrices semblables ont la même image par $f$.\vspace{0.1cm}\\ 
+Soient A et B dans \(\mathcal{M}_n(K)\). On dit que A est \textbf{semblable}\index{matrices!similitude}\footnote{On dit aussi que A et B sont semblables (car la relation est symétrique).} à B \ssi il existe \(P\in GL_n(K)\) telle que \(P^{-1}AP=B.\)
+
+\vspace{1.5cm}
+
+\(\left(\mathbf{HP}\right)\,\) Soit X un ensemble quelconque et \(\,f:\mathcal{M}_n(K)\to X\,\) une application. On dit que $f$ est \textbf{invariante par similitude}\index{matrices!application invariante par similitude} \ssi deux matrices semblables ont la même image par $f$.\vspace{0.1cm}\\ 
 C'est-à-dire \ssi $f$ vérifie : \(\forall\bigl(A,P\bigr)\in\mathcal{M}_n(K)\times GL_n(K),\ \, f\bigl(P^{-1}AP\bigr)=f(A).\)\vspace{0.1cm}\\
 Dans un tel cas de figure, si E est un K-espace vectoriel de dimension $n$, alors on peut associer à $f$ l'application \(\,F:\mathscr{L}(E)\to X\,\) définie par \(F(u)=f\bigl(\text{M}_\mathcal{B}(u)\bigr)\) où \(\,\mathcal{B}\,\) est une base quelconque de E.
 
-\vspace{1.5cm}
+\vspace{1.7cm}
 
 Soit \(A=(a_{ij})\in\mathcal{M}_n(K)\). La \textbf{trace}\index{matrices!trace}\, tr(A)\, de la matrice A est le scalaire défini par :
 
 \hspace{5cm}tr(A)\(\displaystyle\,=\sum_{i=1}^{n}a_{ii}=a_{11}+\cdots+a_{nn}.\)
 
-\vspace{1cm}
+\vspace{1.4cm}
 
 Soit \(A\in \mathcal{M}_{n}(K).\)
-\begin{itemize}[leftmargin=0.2cm]
-    \item[•] Soit \(P=\underset{k\in \NN}{\sum}\alpha_k X^k \) un polynôme de $\poly$. La matrice carrée \(P=\underset{k\in \NN}{\sum}\alpha_k A^k \) est notée P(A).\vspace{-0.1cm}\\
+\begin{itemize}[leftmargin=0.2cm, label=•]
+    \item Soit \(P=\underset{k\in \NN}{\sum}\alpha_k X^k \) un polynôme de $\poly$. La matrice carrée \(\,\underset{k\in \NN}{\sum}\alpha_k A^k \,\) est notée P(A).\vspace{-0.1cm}\\
     Par définition on a donc : \(\displaystyle \ P(A)=\sum_{k\in \NN}\alpha_k A^k.\)\vspace{0.1cm}
 
-    \item[•] On dit qu'un polynôme \(P\in \poly\,\) \textbf{annule la matrice A}\index{matrices!polynôme annulateur} \ssi \(\,\displaystyle P(A)=0_{\mathcal{M}_n(K)}\).\vspace{0.1cm}\\
-    Par définition on pose : \(\displaystyle \;\text{I}_A = \bigl\{P\in \poly \ \rvert \ P(A)=0\bigr\}\)\footnote{On l'appelle \textbf{idéal annulateur}\index{matrices!idéal annulateur} de A.}.\vspace{0.1cm}
+    \item On dit qu'un polynôme \(P\in \poly\,\) \textbf{annule la matrice A}\index{matrices!polynôme annulateur} \ssi \(\,\displaystyle P(A)=0_{\mathcal{M}_n(K)}\).\vspace{0.1cm}\\
+    Par définition on pose : \(\displaystyle \;\text{I}_A = \bigl\{P\in \poly \ \vert \ P(A)=0_{\mathcal{M}_n(K)}\bigr\}\)\footnote{On l'appelle \textbf{idéal annulateur}\index{matrices!idéal annulateur} de A.}.\vspace{0.1cm}
 
-    \item[•] Une matrice de la forme P(A) avec \(P\in \poly\) est appelée un \textbf{polynôme de la matrice carrée A}\index{matrices!polynôme d'une matrice carrée}.\vspace{0.1cm}\\
+    \item Une matrice de la forme P(A) avec \(P\in \poly\) est appelée un \textbf{polynôme de la matrice carrée A}\index{matrices!polynôme d'une matrice carrée}.\vspace{0.1cm}\\
     Par définition on pose : \(K[A]=\bigl\{P(A),\ P\in \poly\bigr\}.\)
 \end{itemize}
 
-\vspace{1.3cm}
+\vspace{1.7cm}
 
 \underline{\emph{Théorème - définition}} : Ou bien I\(_A=\left\{0_{\poly}\right\}\), ou bien I\(_A\neq\left\{0_{\poly}\right\}\) et il existe un unique\vspace{0.1cm}\\
-polynôme unitaire \(\,\Pi_A\,\) de $\,\poly\,$ tel que\, I\(_A=\Pi_A\poly.\,\) En cas d'existence, \(\,\Pi_A\,\) est appelé le \textbf{polynôme minimal}\index{matrices!polynôme minimal} de A.
+polynôme unitaire \(\,\Pi_A\,\) de $\,\poly\,$ tel que\, I\(_A=\Pi_A\poly.\,\) En cas d'existence, \(\,\Pi_A\,\) est appelé le \textbf{polynôme minimal}\index{matrices!polynôme minimal}\footnote{Le polynôme minimal de A est aussi noté $\pi_A$ ou $\mu_A$.} de A.
 
-\vspace{1cm}
+\newpage
 
 Soit \(A\in \mathcal{M}_n(K)\).
-La matrice A peut se \guillemetleft voir\guillemetright\;comme un endomorphisme de \(\mathcal{M}_{n,1}(\KK)\) :\vspace{-0.17cm}
+La matrice A peut se \guillemetleft voir\guillemetright\;comme un endomorphisme de \(\mathcal{M}_{n,1}(K)\) :\vspace{-0.17cm}
 \[\arraycolsep=0.1cm\begin{array}{rccc}
     \tilde{A}: & \mathcal{M}_{n,1}(K) & \to & \mathcal{M}_{n,1}(K)\vspace{0.1cm} \\
     & X & \mapsto & AX
 \end{array}\]\vspace{-0.1cm}
 On a : \(Im\, \tilde{A}\,=Im\, A,\quad \ker \tilde{A} \,=\ker A,\quad tr\,\tilde{A} \,=tr\,A,\quad \det \tilde{A} \,=\det A,\quad \chi_{\tilde{A}}=\chi_A\,,\quad \cdots\)\vspace{0.1cm}\\
-Et M\(_\mathcal{B}(\tilde{A})=A\ \) avec \(\,\mathcal{B}=(X_1,\cdots, X_n)\,\) la base canonique de \(\mathcal{M}_{n,1}(K)\),\vspace{0.2cm}
+Et M\(_\mathcal{B}(\tilde{A})=A\ \) avec \(\,\mathcal{B}=(e_1,\cdots, e_n)\,\) la base canonique de \(\mathcal{M}_{n,1}(K)\),\vspace{0.1cm}
 
-\hspace{1cm}i.e. pour \(i\in \llbracket 1,n \rrbracket,\ X_i = [\delta_{i1},\cdots,\delta_{in}]^\text{T}\ \text{ avec }\, \delta _{ij}=1\,\text{ si }\,i=j,\ \; \delta_{ij}=0\,\text{ si }\,i\neq j.\) 
+\hspace{1cm}i.e. pour \(i\in \llbracket 1,n \rrbracket,\ e_i = [\delta_{i1},\cdots,\delta_{in}]^\text{T}\ \text{ avec }\, \delta _{ij}=1\,\text{ si }\,i=j,\ \; \delta_{ij}=0\,\text{ si }\,i\neq j.\)\vspace{0.4cm}\\
+On peut également assimiler, par abus de notation, l'ensemble \(\mathcal{M}_{n,1}(K)\) à $K^n$. On confond ainsi la matrice colonne $[x_1,\cdots,x_n]$\expo{T} avec le vecteur $(x_1,\cdots,x_n)$. 
 
-\vspace{1cm}
+\vspace{1.6cm}
 
 Soit \(A\in \mathcal{M}_{n}(K)\). Si\, F est un sous-espace vectoriel de \(\mathcal{M}_{n,1}(K)\,\) on pose A(F)\(\,=\left\{AX,\ X\in F\right\}\).\vspace{0.1cm}\\ 
-On dit que F est \textbf{stable}\index{matrices!s.e.v. stable} par A \ssi \,A(F)$\,\subset\;$F\, c'est-à-dire ssi : \(\forall X\in F,\ AX\in F.\) 
+On dit que F est \textbf{stable}\index{matrices!s.e.v. stable} par A \ssi \,A(F)$\,\subset\;$F\, c'est-à-dire ssi\footnote{ssi = \ssi.} : \(\;\forall X\in F,\ \, AX\in F.\) 
 
-\vspace{1.4cm}
+\vspace{1.5cm}
 
 Soit \(A\in \mathcal{M}_n(K)\).\vspace{0.1cm}\\
-On dit que \(X\in \mathcal{M}_{n,1}(K)\,\) est un \textbf{vecteur propre}\index{matrices!vecteur propre} de A \ssi :\vspace{-0.2cm} \[X\neq 0_{n,1}\ \text{ et }\ \exists \lambda \in K \ \rvert \ AX=\lambda X.\]
-On dit que \(\lambda \in K\) est une \textbf{valeur propre}\index{matrices!valeur propre} de A \ssi :\vspace{-0.2cm} \[\exists X\in \mathcal{M}_{n,1}(K)\, \ \rvert \ X\neq 0_{n,1} \  \text{ et }\  AX=\lambda X.\]
+On dit que \(X\in \mathcal{M}_{n,1}(K)\,\) est un \textbf{vecteur propre}\index{matrices!vecteur propre} de A \ssi :\vspace{-0.2cm} \[X\neq 0_{\mathcal{M}_{n,1}(K)}\ \text{ et }\ \exists \lambda \in K \ \text{ tel que } \ AX=\lambda X.\]
+On dit que \(\lambda \in K\) est une \textbf{valeur propre}\index{matrices!valeur propre} de A \ssi :\vspace{-0.2cm} \[\exists X\in \mathcal{M}_{n,1}(K)\, \ \text{ tel que } \ X\neq 0_{\mathcal{M}_{n,1}(K)} \  \text{ et }\  AX=\lambda X.\]
 L'ensemble de toutes les valeurs propres de A est noté\, sp\,A et est appelé \textbf{spectre}\index{matrices!spectre} de A.
 
 \vspace{1.5cm}
@@ -290,43 +292,43 @@ Puisque \(L\subset K\) on a \(A \in \mathcal{M}_{n}(K)\). L'ensemble des valeurs
 
 \vspace{1.3cm}
 
-Soient \(A\in \mathcal{M}_n(K)\,\) et \(\,\lambda \in sp\,A.\)\vspace{0.1cm}\\
+Soient \(A\in \mathcal{M}_n(K)\,\) et \(\,\lambda \in \text{sp}\,A.\)\vspace{0.1cm}\\
 L'ensemble \(\,E_\lambda(A)=\ker (A-\lambda I_n)\,\) est appelé \textbf{sous-espace propre}\index{matrices!sous-espace propre} associé à la valeur propre $\lambda$.\vspace{0.1cm}
-\(E_\lambda(A)=\{X\in \mathcal{M}_{n,1}(K),\ AX=\lambda X\,\}\; \text{ et } E_\lambda(A)\neq \left\{0_{n,1}\right\} \text{ car } \lambda\in sp\,A.\) 
+\(E_\lambda(A)=\{X\in \mathcal{M}_{n,1}(K),\ AX=\lambda X\,\}\; \text{ et } E_\lambda(A)\neq \left\{0_{\mathcal{M}_{n,1}(K)}\right\} \text{ car } \lambda\in \text{sp}\,A.\) 
 
 \vspace{1.4cm}
 
 Soit \((A,B)\in \mathcal{M}_n(K)^2\).\vspace{-0.1cm}
-\begin{itemize}[leftmargin=0.5cm]
-    \item[•] A est dite \textbf{diagonalisable}\index{matrices!diagonalisable} dans \(\mathcal{M}_n(K)\) \ssi elle est semblable à une matrice diagonale,\vspace{0.1cm}\\
+\begin{itemize}[leftmargin=0.5cm, label=•]
+    \item A est dite \textbf{diagonalisable}\index{matrices!diagonalisable} dans \(\mathcal{M}_n(K)\) \ssi elle est semblable à une matrice diagonale,\vspace{0.1cm}\\
     i.e. \(\ \exists P \in GL_n(K),\ \exists D\in D_n(K) \ \mid \ P^{-1}AP=D.\)\vspace{0.1cm}
 
-    \item[•] A est dite \textbf{trigonalisable}\index{matrices!trigonalisable} dans \(\mathcal{M}_n(K)\) \ssi elle est semblable à une matrice triangulaire\vspace{0.1cm}\\
+    \item A est dite \textbf{trigonalisable}\index{matrices!trigonalisable} dans \(\mathcal{M}_n(K)\) \ssi elle est semblable à une matrice triangulaire\vspace{0.1cm}\\
     supérieure, i.e. \(\ \exists P \in GL_n(K),\ \exists\, T\in T_n^s(K) \ \mid \ P^{-1}AP=T.\)\vspace{0.1cm}
     
-    \item[•] \(\left(\mathbf{H} \mathbf{P} \right)\) A et B sont dites \textbf{codiagonalisables}\index{matrices!codiagonalisables} \ssi il existe \(P\in GL_n(K)\) telle que les matrices \(\,P^{-1}AP\,\) et \(\,P^{-1}BP\,\) soient diagonales.
+    \item \(\left(\mathbf{H} \mathbf{P} \right)\) A et B sont dites \textbf{codiagonalisables}\index{matrices!codiagonalisables} \ssi il existe \(P\in GL_n(K)\) telle que les matrices \(\,P^{-1}AP\,\) et \(\,P^{-1}BP\,\) soient diagonales.
 \end{itemize}
 
 \vspace{1.3cm}
 
-\(\left(\mathbf{H} \mathbf{P} \right)\) Le \textbf{rayon spectral}\index{matrices!rayon spectral} d'une matrice \(A\in \mathcal{M}_n(\CC)\) est le réel positif : \(\ \ \displaystyle \rho\left(A\right)=\max_{\lambda\,\in\, sp\, A}|\lambda |\,\).
+\(\left(\mathbf{H} \mathbf{P} \right)\) Le \textbf{rayon spectral}\index{matrices!rayon spectral} d'une matrice \(A\in \mathcal{M}_n(\CC)\) est le réel positif : \(\ \ \displaystyle \rho\left(A\right)=\max_{\lambda\,\in\; \text{sp}\,A}|\lambda |\,\).
 
-\vspace{1.7cm}
+\vspace{1.3cm}
 
 \begin{small}
     La notion de déterminant d'une matrice carrée a été abordé pour des matrices à coefficients dans un corps. Si l'anneau des polynômes $\,\poly\,$ n'est pas un corps, le corps des fractions rationnelles K(X) en est un et on peut donc appliquer la théorie des déterminants à des matrices carrées à coefficients dans K(X).\\
-    Si \(M=\bigl(F_{ij}\bigr)\) est une matrice carrée d'ordre n à coefficients dans K(X), alors\, det\,M\(\,\in\,\)K(X).
+    Si \(M=\bigl(F_{ij}\bigr)\) est une matrice carrée d'ordre $n$ à coefficients dans K(X), alors\, det\,M\(\,\in\,\)K(X).
 \end{small}
 
-\vspace{0.5cm}
+\vspace{0.3cm}
 
-\underline{\emph{Théorème - définition}} : Soit \(A\in \mathcal{M}_n(K)\). La matrice XI\ind{$n$}$-\,$A\, est une matrice carrée d'ordre n à coefficients dans le corps des fractions rationnelles K(X). Son déterminant est un polynôme unitaire de degré $n$ à coefficients dans K. Il est appelé \textbf{polyôme caractéristique}\index{matrices!polyôme caractéristique} de A, et est noté $\chi_A$.\vspace{0.1cm}\\
+\underline{\emph{Théorème - définition}} : Soit \(A\in \mathcal{M}_n(K)\). La matrice XI\ind{$n$}$-\,$A\, est une matrice carrée d'ordre $n$ à coefficients dans le corps des fractions rationnelles K(X). Son déterminant est un polynôme unitaire de degré $n$ à coefficients dans K. Il est appelé \textbf{polyôme caractéristique}\index{matrices!polyôme caractéristique} de A, et est noté $\chi_A$.\vspace{0.1cm}\\
 Et on a : \(\ \chi_A=\det\bigl(XI_n-A\bigr)=X^n-\text{tr}(A)\,X^{n-1}+\cdots+(-1)^n\det(A).\)
 
-\vspace{1.7cm}
+\vspace{1.9cm}
 
 \(\left(\mathbf{HP}\right)\) \underline{\emph{Théorème - définition}} : Soit \(P=X^n+a_{n-1}X^{n-1}+\cdots+a_1X+a_0\ \) un polynôme unitaire\vspace{0.1cm}\\
-de degré $n\geq 1$ de $\poly$.\vspace{-0.3cm}
+de degré $n$ de $\poly$.\vspace{-0.3cm}
 
 \[\text{On pose : }\ C_P=\left[
 \begin{array}{ccccc}
@@ -344,9 +346,9 @@ de degré $n\geq 1$ de $\poly$.\vspace{-0.3cm}
     \text{du polynôme P.}
 \end{array} \]
 
-\vspace{1.5cm}
+\vspace{1.8cm}
 
-Soient \((A,B)\in \mathcal{M}_n(\RR)^2\). On dit que A est \textbf{orthogonalement semblable}\index{matrices!orthogonalement semblable} à B \ssi il existe \(P\in O_n(\RR)\,\) telle que \(\,P^{-1}AP=B.\)
+Soient \((A,B)\in \mathcal{M}_n(\RR)^2\). On dit que A est \textbf{orthogonalement semblable}\index{matrices!orthogonalement semblable}\footnote{On dit aussi que A et B sont orthogonalement semblables (car la relation est symétriques).} à B \ssi il existe \(P\in O_n(\RR)\,\) telle que \(\,P^{-1}AP=B.\)
 
 \vspace{1.6cm}
 
@@ -373,7 +375,7 @@ vérifie : \(\ \forall X\in\mathcal{M}_{n,1}(\RR),\ \, \bigl( X^\text{T}\!AX=0 \
 
 Une \textbf{loi de composition externe}\index{loi de composition externe} (abrégée en l.c.e.) sur un ensemble E à domaine d'opérateurs dans l'ensemble \(\Lambda\) est une application de \(\Lambda \times\)E dans E\ \ (i.e.\ \(\ \odot\) : \(\Lambda\times\)E \(\to\) E) .
 
-\newpage
+\vspace{1.5cm}
 
 Un \textbf{K-espace vectoriel}\index{K-espace vectoriel} est un triplet (E,\ \lci,\ \lce ) où E est un ensemble, \lci\, une l.c.i. sur E et \lce \ une l.c.e. sur E à domaine d'opérateurs dans K tel que : \vspace{-0.1cm}
 \begin{enumerate}[leftmargin=2cm]
@@ -388,19 +390,19 @@ Un \textbf{K-espace vectoriel}\index{K-espace vectoriel} est un triplet (E,\ \lc
     \item \( \forall(\alpha, \beta)\in K^2,\ \forall x\in E,\  \,(\alpha \times \beta)\cdot x= \alpha \cdot (\beta \cdot x). \) \vspace{0.1cm}
     
     \item \(\forall x\in E,\ \,1_K \cdot x = x. \) \\
-     \begin{small}\emph{(Avec 1\textsubscript{K} le neutre de K pour la loi \ \(\times\))}\end{small}
+     \begin{small}\emph{(Avec 1\textsubscript{K} le neutre de K pour la loi \(\times\))}\end{small}
 \end{enumerate}
 
-\vspace{0.5cm}
+\vspace{1cm}
 
-\noindent Les éléments de E sont appelés des \textbf{vecteurs}\index{vecteurs} ou des \textbf{points}\index{points}, ceux de K sont appelés des \textbf{scalaires}\index{scalaires}.\vspace{0.1cm} \\
-Considéré comme un point, un élément de E sera noté à l'aide des lettres majuscules A, B, $\cdots$, considéré comme un vecteur, il sera noté à l'aide des symboles\footnote{Ou sans les flèches, comme ci-dessus.} \(\vec{x},\ \vec{y},\ \cdots\ .\) \\
-Le vecteur nul de E peut être noté 0\ind{E} ou \(\vec{0}\).\vspace{0.3cm}
+\noindent Les éléments de E sont appelés des \textbf{vecteurs}\index{vecteur} ou des \textbf{points}\index{point}, ceux de K sont appelés des \textbf{scalaires}\index{scalaire}.\vspace{0.1cm} \\
+Considéré comme un point, un élément de E sera noté à l'aide des lettres majuscules A, B, ...\,, considéré comme un vecteur, il sera noté à l'aide des symboles\footnote{Ou sans les flèches, comme ci-dessus.} \(\vec{x},\ \vec{y},\ \)... . \\
+Le vecteur nul de E peut être noté $\,\displaystyle 0_E\,$ ou \(\,\vec{0}\).\vspace{0.3cm}
 
-\noindent Étant donnés deux points A et B de E, on pose \(\overrightarrow{AB}\) = B\,$-$\,A.\vspace{0.1cm}\\
+\noindent Étant donnés deux points A et B de E, on pose \(\overrightarrow{AB}\) $=$ B\,$-$\,A.\vspace{0.1cm}\\
 Lorsque A et B sont appelés \emph{points}, alors \(\overrightarrow{AB}\) est appelé \emph{vecteur}\footnote{Alors que les deux objets sont de même nature.}.
 
-\vspace{1.3cm}
+\vspace{1.6cm}
 
 Soit E un K-espace vectoriel.\vspace{0.1cm} \\
 \noindent Étant donnés un point A de E et un sous-espace vectoriel F de E, \,on note\, A\,$+$\,F \,la partie de E\vspace{0.1cm}\\
@@ -408,46 +410,54 @@ définie par A+F\,$=$\,\{\(A+\vec{u},\ \vec{u}\in F \)\}.\vspace{0.3cm} \\
 On appelle \textbf{sous-espace affine}\index{sous-espace affine} de E toute partie \(\,\mathcal{W}\,\) de E qui peut s'écrire sous la forme \(\mathcal{W}=A+F\,\) où A est un point de E et F un sous-espace vectoriel de E.\vspace{0.1cm} \\
 Dans une telle écriture, le sous-espace vectoriel F est unique et est appelé \textbf{direction}\index{direction d'un sous-espace affine} du sous-espace affine \(\mathcal{W}\).
 
-\vspace{1.3cm}
+\newpage
 
 \noindent Soit (E, +,\ \lce ) un K-espace vectoriel.
 \vspace{-0.1cm}
-\begin{itemize}[leftmargin=0.5cm]
-    \item[•] Soient\, x\ind{1}, $\cdots$, x\ind{p}\, des vecteurs de E. Une \textbf{combinaison linéaire}\index{combinaison linéaire} de la famille (x\ind{1}, $\cdots$, x\ind{p}) est un vecteur de E de la forme \(\ \alpha_1 \cdot x_1 + \, \cdots \, + \alpha_p \cdot x_p\ \), où \(\ \alpha_1,\cdots, \alpha_p \) sont des scalaires. \vspace{0.1cm}\\
-    On note Kx\ind{1} + \(\cdots\) + Kx\ind{p} l'ensemble des combinaisons linéaires de (x\ind{1}, $\cdots$, x\ind{p}).\vspace{0.2cm} \\
+\begin{itemize}[leftmargin=0.5cm, label=•]
+    \item Soient $\,x_1,\cdots,x_p\,$ des vecteurs de E. Une \textbf{combinaison linéaire}\index{combinaison linéaire} de la famille $(x_1,\cdots,x_p)$ est un vecteur de E de la forme \(\ \alpha_1 \cdot x_1 + \, \cdots \, + \alpha_p \cdot x_p\ \), où \(\ \alpha_1,\cdots, \alpha_p \) sont des scalaires. \vspace{0.1cm}\\
+    On note $\,\text{K}x_1+\cdots+\text{K}x_p\,$ l'ensemble des combinaisons linéaires de $(x_1,\cdots,x_p)$.\vspace{0.2cm} \\
     On dit qu'une partie A de E est \textbf{stable par combinaison linéaire}\index{partie stable par combinaison linéaire} \ssi :
 
     \hspace{4cm} \(\forall (x,y)\in A^2,\ \ \forall (\alpha,\beta) \in K^2,\ \,\alpha \cdot x+ \beta \cdot y \in A. \) \vspace{0.3cm}
 
-    \item[•] On dit qu'une partie F de E est un \textbf{sous-espace vectoriel}\index{sous-espace vectoriel} de (E, +,\ \lce ) \ssi F est non vide et stable par combinaison linéaire.\vspace{0.3cm}
+    \item On dit qu'une partie F de E est un \textbf{sous-espace vectoriel}\index{sous-espace vectoriel} de (E, +,\ \lce ) \ssi F est non vide et stable par combinaison linéaire.\vspace{0.3cm}
 
-    \item[•] \underline{\emph{Théorème}} : Soit A une partie de E. L'intersection de tous les sous-espaces vectoriels de E qui contiennent A est un sous-espace vectoriel de E. \\
+    \item \underline{\emph{Théorème}} : Soit A une partie de E. L'intersection de tous les sous-espaces vectoriels de E qui contiennent A est un sous-espace vectoriel de E. \\
     Il est noté Vect(A) et est appelé \textbf{sous-espace de E engendré par A}\index{sous-espace vectoriel engendré par une partie}.\vspace{0.3cm}
 
-    \item[•] Soient E\ind{1} et E\ind{2} deux sous-espaces vectoriels de E. \vspace{0.1cm}\\
-    On pose : E\ind{1}\,+\,E\ind{2} = \(\{ x\in E,\ \exists x_1 \in E_1,\ \exists x_2 \in E_2 \ \mid \ x = x_1 + x_2 \}. \)\vspace{0.1cm}\\
-    C'est la \textbf{somme}\index{somme de sous-espaces vectoriels} de E\ind{1} avec E\ind{2} .\vspace{0.1cm} \\
-    On dit que la somme E\ind{1}\,+\,E\ind{2} est \textbf{directe}\index{somme directe d'espace vectoriels} \ssi tout vecteur \(\,x \in \) E\ind{1}\,+\,E\ind{2}\ s'écrit de manière \underline{unique} sous la forme  \(x\ind{1} + x\ind{2}\)  avec \(\, x_1 \in  E_1\, \) et \(\, x_2 \in  E_2\ \).\vspace{0.1cm}\\ 
-    Pour exprimer que la somme E\ind{1}\,+\,E\ind{2} est directe on la note E\ind{1}\(\,\oplus\,\)E\ind{2} . \vspace{0.3cm}
+    \item Soient E\ind{1} et E\ind{2} deux sous-espaces vectoriels de E. \vspace{0.1cm}\\
+    On pose : E\ind{1}\,+\,E\ind{2} = \(\{ x\in E \ \; \vert \ \; \exists x_1 \in E_1,\ \exists x_2 \in E_2, \; \ x = x_1 + x_2 \}. \)\vspace{0.1cm}\\
+    C'est la \textbf{somme}\index{somme de deux sous-espaces vectoriels} de E\ind{1} avec E\ind{2} .\vspace{0.1cm} \\
+    On dit que la somme E\ind{1}\,+\,E\ind{2} est \textbf{directe}\index{somme directe de deux sous-espaces vectoriels} \ssi tout vecteur \(\,x \in \) E\ind{1}\,+\,E\ind{2}\ \,s'écrit de manière \underline{unique} sous la forme  \(x=x\ind{1} + x\ind{2}\)  avec \(\, x_1 \in  E_1\, \) et \(\, x_2 \in  E_2\ \).\vspace{0.1cm}\\ 
+    Pour exprimer que la somme E\ind{1}\,+\,E\ind{2} est directe on la note E\ind{1}\(\,\oplus\,\)E\ind{2} .\vspace{0.3cm}\\
+    
+    \item Soient \(\,\bigl(E_k\bigr)_{1\leq k\leq p}\,\), $p\,$ sous-espaces vectoriels de E, avec $p\geq 2$.\\
+    On pose : \(\displaystyle E_1 + \,\cdots\, + E_p=\left\{x\in E\ \ \vert \ \ \exists\,(x_1,\cdots,x_p)\in E_1\times \cdots \times E_p, \ \; x=\sum_{k=1}^px_k\,\right\}\).\vspace{0.15cm}\\
+    C'est la \textbf{somme}\index{somme de $p$ sous-espaces vectoriels} de E\ind{1}, $\cdots$, E\ind{$p$} .\vspace{0.1cm} \\
+    On dit que la somme est \textbf{directe}\index{somme directe de $p$ sous-espaces vectoriels} \ssi tout vecteur \(\,x\in E_1 + \,\cdots\, + E_p\,\)\ s'écrit de\\
+    manière \underline{unique} sous la forme \(x=x_1 + \,\cdots\,+ x_p\;\) avec \(x_1\in E_1,\, \cdots,\, x_p\in E_p\).\\ 
+    Pour exprimer que la somme \(E_1 + \,\cdots\, + E_p\) est directe on la note \(\,\displaystyle\bigoplus_{k=1}^p E_k \,\).\vspace{0.3cm}\\
 
-    \item[•] On dit que les sous-espaces vectoriels E\ind{1} et E\ind{2} sont \textbf{supplémentaires}\index{supplémentaire} dans E \ssi tout vecteur \(x\in\) E s'écrit de manière \underline{unique} sous la forme \(x\ind{1} + x\ind{2}\)  avec \( x_1 \in  E_1 \) et \( x_2 \in  E_2\ \). Autrement dit : E\,=\,E\ind{1}\(\,\oplus\,\)E\ind{2}\vspace{0.1cm} .\vspace{0.1cm}\\
+
+    \item On dit que les sous-espaces vectoriels E\ind{1} et E\ind{2} sont \textbf{supplémentaires}\index{supplémentaire} dans E \ssi tout vecteur \(x\in\) E s'écrit de manière \underline{unique} sous la forme \(x=x_1 + x_2\)  avec \( x_1 \in  E_1 \) et \( x_2 \in  E_2\ \). Autrement dit : E\,$=$\,E\ind{1}\(\,\oplus\,\)E\ind{2}\vspace{0.1cm} .\vspace{0.1cm}\\
     Si F est un sous-espace vectoriel de E alors tout sous-espace vectoriel G de E vérifiant\\
-    E\,=\,F\(\,\oplus\,\)G\ est appelé \textbf{un supplémentaire} de F dans E.
+    E\,$=$\,F\(\,\oplus\,\)G\ est appelé \textbf{un supplémentaire} de F dans E.
 \end{itemize}
 
 \vspace{1cm}
 
-\noindent Soient x\ind{1}, $\cdots$, x\ind{p} des vecteurs de E.\vspace{-0.2cm}
-\begin{itemize}[leftmargin=1cm]
-    \item[•] On dit que (x\ind{1},\(\cdots\), x\ind{p}) est une famille \textbf{libre}\index{famille libre} \ssi :\vspace{0.1cm} \\ \(\ \forall(\alpha_1, \cdots, \alpha_p)\in K^p\ \) on a : \(\, \alpha_1 \cdot x_1 + \ \cdots \ + \alpha_p \cdot x_p=0_E\ \ \Rightarrow \ \ \forall i\in \llbracket 1,p \rrbracket ,\ \alpha_i = 0_K. \) \vspace{0.3cm}
+\noindent Soient $\,x_1,\cdots,x_p\,$ des vecteurs de E.
+\begin{itemize}[leftmargin=1cm, label=•]
+    \item On dit que $\,(x_1,\cdots,x_p)\,$ est une famille \textbf{libre}\index{famille libre} \ssi :\vspace{0.1cm} \\ \(\ \forall(\alpha_1, \cdots, \alpha_p)\in K^p\ \) on a : \(\, \alpha_1 \cdot x_1 + \ \cdots \ + \alpha_p \cdot x_p=0_E\ \ \Rightarrow \ \ \forall i\in \llbracket 1,p \rrbracket ,\ \;\alpha_i = 0_K. \) \vspace{0.3cm}
 
-     \item[•] On dit que (x\ind{1},\(\cdots\), x\ind{p}) est une famille \textbf{génératrice}\index{famille génératrice} de E \ssi tout vecteur \(x\in\) E\vspace{0.1cm}\\
+     \item On dit que $\,(x_1,\cdots,x_p)\,$ est une famille \textbf{génératrice}\index{famille génératrice} de E \ssi tout vecteur\vspace{0.1cm}\\ \(x\in\) E
      peut s'écrire sous la forme : \(\ x=\alpha_1 \cdot x_1 + \ \cdots \ + \alpha_p \cdot x_p\ \) avec \(\ (\alpha_1, \cdots, \alpha_p)\in K^p\). \vspace{0.3cm}
 
-     \item[•] On dit que (x\ind{1},\(\cdots\), x\ind{p}) est une \textbf{base}\index{base} de E \ssi tout vecteur \(x\in\) E peut s'écrire\vspace{0.1cm}\\
-     \emph{de manière unique} sous la forme : \(\ x=\alpha_1 \cdot x_1 + \ \cdots \ + \alpha_p \cdot x_p\ \) avec \(\ (\alpha_1, \cdots, \alpha_p)\in K^p\).\vspace{0.3cm}
+     \item On dit que $\,(x_1,\cdots,x_p)\,$ est une \textbf{base}\index{base}\footnote{La famille est une base si elle est à la fois libre et génératrice de E.} de E \ssi tout vecteur \(x\in\) E peut s'écrire\vspace{0.1cm}\\
+     de manière \underline{unique} sous la forme : \(\ x=\alpha_1 \cdot x_1 + \ \cdots \ + \alpha_p \cdot x_p\ \) avec \(\ (\alpha_1, \cdots, \alpha_p)\in K^p\).\vspace{0.3cm}
 
-      \item[•] On dit que (x\ind{1},\(\cdots\), x\ind{p}) est une famille \textbf{liée}\index{famille liée} \ssi elle n'est \underline{pas} libre. \vspace{0.1cm}\\
+      \item On dit que $\,(x_1,\cdots,x_p)\,$ est une famille \textbf{liée}\index{famille liée} \ssi elle n'est \underline{pas} libre. \vspace{0.1cm}\\
       Autrement dit : \(\ \exists (\alpha_1, \cdots, \alpha_p)\in K^p\setminus\{0_{K^p}\},\ \ \alpha_1 \cdot x_1 + \ \cdots \ + \alpha_p \cdot x_p=0_E. \)
 \end{itemize}
 
@@ -462,27 +472,26 @@ Ce cardinal commun est appelé la \textbf{dimension}\index{dimension} du K-espac
 
 Un sous-espace affine \(\mathcal{W}\) de E est dit de \textbf{dimension finie}\index{dimension finie} \ssi sa direction est de dimension finie. Dans ces conditions, la dimension du sous-espace affine est la dimension de sa direction.
 
-\newpage
+\vspace{1.4cm}
 
 \noindent Soit F un sous-espace vectoriel (resp. affine) de E.\vspace{-0.1cm}
-\begin{itemize}[leftmargin=1cm]
-    \item[•] F est une \textbf{droite}\index{droite vectorielle} vectorielle (resp. affine)\index{droite affine} de E \ssi \, dim\ind{K}F\,=\,1.
+\begin{itemize}[leftmargin=1cm, label=•]
+    \item F est une \textbf{droite}\index{droite vectorielle} vectorielle (resp. affine)\index{droite affine} de E \ssi \, dim\ind{K}F\,=\,1.
 
-    \item[•] F est un \textbf{plan}\index{plan vectoriel} vectoriel (resp. affine)\index{plan affine} de E \ssi\, dim\ind{K}F\,=\,2.
+    \item F est un \textbf{plan}\index{plan vectoriel} vectoriel (resp. affine)\index{plan affine} de E \ssi\, dim\ind{K}F\,=\,2.
 \end{itemize}
 
-\vspace{0.8cm}
+\vspace{1.6cm}
 
 Un \textbf{hyperplan de E}\index{hyperplan} est un sous-espace vectoriel de E qui peut s'écrire comme le noyau d'une forme linéaire non nulle sur E.\\
 Un \textbf{hyperplan affine de E}\index{hyperplan affine} est un sous-espace affine de E dont la direction est un hyperplan de E.
 
-\vspace{1cm}
+\vspace{2.1cm}
 
 Soit \((a_1,\cdots,a_n)\) une famille de vecteurs de E. Le \textbf{rang de la famille}\index{rang d'une famille} \((a_1,\cdots,a_n)\) est définie\\
 par : rg\((a_1,\cdots,a_n)=\dim Vect(a_1,\cdots,a_n)\).\vspace{0.5cm}
 
-
-\vspace{1.3cm}
+\newpage
 
 \subsection{Applications linéaires}
 
@@ -494,42 +503,42 @@ par : rg\((a_1,\cdots,a_n)=\dim Vect(a_1,\cdots,a_n)\).\vspace{0.5cm}
 
 \vspace{0.5cm}
 
-\noindent Une application u : E \(\to\) F de E dans F est dite \textbf{linéaire}\index{application linéaire} \ssi :\vspace{-0.3cm}\\
+\noindent Une application $u$ : E \(\to\) F de E dans F est dite \textbf{linéaire}\index{application linéaire} \ssi :\vspace{-0.3cm}\\
 \[ \forall (\alpha, \beta)\in K^2,\ \forall(x,y)\in E^2,\ \ u(\alpha x+ \beta y)= \alpha u(x)+ \beta u(y). \] \vspace{-0.5cm} \\
 \begin{small}
     On note $\,\mathscr{L}(E,F)$ l'ensemble des applications linéaires de E dans F.
 \end{small}
 
-\vspace{0.9cm}
+\vspace{1.4cm}
 
-Soit u : E \(\to\) F une application linéaire de E dans F. On définit les ensembles suivants : \\
-Le \textbf{noyau}\index{applications linéaires!noyau} de u : \(\ \ker  u= \{ x\in E \ | \ u(x)=0_F\}. \) \vspace{0.1cm} \\
-L'\textbf{image}\index{applications linéaires!image} de u :\hspace{0.34cm} Im\(\; u = \{y\in F,\ \exists\, x\in E \ \mid\ y=u(x) \}. \)
+Soit $u$ : E \(\to\) F une application linéaire de E dans F. On définit les ensembles suivants : \\
+Le \textbf{noyau}\index{applications linéaires!noyau} de $u$ : \(\ \ker  u= \bigl\{ x\in E \ | \ u(x)=0_F\bigr\}. \) \vspace{0.1cm} \\
+L'\textbf{image}\index{applications linéaires!image} de $u$ :\hspace{0.34cm} Im\(\; u = \bigl\{y\in F\ \mid \ \exists\, x\in E, \ \;y=u(x) \bigr\}. \)
 
-\vspace{1cm}
+\vspace{1.3cm}
 
-Supposons que E est de dimension \underline{finie}. Le \textbf{rang de l'application linéaire}\index{applications linéaires!rang} \(u\in \mathscr{L}(E,F)\) est définie par : rg\((f)=\dim(\text{Im}\,f) \).
+Supposons que E est de dimension \underline{finie}. Le \textbf{rang de l'application linéaire}\index{applications linéaires!rang} \(u\in \mathscr{L}(E,F)\) est définie par : rg\((u)=\dim(\text{Im}\,u) \).
 
-\vspace{1cm}
+\vspace{1.3cm}
 
-\noindent Soit u : E \(\to\) F une application linéaire de E dans F.\vspace{-0.1cm}
-\begin{itemize}
-    \item[•] Si u est \underline{bijective} on dit que u est un \textbf{isomorphisme}\index{isomorphisme} de K-espaces vectoriels de E sur F.\\
+\noindent Soit $u$ : E \(\to\) F une application linéaire de E dans F.\vspace{-0.1cm}
+\begin{itemize}[label=•]
+    \item Si $u$ est \underline{bijective} on dit que $u$ est un \textbf{isomorphisme}\index{isomorphisme} de K-espaces vectoriels de E sur F.\\
     \begin{small}
         On note Isom(E,F) l'ensemble des isomorphismes de E sur F.
     \end{small}\vspace{0.2cm}
 
-    \item[•] Si \underline{F = K} alors on dit que u est une \textbf{forme linéaire}\index{forme linéaire} sur E.\\
+    \item Si \underline{F = K} alors on dit que $u$ est une \textbf{forme linéaire}\index{forme linéaire} sur E.\\
     \begin{small}
         On note E\expo{*} l'ensemble des formes linéaires sur E et on l'appelle \textbf{espace dual}\index{espace dual} de E.
     \end{small}\vspace{0.2cm}
 
-    \item[•] Si \underline{E = F} alors on dit que u est un \textbf{endomorphisme}\index{endomorphisme} du K-espace vectoriel E.\\
+    \item Si \underline{E = F} alors on dit que $u$ est un \textbf{endomorphisme}\index{endomorphisme} du K-espace vectoriel E.\\
     \begin{small}
         On note $\mathscr{L}$(E) l'ensemble des endomorphismes de E.
     \end{small}\vspace{0.2cm}
 
-    \item[•] Si \underline{E=F} et u est \underline{bijective} alors on dit que u est un \textbf{automorphisme}\index{automorphisme} du K-espace vectoriel E.\\
+    \item Si \underline{E=F} et $u$ est \underline{bijective} alors on dit que $u$ est un \textbf{automorphisme}\index{automorphisme} du K-espace vectoriel E.\\
     \begin{small}
         On note GL(E) l'ensemble des automorphismes de E.
     \end{small}
@@ -539,145 +548,144 @@ Supposons que E est de dimension \underline{finie}. Le \textbf{rang de l'applica
 
 \noindent On pose : \(SL(E)=\{u\in \mathscr{L}(E) \ \mid \ \det u=1 \}.\)
 
-\vspace{1cm}
+\vspace{1.5cm}
 
 Soient F et G deux sous-espaces vectoriels supplémentaires dans E. Tout vecteur \(x\in\) E s'écrit donc de manière unique sous la forme \(x=y+z\) avec \(y\in\) F et \(z\in\) G \emph{(par définition)}. \\
-L'application de E dans E qui à x associe y est appelée \textbf{projection sur F parallèlement à G}\index{projection sur F parallèlement à G}.\\
+L'application de E dans E qui à $x$ associe $y$ est appelée \textbf{projection sur F parallèlement à G}\index{projection sur F parallèlement à G}.\\
 Elle est notée \(\,\displaystyle p_{F,G}\).
 
 \vspace{0.5cm}
 
-On appelle \textbf{projecteur}\index{projecteur} de E tout endomorphisme \(p\) de E vérifiant\footnote{Idempotence.} \(p\circ p=p\).
+On appelle \textbf{projecteur}\index{projecteur} de E tout endomorphisme \(\,p\,\) de E vérifiant\footnote{Idempotence.} \(p\circ p=p\).
 
 \vspace{1.3cm}
 
-\noindent On suppose que \(1_K + 1_K \neq 0_K \).\vspace{-0.1cm}
-\begin{itemize}[leftmargin=0.8cm]
-    \item[•] Soient F et G deux sous-espaces vectoriels supplémentaires dans E.\\
+\noindent On suppose que \(1_K + 1_K \neq 0_K \)\footnote{Lorsque $K=\mathbb{F}_2$,\, on a $1_K+1_K=0_K$.}.\vspace{-0.1cm}
+\begin{itemize}[leftmargin=0.8cm, label=•]
+    \item Soient F et G deux sous-espaces vectoriels supplémentaires dans E.\\
     L'application \(\,\displaystyle s_{F,G}=2p_{F,G}-id_E\,\) est appelée \textbf{symétrie par rapport à F parallèlement à G}\index{symétrie par rapport à F parallèlement à G}.\vspace{0.2cm}
 
-    \item[•]On appelle \textbf{symétrie de E}\index{symétrie} tout endomorphisme \(s\) de E vérifiant\footnote{Involution.} \(s\circ s= id_E\).
+    \item On appelle \textbf{symétrie de E}\index{symétrie} tout endomorphisme \(s\) de E vérifiant\footnote{Involution.} \(s\circ s= id_E\).
 \end{itemize}
 
 \vspace{1.3cm}
 
-\underline{\emph{Théorème - définition}} : Soient E un K-espace vectoriel de dimension \(\,n\geq 1\,\) et \(u\in \mathscr{L}(E)\).\vspace{0.1cm}\\
-Si \(\,\mathcal{B}\) et \(\,\mathcal{B}'\) sont des bases de E\, alors\, tr(\(M_\mathcal{B}(u)\))=tr(\(M_{\mathcal{B}'}(u)\)). Le scalaire tr(\(M_\mathcal{B}(u)\)) est donc indépendant de la base \(\,\mathcal{B}\) considérée. Il est noté tr($u$) et est appelé \textbf{trace de l'endomorphisme}\index{endomorphismes!trace} $u$.
+\underline{\emph{Théorème - définition}} : Soient E un K-espace vectoriel de dimension $\,n\,$ et \(u\in \mathscr{L}(E)\).\vspace{0.1cm}\\
+Si \(\,\mathcal{B}\) et \(\,\mathcal{B}'\) sont des bases de E\, alors\, tr(\(M_\mathcal{B}(u)\))$\,=\,$tr(\(M_{\mathcal{B}'}(u)\)). Le scalaire \,tr(\(M_\mathcal{B}(u)\))\, est donc indépendant de la base \(\,\mathcal{B}\) considérée. Il est noté tr($u$) et est appelé \textbf{trace de l'endomorphisme}\index{endomorphismes!trace} $u$.
 
-\vspace{1cm}
+\vspace{1.6cm}
 
 Soit \(\, u\in \mathscr{L}(E)\).
-\begin{itemize}[leftmargin=0.8cm]
-    \item[•] Soit \(P=\underset{k\in \NN}{\sum}\alpha _k \text{X}^k\) un polynôme de K$[$X$]$. L'endomorphisme \(\underset{k\in \NN}{\sum}\alpha_k u^k\) est noté \(P(u)\).\\
+\begin{itemize}[leftmargin=0.8cm, label=•]
+    \item Soit \(P=\underset{k\in \NN}{\sum}\alpha _k \text{X}^k\) un polynôme de $\poly$. L'endomorphisme \(\underset{k\in \NN}{\sum}\alpha_k u^k\) est noté \(P(u)\).\\
     Par définition on a donc : \(\displaystyle P(u)=\sum_{k\in \NN}\alpha _k u^k.\)\vspace{0.1cm}
 
-    \item[•] Un polynôme P de $\poly\,$ \textbf{annule l'endomorphisme}\index{endomorphismes!polynôme annulateur} $u$ \ssi \(\,P(u)=0_{_{\mathscr{L}(E)}}\).\vspace{0.1cm}\\
-    Par définition on pose : \(\;\text{I}_u = \bigl\{ P\in \poly \ \rvert \ P(u)=0_{_{\mathscr{L}(E)}}\bigr\}\footnote{On l'appelle \textbf{idéal annulateur}\index{endomorphismes!idéal annulateur} de $u$.}.\)\vspace{0.3cm}
+    \item Un polynôme P de $\poly\,$ \textbf{annule l'endomorphisme}\index{endomorphismes!polynôme annulateur} $u$ \ssi \(\,P(u)=0_{_{\mathscr{L}(E)}}\).\vspace{0.1cm}\\
+    Par définition on pose : \(\;\text{I}_u = \bigl\{ P\in \poly \ \vert \ P(u)=0_{_{\mathscr{L}(E)}}\bigr\}\footnote{On l'appelle \textbf{idéal annulateur}\index{endomorphismes!idéal annulateur} de $u$.}.\)\vspace{0.3cm}
 
-    \item[•] Un \textbf{polynôme de l'endomorphisme}\index{endomorphismes!polynôme d'un endomorphisme} $u$ est un endomorphisme de la forme $P(u)$ avec \(P\in \poly\).\vspace{0.1cm}\\
+    \item Un \textbf{polynôme de l'endomorphisme}\index{endomorphismes!polynôme d'un endomorphisme} $u$ est un endomorphisme de la forme $P(u)$ avec \(P\in \poly\).\vspace{0.1cm}\\
     Par définition on pose : \(K[u]=\bigl\{ P(u),\ P\in \poly\bigr\}.\)
 \end{itemize}
 
-\vspace{1cm}
+\vspace{1.3cm}
 
 \underline{\emph{Théorème - définition}} : Ou bien I\(_u=\left\{0_{\poly}\right\}\), ou bien I\(_u\neq\left\{0_{\poly}\right\}\) et il existe un unique\vspace{0.1cm}\\
-polynôme unitaire \(\,\Pi_u\,\) de $\poly$ tel que\, I\(_u=\Pi_u\poly.\,\) En cas d'existence, \(\,\Pi_u\,\) est appelé le \textbf{polynôme minimal}\index{endomorphismes!polynôme minimal} de $u$.
+polynôme unitaire \(\,\Pi_u\,\) de $\poly$ tel que\, I\(_u=\Pi_u\poly.\,\) En cas d'existence, \(\,\Pi_u\,\) est appelé le \textbf{polynôme minimal}\index{endomorphismes!polynôme minimal}\footnote{Le polynôme minimal de $u$ est aussi noté $\pi_u$ ou $\mu_u$.} de $u$.
 
-\vspace{1cm}
+\vspace{1.5cm}
 
 Soient \(u\in \mathscr{L}(E)\) et F un sous-espace vectoriel de E.\\
 On dit que F est \textbf{stable}\index{endomorphismes!s.e.v. stable} par $u$ \ssi \(u(F)\subset F\) c'est-à-dire ssi \(\,\forall x\in F,\ u(x)\in F.\)\\
 Pour exprimer que F est stable par $u$ on dit aussi que $u$ \textbf{stabilise} F.
 
-\vspace{1.3cm}
+\vspace{1.5cm}
 
 Soient \(u\in \mathscr{L}(E)\) et F un sous-espace vectoriel de E \underline{stable} par $u$.\\
-On peut considérer l'application \(u_F :F \to F\) définie par : \(\forall x\in F,\ u_F(x)=u(x)\).\\
-On vérifie que \(u\in \mathscr{L}(F)\). $u_F$ est appelé \textbf{endomorphisme de F induit par u.}\index{endomorphisme induit}
+On peut considérer l'application \(\,u_F :F \to F\,\) définie par : \(\ \forall x\in F,\ \;u_F(x)=u(x)\).\\
+On vérifie que \(\,u_F\in \mathscr{L}(F)\). $u_F$ est appelé \textbf{endomorphisme de F induit par u.}\index{endomorphisme induit}
 
-\vspace{1.3cm}
+\newpage
 
 Soit \(u\in \mathscr{L}(E)\).\\
-On dit que \(x\in E\) est un \textbf{vecteur propre}\index{endomorphismes!vecteur propre} de $u$ \ssi : \(x\neq 0_E\, \text{ et }\, \exists \lambda \in K \ \rvert \ u(x)=\lambda x.\)\\
-On dit que \(\lambda \in K\) est une \textbf{valeur propre}\index{endomorphismes!valeur propre} de $u$ \ssi : \(\exists\, x\in E \ \rvert \ x\neq 0_E \, \text{ et }\,  u(x)=\lambda x.\)\\
+On dit que \(x\in E\) est un \textbf{vecteur propre}\index{endomorphismes!vecteur propre} de $u$ \ssi : \(x\neq 0_E\, \text{ et }\, \exists \lambda \in K \ \vert \ u(x)=\lambda x.\)\\
+On dit que \(\lambda \in K\) est une \textbf{valeur propre}\index{endomorphismes!valeur propre} de $u$ \ssi : \(\exists\, x\in E \ \vert \ x\neq 0_E \, \text{ et }\,  u(x)=\lambda x.\)\\
 L'ensemble de toutes les valeurs propres de $u$ est noté\, sp$\,u\,$ et est appelé \textbf{spectre}\index{endomorphismes!spectre} de $u$.
 
 \vspace{1.3cm}
 
-Soient \(u\in \mathscr{L}(E)\) et \(\lambda \in sp\,u.\)\vspace{0.1cm}\\
+Soient \(u\in \mathscr{L}(E)\) et \(\lambda \in \text{sp}\,u.\)\vspace{0.1cm}\\
 L'ensemble \(\,E_\lambda(u)=\ker (u-\lambda id_E)\,\) est appelé \textbf{sous-espace propre}\index{endomorphismes!sous-espace propre} associé à la valeur propre $\lambda$.\vspace{0.1cm}
-\(E_\lambda(u)=\{x\in E,\ u(x)=\lambda x\,\}\; \text{ et } E_\lambda(u)\neq \left\{0_E\right\} \text{ car } \lambda\in sp\,u.\) 
+\(E_\lambda(u)=\{x\in E \ \vert \ u(x)=\lambda x\,\}\; \text{ et } E_\lambda(u)\neq \left\{0_E\right\} \text{ car } \lambda\in \text{sp}\,u.\) 
 
 \vspace{1.3cm}
 
-\noindent On suppose E de \underline{dimension finie} \(n\geq 1\). Soit \((u,v)\in \mathscr{L}(E)^2.\)
-\begin{itemize}[leftmargin=0.5cm]
-    \item[•] L'endomorphisme $u$ est dit \textbf{diagonalisable}\index{endomorphismes!diagonalisable} \ssi il existe une base de E dans laquelle la matrice de $u$ est diagonale. Toute base \(\,\mathcal{B}\,\) de E dans laquelle la matrice de $u$ est diagonale est appelée une \textbf{base de diagonalisation}\index{endomorphismes!base de diagonalisation} de $u$.\vspace{.2cm}
+\noindent On suppose E de \underline{dimension finie} égale à $n$. Soit \((u,v)\in \mathscr{L}(E)^2.\)
+\begin{itemize}[leftmargin=0.5cm, label=•]
+    \item L'endomorphisme $u$ est dit \textbf{diagonalisable}\index{endomorphismes!diagonalisable} \ssi il existe une base de E dans laquelle la matrice de $u$ est diagonale. Toute base \(\,\mathcal{B}\,\) de E dans laquelle la matrice de $u$ est diagonale est appelée une \textbf{base de diagonalisation}\index{endomorphismes!base de diagonalisation} de $u$.\vspace{.2cm}
     
-    \item[•] L'endomorphisme $u$ est dit \textbf{trigonalisable}\index{endomorphismes!trigonalisable} \ssi il existe une base de E dans laquelle la matrice de $u$ est triangulaire supérieure\footnote{Si il existe une base \(\,\mathcal{B}=(e_1,\cdots,e_n)\,\) de E dans laquelle la matrice de $u$ est triangulaire inférieure alors $u$ est trigonalisable car la matrice de $u$ dans la base \guillemetleft inversée\guillemetright\, \(\;\mathcal{B}'=(e_n,\cdots,e_1)\,\) est triangulaire supérieure.\vspace{0.2cm}}. Toute base \(\,\mathcal{B}\,\) de E dans laquelle la matrice de $u$ est triangulaire supérieure est appelée une \textbf{base de trigonalisation}\index{endomorphismes!base de trigonalisation} de $u$\vspace{0.2cm}.
+    \item L'endomorphisme $u$ est dit \textbf{trigonalisable}\index{endomorphismes!trigonalisable} \ssi il existe une base de E dans laquelle la matrice de $u$ est triangulaire supérieure\footnote{Si il existe une base \(\,\mathcal{B}=(e_1,\cdots,e_n)\,\) de E dans laquelle la matrice de $u$ est triangulaire inférieure alors $u$ est trigonalisable car la matrice de $u$ dans la base \guillemetleft inversée\guillemetright\, \(\;\mathcal{B}'=(e_n,\cdots,e_1)\,\) est triangulaire supérieure.\vspace{0.2cm}}. Toute base \(\,\mathcal{B}\,\) de E dans laquelle la matrice de $u$ est triangulaire supérieure est appelée une \textbf{base de trigonalisation}\index{endomorphismes!base de trigonalisation} de $u$\vspace{0.2cm}.
     
-    \item[•] L'endomorphisme $u$ est dit \textbf{nilpotent}\index{endomorphismes!nilpotent} \ssi : \(\ \exists \, m\in \NN^* \ \mid \ u^m=0_{_{\mathscr{L}(E)}}\).\vspace{0.2cm}
+    \item L'endomorphisme $u$ est dit \textbf{nilpotent}\index{endomorphismes!nilpotent} \ssi : \(\ \exists \, m\in \NN^* \ \mid \ u^m=0_{_{\mathscr{L}(E)}}\).\vspace{0.2cm}
     
-    \item[•] \(\left(\mathbf{H} \mathbf{P}\right) \) Les endomorphismes $u$ et $v$ sont dits \textbf{codiagonalisables}\index{endomorphismes!codiagonalisables} \ssi il existe une base de E dans laquelle les matrices de $u$ et de $v$ sont diagonales.
+    \item \(\left(\mathbf{H} \mathbf{P}\right) \) Les endomorphismes $u$ et $v$ sont dits \textbf{codiagonalisables}\index{endomorphismes!codiagonalisables} \ssi il existe une base de E dans laquelle les matrices de $u$ et de $v$ sont diagonales.
 \end{itemize}
 
-\vspace{1.3cm}
+\vspace{1.5cm}
 
-\underline{\emph{Théorème - définition}} : On suppose E de dimension finie égale à $n\geq 1$. Soit \(u\in \mathscr{L}(E)\).\vspace{0.1cm}\\
+\underline{\emph{Théorème - définition}} : On suppose E de dimension finie égale à $n$. Soit \(u\in \mathscr{L}(E)\).\vspace{0.1cm}\\
 Si \(\,\mathcal{B}\,\) et \(\,\mathcal{B}'\,\) sont deux bases de E, alors \(\,\chi_{_{M_{_{\mathcal{B}}}(u)}}=\chi_{_{M_{\mathcal{B}'}(u)}}\). Le polynôme \(\chi_{_{M_{_{\mathcal{B}}}(u)}}\) est donc indépendant\vspace{0.1cm}\\
 de la base \(\,\mathcal{B}\,\) considérée. Il est noté \(\chi_{_u}\) et est appelé \textbf{polynôme caractéristique}\index{endomorphismes!polynôme caractéristique} de $u$.\vspace{0.15cm}\\
 Et on a : \(\ \chi_{_u}=X^n-\text{tr}(u)\,X^{n-1}+\cdots+(-1)^n\det(u).\)
  
-\newpage
+\vspace{1.8cm}
 
-On suppose que \(\,\chi_u\,\) est scindé sur K. Le polynôme \(\,\chi_u\,\) peut donc s'écrire sous la forme :\vspace{0.1cm}\\
-\(\displaystyle \chi_u=(\text{X}-\lambda_1)^{\alpha_1}\cdots(\text{X}-\lambda_r)^{\alpha_r}\,\) où \(\,\alpha_1,\cdots,\alpha_r\,\) sont dans \(\,\NN\)\expo{*} et où \(\,\lambda_1,\cdots,\lambda_r\,\) sont des scalaires deux à deux distincts.\vspace{0.1cm}\\
+On suppose que \(\,\chi_{_u}\) est scindé sur K. Le polynôme \(\,\chi_{_u}\) peut donc s'écrire sous la forme :\vspace{0.1cm}\\
+\(\displaystyle \chi_{_u}=(\text{X}-\lambda_1)^{\alpha_1}\cdots(\text{X}-\lambda_r)^{\alpha_r}\,\) où \(\,\alpha_1,\cdots,\alpha_r\,\) sont dans \(\,\NN\)\expo{*} et où \(\,\lambda_1,\cdots,\lambda_r\,\) sont des scalaires deux à deux distincts.\vspace{0.1cm}\\
 Pour \(\,k\in \llbracket 1,r \rrbracket\,\) on pose\footnote{\(\, V_k=\ker\bigl(P_k(u)\bigr)\,\) avec \(\displaystyle \, P_k (u)= \bigl( u-\lambda_kid_E\bigr)^{\alpha_k}\).} : \(\displaystyle V_k = \ker\bigl(u-\lambda_kid_E\bigr)^{\alpha_k}.\)\vspace{0.1cm}\\
 $V_k$ est appelé \textbf{sous-espace caractéristique}\index{endomorphismes!sous-espace caractéristique} de $u$ associé à la valeur propre $\lambda_k$.
 
-\vspace{2cm}
+\newpage
 
 \subsection{Théorie des déterminants}
 
 \vspace{0.7cm}
 
 \begin{center}
-    Soit (E, +,\ \lce\,) une K-espace vectoriel.
+    Soit (E, +,\ \lce\,) un K-espace vectoriel.
 \end{center}
 
-\vspace{1cm}
+\vspace{1.3cm}
 
-Soit p un entier supérieur ou égal à deux.\\
-Une \textbf{forme p-linéaire}\index{forme p-linéaire} sur E est une application \(\ \varphi \) : E\expo{p} \(\to\) K\ \ vérifiant :\vspace{0.1cm}\\
+Soit $\,p\,$ un entier supérieur ou égal à deux.\\
+Une \textbf{forme $p$-linéaire}\index{forme $p$-linéaire} sur E est une application \(\ \varphi \) : E\expo{$p$} \(\to\) K\ \ vérifiant :\vspace{0.1cm}\\
 \(\forall j\in \llbracket 1,p \rrbracket,\ \forall (a_1,\cdots,a_{j-1},a_{j+1},\cdots,a_p)\in E^{p-1},\ \bigl( x\mapsto \varphi(a_1,\cdots,a_{j-1}, x,a_{j+1},\cdots,a_p) \bigr) \in E^*. \)
 
-\vspace{1.5cm}
+\vspace{1.8cm}
 
-Une forme p-linéaire \(\ \varphi \) : E\expo{p} \(\to\) K\ est dite \textbf{alternée}\index{forme p-linéaire alternée} \ssi :\\
-\( \varphi(x_1,\cdots, x_p)=0_K  \) pour tout p-uplet \((x_1,\cdots, x_p)\) de E\expo{p} dont au moins deux vecteurs sont égaux.\vspace{0.5cm}\\
+Une forme $p$-linéaire \(\ \varphi \) : E\expo{$p$} \(\to\) K\ est dite \textbf{alternée}\index{forme p-linéaire alternée} \ssi :\\
+\( \varphi(x_1,\cdots, x_p)=0_K  \) pour tout $p$-uplet \((x_1,\cdots, x_p)\) de E\expo{$p$} dont au moins deux vecteurs sont égaux.\vspace{0.2cm}\\
 Ou, de manière équivalente, $\varphi$ est dite alternée \ssi :\vspace{0.1cm}\\
 \(\forall(x_1,\cdots,x_p)\in E^p,\quad \Bigl(\,\varphi(x_1,\cdots,x_p)=0_K \ \Leftrightarrow \ \) la famille $(x_1,\cdots,x_p)$ est liée$\Bigr)$. 
 
-\vspace{1.5cm}
+\vspace{1.8cm}
 
-Soit E un K-espace vectoriel de dimension \(n\geq 1\).\\
-On note \(\Lambda_n(E)\) l'ensemble des formes n-linéaires alternées sur E.\\
+Soit E un K-espace vectoriel de dimension égale à $n$.\\
+On note \(\Lambda_n(E)\) l'ensemble des formes $n$-linéaires alternées sur E.\\
 \underline{\emph{Théorème - définition}} : Fixons une base \(\mathcal{B}=(e_1,\cdots,e_n)\) de E.\vspace{-0.1cm}
-\begin{itemize}[leftmargin=2cm]
-    \item[•] Il existe une unique forme n-linéaire alternée \(\varphi\) telle que \(\ \varphi(e_1,\cdots,e_n)=1_K\).\\
+\begin{itemize}[leftmargin=2cm, label=•]
+    \item Il existe une unique forme $n$-linéaire alternée \(\varphi\) telle que \(\ \varphi(e_1,\cdots,e_n)=1_K\).\\
     Elle est appelée \textbf{déterminant dans la base \(\mathcal{B}\)}\index{déterminant dans une base} et est notée det\(_\mathcal{B}\).\vspace{0.1cm}
 
-    \item[•] \(\Lambda_n(E)\) est une droite vectorielle et \{det\(_\mathcal{B}\)\} est une base de \(\Lambda_n(E).\)
+    \item \(\Lambda_n(E)\) est une droite vectorielle et \{det\(_\mathcal{B}\)\} est une base de \(\Lambda_n(E).\)
 \end{itemize}
 
-\vspace{1.2cm}
+\vspace{1.8cm}
 
-\noindent Si \(\,\mathcal{B}\,\) est une base de E et si \(\,(x_1,\cdots,x_n)\in E^n\), alors le scalaire\, det\(_\mathcal{B}(x_1,\cdots,x_n)\,\) est appelé\\
-\textbf{déterminant de la famille}\index{déterminant d'une famille} de vecteurs \((x_1,\cdots,x_n)\) dans la base \(\mathcal{B}\).
+\noindent Si \(\,\mathcal{B}\,\) est une base de E (dim\,E$\,=n$) et si \(\,(x_1,\cdots,x_n)\in E^n\), alors le scalaire\, det\(_\mathcal{B}(x_1,\cdots,x_n)\,\) est appelé \textbf{déterminant de la famille}\index{déterminant d'une famille} de vecteurs \((x_1,\cdots,x_n)\) dans la base \(\mathcal{B}\).
 
-\newpage
+\vspace{2cm}
 
-Soit E un \(\RR\)-espace vectoriel de dimension finie \(n\geq 1\).\\
+Soit E un \(\RR\)-espace vectoriel de dimension finie égale à $n$.\\
 \textbf{Orienter}\index{orienter un espace vectoriel} E c'est \underline{choisir} une base \(\,\mathcal{B}=(e_1,\cdots,e_n)\) de E et \guillemotleft\underline{décréter}\guillemotright \ qu'elle est \textbf{directe}. \\
 À partir de là, si \(\,\mathcal{B}'=(e'_1,\cdots,e'_n)\,\) est une autre base de E, alors\footnote{Cela découle du deuxième point du théorème ci-dessus.} det\(_\mathcal{B}(e'_1,\cdots,e'_n)\neq 0\).\vspace{0.25cm}\\
 Il n'y a que deux possibilités : \(\left\{\begin{array}{ll}
@@ -685,9 +693,9 @@ Il n'y a que deux possibilités : \(\left\{\begin{array}{ll}
      \text{Si } \det_\mathcal{B}(e'_1,\cdots,e'_n)<0, & \text{on dit que la base }\mathcal{B}' \text{ est \textbf{indirecte}\index{base indirecte}}.
 \end{array} \right.\)
 
-\vspace{1.5cm}
+\newpage
 
-\underline{\emph{Théorème - définition}} : Soient E un K-espace vectoriel de dimension finie \(n\geq 1\) et \(u\in \mathscr{L}(E)\).\vspace{0.05cm} \\
+\underline{\emph{Théorème - définition}} : Soient E un K-espace vectoriel de dimension finie égale à $n$ et \(u\in \mathscr{L}(E)\).\vspace{0.05cm} \\
 Si \(\,\mathcal{B}=(e_1,\cdots,e_n)\,\) et \(\,\mathcal{B}'=(e'_1,\cdots,e'_n)\,\) sont deux bases de E, alors : \vspace{-0.2cm}
 \begin{center}
     \(\det_\mathcal{B}\Bigl(u(e_1),\cdots,u(e_n)\Bigr)=\det_{\mathcal{B}'}\Bigl(u(e'_1),\cdots,u(e'_n)\Bigr) \)
@@ -695,19 +703,19 @@ Si \(\,\mathcal{B}=(e_1,\cdots,e_n)\,\) et \(\,\mathcal{B}'=(e'_1,\cdots,e'_n)\,
 Le scalaire \(\det_\mathcal{B}\Bigl(u(e_1),\cdots,u(e_n)\Bigr)\) est indépendant de la base \(\mathcal{B}\) considérée et ne dépend que de \(u\).\\
 Il est noté \(\det u\) et est appelé \textbf{déterminant de l'endomorphisme \(u\)}\index{déterminant d'un endomorphisme}. 
 
-\vspace{1.3cm}
+\vspace{1.6cm}
 
 Soit \(A=(a_{ij})\in \mathcal{M}_n(K).\) Le \textbf{déterminant de la matrice A}\index{déterminant d'une matrice} est le scalaire \(\det A\) défini par :\\
 \(\det A = \det_\varepsilon\bigl(C_1,\cdots,C_n\bigr) \) où \(\bigl(C_1,\cdots,C_n\bigr)\) est la famille des vecteurs colonnes de A et où \(\varepsilon\) est la base canonique de \(K^n\).
 
 \emph{\underline{Proposition}} : \(\displaystyle\ \det A = \sum_{\sigma \in S_n}\varepsilon(\sigma)\prod_{i=1}^{n}a_{i\,\sigma(i)}=\sum_{\sigma \in S_n}\varepsilon(\sigma)\prod_{j=1}^{n}a_{\sigma(j)\,j}.\)
 
-\vspace{1cm}
+\vspace{1.5cm}
 
 Soit \(M=(\alpha_{ij})\in\mathcal{M}_n(K)\) avec \(n\geq 2\).\\
-On note \(M_{ij} \) la matrice carrée d'ordre \(n-1\) déduite de \(M\) en supprimant la i\expo{ème} ligne et\\
-la j\expo{ème} colonne de M.\\
-Le scalaire \(\,A_{ij}=(-1)^{i+j}\det M_{ij}\, \) est appelé \textbf{cofacteur}\index{cofacteur} de \(\alpha_{ij} \) dans la matrice \(M\).\vspace{0.5cm}
+On note \(M_{ij} \) la matrice carrée d'ordre \(n-1\) déduite de \(M\) en supprimant la $i$\expo{ème} ligne et\\
+la $j$\expo{ème} colonne de $M$.\\
+Le scalaire \(\,A_{ij}=(-1)^{i+j}\det M_{ij}\, \) est appelé \textbf{cofacteur}\index{matrices!cofacteur} de \(\alpha_{ij} \) dans la matrice \(M\).\vspace{0.5cm}
 
 \(\displaystyle \arraycolsep=0.07cm\def\arraystretch{1}  \hspace{-1cm}M= \left[
 \begin{array}{ccc|c|ccc}
@@ -733,9 +741,8 @@ M_{ij}= \left[
 \right]
 \)
 
-\vspace{1cm}
+\vspace{1.3cm}
 
 Soit \(M=(\alpha_{ij})\) une matrice carrée d'ordre n avec \(n\geq 2\). La  \textbf{comatrice}\index{comatrice} de \(M\) est la matrice carrée\, com\(\,M\)\, définie par :\, com\(\,M=(A_{ij})\ \) avec \(A_{ij}\) le cofacteur de \(\alpha_{ij}\) dans la matrice \(M\).
 
-
-\vspace{2.3cm}
+\newpage

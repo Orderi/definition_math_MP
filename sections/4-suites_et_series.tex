@@ -1,10 +1,9 @@
-
 \section{Suites et séries}
 
 \vspace{1cm}
 
 \begin{center}
-    Le symbole | | désigne la valeur absolue ou le module suivant\\
+    Le symbole $\,\lvert\ \rvert\,$ désigne la valeur absolue ou le module suivant\\
     que l'on se trouve dans \(\RR\) ou dans \(\CC\).
 \end{center}
 
@@ -14,68 +13,70 @@
 
 \vspace{1.3cm}
 
-\hspace{0.5cm} Soient \((x_n)\) une suite d'éléments de $\KK$ et \(a\in \KK\).\\
+\hspace{0.5cm} Afin d'alléger les notations, la suite $\displaystyle(x_n)_{_{n\in \NN}}\,$ sera simplement notée $(x_n)$.\vspace{0.3cm}\\
+
+Soient \((x_n)\) une suite d'éléments de $\KK$ et \(a\in \KK\).\\
 On dit que $(x_n)$ \textbf{tend vers a}\index{suites de scalaires!limite} \ssi :\(\ \ \forall \varepsilon >0,\ \exists N\in \NN,\ \forall n\geq N,\ |x_n-a|\leq \varepsilon. \)\vspace{0.3cm}\\
 On dit que $(x_n)$ est \textbf{convergente}\index{suites de scalaires!convergence} dans $\KK$ \ssi il existe un élément de $\KK$ vers lequel $(x_n)$ tend. On dit que $(x_n)$ est \textbf{divergente}\index{suites de scalaires!divergence} dans $\KK$ \ssi elle n'est pas convergente dans $\KK$.
 
 \vspace{1.3cm}
 
 Soit $(x_n)$ une suite de nombres \underline{réels}.\\
-On dit que $(x_n)$ \textbf{tend vers $+\infty$}\index{suites de scalaires!limite en $+\infty$} \ssi :\(\ \ \forall A>0,\ \exists N\in \NN,\ \forall x\geq N,\ x_n\geq A\).\vspace{0.1cm}\\
-On dit que $(x_n)$ \textbf{tend vers $-\infty$}\index{suites de scalaires!limite en $-\infty$} \ssi :\(\ \ \forall A>0,\ \exists N\in \NN,\ \forall x\geq N,\ x_n\leq -A\).
+On dit que $(x_n)$ \textbf{tend vers $+\infty$}\index{suites de scalaires!limite en $+\infty$} \ssi :\(\ \ \forall A>0,\ \exists N\in \NN,\ \forall n\geq N,\ x_n\geq A\).\vspace{0.1cm}\\
+On dit que $(x_n)$ \textbf{tend vers $-\infty$}\index{suites de scalaires!limite en $-\infty$} \ssi :\(\ \ \forall A>0,\ \exists N\in \NN,\ \forall n\geq N,\ x_n\leq -A\).
 
-\vspace{1.2cm}
+\newpage
 
 Soit $(x_n)$ une suite d'éléments de $\KK$.\\
 On dit que $(x_n)$ est \textbf{bornée}\index{suites de scalaires!bornée} \ssi : \(\ \exists M\in \RR_+ \ \mid \ \forall n\in \NN,\ |x_n|\leq M. \)
 
-\vspace{1.5cm}
+\vspace{1.2cm}
 
 \noindent Soit $(x_n)$ une suite de nombres \underline{réels}.\vspace{0.1cm}
-\begin{itemize}[leftmargin=1cm]
-    \item[•] $(x_n)$ est dite \textbf{croissante}\index{suites de scalaires!croissante} \ssi : \(\ \forall n\in \NN,\ \ x_n \leq x_{n+1}.  \)\vspace{0.1cm}
+\begin{itemize}[leftmargin=1cm, label=•]
+    \item $(x_n)$ est dite \textbf{croissante}\index{suites de scalaires!croissante} \ssi : \(\ \forall n\in \NN,\ \ x_n \leq x_{n+1}.  \)\vspace{0.1cm}
     
-    \item[•] $(x_n)$ est dite \textbf{strictement croissante}\index{suites de scalaires!strictement croissante} \ssi : \(\ \forall n\in \NN,\ \ x_n < x_{n+1}.  \)\vspace{0.1cm}
+    \item $(x_n)$ est dite \textbf{strictement croissante}\index{suites de scalaires!strictement croissante} \ssi : \(\ \forall n\in \NN,\ \ x_n < x_{n+1}.  \)\vspace{0.1cm}
 
-    \item[•] $(x_n)$ est dite \textbf{décroissante}\index{suites de scalaires!décroissante} \ssi : \(\ \forall n\in \NN,\ \ x_{n+1} \leq x_n.  \)\vspace{0.1cm}
+    \item $(x_n)$ est dite \textbf{décroissante}\index{suites de scalaires!décroissante} \ssi : \(\ \forall n\in \NN,\ \ x_{n+1} \leq x_n.  \)\vspace{0.1cm}
     
-    \item[•] $(x_n)$ est dite \textbf{strictement décroissante}\index{suites de scalaires!strictement décroissante} \ssi : \(\ \forall n\in \NN,\ \ x_{n+1} < x_n.  \)\vspace{0.1cm}
+    \item $(x_n)$ est dite \textbf{strictement décroissante}\index{suites de scalaires!strictement décroissante} \ssi : \(\ \forall n\in \NN,\ \ x_{n+1} < x_n.  \)\vspace{0.1cm}
 
-    \item[•] $(x_n)$ est dite \textbf{majorée}\index{suites de scalaires!majorée} \ssi : \(\ \exists M\in \RR,\ \forall n\in \NN,\ \ x_n \leq M.  \)\vspace{0.1cm}
+    \item $(x_n)$ est dite \textbf{majorée}\index{suites de scalaires!majorée} \ssi : \(\ \exists M\in \RR,\ \forall n\in \NN,\ \ x_n \leq M.  \)\vspace{0.1cm}
 
-    \item[•] $(x_n)$ est dite \textbf{minorée}\index{suites de scalaires!minorée} \ssi : \(\ \exists m\in \RR,\ \forall n\in \NN,\ \ m\leq x_n .  \)
+    \item $(x_n)$ est dite \textbf{minorée}\index{suites de scalaires!minorée} \ssi : \(\ \exists m\in \RR,\ \forall n\in \NN,\ \ m\leq x_n .  \)
 \end{itemize}
 
 \vspace{1.3cm}
 
-Soient $(a_n)$ et $(b_n)$ deux suites \underline{réelles}. On dit que \(\bigl((a_n),(b_n)\bigr)\) est une couple de \textbf{suites adjacentes}\index{suites adjacentes} \ssi $(a_n)$ est croissante, $(b_n)$ est décroissante et \(\displaystyle \lim \bigl(b_n-a_n\bigr)=0.\)
+Soient $u=(u_n)$ et $v=(v_n)$ deux suites \underline{réelles}. On dit que \((u,v)\) est une couple de \textbf{suites adjacentes}\index{suites adjacentes} \ssi $u$ est croissante, $v$ est décroissante et \(\displaystyle \lim_{n\to+\infty} \bigl(u_n-v_n\bigr)=0.\)
 
 
 \vspace{1.3cm}
 
 \noindent Soient $(a_n)$ et $(b_n)$ dans $\KK^\NN$. On suppose que : \(\forall n\in \NN,\ b_n\neq 0 . \ \)\footnote{Cela se généralise au cas où la suite $(b_n)$ ne s'annule pas \emph{à partir d'un certain rang}.}\vspace{-0.2cm}
-\begin{itemize}[leftmargin=0.5cm]
-    \item[•] On dit que $(a_n)$ est \textbf{dominée}\index{suites de scalaires!dominée} par $(b_n)$, et on note \(a_n=\text{O}(b_n)\) \ssi \(\displaystyle \left( \frac{a_n}{b_n} \right)\) est bornée.\\
+\begin{itemize}[leftmargin=0.5cm, label=•]
+    \item On dit que $(a_n)$ est \textbf{dominée}\index{suites de scalaires!dominée} par $(b_n)$, et on note \(a_n=\text{O}(b_n)\) \ssi \(\displaystyle \left( \frac{a_n}{b_n} \right)\) est bornée.\\
     \begin{small}
         On dit aussi que \((a_n)\) est \underline{\emph{un}} grand O de \((b_n)\).
     \end{small}
     \vspace{0.1cm}
     
-    \item[•] On dit que $(a_n)$ est \textbf{négligeable}\index{suites de scalaires!négligeable} devant $(b_n)$, et on note \(a_n=\text{o}(b_n)\), \ssi \(\ \displaystyle \lim \frac{a_n}{b_n}=0.  \)\\
+    \item On dit que $(a_n)$ est \textbf{négligeable}\index{suites de scalaires!négligeable} devant $(b_n)$, et on note \(a_n=\text{o}(b_n)\), \ssi \( \displaystyle \lim_{n\to+\infty}\,\frac{a_n}{b_n}=0.  \)\\
     \begin{small}
         On dit aussi que \((a_n)\) est \underline{\emph{un}} petit o de \((b_n)\).
     \end{small}
     \vspace{0.1cm}
     
-    \item[•] On dit que \((a_n)\) est \textbf{équivalente}\index{suites de scalaires!équivalente} à \((b_n)\), et on note \(a_n\sim b_n\), \ssi \(\ \displaystyle \lim\frac{a_n}{b_n}=1. \) 
+    \item On dit que \((a_n)\) est \textbf{équivalente}\index{suites de scalaires!équivalente} à \((b_n)\), et on note \(a_n\sim b_n\), \ssi \( \displaystyle \lim_{n\to+\infty}\,\frac{a_n}{b_n}=1. \) 
 \end{itemize}
 
-\vspace{0.8cm}
+\vspace{1.3cm}
 
 Soit \((x_n)\) une suite d'éléments de \(\KK\). \\
 On appelle \textbf{suite extraite}\index{suite extraite}, ou encore \textbf{sous-suite}\index{sous-suite}, de la suite \((x_n)\) toute suite de la forme \(\displaystyle \bigl(x_{\varphi (n)}\bigr)\) où \(\varphi\) est une application strictement croissante de \(\NN\) dans \(\NN\).
 
-\vspace{1.3cm}
+\newpage
 
 \subsection{Séries numériques $-$ Familles sommables}
 
@@ -85,8 +86,8 @@ On appelle \textbf{suite extraite}\index{suite extraite}, ou encore \textbf{sous
 
 \vspace{0.5cm}
 
-Soit \((a_n)\in \KK^\NN\). Pour \(n\in \NN\) on pose : \(\displaystyle A_n=\sum_{k=0}^{n} a_k = a_0+a_1+\cdots a_n.  \)\\
-La suite \((A_n)\) est appelée \textbf{série de terme général $(a_n)$}\index{séries numériques!série} et est notée \(\sum a_n\).\vspace{0.2cm}\\
+Soit \((a_n)\in \KK^\NN\). Pour \(n\in \NN\) on pose : \(\displaystyle A_n=\sum_{k=0}^{n} a_k = a_0+a_1+\cdots +a_n.  \)\vspace{0.1cm}\\
+La suite \((A_n)\) est appelée \textbf{série de terme général $(a_n)$}\index{séries numériques!série} et est notée \(\,\sum a_n\).\vspace{0.2cm}\\
 Pour $N\in\NN$, le scalaire \(A_N\) est appelé \textbf{somme partielle}\index{séries numériques!somme partielle} d'ordre $N$ de la série \(\sum a_n\).\vspace{0.5cm}\\
 Dire que la série \(\sum a_n\) est \textbf{convergente}\index{séries numériques!série convergente} (resp. \textbf{divergente}\index{séries numériques!série divergente}) dans \(\KK\) c'est dire que la suite \((A_n)\) est convergente (resp. divergente) dans \(\KK\).\vspace{-0.3cm}\\
 En cas de convergence de la série \(\sum a_n\), le scalaire \(\displaystyle \lim_{N \to +\infty} A_N\,  \) est noté \(\,\displaystyle \sum_{n = 0}^{+\infty}a_n  \,\) et est appelé \textbf{somme}\index{séries numériques!somme d'une}\vspace{-0.3cm} \\
@@ -94,7 +95,7 @@ En cas de convergence de la série \(\sum a_n\), le scalaire \(\displaystyle \li
 
 \vspace{0.3cm}
 
-On dit que la série \(\sum a_n\) \textbf{diverge grossièrement}\index{séries numériques!diverge grossièrement} lorsque le terme général ne tend pas vers $0$.
+\noindent On dit que la série \(\sum a_n\) \textbf{diverge grossièrement}\index{séries numériques!diverge grossièrement} lorsque le terme général ne tend pas vers $0$.
 
 \vspace{0.3cm}
 
@@ -108,7 +109,7 @@ On dit que la série \(\sum a_n\) est \textbf{semi-convergente}\index{séries nu
 
 \vspace{1cm}
 
-Une \textbf{série alternée}\index{série alternée} est une série dont le terme général est de la forme \((-1)^na_n\,\) où \(\,(a_n)\) est une suite de réels positifs.
+Une \textbf{série alternée}\index{série alternée} est une série dont le terme général est de la forme \(\displaystyle\Bigl((-1)^na_n\Bigr)\,\) où \(\,(a_n)\) est une suite de réels positifs.
 
 \vspace{1.5cm}
 
@@ -131,38 +132,38 @@ Dans tous les cas, on note la somme \(\,\underset{i\in I}{\sum}u_i.\)
 
 \vspace{1.3cm}
 
-Une famille \(\bigl(a_i\bigr)_{i\in I}\) de réels est dite \textbf{sommable}\index{famille sommable de réels} \ssi \(\bigl(a^+_i\bigr)_{i\in I}\)\footnote{\(\ \forall i\in I,\ \, a^+_i=\max \bigl(a_i, 0\bigr)\)\vspace{0.2cm}} et \(\bigl(a^-_i\bigr)_{i\in I}\)\footnote{\(\ \forall i\in I,\ \, a^-_i=\max \bigl(-a_i, 0\bigr)\)} sont sommables.\vspace{0.1cm}\\
+Une famille \(\bigl(a_i\bigr)_{i\in I}\) de réels est dite \textbf{sommable}\index{famille sommable de réels} \ssi \(\bigl(a^+_i\bigr)_{i\in I}\)\footnote{\(\ \forall i\in I,\ \, a^+_i=\max \bigl(a_i, 0\bigr)\)\vspace{0.2cm}} et \(\bigl(a^-_i\bigr)_{i\in I}\)\footnote{\(\ \forall i\in I,\ \, a^-_i=\max \bigl(-a_i, 0\bigr)\)\vspace{0.2cm}} sont sommables.\vspace{0.1cm}\\
 Si c'est le cas, on appelle \textbf{somme}\index{somme d'une famille sommable de réel} de la famille \(\bigl(a_i\bigr)_{i\in I}\) le réel : \(\displaystyle \sum_{i\in I}a_i = \sum_{i\in I}a_i^+ -\sum_{i\in I}a_i^-. \)
 
 \vspace{1.3cm}
 
-Une famille \(\bigl(z_i\bigr)_{i\in I}\) de complexes est dite \textbf{sommable}\index{famille sommable de complexes} \ssi la famille \(\bigl(|z_i|\bigr)_{i\in I}\) est sommable.\vspace{0.2cm}\\
+Une famille \(\bigl(z_k\bigr)_{k\in I}\) de complexes est dite \textbf{sommable}\index{famille sommable de complexes} \ssi la famille \(\bigl(|z_k|\bigr)_{k\in I}\) est sommable\footnote{On notera que \(\bigl(|z_k|\bigr)_{k\in I}\) est une famille de \emph{réels positifs}.\vspace{0.1cm}}.\vspace{0.2cm}\\
 On note \(\ell^1(I)\) l'ensemble des familles sommables de nombres complexes indexées par I.\vspace{0.2cm}\\
-On a donc : \( \displaystyle \ell^1(I)= \left\{ \bigl( z_i \bigr) _{i\in I}\! \in \CC^I \ \mid \ \sum_{i\in I} |z_i| < + \infty \right\} \)
+On a donc : \( \displaystyle \ell^1(I)= \left\{ \bigl( z_k \bigr) _{k\in I}\! \in \CC^I \ \mid \ \sum_{k\in I} |z_k| < + \infty \right\} \)
 
 \vspace{1.7cm}
 
 Si \(\bigl(z_k\bigr)_{k\in I}\) est une famille \underline{sommable} de complexes alors on pose : \(\displaystyle \sum_{k\in I}z_k = \sum_{k\in I}\text{Re}\,z_k\, +\, i\sum_{k\in I} \text{Im}\,z_k. \)\\
 Le complexe \(\,\displaystyle \sum_{k\in I}z_k\,\) ainsi défini est appelé \textbf{somme}\index{somme d'une famille sommable de complexes} de la famille \(\bigl(z_k\bigr)_{k\in I}\).
 
-\newpage
+\vspace{1.5cm}
 
 Soient \((a_n)\) et \((b_n)\) dans \(\KK^\NN\).\\
-Pour \(n\in \NN\) on pose : \(\displaystyle c_n=\sum_{k=0}^{n}a_kb_{n-k}=a_0b_n+a_1b_{n-1}+\cdots+a_nb_0=\sum_{p+q=n}a_pb_q.  \)\\
+Pour \(n\in \NN\) on pose : \(\displaystyle c_n=\sum_{k=0}^{n}a_kb_{n-k}=a_0b_n+a_1b_{n-1}+\cdots+a_nb_0=\!\!\sum_{p+q=n}a_pb_q.  \)\vspace{0.1cm}\\
 La suite \((c_n)\) est appelée \textbf{produit de convolution}\index{produit de convolution} des deux suite \((a_n)\) et \((b_n)\).\\
-La série \(\sum c_n\) est appelé \textbf{produit de Cauchy}\index{produit de Cauchy} des deux séries \(\sum a_n\) et \(\sum b_n\).
+La série \(\sum c_n\) est appelée \textbf{produit de Cauchy}\index{produit de Cauchy} des deux séries \(\sum a_n\) et \(\sum b_n\).
 
-\vspace{1cm}
+\vspace{1.5cm}
 
 \noindent\underline{\emph{Théorème - définition}} : Pour tout \(z\in \CC\), la série \(\,\displaystyle\sum \frac{z^n}{n!}\,\) est convergente et on pose : \(\displaystyle \exp(z)=\sum_{n=0}^{+\infty} \frac{z^n}{n!}. \)\\
 Le complexe \(\exp(z)\) est appelé \textbf{exponentielle}\index{exponentiel complexe} de \(z\) et est noté \(e^z\).\vspace{0.5cm}\\
-On adopte les définitions suivantes : \(\ \displaystyle \cos z = \frac{1}{2}\bigl(e^{iz}+e^{-iz}\bigr) \qquad \sin z = \frac{1}{2i}\bigl(e^{iz}-e^{-iz}\bigr) \)
+On adopte\footnote{Selon les ouvrages, ces égalités sont considérées comme des définitions ou des propriétés.} les définitions suivantes : \(\ \displaystyle \cos z = \frac{1}{2}\bigl(e^{iz}+e^{-iz}\bigr) \qquad \sin z = \frac{1}{2i}\bigl(e^{iz}-e^{-iz}\bigr) \)
 
 \vspace{0.4cm}
 
 \hspace{6.25cm}\( \displaystyle \cosh z = \frac{1}{2}\bigl(e^{z}+e^{-z}\bigr) \qquad \sinh z = \frac{1}{2}\bigl(e^{z}-e^{-z}\bigr) \)
 
-\vspace{1.4cm}
+\newpage
 
 \subsection{Convergences}
 
@@ -175,72 +176,72 @@ On adopte les définitions suivantes : \(\ \displaystyle \cos z = \frac{1}{2}\bi
 
 \vspace{1cm}
 
-\noindent On dit que la suite d'application \((f_n)\) \textbf{converge simplement sur A vers \(f\)}\index{suite d'applications!convergence simple} \ssi :\vspace{-0.2cm} \[ \forall x\in A,\ \lim_{n\to +\infty}f_n(x)=f(x). \]\vspace{-0cm}\\
+\noindent On dit que la suite d'applications \((f_n)\) \textbf{converge simplement sur A vers \(f\)}\index{suite d'applications!convergence simple} \ssi :\vspace{-0.2cm} \[ \forall x\in A,\ \lim_{n\to +\infty}f_n(x)=f(x). \]\\
 On dit que la suite d'applications \((f_n)\) \textbf{converge simplement sur A} \ssi il existe une application de A dans \(\KK\) vers laquelle \((f_n)\) converge simplement sur A.
 
 \vspace{2cm}
 
-\noindent On dit que la suite d'application \((f_n)\) \textbf{converge uniformément sur A vers \(f\)}\index{suite d'applications!convergence uniforme} \ssi :\vspace{-0.2cm} \[ \forall \varepsilon>0,\ \exists N\in \NN,\ \forall n\geq N,\ \forall x\in A,\ |f_n(x)-f(x)|\leq \varepsilon. \]\vspace{-0cm}\\
-\underline{\emph{Proposition}} : $(f_n)$ converge uniformément sur A vers $f$ \(\ \Leftrightarrow \ \displaystyle \lim_{n\,\to\,\infty} \norm{f_n-f}_\infty^A=0\)\vspace{0.7cm}\\
-On dit que la suite d'applications \((f_n)\) \textbf{converge uniformément sur A} \ssi il existe une application de A dans \(\KK\) vers laquelle \((f_n)\) converge uniformément sur A.\vspace{0.2cm}
+\noindent On dit que la suite d'applications \((f_n)\) \textbf{converge uniformément sur A vers \(f\)}\index{suite d'applications!convergence uniforme} \ssi :\vspace{-0.2cm} \[ \forall \varepsilon>0,\ \exists N\in \NN,\ \forall n\geq N,\ \forall x\in A,\ |f_n(x)-f(x)|\leq \varepsilon. \]\\
+\underline{\emph{Proposition}} : $(f_n)$ converge uniformément sur A vers $f$ \(\ \Leftrightarrow \ \displaystyle \lim_{n\,\to\,+\infty} \norm{f_n-f}_\infty^A=0\)\vspace{0.7cm}\\
+On dit que la suite d'applications \((f_n)\) \textbf{converge uniformément sur A} \ssi il existe une application de A dans \(\KK\) vers laquelle \((f_n)\) converge uniformément sur A.
 
-
-\newpage
+\vspace{1.5cm}
 
 Pour \(n\in \NN\) on pose : \(\displaystyle S_n = \sum_{k=0}^{n}f_k=f_0+f_1+\cdots+f_n \).\\
 La suite d'applications \(\left(S_n\right)\) est appelée \textbf{série d'applications}\index{série d'applications} de terme général \(f_n\) et est notée \(\sum f_n\).\\
-Dire que la série \(\sum f_n\) \textbf{converge simplement sur A}\index{série d'applications!convergence simple} (resp. \textbf{converge uniformément sur A}\index{série d'applications!convergence uniforme}) c'est dire que la suite d'applications \(\left(S_n\right)\) converge simplement sur A (resp. converge uniformément sur A). L'application \(S_n\) est appelée \textbf{somme partielle}\index{série d'applications!somme partielle} d'ordre n de la série d'applications \(\sum f_n\).
+Dire que la série \(\sum f_n\) \textbf{converge simplement sur A}\index{série d'applications!convergence simple} (resp. \textbf{converge uniformément sur A}\index{série d'applications!convergence uniforme}) c'est dire que la suite d'applications \(\left(S_n\right)\) converge simplement sur A (resp. converge uniformément sur A). L'application \(S_n\) est appelée \textbf{somme partielle}\index{série d'applications!somme partielle} d'ordre $n$ de la série d'applications \(\sum f_n\).
 
-\vspace{1.2cm}
+\vspace{2cm}
 
 On suppose que la série d'applications \(\sum f_n\) \underline{converge simplement} sur A.\vspace{0.1cm}\\
 La \textbf{somme de la série}\index{série d'applications!somme de la série} \(\sum f_k\) est l'application \(\displaystyle \sum_{k=0}^{+\infty}\! f_k : A\to \KK \ \) définie par : \(\displaystyle \left(\sum_{k=0}^{+\infty}f_k \right)(x)=\sum_{k=0}^{+\infty}f_k(x). \)\vspace{0.2cm}\\
 Le \textbf{reste d'ordre n}\index{série d'applications!reste d'ordre n} de la série \(\sum f_k\) est l'application \(R_n : A\to \KK \ \) définie par : \(\displaystyle R_n(x) = \sum_{k=n+1}^{+\infty}f_k(x). \)
 
-\vspace{1cm}
-On dit que la série d'applications \(\sum f_n\) \textbf{converge absolument en tout point de A}\index{série d'applications!convergence absolue} \ssi pour tout \( x\in A\) la série numérique \(\displaystyle \sum |f_n(x)|\) est convergente.
+\newpage
+
+On dit que la série d'applications \(\sum f_n\) \textbf{converge absolument en tout point de A}\index{série d'applications!convergence absolue} \ssi pour tout \( x\in A\); la série numérique \(\displaystyle \sum |f_n(x)|\) est convergente.
 
 \vspace{1.3cm}
 
 On dit que la série d'applications \(\sum f_n\) \textbf{converge normalement sur A}\index{convergence normale} \ssi la série numérique \(\displaystyle \sum \norm{f_n}_\infty^A\) est convergente.
 
-\vspace{1.5cm}
+\vspace{2cm}
 
 \subsection{Séries entières}
 
 \vspace{0.8cm}
 \begin{center}
-On désigne par \(\ell^\infty(\CC)\) l'ensemble des suites complexes bornées.
+On désigne par \(\displaystyle\ell^\infty(\CC)\) l'ensemble des suites complexes bornées.
 \end{center}
-\vspace{0.5cm}
+\vspace{0.7cm}
 
 Soit \(a=(a_n)\in \CC^\NN\). On pose \(I_a=\left\{ r\in \RR_+ \ | \ (a_nr^n)\in \ell^\infty(\CC) \right\}. \)\vspace{0.2cm}\\
-Le \textbf{rayon de convergence de la suite}\index{rayon de convergence d'une suite} \(a\) est l'élément de \([\,0,\,\underline{\underline{+\infty} } ]\) défini par : \(R_a= \sup\, I_a.\)\footnote{Son existence est assurée car c'est une partie non vide (\(0\in I_a\)) de \(\overline{\RR}_+\) majorée par \(+\infty\).}
+Le \textbf{rayon de convergence de la suite}\index{rayon de convergence d'une suite} \(a\) est l'élément de \(\,[\,0,\,\underline{\underline{+\infty} } \,]\,\) défini par : \(\ R_a= \sup\, I_a.\)\footnote{Son existence est assurée car c'est une partie non vide (\(0\in I_a\)) de \(\overline{\RR}_+\) majorée par \(+\infty\).}
 
 \vspace{1.4cm}
 
-Soit \((f_n)\) une suite d'applications de \(\CC\) dans \(\CC\).\\
+Soit \((f_n)\) une suite d'applications de \(\CC\) dans \(\CC\).\vspace{0.2cm}\\
 On dit que la série d'applications \(\sum f_n\) est une \textbf{série entière de la variable complexe}\index{série entière de la variable complexe} \ssi il existe \((a_n)\in \CC^\NN \) telle que : \(\forall n\in \NN,\ \forall z\in \CC,\ f_n(z)=a_nz^n.  \)\vspace{0.2cm}\\
 \begin{small}
     Soit \((a_n)\in \CC^\NN\). On lui associe la série d'applications \(\sum f_n\) définie par : \(\forall n \in \NN,\ \forall z\in \CC, \ f_n(z)=a_nz^n.\) La série d'applications \(\sum f_n\) est une série entière de la variable complexe et est dite associée à la suite \((a_n)\). Elle est abusivement notée \(\sum a_nz^n\).    
 \end{small}
 
-\newpage
+\vspace{1.2cm}
 
 Soit \(\sum a_nz^n\) la série entière associée à la suite complexe \(a=(a_n)\). Le \textbf{rayon de convergence de la série entière}\index{rayon de convergence d'une série entière} \(\sum a_n z^n\) est le rayon de convergence \(R_a\) de la suite \((a_n)\)\vspace{0.1cm}.\\
 Il est aussi noté \(R\bigl(\sum a_nz^n\bigr)\). Par définition on a donc : \(R\bigl(\sum a_nz^n\bigr)=R_a.\)
 
-\vspace{1.2cm}
+\vspace{1.5cm}
 
 Soit \(\sum a_nz^n\) une série entière de rayon de convergence \(R_a\).\\
 L'ensemble \(E_a\) des nombres complexes \(\,z\,\) pour lesquels la série numérique \(\sum a_nz^n\) est convergente est appelé \textbf{ensemble de convergence}\index{ensemble de convergence} de la série entière \(\sum a_nz^n\).\vspace{0.1cm}\\
 i.e. \(E_a =\{ z\in \CC \ | \ \sum a_nz^n\ \) est convergente$\}$.\vspace{0.2cm}\\
-L'ensemble \(D_a = \{ z\in \CC \ \rvert \ |z|<R_a \} \) est appelé \textbf{disque ouvert de convergence}\index{disque ouvert de convergence} de  \(\sum a_nz^n\).\vspace{0.2cm}\\
-L'ensemble \(C_a=\{ z\in \CC \ \rvert \ |z|=R_a \} \) est appelé \textbf{cercle d'incertitude}\index{cercle d'incertitude} de la série entière \(\sum a_nz^n\).
+L'ensemble \(D_a = \{ z\in \CC, \ \; |z|<R_a \} \) est appelé \textbf{disque ouvert de convergence}\index{disque ouvert de convergence} de  \(\sum a_nz^n\).\vspace{0.2cm}\\
+L'ensemble \(C_a=\{ z\in \CC, \ \; |z|=R_a \} \) est appelé \textbf{cercle d'incertitude}\index{cercle d'incertitude} de la série entière \(\sum a_nz^n\).
 
-\vspace{1.5cm}
+\newpage
 
-On appelle \textbf{somme de la série entière}\index{somme d'une série entière} \(\,\sum a_n z^n\,\) l'application \(\,S_a:E_a\!\subset \CC \to \CC\,\) définie par :\vspace{-0.2cm} \[\forall z\in E_a,\ S_a(z)=\sum_{n=0}^{+\infty}a_nz^n.\]
+On appelle \textbf{somme de la série entière}\index{somme d'une série entière} \(\,\sum a_n z^n\,\) l'application \(\,S_a:E_a\!\subset \CC \to \CC\,\) définie par :\vspace{-0.2cm} \[\forall z\in E_a,\ \; S_a(z)=\sum_{n=0}^{+\infty}a_nz^n.\]
 
 \vspace{1cm}
 
@@ -268,25 +269,25 @@ Soit \(\sum a_nt^n\) la série entière de la variable réelle associée à la s
 \end{small} 
 L'ensemble \(\,E_a\,\) des nombres réels \(\,t\,\) pour lesquels la série numérique \(\sum a_nt^n\) est convergente est appelé \textbf{ensemble de convergence}\index{ensemble de convergence} de la série entière \(\sum a_nt^n\).\vspace{0.1cm}\\
 i.e. \(E_a = \{ t\in \RR \ \mid \ \sum a_nt^n\) est convergente$\}$.\vspace{0.2cm}\\
-L'intervalle \(]-R_a,R_a\, [\) est appelé \textbf{intervalle ouvert de convergence}\index{intervalle ouvert de convergence} de la série entière \(\sum a_nt^n\).
+L'intervalle \(\:]-\!R_a,R_a\, [\;\) est appelé \textbf{intervalle ouvert de convergence}\index{intervalle ouvert de convergence} de la série entière \(\sum a_nt^n\).
 
-\vspace{1.2cm}
+\vspace{1.4cm}
 
-Soient \(r>0\ \) et \(f:\CC \to \CC\) une fonction. On pose \(\Delta_r=\bigl\{ z\in \CC \ \rvert \ |z|<r \bigr\}\).\vspace{0.1cm}\\
+Soient \(r>0\ \) et \(f:\CC \to \CC\) une fonction. On pose \(\,\Delta_r=\bigl\{ z\in \CC, \ \; |z|<r \bigr\}\).\vspace{0.1cm}\\
 On dit que \(f\) est \textbf{développable en série entière}\index{application développable en série entière} sur le disque ouvert \(\Delta_r\) \ssi \(f\) est\vspace{0.1cm}\\
-définie (\emph{au moins}) sur \(\Delta_r\) et si il existe \((a_n)\in \CC^\NN\) telle que : \(\displaystyle \forall z\in \Delta_r,\ f(t)=\sum_{n=0}^{+\infty}a_nz^n\)
+définie (\emph{au moins}) sur \(\Delta_r\,\) et si il existe \((a_n)\in \CC^\NN\) telle que : \(\,\displaystyle \forall z\in \Delta_r,\ \;f(t)=\sum_{n=0}^{+\infty}a_nz^n\)
 
-\vspace{1cm}
+\vspace{1.3cm}
 
 Soient \(r>0\ \) et \(f:\RR \to \CC\) une fonction.\vspace{0.1cm}\\
-On dit que \(f\) est \textbf{développable en série entière}\index{application développable en série entière} sur \(]-r,r\,[\ \) \ssi \(f\) est définie (\emph{au moins}) sur \(]-r,r\,[\ \) et si il existe \((a_n)\in \CC^\NN\) telle que : \(\displaystyle \forall t\in \ ]-r,r\, [\, ,\ f(t)=\sum_{n=0}^{+\infty}a_nt^n\)
+On dit que \(f\) est \textbf{développable en série entière}\index{application développable en série entière} sur \(]-\!r,r\,[\ \) \ssi \(f\) est définie (\emph{au moins}) sur \(]-\!r,r\,[\ \) et si il existe \((a_n)\in \CC^\NN\) telle que : \(\,\displaystyle \forall t\in \ ]-\!r,r\, [\, ,\ \; f(t)=\sum_{n=0}^{+\infty}a_nt^n\)
+
+\newpage
+
+On dit qu'une fonction \(\,f:\RR \to \CC\,\) est \textbf{développable en série entière au voisinnage de zéro}\index{application développable en série entière au voisinnage de zéro} \ssi il existe \(r>0\,\) tel que \(f\) soit définie et développable en série entière sur \(]-\!r,r\, [\).
 
 \vspace{1cm}
 
-On dit qu'une fonction \(f:\RR \to \CC\) est \textbf{développable en série entière au voisinnage de zéro}\index{application développable en série entière au voisinnage de zéro} \ssi il existe \(r>0\) tel que \(f\) soit définie et développable en série entière sur \(]-r,r\, [\).
+\noindent Soient \(r>0\,\) et \(f:\RR \to \CC\,\) une fonction de classe \(\,\mathscr{C}^\infty\,\) sur \(]-\!r,r\, [\). La série entière \(\displaystyle \sum \frac{f^{(n)}(0)}{n!}t^n\) est appelée \textbf{série de Taylor}\index{série de Taylor} de \(f\) en 0.
 
-\vspace{1cm}
-
-\noindent Soient \(r>0\) et \(f:\RR \to \CC\) une fonction de classe \(\CC ^\infty\) sur \(]-r,r\, [\). La série entière \(\displaystyle \sum \frac{f^{(n)}(0)}{n!}t^n\) est appelé \textbf{série de Taylor}\index{série de Taylor} de \(f\) en 0.
-
-\vspace{2.4cm}
+\vspace{2cm}

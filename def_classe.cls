@@ -4,9 +4,9 @@
 
 \LoadClass[12pt, a4paper]{article}
 
-\title{Définitions - Mathématiques}
-\date{}
-\author{}
+\title{Définitions - Mathématiques - MP}
+\author{Dernière mise à jour :}
+\date{Avril 2024}
 
 
 
@@ -70,6 +70,7 @@
 \newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}} % point médian ·
 \newcommand{\ps}{\(\bigl\langle \sbullet[0.75]\mid \sbullet[0.75] \bigr\rangle\)} % symbole désignant le produit scalaire dans le mode texte : (·|·)
 \newcommand\psm[2]{\bigl\langle#1\mid #2 \bigr\rangle} % produit scalaire dans le mode math
+\newcommand\indep{\perp\!\!\!\!\perp}             % Double taquets vers le haut (⫫) pour l'inpendance de deux VAD 
 
 % Traduction
 \renewcommand*\contentsname{Table des matières}

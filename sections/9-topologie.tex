@@ -9,9 +9,9 @@
 \vspace{0.2cm}
 \subsection{Notion de norme}
 
-\vspace{0.7cm}
+\vspace{1.1cm}
 
-\noindent On appelle \textbf{norme}\index{norme} sur E toute application \(N\) : E \(\to\) \(\RR_+\) telle que :\vspace{0.1cm} 
+\noindent On appelle \textbf{norme}\index{norme} sur E toute application \(\,N\) : E \(\to\) \(\RR_+\,\) telle que :\vspace{0.1cm} 
 \begin{enumerate}[leftmargin = 2cm, label=(\roman*).\,]
     \item \(\forall x\in E,\ \forall \lambda \in \KK,\ \ N(\lambda x)=|\lambda |N(x). \) \hspace{1cm} (\emph{Homogénéité})\vspace{0.1cm}
 
@@ -19,16 +19,16 @@
 
     \item \(\forall x\in E,\ \ N(x)=0\ \Rightarrow \ x=0_E \) \hspace{2cm} (\emph{Séparation})
 \end{enumerate}
-\vspace{0.7cm}
+\vspace{0.9cm}
 \noindent Toute application de E dans \(\,\RR_+\) vérifiant (i). (\emph{l'homogénéité}) et (ii). (\emph{la sous-additivité}) mais \underline{pas} (iii). (\emph{la séparation}) est appelée \textbf{semi-norme}\index{semi-norme} sur E.\vspace{0.1cm}\\
 \noindent Un \textbf{espace vectoriel normé}\index{espace vectoriel normé} est un couple (E,\(\,N\)) où E est un \(\KK\)-ev\footnote{Contraction d'\guillemotleft espace vectoriel\guillemotright .} et \(N\) une norme sur E.
 
-\vspace{1.3cm}
+\vspace{1.5cm}
 
 Soit \normtxt{\ } une norme sur E. Pour \((x,y)\in E^2 \ \) on pose : \(\ d(x,y)=\norm{y-x} \). \\
 Le réel positif \(d(x,y)\) est appelé la \textbf{distance}\index{distance entre deux vecteurs} de \(x\) à \(y\,\) (qui dépend de la norme considérée).
 
-\vspace{1.3cm}
+\newpage
 
 Étant donnés un vecteur \(x\in\) E et une partie non vide A de E, le réel \(\;\displaystyle d(x,A)=\inf _{a\in A} d(x,A)\ \) est\vspace{-0.1cm} \\
 appelé \textbf{distance}\index{distance à une partie} du vecteur \(x\) à la partie A.
@@ -45,18 +45,18 @@ Si X est un ensemble alors on appelle distance sur X toute application \(\,d:X^2
     \item \(\forall (x,y)\in X^2,\ \; \Bigl(\,d(x,y)=0\; \Rightarrow\; x=y\,\Bigr)\) \hspace{1.65cm} (\emph{Séparation})
 \end{enumerate}
 
-\vspace{1.2cm}
+\vspace{1.5cm}
 
 On dit que deux normes \(N_1\) et \(N_2\,\) sur\, E\, sont \textbf{équivalentes}\index{normes équivalentes} \ssi :\vspace{-0.15cm}
 \begin{center}
     \( \exists (\alpha, \beta) \in \RR\textsuperscript{*}\!\!_+\,,\ \ N_1\leq \alpha N_2 \ \,\) et \(\ N_2\leq \beta N_1\).
 \end{center}
 
-\newpage
+\vspace{1.4cm}
 
-• Supposons que \(\ \dim_KE< \infty \ \) et considérons \(\,B = (e_{1}, \cdots, e_{p})\,\) une base de E.\vspace{-0.2cm}
-\[\text{Pour } x=\sum_{i=1}^p \alpha_ie_i \ \text{ on pose :} \qquad N_{B,1}(x) =\sum_{i=1}^p |\alpha_i|, \qquad  N_{B,2}(x) =\sqrt{\sum_{i=1}^p |\alpha_i|^2}, \qquad  N_{B,\infty}(x) =\max _{1\leq i\leq p} |\alpha_i|. \]
-\underline{\emph{Théorème}} : \(N_{B,1},\ N_{B,2}\) et \(N_{B,\infty}\) sont des normes sur E.
+• Supposons que \(\ \dim_KE< +\infty \ \) et considérons \(\,\mathcal{B} = (e_{1}, \cdots, e_{p})\,\) une base de E.\vspace{-0.2cm}
+\[\text{Pour } x=\sum_{i=1}^p \alpha_ie_i \ \text{ on pose :} \qquad N_{\mathcal{B},1}(x) =\sum_{i=1}^p |\alpha_i|, \qquad  N_{\mathcal{B},2}(x) =\sqrt{\sum_{i=1}^p |\alpha_i|^2}, \qquad  N_{\mathcal{B},\infty}(x) =\max _{1\leq i\leq p} |\alpha_i|. \]
+\underline{\emph{Théorème}} : \(N_{\mathcal{B},1},\ N_{\mathcal{B},2}\) et \(N_{\mathcal{B},\infty}\) sont des normes sur E.
 
 \vspace{1cm}
 
@@ -72,21 +72,21 @@ On dit que deux normes \(N_1\) et \(N_2\,\) sur\, E\, sont \textbf{équivalentes
 
 \vspace{1cm}
 
-• De manière analogue, pour \(\displaystyle P=\sum_{n\in \NN} a_nX^n \in \KK[X] \) on pose :\vspace{-0.2cm}
+• De manière analogue, pour \(\displaystyle P=\sum_{n\in \NN} a_n\text{X}^n \in \KK[\text{X}] \) on pose :\vspace{-0.2cm}
 \[\norm{P}_1 = \sum_{n\in \NN} |a_n|, \qquad \norm{P}_2 = \sqrt{\sum_{n\in \NN} |a_n|^2}, \qquad \norm{P}_{\infty} = \sup _{n\in \NN} |a_n|. \]
-\underline{\emph{Théorème}} : \(\norm{\ }_1,\ \norm{\ }_2\) et \(\norm{\ }_{\infty}\) sont des normes sur \(\KK[X]\).
+\underline{\emph{Théorème}} : \(\norm{\ }_1,\ \norm{\ }_2\) et \(\norm{\ }_{\infty}\) sont des normes sur \(\KK[\text{X}]\).
 
 \vspace{1cm}
 
 • De manière analogue, pour \(u=(u_n)\in \ell^1(\KK),\ v=(v_n)\in \ell^2(\KK)\) et \(w=(w_n)\in \ell^\infty(\KK)\) on pose :\vspace{-0.2cm}
-\[\norm{u}_1 = \sum_{n=0}^\infty |u_n|, \qquad \norm{v}_2 = \sqrt{\sum_{n=0}^\infty |v_n|^2}, \qquad \norm{w}_{\infty} = \sup _{n\in \NN} |w_n|. \]
+\[\norm{u}_1 = \sum_{n=0}^{+\infty} |u_n|, \qquad \norm{v}_2 = \sqrt{\sum_{n=0}^{+\infty} |v_n|^2}, \qquad \norm{w}_{\infty} = \sup _{n\in \NN} |w_n|. \]
 \underline{\emph{Théorème}} : \(\displaystyle \left( \ell^1(\KK),\ \norm{\ }_1 \right) ,\ \left( \ell^2(\KK),\ \norm{\ }_2 \right) \) et \(\displaystyle \left( \ell^\infty(\KK),\ \norm{\ }_\infty \right) \) sont des espaces vectoriels normés.
 
 \vspace{1cm}
 
 • De manière analogue, pour \(f\in M^0\bigl([a,b],\KK\bigr) \) on pose :\vspace{-0.3cm}
 \[ \norm{f}_1=\int_a^b |f|, \qquad \norm{f}_2=\sqrt{\int_a^b |f|^2}, \qquad \norm{f}_\infty = \sup_{t\in [a,b]} |f(t)|.\]
-\underline{\emph{Théorème}} : \(\norm{\ }_1,\) et \(\ \norm{\ }_2  \) sont des semi-normes sur \(M^0\bigl([a,b],\KK\bigr)\), mais \(\norm{\ }_\infty\) est une norme sur \(M^0\bigl([a,b],\KK\bigr)\). Toutes les trois sont des normes sur \(\mathscr{C}^0\bigl([a,b],\KK\bigr)\).\\
+\underline{\emph{Théorème}} : \(\norm{\ }_1,\) et \( \norm{\ }_2  \) sont des semi-normes sur \(M^0\bigl([a,b],\KK\bigr)\), mais \(\norm{\ }_\infty\) est une norme sur \(M^0\bigl([a,b],\KK\bigr)\). Toutes les trois sont des normes sur \(\mathscr{C}^0\bigl([a,b],\KK\bigr)\).\\
 Sur \(\mathscr{C}^0\bigl([a,b],\KK\bigr)\), la norme \normtxt{\ }\ind{1} est appelée norme de la \textbf{convergence en moyenne}\index{convergence en moyenne}, \normtxt{\ }\ind{2} la norme de la \textbf{convergence en moyenne quadratique}\index{convergence en moyenne quadratique} et \(\norm{\ }_\infty \) la norme de la \textbf{convergence uniforme} ou \textbf{norme infini}\index{norme infini}.\\
 Soient I un intervalle, A une partie de I et \(f\in M^0\bigl(I,\KK\bigr)\). On note\footnote{Comme I n'est pas un segment, on a \(\,\norm{f}_\infty^A\in \overline{\RR}^+\)} : \(\displaystyle \norm{f}_\infty^A=\sup_{t\in A}|f(t)|\,.\) 
 
@@ -98,14 +98,14 @@ est une norme sur le \(\KK\)-espace vectoriel \(\,E_1\times \cdots \times E_p\).
 L'espace vectoriel normé \(\,\bigl(E_1\times \cdots \times E_p, N\bigr)\, \) est appelé \textbf{espace vectoriel normé produit}\index{espace vectoriel normé produit} des\vspace{0.1cm}\\
 espaces vectoriels normés \(\,\bigl(E_1,N_1\bigr),\ \cdots,\ \bigl(E_p,N_p\bigr)\).
 
-\vspace{1.2cm}
+\vspace{1.5cm}
 
 \(\left(\mathbf{HP}\right)\; -\,\) Les \textbf{normes d'algèbres}\index{normes d'algèbres}.
-\begin{itemize}[leftmargin=0.5cm]
-    \item[•] Une norme N sur \(\,\mathcal{M}_n(\KK)\,\) qui vérifie \(N(I_n)=1\,\) et \(\,N(AB)\leq N(A)N(B)\,\) pour tout couple \((A,B)\)\vspace{0.1cm}\\
+\begin{itemize}[leftmargin=0.5cm, label=•]
+    \item Une norme N sur \(\,\mathcal{M}_n(\KK)\,\) qui vérifie \(N(I_n)=1\,\) et \(\,N(AB)\leq N(A)N(B)\,\) pour tout couple \((A,B)\)\vspace{0.1cm}\\
     de \(\,\mathcal{M}_n(\KK)^2\,\) est appelée une norme d'algèbre sur \(\,\mathcal{M}_n(\KK).\)\vspace{0.2cm}
 
-    \item[•] On suppose E de \underline{dimension finie}. Une norme N sur \(\,\mathscr{L}(E)\,\) qui vérifie \(N(id_E)=1\,\) et\vspace{0.1cm}\\ 
+    \item On suppose E de \underline{dimension finie}. Une norme N sur \(\,\mathscr{L}(E)\,\) qui vérifie \(N(id_E)=1\,\) et\vspace{0.1cm}\\ 
     \(N(u\circ v)\leq N(u)N(v)\,\) pour tout \(\,(u,v)\in\mathscr{L}(E)^2\,\) est appelée norme d'algèbre sur \(\,\mathscr{L}(E)\).
 \end{itemize}
 
@@ -114,29 +114,29 @@ espaces vectoriels normés \(\,\bigl(E_1,N_1\bigr),\ \cdots,\ \bigl(E_p,N_p\bigr
 \underline{\emph{Théorèmes - définitions}} : \textbf{Normes subordonnées}\index{normes subordonnées} ou \textbf{normes d'opérateur}\index{normes d'opérateur}.\vspace{0.1cm}\\
 Soient \(\bigl(E,\,\norm{\ }_E\bigr),\ \bigl(F,\,\norm{\ }_F\bigr)\) deux \(\,\KK\)-espaces vectoriels normés, \(\displaystyle\,\norm{\ }_n\,\) une norme sur \(\mathcal{M}_{n,1}(\KK)\)\vspace{0.1cm}\\
 et \normtxt{\ }\ind{$p$} une norme sur \(\mathcal{M}_{p,1}(\KK)\).
-\begin{itemize}[leftmargin=0cm]
-    \item[•] Pour\footnote{\(\mathscr{L}_c(E,F)\,\) désigne l'ensemble des applications linéaires continues de E dans F.} \(u\in \mathscr{L}_c(E,F)\), on pose : \(\displaystyle \ \lvert\lvert\lvert u \rvert\rvert\rvert=\sup_{\substack{x\,\in\, E\vspace{0.1cm} \\ \ \, x\,\neq\, 0_{_E}}}\frac{\norm{u(x)}_F}{\norm{x}_E}\qquad \ \;
+\begin{itemize}[leftmargin=0cm, label=•]
+    \item Pour\footnote{\(\mathscr{L}_c(E,F)\,\) désigne l'ensemble des applications linéaires continues de E dans F.} \(u\in \mathscr{L}_c(E,F)\), on pose : \(\displaystyle \ \lvert\lvert\lvert u \rvert\rvert\rvert=\sup_{\substack{x\,\in\, E\vspace{0.1cm} \\ \ \, x\,\neq\, 0_{_E}}}\frac{\norm{u(x)}_F}{\norm{x}_E}\qquad \ \;
     \begin{array}{l}
         \lvert\lvert\lvert \ \; \rvert\rvert\rvert \, \text{ est une norme sur } \mathscr{L}_c(E,F). \\
         \text{Elle est appelée norme subordonnée} \\
         \text{aux normes } \norm{\ }_E\text{ et }\norm{\ }_F.
     \end{array}\)
     
-    \item[•] Pour\footnote{\(\mathscr{L}_c(E)\,\) désigne l'ensemble des endomorphisme continues de E.} \(a\in \mathscr{L}_c(E)\), on pose : \(\displaystyle \ \lvert\lvert\lvert a \rvert\rvert\rvert=\sup_{\substack{x\,\in\, E\vspace{0.1cm} \\ \ \,x\,\neq\, 0_{_E}}}\frac{\norm{a(x)}_E}{\norm{x}_E}\qquad\qquad
+    \item Pour\footnote{\(\mathscr{L}_c(E)\,\) désigne l'ensemble des endomorphisme continues de E.} \(a\in \mathscr{L}_c(E)\), on pose : \(\displaystyle \ \lvert\lvert\lvert a \rvert\rvert\rvert=\sup_{\substack{x\,\in\, E\vspace{0.1cm} \\ \ \,x\,\neq\, 0_{_E}}}\frac{\norm{a(x)}_E}{\norm{x}_E}\qquad\qquad
     \begin{array}{l}
         \lvert\lvert\lvert \ \; \rvert\rvert\rvert \, \text{ est une norme sur } \mathscr{L}_c(E). \\
         \text{Elle est appelée norme subordonnée} \\
         \text{à la norme } \norm{\ }_E.
     \end{array}\)
     
-    \item[•] Pour \(A\in \mathcal{M}_n(\KK)\),\, on pose : \(\ \displaystyle \left\lvert\left\lvert\left\lvert A \right\rvert\right\rvert\right\rvert =\hspace{-0.2cm} \sup_{\substack{X\in \mathcal{M}_{n,1}(\KK)\vspace{0.1cm} \\ X\neq\, 0}} \frac{\norm{AX}_n}{\norm{X}_n}\qquad \ \
+    \item Pour \(A\in \mathcal{M}_n(\KK)\),\, on pose : \(\ \displaystyle \left\lvert\left\lvert\left\lvert A \right\rvert\right\rvert\right\rvert =\hspace{-0.2cm} \sup_{\substack{X\in \mathcal{M}_{n,1}(\KK)\vspace{0.1cm} \\ X\neq\, 0}} \frac{\norm{AX}_n}{\norm{X}_n}\qquad \ \
     \begin{array}{l}
         \lvert\lvert\lvert \ \; \rvert\rvert\rvert \, \text{ est une norme sur } \mathcal{M}_n(\KK). \\
         \text{Elle est appelée norme subordonnée} \\
         \text{à la norme } \norm{\ }_n.
     \end{array}\)
     
-    \item[•] Pour \(M\in \mathcal{M}_{n,p}(\KK)\),\, on pose : \(\ \displaystyle \left\lvert\left\lvert\left\lvert M \right\rvert\right\rvert\right\rvert =\hspace{-0.2cm} \sup_{\substack{X\in \mathcal{M}_{p,1}(\KK)\vspace{0.1cm} \\ X\neq\, 0}} \frac{\norm{MX}_n}{\norm{X}_p}\quad \
+    \item Pour \(M\in \mathcal{M}_{n,p}(\KK)\),\, on pose : \(\ \displaystyle \left\lvert\left\lvert\left\lvert M \right\rvert\right\rvert\right\rvert =\hspace{-0.2cm} \sup_{\substack{X\in \mathcal{M}_{p,1}(\KK)\vspace{0.1cm} \\ X\neq\, 0}} \frac{\norm{MX}_n}{\norm{X}_p}\quad \
     \begin{array}{l}
         \lvert\lvert\lvert \ \; \rvert\rvert\rvert \, \text{ est une norme sur } \mathcal{M}_{n,p}(\KK). \\
         \text{Elle est appelée norme subordonnée} \\
@@ -145,9 +145,7 @@ et \normtxt{\ }\ind{$p$} une norme sur \(\mathcal{M}_{p,1}(\KK)\).
     
 \end{itemize}
 
-\newpage
-
-
+\vspace{1.4cm}
 
 \subsection{Suites et séries dans un e.v.n.}
 
@@ -160,13 +158,13 @@ et \normtxt{\ }\ind{$p$} une norme sur \(\mathcal{M}_{p,1}(\KK)\).
 \vspace{0.5cm}
 
 Soient \((x_n)\in E^\NN\) et \(a\in E\).\vspace{0.1cm}\\
-On dit que \((x_n)\) \textbf{tend vers}\index{espace vectoriel normé!limite d'une suite} a dans (E,\ \normtxt{\ }) \ssi : \( \displaystyle \lim_{n\to +\infty}\norm{x_n-a}=0.  \) \vspace{0.4cm} \\
+On dit que \((x_n)\) \textbf{tend vers}\index{espace vectoriel normé!limite d'une suite} $a$ dans (E,\ \normtxt{\ }) \ssi : \( \displaystyle \lim_{n\to +\infty}\norm{x_n-a}=0.  \) \vspace{0.4cm} \\
 La suite \((x_n)\) est dite \textbf{convergente}\index{espace vectoriel normé!convergence d'une suite} dans (E,\ \normtxt{\ }) \ssi il existe un vecteur de E vers lequel \((x_n)\) tend.\vspace{0.1cm}\\
 Elle est dite \textbf{divergente}\index{espace vectoriel normé!divergence d'une suite} dans (E,\ \normtxt{\ }) \ssi elle n'est pas convergente dans (E,\ \normtxt{\ }).
 
-\vspace{1cm}
+\vspace{1.2cm}
 
-On dit que a est une \textbf{valeur d'adhérence}\index{valeur d'adhérence} de \((x_n)\) dans (E,\ \normtxt{\ }) \ssi il existe une suite extraite \(\left(x_{\varphi (n)}\right)\) de \((x_n)\) qui converge dans (E,\ \normtxt{\ }) vers a.\vspace{0.1cm}\\
+On dit que $a$ est une \textbf{valeur d'adhérence}\index{valeur d'adhérence} de \((x_n)\) dans (E,\ \normtxt{\ }) \ssi il existe une suite extraite \(\left(x_{\varphi (n)}\right)\) de \((x_n)\) qui converge dans (E,\ \normtxt{\ }) vers a.\vspace{0.1cm}\\
 Ou, de manière équivalente : \(\displaystyle\ \forall \varepsilon >0,\ \,\exists n_0\in \NN,\ \ \norm{x_{n_0}-a}\leq \varepsilon.\)
 
 \vspace{1cm}
@@ -178,181 +176,181 @@ La suite \((x_n)\) est dite \textbf{bornée}\index{espace vectoriel normé! suit
 Soit \((u_n)\in E^\NN\). Pour tout \(n\in \NN\) on pose : \(\ \displaystyle U_n=\sum_{k=0}^nu_k.\)\vspace{0.2cm}\\
 La suite \((U_n)\) est appelée \textbf{série de terme général}\index{espace vectoriel normé!série de terme général} \(u_n\) et est notée \(\sum u_n\).\vspace{0.1cm}\\
 Dire que la série \(\sum u_n\) est \textbf{convergente}\index{espace vectoriel normé! série convergente} (resp. \textbf{divergente}\index{espace vectoriel normé! série divergente}) dans (E,\ \normtxt{\ }) c'est donc dire que la suite \((U_n)\) est convergente (resp. divergente) dans (E,\ \normtxt{\ }).\vspace{0.3cm}\\
-Le vecteur \(\,U_n\,\) est appelé \textbf{somme partielle d'ordre n}\index{espace vectoriel normé!somme partielle d'ordre n} de la série \(\sum u_n\).\vspace{0.6cm}\\
+Le vecteur \(\,U_n\,\) est appelé \textbf{somme partielle d'ordre n}\index{espace vectoriel normé!somme partielle d'ordre n} de la série \(\sum u_n\).\\
 En cas de convergence de la série \(\sum u_n\), le vecteur \(\displaystyle \lim_{N\to +\infty}U_N\) est noté \(\displaystyle \sum_{n=0}^{+\infty}u_n\) et est appelé \textbf{somme de la série}\index{espace vectoriel normé!somme d'une série} \(\sum u_n\).\vspace{1cm}\\
 On dit que la série \(\sum u_n\) est \textbf{absolument convergente}\index{espace vectoriel normé!série absolument convergente} dans (E,\ \normtxt{\ }) \ssi la série \(\sum \norm{u_n}\) est convergente.\vspace{0.1cm}\\
 On dit que la série \(\sum u_n\) est \textbf{semi-convergente}\index{espace vectoriel normé!série semi-convergente} dans (E,\ \normtxt{\ }) \ssi \(\sum u_n\) est convergente et non absolument convergente dans (E,\ \normtxt{\ }).\vspace{1cm}\\
 En cas de convergence de la série \(\sum u_n\), on appelle \textbf{reste d'ordre n}\index{espace vectoriel normé!reste d'ordre n} de la série \(\sum u_n\) le vecteur noté \(R_n\) défini par : \(\displaystyle R_n =\sum_{k=n+1}^{+\infty}u_k. \)
 
-\newpage
+\vspace{1.3cm}
 
 \underline{\emph{Théorème - définition}} : \(\ \forall A\in \mathcal{M}_n(\KK) \),\, la série \(\,\displaystyle \sum \frac{A^k}{k!} \) est absolument convergente\footnote{On ne précise pas la norme ici car \(\,\dim \mathcal{M}_n(\KK)=n^2<+\infty\),\, donc toutes les normes y sont équivalentes.}\\
 La matrice \(\,\displaystyle \sum_{k=0}^{+\infty}\frac{A^k}{k!}\,\) est appelée \textbf{exponentielle de A}\index{matrices!exponentielle d'une matrice} et est notée \(\exp (A)\) ou encore \(e^A\).\vspace{0.3cm}\\
 
-\underline{\emph{Théorème - définition}} : Supposons que \(\dim E<+\infty\). \(\forall a\in L(E)\) la série \(\,\displaystyle \sum \frac{a^k}{k!}\,\) est absolument convergente\footnote{De même, comme \(\,\dim E <+\infty\,\) alors \(\,\dim \mathscr{E} < +\infty\,\) et toutes les normes sont équivalentes.}.\\
+\underline{\emph{Théorème - définition}} : Supposons que \(\dim E<+\infty\). \(\forall a\in \mathscr{L}(E)\) la série \(\,\displaystyle \sum \frac{a^k}{k!}\,\) est absolument convergente\footnote{De même, comme \(\,\dim E <+\infty\,\) alors \(\,\dim \mathscr{L}(E)=n^2 < +\infty\,\) et toutes les normes sont équivalentes.}.\\
 L'endomorphisme \(\,\displaystyle \sum_{k=0}^{+\infty}\frac{a^k}{k!}\, \) est appelé \textbf{exponentielle de a}\index{endomorphismes!exponentielle d'un endomorphisme} et est noté \(\exp(a)\) ou encore \(e^a\).
-
-
 
 \vspace{2cm}
 
 \subsection{Topologie d'un e.v.n}
 
-\vspace{0.5cm}
+\vspace{0.7cm}
 \begin{center}
     Soit (E,\ \normtxt{\ }) un espace vectoriel normé.
 \end{center}
 
-\vspace{0.5cm}
+\vspace{1cm}
 
 Une partie A de E est dite \textbf{bornée}\index{partie bornée} \ssi : \(\, \exists\,M\in \RR_+ \ \mid \ \forall x\in A,\ \; \norm{x}\leq M.\)
 
-\vspace{1cm}
+\vspace{1.3cm}
 
 Étant donnés deux points $x$ et $y$ de E, on appelle \textbf{segment}\index{segment} d'extrémités $x$ et $y$ la partie de E\vspace{0.1cm}\\
 notée \([x,y]\) définie par :
-\([x,y]=\bigl\{z\in E,\ \exists \lambda \in [0,1] \ | \ z=(1-\lambda )x + \lambda y \bigr\} \).\footnote{Défini ainsi, on a \([x,y] = [y,x]\).}
+\([x,y]=\bigl\{z\in E\ \;\vert \ \; \exists \lambda \in [0,1], \ \, z=(1-\lambda )x + \lambda y \bigr\} \).\footnote{Défini ainsi, on a \([x,y] = [y,x]\).}
 
-\vspace{1cm}
+\vspace{1.3cm}
 
 Soit A une partie de E. \vspace{0.1cm}\\
 On dit que A est \textbf{étoilée}\index{étoilée} \ssi : \(\ \exists a\in A,\ \forall x\in A,\ \ [a,x]\subset A. \) \vspace{0.2cm} \\
 On dit que A est \textbf{convexe}\index{convexe} \ssi : \(\ \forall(x,y)\in A^2,\ \ [x,y]\subset A. \)
 
-\vspace{1.3cm}
+\newpage
 
-Soient \(a\in E\) et \(r>0\).
-\begin{itemize}[leftmargin=0.3cm]
-    \item[•] On appelle \textbf{boule ouverte}\index{boule ouverte} de centre \(a\) et de rayon \(\,r\,\) l'ensemble : \(BO(a,r)=\{ x\in E,\ \norm{x-a}< r\}  \)\vspace{0.1cm}
+Soient \(a\in E\,\) et \(\,r>0\).
+\begin{itemize}[leftmargin=0.3cm, label=•]
+    \item On appelle \textbf{boule ouverte}\index{boule ouverte} de centre \(a\) et de rayon \(\,r\,\) l'ensemble : \(BO(a,r)=\{ x\in E,\ \norm{x-a}< r\}  \)\vspace{0.1cm}
 
-    \item[•] On appelle \textbf{boule fermée}\index{boule fermée} de centre \(a\) et de rayon \(\,r\,\) l'ensemble : \(BF(a,r)=\{ x\in E,\ \norm{x-a}\leq r\}  \)\vspace{0.1cm}
+    \item On appelle \textbf{boule fermée}\index{boule fermée} de centre \(a\) et de rayon \(\,r\,\) l'ensemble : \(BF(a,r)=\{ x\in E,\ \norm{x-a}\leq r\}  \)\vspace{0.1cm}
 
-    \item[•] On appelle \textbf{sphère}\index{sphère} de centre \(a\) et de rayon \(\,r\,\) l'ensemble : \(S(a,r)=\{ x\in E,\ \norm{x-a}= r\}  \)
+    \item On appelle \textbf{sphère}\index{sphère} de centre \(a\) et de rayon \(\,r\,\) l'ensemble : \(S(a,r)=\{ x\in E,\ \norm{x-a}= r\}  \)
 \end{itemize}
 
-\vspace{0.8cm}
+\vspace{1.3cm}
 
 Soient \(a\in E\) et V une partie de E.\vspace{0.1cm}\\
 On dit que V est un \textbf{voisinage}\index{voisinage} de $a$ dans (E,\ \normtxt{\ }) \ssi :\vspace{0.15cm}
 
-\hspace{5cm} il existe $\,r>0\,$ tel que \(\,BF(a,r)\subset V\).\vspace{0.7cm}
+\hspace{5cm} il existe $\,r>0\,$ tel que \(\,BF(a,r)\subset V\).\vspace{0.4cm}
 
-\noindent On note \(\mathcal{V}_E(a)\) l'ensemble des voisinages de $a$ dans (E,\ \normtxt{\ }).
+\noindent \begin{small}On note\footnote{L'ensemble dépend de la norme considérée, même si la notation n'en fait pas mention.} \(\mathcal{V}_E(a)\) l'ensemble des voisinages de $a$ dans (E,\ \normtxt{\ }).\end{small}
 
 \vspace{0.7cm}
 
-On appelle \textbf{voisinage de \(-\infty\)}\index{voisinage de \(-\infty\)} dans \(\overline{\RR}\) toute partie V de \(\RR\) qui contient un intervalle\\
-de la forme \(\,]-\infty,-P]\,\) avec \(P>0\).\vspace{0.1cm}
+On appelle \textbf{voisinage de \(-\infty\)}\index{voisinage de \(-\infty\)} dans \(\overline{\RR}\) toute partie de \(\RR\) qui contient un intervalle de la\\
+forme \(\,]-\!\infty,-P]\,\) avec \(P>0\).\vspace{0.1cm}
 
-On appelle \textbf{voisinage de \(+\infty\)}\index{voisinage de \(+\infty\)} dans \(\overline{\RR}\) toute partie V de \(\RR\) qui contient un intervalle\\
-de la forme \(\,[P,+\infty[\,\) avec \(P>0\).\vspace{0.1cm}
+On appelle \textbf{voisinage de \(+\infty\)}\index{voisinage de \(+\infty\)} dans \(\overline{\RR}\) toute partie de \(\RR\) qui contient un intervalle de la\\
+forme \(\,[P,+\infty[\,\) avec \(P>0\).\vspace{0.1cm}
 
-Étant donné \(a\in \RR\), on appelle \textbf{voisinage de a}\index{voisinage d'un point dans \(\,\RR\)} dans \(\overline{\RR}\) toute partie V de \(\RR\) qui contient\\
-un intervalle de la forme \(\,[a-\varepsilon\,,a+\varepsilon]\,\) avec \(\varepsilon>0\).
+Étant donné \(a\in \RR\), on appelle \textbf{voisinage de a}\index{voisinage d'un point dans \(\,\RR\)} dans \(\overline{\RR}\) toute partie de \(\RR\) qui contient un intervalle de la forme \(\,[a-\varepsilon\,,a+\varepsilon]\,\) avec \(\varepsilon>0\).
 
-\vspace{1.3cm}
+\vspace{1.6cm}
 
 On dit qu'une partie A de E est une partie \textbf{ouverte}\index{ouvert} de (E,\ \normtxt{\ }) \ssi A est un voisinage de chacun de ses points,\, i.e. : \(\ \forall a\in A,\ \; A\in \mathcal{V}_E(a) \).\vspace{0.1cm}\\
 Ou encore : \(\forall a\in A,\ \exists r_a>0 \ \mid \ BF(a,r_a)\subset A. \)
 
-\vspace{1cm}
+\vspace{1.3cm}
 
 On dit qu'une partie A de E est une partie \textbf{fermée}\index{fermée} de (E,\ \normtxt{\ }) \ssi A contient les limites de ses suites convergentes.
 
-\vspace{1cm}
+\vspace{1.5cm}
 
 Soient \(a\in E\) et A une partie de E. On dit que \(a\) est \textbf{adhérent à A}\index{point adhérent à une partie} \ssi il existe une suite \((a_n)\) d'éléments de A qui tend vers $a$.\vspace{0.1cm}\\
-On note \(\overline{\text{A}}\) l'ensemble des points adhérents à A. L'ensemble \(\overline{\text{A}}\) est appelée \textbf{adhérence}\index{adhérence d'une partie} de A.\vspace{0.1cm}\\
-On a donc \(a\in \overline{\text{A}}\  \Leftrightarrow \ \exists(a_n)\in A^\NN,\ \lim a_n = a. \)
+On note \(\overline{\text{A}}\) l'ensemble des points adhérents à A. L'ensemble \(\overline{\text{A}}\) est appelé \textbf{adhérence}\index{adhérence d'une partie} de A.\vspace{0.1cm}\\
+On a donc : \(\;a\in \overline{\text{A}}\  \Leftrightarrow \ \exists(a_n)\in A^\NN,\ \,\lim a_n = a. \)
 
-\vspace{0.4cm}
+\vspace{0.7cm}
 
-Soient A une partie de \(\RR\) et \(a\in \overline{\RR}\). On dit que a est \textbf{adhérent à A}\index{adhérent à une partie dans \(\,\overline{\RR}\)} dans \(\overline{\RR}\) \ssi il existe une suite \((a_n)\) d'éléments de A qui tend vers $a$ dans \(\overline{\RR}\).\vspace{-0.1cm}\\
+Soient A une partie de \(\RR\) et \(a\in \overline{\RR}\). On dit que $a$ est \textbf{adhérent à A}\index{point adhérent à une partie dans \(\,\overline{\RR}\)} dans \(\overline{\RR}\) \ssi il existe une suite \((a_n)\) d'éléments de A qui tend vers $a$ dans \(\overline{\RR}\).\vspace{-0.1cm}\\
 L'ensemble des éléments de \(\overline{\RR}\) qui sont adhérents à A est noté \(\overline{\text{A}}^{\overline{\RR}}\) et est appelé \textbf{adhérence}\index{adhérence d'une partie de \(\,\overline{\RR}\)} de A dans \(\overline{\RR}\).
 
-\vspace{1cm}
+\newpage
 
 Une partie A de E est dite \textbf{dense}\index{dense} dans (E,\ \normtxt{\ }) \ssi tout point de E est limite d'une suite d'éléments de A.\\
 Si A et B sont des parties de E telles que \(B\subset A\) alors on dit que B est \textbf{dense dans A}\index{dense dans une partie} \ssi tout point de A est limite d'une suite d'éléments de B.
 
-\vspace{1cm}
+\vspace{1.3cm}
 
 Soient \(a\in E\) et A une partie de E.\\
-On dit que \(a\) est un \textbf{point intérieur}\index{point intérieur} à A \ssi \(A\in \mathcal{V}_E(a)\).\\
+On dit que \(a\) est un \textbf{point intérieur}\index{point intérieur} à A \ssi A est un voisinage de $a$ dans (E,\ \normtxt{\ }).\vspace{0.1cm}\\
 L'ensemble des points de E qui sont intérieurs à A est appelé \textbf{intérieur de A}\index{intérieur d'une partie} et est noté \(\mathring{\text{A}}\).
 
-\vspace{1cm}
+\vspace{1.3cm}
 
 La \textbf{frontière}\index{frontière} d'une partie A de E est l'ensemble \(\overline{\text{A}}\setminus \mathring{\text{A}}\). On le note Fr(A) ou \(\partial\)A.
 
-\vspace{1cm}
+\vspace{1.3cm}
 
 Soient A une partie de E et \(a\in A\).\vspace{0.1cm}\\
 Toute partie de la forme \(V\cap A\) \,avec\, \(V\in \mathcal{V}_E(a)\) est appelée un \textbf{voisinage de a dans A}\index{voisinage relatif à une partie}.\vspace{0.1cm}\\
 Toute partie de la forme \(O\cap A\) \,avec\, $O$ un ouvert de (E,\ \normtxt{\ }) est appelée un \textbf{ouvert de A}\index{ouvert relatif à une partie}.\vspace{0.1cm}\\
-Toute partie de la forme \(F\cap A\) \,avec\, $F$ un fermé de (E,\ \normtxt{\ }) est appelée un \textbf{fermé de A}\index{fermé relatif à une partie}.
+Toute partie de la forme \(F\cap A\) \,avec\, $F$ un fermé de (E,\ \normtxt{\ }) est appelée un \textbf{fermé de A}\index{fermé relatif à une partie}.\vspace{0.2cm}\\
+\begin{small}On parle de voisinage relatif à une partie, d'ouvert relatif à une partie, etc...\end{small}
 
-\vspace{1.2cm}
+\vspace{1.5cm}
 
 Une partie A de E est dite \textbf{compacte}\index{compacte} dans (E,\ \normtxt{\ }) \ssi de toute suite d'éléments de A on peut extraire une sous-suite qui converge vers un élément de A.
 
-\vspace{1.2cm}
+\vspace{1.5cm}
 
 Un \textbf{arc}\index{arc} (ou \textbf{chemin}\index{chemin}) de (E,\ \normtxt{\ }) est une application continue de \([0,1]\) dans E.
 
 \vspace{0.3cm}
 
-Soit \(\gamma  : [0,1] \to \) E\ \ un arc de (E,\ \normtxt{\ }). Les points \(x=\gamma(0)\) et \(y=\gamma(1)\) sont respectivement appelés \textbf{origine}\index{origine d'un arc} et \textbf{but}\index{but d'un arc} de l'arc \(\gamma\), et on dit que l'arc \(\gamma\) relie les points \(x\) et \(y\).\vspace{0.1cm}\\
-L'ensemble \(\gamma \bigl( [0,1] \bigr) = \{ \gamma(t),\ t\in [0,1] \} \) est appelé \textbf{support de l'arc \(\gamma\)}\index{support d'un arc}. 
+Soit \(\gamma  : [0,1] \to \) E\ \ un arc de (E,\ \normtxt{\ }). Les points \(x=\gamma(0)\) et \(y=\gamma(1)\) sont respectivement appelés \textbf{origine}\index{origine d'un arc} et \textbf{but}\index{but d'un arc} de l'arc \(\,\gamma\), \,et on dit que l'arc \(\,\gamma\,\) relie les points \(x\) et \(y\).\vspace{0.1cm}\\
+L'ensemble \(\,\gamma \bigl( [0,1] \bigr) = \{ \gamma(t),\ \,t\in [0,1] \} \,\) est appelé \textbf{support de l'arc \(\gamma\)}\index{support d'un arc}. 
 
-\vspace{1cm}
+\vspace{1.4cm}
 
-On dit qu'une partie A de E est une partie \textbf{connexe par arcs}\index{connexe par arcs} de (E,\ \normtxt{\ }) \ssi pour tout \((x,y)\in A^2,\) il existe une arc de E à support contenu dans A qui relie \(x\) à \(y\).\vspace{0.1cm}\\
-i.e. \(\forall(x,y)\in A^2,\ \exists \gamma : [0,1] \xlongrightarrow{\mathscr{C}^0} \) E\, tel que \(\,\gamma \bigl( [0,1] \bigr) \subset A\,\) et \(\,\gamma(0)=x,\ \gamma(1)=y. \)
-\vspace{01cm}
+On dit qu'une partie A de E est une partie \textbf{connexe par arcs}\index{connexité par arcs} de (E,\ \normtxt{\ }) \ssi pour tout \((x,y)\in A^2,\) il existe une arc de E à support contenu dans A qui relie \(x\) à \(y\).\vspace{0.1cm}\\
+i.e. \(\ \forall(x,y)\in A^2,\ \; \exists \gamma : [0,1] \xlongrightarrow{\mathscr{C}^0} \) E\; tel que \(\,\gamma \bigl( [0,1] \bigr) \subset A\,\) et \(\,\gamma(0)=x,\ \gamma(1)=y. \)
+\vspace{1.6cm}
 
-Soient A une partie de E et \((a,b)\in A^2\).\\
-On dit que \textbf{a est connecté à b} dans A, et on note\footnote{On adopte cette notation car il s'agit d'une relation d'équivalence sur l'ensemble A.} \(a\sim_A b\),\, \ssi il existe un arc de E à support contenu dans A reliant $a$ à $b$.
+Soient A une partie de E et \((a,b)\in A^2\).\vspace{0.1cm}\\
+On dit que \textbf{a est connecté à b} dans A \ssi il existe un arc de E à support contenu dans A reliant $a$ à $b$.
 
-\vspace{2cm}
+\newpage
 
 \subsection{Fonctions de E dans F}
 
-\vspace{0.5cm}
+\vspace{0.8cm}
 \begin{center}
     Soient \(\bigl(E,\, \norm{\ }_E\bigr)\,\text{ et }\, \bigl(F,\, \norm{\ }_F\bigr)\,\) deux $\,\KK$-espaces vectoriels normés.
 \end{center}
-\vspace{0.5cm}
+\vspace{0.8cm}
 
 Soient \(\,f:D\subset E\to F\,\) une application de D dans F, \(\,A\subset D,\ a\in \overline{\text{A}}\,\text{ et } \,b\in F.\)\vspace{0.1cm}\\
 On dit que $f$ tend vers $b$ en $a$ suivant A \ssi pour toute suite $(a_n)$ d'éléments de A qui tend vers $a$ dans \(\bigl(E,\ \norm{\ }_E\bigr)\), la suite \(\bigl(f(a_n)\bigr)\) tend vers $b$ dans \(\bigl(F,\, \norm{\ }_F\bigr)\).\vspace{0.2cm}\\
 On dit que $f$ admet une limite dans F lorsque $x$ tend vers $a$ en appartenant à A \ssi il existe $b\in F\,$ tel que $f(x)$ tende vers $b$ lorsque $x$ tend vers $a$ en appartenant à A.\vspace{0.2cm}\\
-Pour exprimer que $f$ tend vers $b$ en $a$ suivant A on écrit : \(\,\displaystyle \lim_{a,\,A}f=b\,\) ou \( \displaystyle \lim_{\substack{\vspace{-0.05cm} \\ x\to a\vspace{0.05cm}\\ x\in A}} f(x)=b.\)\vspace{-0.1cm}\\
-Lorsque $A=D$, \(\displaystyle \; \lim_{a,\,A}f\,\) est noté \(\,\displaystyle \lim_af.\)\vspace{0.15cm}\\
+Pour exprimer que $f$ tend vers $b$ en $a$ suivant A on écrit : \(\,\displaystyle \lim_{a,\,A}f=b\;\) ou \( \;\displaystyle \lim_{\substack{\vspace{-0.05cm} \\ x\to a\vspace{0.05cm}\\ x\in A}} f(x)=b.\)\vspace{-0.1cm}\\
+Lorsque $A=D$, \(\displaystyle \; \lim_{a,\,A}f\,\) est simplement noté \(\,\displaystyle \lim_af.\)\vspace{0.15cm}\\
 Lorsque $A=D\!\setminus\!\{a\}$, \(\ \displaystyle \lim_{a,\,A}f\,\) est noté \(\,\displaystyle \lim_{a,\, \neq}f.\)\vspace{0.15cm}\\
-Lorsque \(\bigl(E,\, \norm{\ }_E\bigr)=\bigl(\RR,\, \mid\ \; \mid\bigr)\) et \(A=D\,\cap\,]-\infty,a\,[\), \(\ \displaystyle \; \lim_{a,\,A}f\,\) est noté \(\,\displaystyle \lim_{\;a^-}f.\)\vspace{0.15cm}\\
-Lorsque \(\bigl(E,\, \norm{\ }_E\bigr)=\bigl(\RR,\, \mid\ \; \mid\bigr)\) et \(A=D\,\cap\,]\,a,\,+\infty\,[\), \(\ \displaystyle \; \lim_{a,\,A}f\,\) est noté \(\,\displaystyle \lim_{\;a^+}f.\)
+Lorsque \(\bigl(E,\, \norm{\ }_E\bigr)=\bigl(\RR,\, \mid\ \; \mid\bigr)\;\) et \(\;A=D\,\cap\,]-\!\infty,a\,[\,\), \(\ \displaystyle \; \lim_{a,\,A}f\,\) est noté \(\;\displaystyle \lim_{\;a^-}f.\)\vspace{0.15cm}\\
+Lorsque \(\bigl(E,\, \norm{\ }_E\bigr)=\bigl(\RR,\, \mid\ \; \mid\bigr)\;\) et \(\;A=D\,\cap\,]\,a,\,+\infty\,[\,\), \(\ \displaystyle \; \lim_{a,\,A}f\,\) est noté \(\;\displaystyle \lim_{\;a^+}f.\)
 
-\vspace{1.3cm}
+\vspace{1.5cm}
 
 On suppose\, dim\,F\(\,<\!+\infty\,\) et on considère une base \(\,\mathcal{B}=(e_1,\cdots,e_n)\,\) de\, F.\vspace{0.1cm}\\
 Soit \(\,f:D\subset E\to F\,\) une application de D dans F. \,Pour \(i\in \llbracket 1,n \rrbracket\,\) on pose : \(\,f_i=e_i^*\circ f.\)\vspace{0.1cm}\\
 Si \(\,x\in D\,\) alors $f_i(x)$ est la i\expo{ème} coordonnée de $f(x)$ dans la base $\,\mathcal{B}\,$ et on a donc \(\,\displaystyle f(x)=\sum_{i=1}^{n}f_i(x)\,e_i.\)\vspace{(-0.2cm)}\\
-L'application $f_i$ est appelée \textbf{i\expo{ème} application coordonnée}\index{fonctions de E dans F!i\expo{ème} application coordonnée} de $f$ sur $\,\mathcal{B}.$
+L'application $f_i$ est appelée\, \textbf{i\expo{ème} application coordonnée}\index{fonctions de E dans F!i\expo{ème} application coordonnée} de $f$ sur $\,\mathcal{B}.$
 
-\vspace{1.3cm}
+\vspace{1.7cm}
 
 Soient \(\bigl(F_1,\, \norm{\ }_{F_1}\bigr),\cdots, \bigl(F_n,\, \norm{\ }_{F_n}\bigr)\) des espaces vectoriels normés et \(f:D\subset E \to F_1\times\cdots\times F_n\).\vspace{0.1cm}\\
 Pour \(i\in \llbracket 1,n \rrbracket\,\) on note \(\,\pi_i : F_1\times\cdots\times F_n \to F_i\;\) l'application définie par : \(\,\pi_i\,(y_1,\cdots,y_n)=y_i\).\vspace{0.2cm}\\
 L'application \(f_i=\pi_i\circ f\,\) est une application de E dans F\ind{i}\, et \(\;\forall x\in E,\ \,f(x)=\bigl(f_1(x),\cdots,f_n(x)\bigr).\)\vspace{0.1cm}\\
 On note \(f=(f_1,\cdots,f_n)\) et on dit que $f_i$ est la \textbf{i\expo{ème} application composante}\index{fonctions de E dans F!i\expo{ème} application composante} de l'application $f$.
 
-\vspace{1cm}
+\vspace{1.8cm}
 
-Soit $D\subset E$ vérifiant : \(\exists\, R>0,\ \, \text{E}\setminus\text{BO}(\,0_E,\,R)\subset D.\;\) Soient \(f:D\subset E\to F\, \) et $b\in F$.\vspace{0.1cm}\\
-On dit que $f(x)$ tend vers $b$ lorsque \normtxt{x}\ind{E} tend vers $+\infty$ \ssi pour toute suite $(a_n)$ d'éléments de D qui vérifie \(\displaystyle \lim_{n\to +\infty}\! \norm{a_n}_E=+\infty\),\, la suite \( \bigl( f(a_n) \bigr) \) tend vers $b$ dans \(\bigl(F,\, \norm{\ }_F\bigr)\).
+Soit $D\subset E$ vérifiant : \(\exists\, r>0,\ \; \text{E}\setminus\text{BO}(\,0_E,\,r)\subset D.\)\footnote{Autrement dit : \(\exists r>0,\ \forall x\in E,\ \bigl(\,\norm{x}_{_E}\geq r \ \Rightarrow \ x\in D\bigr).\)}\; Soient \(f:D\subset E\to F\, \) et $b\in F$.\vspace{0.2cm}\\
+On dit que $f(x)$ tend vers $b$ lorsque \normtxt{x}\ind{\ind{E}} tend vers $+\infty$ \ssi pour toute suite $(a_n)$\vspace{0.1cm}\\
+d'éléments de D qui vérifie \(\displaystyle \lim_{n\to +\infty}\! \norm{a_n}_E=+\infty\),\, la suite \( \bigl( f(a_n) \bigr) \) tend vers $b$ dans \(\bigl(F,\, \norm{\ }_F\bigr)\).\vspace{0.3cm}\\
+On note alors \(\ \displaystyle \lim_{\norm{x}_{_E}\!\!\!\to \,+\infty}\!\!f(x) = b.\)
 
-\vspace{1cm}
+\newpage
 
 Soient \(f:D\subset E\to F\) une application de D dans F et \underline{\(a\in D\)}.\vspace{0.1cm}\\
 On dit que $f$ est \textbf{continue au point a}\index{fonctions de E dans F!continue en un point} \ssi pour toute suite \((x_n)\) d'éléments de D qui tend vers $a$, la suite \(\bigl(f(x_n)\bigr)\) tend vers $f(a)$.\vspace{0.1cm}\\
@@ -363,7 +361,7 @@ Autrement dit : l'application $f$ est continue au point $a$ \ssi \(\,\displaysty
 Autrement dit : \(\,f\) est continue au point $a$ \ssi :\vspace{-0.25cm}
 \[\forall \varepsilon >0,\ \, \exists \alpha >0,\ \, \forall x\in D,\ \; \norm{x-a}_E \leq \alpha \ \, \Rightarrow \ \norm{f(x)-f(a)}_F\leq \varepsilon\]
 
-\vspace{0.3cm}
+\vspace{0.6cm}
 
 \noindent Soit $A\subset D$. On dit que $f$ est \textbf{continue sur A}\index{fonctions de E dans F!continue sur une partie} \ssi $f$ est continue en tout point de A. On note \(\,\mathscr{C}^{\,0}(D,F)\) l'ensemble des applications de D dans F qui sont continues sur D.
 
@@ -372,7 +370,7 @@ Autrement dit : \(\,f\) est continue au point $a$ \ssi :\vspace{-0.25cm}
 Autrement dit : \(\,f\) est continue sur A \ssi :\vspace{-0.25cm}
 \[\forall y\in A,\ \,\forall \varepsilon >0,\ \, \exists \alpha >0,\ \, \forall x\in D,\ \; \norm{x-y}_E \leq \alpha \ \, \Rightarrow \ \norm{f(x)-f(y)}_F\leq \varepsilon\]
 
-\vspace{1.3cm}
+\vspace{1.7cm}
 
 \(\left(\mathbf{HP}\right)\) Soient \(A\subset E,\ B\subset F\,\text{ et }\, f:A\to B\,\) une application.\vspace{0.1cm}\\
 On dit que $f$ est un \textbf{homéomorphisme}\index{homéomorphisme} de A sur B \ssi $f$ vérifie :
@@ -381,67 +379,66 @@ On dit que $f$ est un \textbf{homéomorphisme}\index{homéomorphisme} de A sur B
     \item $f$ est continue sur A et $f^{-1}$ est continue sur B.
 \end{enumerate}
 
-\vspace{1.3cm}
+\vspace{1.7cm}
 
 \noindent Soit \(f:D\subset E\to F\) une application de D dans F.
 
 \vspace{0.3cm}
 
-On dit que $f$ est \textbf{lipschitzienne}\index{lipschitzienne}\footnote{Si $f$ vérifie cette relation, on dit aussi que $f$ est \textbf{k-lipschitzienne}\index{k-lipschitzienne}.} \ssi :\vspace{-0.25cm} \[\exists\, k \in \RR_+ \ \mid \ \forall(x,y)\in D^2,\ \; \norm{f(x)-f(y)}_F\,\leq\, k\norm{x-y}_E.\vspace{0.1cm}\]
+On dit que $f$ est \textbf{lipschitzienne}\index{lipschitzienne}\footnote{Si $f$ vérifie cette relation, on dit aussi que $f$ est \textbf{k-lipschitzienne}\index{k-lipschitzienne}.} \ssi :\vspace{-0.25cm} \[\exists\, k \geq 0 \ \mid \ \forall(x,y)\in D^2,\ \; \norm{f(x)-f(y)}_F\,\leq\, k\norm{x-y}_E.\vspace{0.1cm}\]
 
 On dit que $f$ est \textbf{contractante}\index{contractante} \ssi : \vspace{-0.25cm} \[\exists\,k\in [0,1[\ \ \mid \ \forall(x,y)\in D^2,\ \; \norm{f(x)-f(y)}_F\,\leq\, k\norm{x-y}_E.\]
 
-
-\vspace{1.3cm}
+\vspace{1.7cm}
 
 L'application \(f:D\subset E\to F\) est dite \textbf{uniformément continue}\index{fonctions de E dans F!uniformément continue}\footnote{Si on compare cette définition avec celle de continuité sur A, on remarque que $\,\alpha\,$ est indépendant du $y$ choisi.} \ssi : \vspace{-0.25cm} \[\forall \varepsilon >0,\ \,\exists\, \alpha>0,\ \, \forall(x,y)\in D^2,\ \ \norm{x-y}_E\leq \alpha \ \Rightarrow \ \norm{f(x)-f(y)}_F\leq \varepsilon\]
 
-\vspace{1cm}
+\newpage
 
 \subsection{Fonctions de $\,\RR\,$ dans F}
 
-\vspace*{0.5cm}
+\vspace*{1cm}
 
 \begin{center}
     Soient \(\,\bigl(F,\norm{\ }_F\bigr)\,\) un $\,\KK$-espace vectoriel normé de dimension finie, \((a,b)\in\RR^2\,\) tel que \(a\leq b\,\) et I un intervalle de $\,\RR\,$ d'intérieur non vide.
 \end{center}
 
-\vspace{0.7cm}
+\vspace{0.9cm}
 
-On dit que \(\,f:[a,b]\to F\, \) est \textbf{continue par morceaux sur le segment}\index{fonctions de \(\RR\) dans F!continue par morceaux sur un segment} $[a,b]$ \ssi il existe une subdivision \(\sigma =(a_i)_{i\in \llbracket 0,n \rrbracket}\,\) de \([a,b]\) telle que pour tout \(\,i\in \llbracket 0,n \rrbracket\,\), la restriction de $f$ à l'intervalle ouvert \(\,]a_{i-1},a_i[\,\) se prolonge en une application continue sur \(\,[a_{i-1},a_i].\)\vspace{0.3cm}\\
+On dit que \(\,f:[a,b]\to F\, \) est \textbf{continue par morceaux sur le segment}\index{fonctions de \(\RR\) dans F!continue par morceaux sur un segment} $[a,b]$ \ssi il existe une subdivision \(\sigma =(a_i)_{i\in \llbracket 0,n \rrbracket}\,\) de \([a,b]\) telle que pour tout \(\,i\in \llbracket 1,n \rrbracket\,\), la restriction de $f$ à l'intervalle ouvert \(\,]a_{i-1},a_i[\,\) se prolonge en une application continue sur \(\,[a_{i-1},a_i].\)\vspace{0.3cm}\\
 On dit que \(\,f:I\to F\,\) est \textbf{continue par morceaux sur l'intervalle}\index{fonctions de \(\RR\) dans F!continue par morceaux sur un intervalle} I \ssi $f$ est continue par morceaux sur tout segment contenu dans I.
 
-\vspace{1.3cm}
+\vspace{2cm}
 
-\noindent L'\textbf{intégrale}\index{fonctions de \(\RR\) dans F!intégrale} sur \([a,b]\,\) de \(f\in\text{M}^0\bigl([a,b],F\bigr)\,\) est le vecteur de F défini par :
+\noindent L'\textbf{intégrale}\index{fonctions de \(\RR\) dans F!intégrale} sur \([a,b]\,\) de \(f\in\text{M}^0\bigl([a,b],F\bigr)\,\)\footnote{$f$ est continue par morceaux sur $[a,b]$ à valeurs dans F.} est le vecteur de F défini par :
 \(\displaystyle \int_{[a,b]}\!\!f\,=\,\sum_{i=1}^{n}\!\left(\int_{[a,b]}\!\!f_i\right)\!e_i\)\vspace{0.3cm}\\
 où \(\,\mathcal{B}=(e_1,\cdots,e_n)\,\) est une base de F et où $f_i\,$ est la i\expo{ème} application coordonnée de $f$ sur \(\,\mathcal{B}.\)
 
-\vspace{1.3cm}
+\vspace{2.3cm}
 
 \noindent Soit \(\,f:I\to F,\ \,a\in F\,\) et \(\,T_a:I\setminus\! \{a\}\to F\,\) définie par\footnote{On n'utilise pas l'écriture fractionnaire car \(\bigl[f(t)-f(a)\bigr]\) est un vecteur de F, pas un scalaire. } : \(\,\displaystyle T_a(t)=\frac{1}{t-a}\bigl[f(t)-f(a)\bigr].\)\vspace{0.1cm}
-\begin{itemize}[leftmargin=1cm]
-    \item[•] On dit que $f$ est \textbf{dérivable au point}\index{fonctions de \(\RR\) dans F!dérivable en un point} $a$ \ssi \(\;\displaystyle \lim_{a,\,\neq}\,T_a\:\) existe dans F.
+\begin{itemize}[leftmargin=1cm, label=•]
+    \item On dit que $f$ est \textbf{dérivable au point}\index{fonctions de \(\RR\) dans F!dérivable en un point} $a$ \ssi \(\;\displaystyle \lim_{a,\,\neq}\,T_a\:\) existe dans F.
     
-    \item[•] Si $\,a\,$ n'est pas l'extrémité droite de I, on dit que $f$ est \textbf{dérivable à droite}\index{fonctions de \(\RR\) dans F!dérivable à droite} en $a$ \ssi \(\;\displaystyle \lim_{a^+}\,T_a\;\) existe dans F. En cas d'existence, cette limite est notée \(f_d'(a)\) et est appelée vecteur dérivé à droite de $f$ en $a$.
+    \item Si $\,a\,$ n'est pas l'extrémité droite de I, on dit que $f$ est \textbf{dérivable à droite}\index{fonctions de \(\RR\) dans F!dérivable à droite} en $a$ \ssi \(\;\displaystyle \lim_{a^+}\,T_a\;\) existe dans F. En cas d'existence, cette limite est notée \(f_d'(a)\) et est appelée vecteur dérivé à droite de $f$ en $a$.
     
-    \item[•] Si $\,a\,$ n'est pas l'extrémité gauche de I, on dit que $f$ est \textbf{dérivable à gauche}\index{fonctions de \(\RR\) dans F!dérivable à gauche} en $a$ \ssi \(\;\displaystyle \lim_{a^-}\,T_a\;\) existe dans F. En cas d'existence, cette limite est notée \(f_g'(a)\) et est appelée vecteur dérivé à gauche de $f$ en $a$.
+    \item Si $\,a\,$ n'est pas l'extrémité gauche de I, on dit que $f$ est \textbf{dérivable à gauche}\index{fonctions de \(\RR\) dans F!dérivable à gauche} en $a$ \ssi \(\;\displaystyle \lim_{a^-}\,T_a\;\) existe dans F. En cas d'existence, cette limite est notée \(f_g'(a)\) et est appelée vecteur dérivé à gauche de $f$ en $a$.
 \end{itemize}
 
-\vspace{1cm}
+\vspace{1.5cm}
 
-Une application \(\,f:I\to F\,\) est dite \textbf{dérivable sur l'intervalle}\index{fonctions de \(\RR\) dans F!dérivable sur un intervalle} I \ssi $f$ est dérivable en tout point de I. On note \(\,\mathcal{D}(I,F)\,\) l'ensemble des applications de I dans F dérivables du I.\\
-Lorsque $f$ est dérivable sur I on dispose de l'application \(\, f':I\to F\,\) qui à tout réel \(t\in I\) associe le vecteur \(f'(t)\) de F. L'application $f'$ est appelée \textbf{application dérivée}\index{fonctions de \(\RR\) dans F!application dérivée} de $f$
+Une application \(\,f:I\to F\,\) est dite \textbf{dérivable sur l'intervalle}\index{fonctions de \(\RR\) dans F!dérivable sur un intervalle} I \ssi $f$ est dérivable en tout point de I.\\
+Lorsque $f$ est dérivable sur I on dispose de l'application \(\, f':I\to F\,\) qui à tout réel \(t\in I\) associe le vecteur \(f'(t)\) de F. L'application $f'$ est appelée \textbf{application dérivée}\index{fonctions de \(\RR\) dans F!application dérivée} de $f$.
 
-\vspace{1cm}
+\newpage
 
 Soit \(\, f:I\to F.\,\) Par convention $f$ est dire zéro fois dérivable sur I et on pose : $f^{(0)}=f$.\vspace{0.1cm}\\
 L'application $f$ est dite une fois dérivable sur I \ssi $f$ est dérivable sur I et on pose alors : $f^{(1)}=f'$.\vspace{0.1cm}\\
 Pour \(n\in \NN\)\expo{*}, l'application $f$ est dite \textbf{n-fois dérivable}\index{fonctions de \(\RR\) dans F!n-fois dérivable} sur I \ssi $f$ est $n-1$ fois dérivable sur I et si $f^{(n-1)}$ est dérivable sur I. Dans ces conditions on pose : \(f^{(n)}=\left(f^{(n-1)}\right)'.\)\vspace{0.1cm}\\
-En cas d'existence, l'application $f^{(n)}$ est appelée \textbf{dérivée n\expo{ième}}\index{fonctions de \(\RR\) dans F!dérivée n\expo{ième}} de $f$. L'application $f$ est dite \textbf{indéfiniment déviable}\index{fonctions de \(\RR\) dans F!indéfiniment déviable} sur I \ssi pour tout \(n\in \NN\), $f$ est $n$-fois dérivable sur I. 
+En cas d'existence, l'application $f^{(n)}$ est appelée \textbf{dérivée n\expo{ième}}\index{fonctions de \(\RR\) dans F!dérivée n\expo{ième}} de $f$. L'application $f$ est dite \textbf{indéfiniment dérivable}\index{fonctions de \(\RR\) dans F!indéfiniment dérivable} sur I \ssi pour tout \(n\in \NN\), $f$ est $n$-fois dérivable sur I. 
 
-\vspace{1.3cm}
+\vspace{1.5cm}
 
-Soit \(\,f:I\to F.\,\) On dit que $f$ admet une \textbf{primitive}\index{fonctions de \(\RR\) dans F!primitive} sur I \ssi il existe une application \(\,G:I\to F\,\) dérivable sur I et telle que : \(\,\forall t \in I,\ G'(t)=f(t).\,\) On dit alors que $G$ est une primitive de $f$ sur I.
+Soit \(\,f:I\to F.\,\) On dit que $f$ admet une \textbf{primitive}\index{fonctions de \(\RR\) dans F!primitive} sur I \ssi il existe une application \(\,G:I\to F\,\) dérivable sur I et telle que : \(\,\forall t \in I,\ G'(t)=f(t).\,\) On dit alors que $G$ est \underline{une} primitive de $f$ sur I.
 
 \vspace{2cm}
